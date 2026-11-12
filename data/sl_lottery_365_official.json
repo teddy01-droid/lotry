@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "2.0",
+  "updatedAt": "2026-11-12T05:12:42Z",
+  "maxDrawsTarget": 7,
+  "lotteries": {
+    "mahajana-sampatha": {
+      "id": "mahajana-sampatha",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "govisetha": {
+      "id": "govisetha",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "mega-power": {
+      "id": "mega-power",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "dhana-nidhanaya": {
+      "id": "dhana-nidhanaya",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "handahana": {
+      "id": "handahana",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "ada-sampatha": {
+      "id": "ada-sampatha",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "nlb-jaya": {
+      "id": "nlb-jaya",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "suba-dawasak": {
+      "id": "suba-dawasak",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "ayubo": {
+      "id": "ayubo",
+      "board": "NLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "ada-kotipathi": {
+      "id": "ada-kotipathi",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "shanida": {
+      "id": "shanida",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "lagna-wasana": {
+      "id": "lagna-wasana",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "supiri-dhana-sampatha": {
+      "id": "supiri-dhana-sampatha",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "super-ball": {
+      "id": "super-ball",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "kapruka": {
+      "id": "kapruka",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "waasi": {
+      "id": "waasi",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "sasiri": {
+      "id": "sasiri",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    },
+    "jaya-sampatha": {
+      "id": "jaya-sampatha",
+      "board": "DLB",
+      "draws": [],
+      "perDrawTables": {}
+    }
+  }
+}
