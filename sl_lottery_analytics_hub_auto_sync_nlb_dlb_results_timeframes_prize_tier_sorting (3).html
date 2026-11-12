@@ -776,17 +776,17 @@
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div>
               <span class="rounded bg-emerald-500/20 px-2 py-0.5 text-[10px] font-extrabold uppercase text-emerald-300">Zero CORS • 365 Draws</span>
-              <h4 class="mt-1 text-sm font-extrabold text-white">🐙 GitHub Actions 365-Draw Auto-Sync (`sl_lottery_365_official.json`)</h4>
+              <h4 class="mt-1 text-sm font-extrabold text-white">🐙 GitHub Live Sync — ticket-wise JSON (`data/tickets/&lt;ticket&gt;.json`)</h4>
             </div>
             <button id="exportSeedJsonBtn" type="button" class="rounded-lg border border-amber-500/40 bg-amber-500/15 hover:bg-amber-500 hover:text-slate-950 px-2.5 py-1 text-[11px] font-extrabold text-amber-300 transition">
               ⬇️ Download Seed JSON for Repo
             </button>
           </div>
           <p class="text-[11px] text-slate-300 leading-relaxed">
-            NLB/DLB වෙබ් අඩවි Browser CORS මඟින් අවහිර කරන නිසා, ඔබේ GitHub Repository එකට <code class="text-amber-300">.github/workflows/sync_nlb_dlb_365.yml</code> සහ <code class="text-amber-300">scripts/fetch_nlb_dlb_365.py</code> එක් කළ පසු දිනුම් වාර 365 ක් දක්වා 100% නිල දත්ත සහ "MORE" ත්‍යාග වගු ස්වයංක්‍රීයව <code class="text-emerald-300">data/sl_lottery_365_official.json</code> වෙත Sync වේ.
+            NLB/DLB වෙබ් අඩවි Browser CORS මඟින් අවහිර කරන නිසා, ඔබේ GitHub Repository එකට <code class="text-amber-300">.github/workflows/sync_nlb_dlb_365.yml</code> සහ <code class="text-amber-300">scripts/fetch_nlb_dlb_365.py</code> එක් කළ පසු දිනුම් වාර 365 ක් දක්වා 100% නිල දත්ත සහ "MORE" ත්‍යාග වගු ස්වයංක්‍රීයව <code class="text-emerald-300">data/tickets/&lt;ticket-id&gt;.json</code> (ticket එකකට එක JSON ගොනුවක්) + <code class="text-emerald-300">data/index.json</code> වෙත Sync වේ. මෙම පිටුව raw link එකෙන් live fetch කර විනාඩි 5 කට වරක් auto-refresh වේ.
           </p>
           <div class="grid grid-cols-1 gap-2 sm:grid-cols-12">
-            <input id="githubRepoOrUrlInput" type="text" value="teddy01-droid/lotry" placeholder="teddy01-droid/lotry හෝ https://raw.githubusercontent.com/..." class="sm:col-span-8 rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-xs font-mono text-white placeholder-slate-500 focus:border-emerald-400 focus:outline-none" />
+            <input id="githubRepoOrUrlInput" type="text" value="https://raw.githubusercontent.com/teddy01-droid/lotry/refs/heads/main/data/sl_lottery_365_official.json" placeholder="teddy01-droid/lotry හෝ https://raw.githubusercontent.com/.../data/" class="sm:col-span-8 rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-xs font-mono text-white placeholder-slate-500 focus:border-emerald-400 focus:outline-none" />
             <button id="syncFromGithubBtn" type="button" class="sm:col-span-4 rounded-lg bg-emerald-500 hover:bg-emerald-400 px-3 py-2 text-xs font-extrabold text-slate-950 shadow transition">
               🔄 Sync 365 Draws from GitHub
             </button>
@@ -796,7 +796,7 @@
               <span>📂 හෝ ඔබේ පරිගණකයේ ඇති `sl_lottery_365_official.json` ගොනුව කෙලින්ම Load කරන්න:</span>
               <input id="uploadGithubJsonInput" type="file" accept=".json,application/json" class="text-[11px] text-slate-300 file:mr-2 file:rounded-md file:border-0 file:bg-blue-500/20 file:px-2.5 file:py-1 file:text-[11px] file:font-bold file:text-blue-300 hover:file:bg-blue-500/30" />
             </label>
-            <span id="githubSyncStatusBadge" class="text-[11px] font-semibold text-emerald-400">Auto-detects ./data/sl_lottery_365_official.json on GitHub Pages</span>
+            <span id="githubSyncStatusBadge" class="text-[11px] font-semibold text-emerald-400">Live fetch from GitHub raw link (auto-refresh every 5 min)</span>
           </div>
         </div>
 
@@ -5544,17 +5544,60 @@
     }
 
     
-    function buildGithubRawUrl(inputStr) {
+    // ── Live GitHub fetch (ticket-wise JSON) ────────────────────────────────────
+    // data/index.json  +  data/tickets/<ticket-id>.json   (fallback: data/sl_lottery_365_official.json)
+    const GH_DEFAULT_RAW_URL = 'https://raw.githubusercontent.com/teddy01-droid/lotry/refs/heads/main/data/sl_lottery_365_official.json';
+    const GH_AUTO_REFRESH_MS = 5 * 60 * 1000;
+    let ghSyncInFlight = false;
+    let ghAutoRefreshTimer = null;
+
+    // Accepts: owner/repo | github.com/owner/repo | any raw URL to a file or folder inside /data/
+    // Returns the data folder URL (always ends with "/").
+    function resolveGithubDataBase(inputStr) {
       const s = String(inputStr || '').trim();
       if (!s) return '';
-      if (/^https?:\/\//i.test(s)) return s;
-      // Convert "owner/repo" to raw.githubusercontent.com URL
+      if (/^https?:\/\/(?!github\.com\/)/i.test(s) || s.startsWith('./') || s.startsWith('/')) {
+        return s.replace(/[?#].*$/, '').replace(/[^/]*\.json$/i, '').replace(/\/*$/, '/');
+      }
       const clean = s.replace(/^https?:\/\/github\.com\//i, '').replace(/\/+$/, '');
       const parts = clean.split('/');
       if (parts.length >= 2) {
-        return `https://raw.githubusercontent.com/${parts[0]}/${parts[1]}/main/data/sl_lottery_365_official.json`;
+        return `https://raw.githubusercontent.com/${parts[0]}/${parts[1]}/refs/heads/main/data/`;
       }
-      return s;
+      return '';
+    }
+
+    function toJsdelivrUrl(url) {
+      const m = String(url).match(/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/(?:refs\/heads\/)?([^/]+)\/(.+)$/);
+      return m ? `https://cdn.jsdelivr.net/gh/${m[1]}/${m[2]}@${m[3]}/${m[4]}` : '';
+    }
+
+    async function fetchJsonOnce(url, bustCache) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 20000);
+      try {
+        const finalUrl = bustCache ? url + (url.includes('?') ? '&' : '?') + 't=' + Date.now() : url;
+        const resp = await fetch(finalUrl, { cache: 'no-store', signal: controller.signal });
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        return await resp.json();
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    // raw.githubusercontent first (fresh), jsDelivr only as a backup
+    async function fetchJsonLive(url) {
+      try {
+        return await fetchJsonOnce(url, true);
+      } catch (e1) {
+        const alt = toJsdelivrUrl(url);
+        if (!alt) throw e1;
+        return await fetchJsonOnce(alt, false);
+      }
+    }
+
+    function buildGithubRawUrl(inputStr) {
+      return resolveGithubDataBase(inputStr) + 'sl_lottery_365_official.json';
     }
 
     function ingestOfficial365Dataset(datasetObj, sourceLabel) {
@@ -5606,46 +5649,97 @@
 
     async function syncFromGithubDatasetUrl(rawInputUrl, silentOnFail = false) {
       const badge = document.getElementById('githubSyncStatusBadge');
-      const url = buildGithubRawUrl(rawInputUrl);
-      if (!url) return false;
+      const base = resolveGithubDataBase(rawInputUrl);
+      if (!base) return false;
+      if (ghSyncInFlight) return false;
+      ghSyncInFlight = true;
 
-      if (badge) {
-        badge.textContent = `Syncing from ${url}...`;
-        badge.className = 'text-[11px] font-semibold text-amber-300';
-      }
+      const setBadge = (txt, cls) => {
+        if (!badge) return;
+        badge.textContent = txt;
+        badge.className = cls;
+      };
+      setBadge(`Fetching ${base}index.json ...`, 'text-[11px] font-semibold text-amber-300');
 
-      const candidateUrls = [url];
-      const ghMatch = url.match(/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/]+)\/(.+)/);
-      if (ghMatch) {
-        candidateUrls.push(`https://cdn.jsdelivr.net/gh/${ghMatch[1]}/${ghMatch[2]}@${ghMatch[3]}/${ghMatch[4]}`);
-      }
+      try {
+        let dataset = null;
+        let sourceLabel = '';
 
-      for (const candidate of candidateUrls) {
+        // 1) Ticket-wise: index.json -> tickets/<id>.json (all downloaded in parallel)
         try {
-          const resp = await fetch(candidate, { cache: 'no-store' });
-          if (!resp.ok) continue;
-          const data = await resp.json();
-          const stats = ingestOfficial365Dataset(data, candidate);
-          if (stats.ticketsUpdated > 0) {
-            try {
-              localStorage.setItem('sl_lotto_github_json_url_v1', rawInputUrl);
-            } catch (_) {}
-            if (badge) {
-              badge.textContent = `✅ Synced ${stats.totalDrawsLoaded} Real Draws & ${stats.totalTablesLoaded} Prize Tables (${data.updatedAt || 'Latest'})`;
-              badge.className = 'text-[11px] font-extrabold text-emerald-400';
+          const index = await fetchJsonLive(base + 'index.json');
+          const list = index && Array.isArray(index.tickets) ? index.tickets : [];
+          if (list.length) {
+            let done = 0;
+            const settled = await Promise.allSettled(list.map(async (t) => {
+              const data = await fetchJsonLive(base + (t.file || `tickets/${t.id}.json`));
+              done++;
+              setBadge(`Fetching tickets ${done}/${list.length} ...`, 'text-[11px] font-semibold text-amber-300');
+              if (data && !data.id) data.id = t.id;
+              return data;
+            }));
+            const lotteries = {};
+            let failed = 0;
+            settled.forEach((r) => {
+              if (r.status === 'fulfilled' && r.value && r.value.id) lotteries[r.value.id] = r.value;
+              else failed++;
+            });
+            if (Object.keys(lotteries).length) {
+              dataset = { updatedAt: index.updatedAt, lotteries };
+              sourceLabel = `${base}tickets/*.json (${Object.keys(lotteries).length} files${failed ? `, ${failed} failed` : ''})`;
             }
+          }
+        } catch (_) { /* fall through to the combined file */ }
+
+        // 2) Fallback: legacy combined file
+        if (!dataset) {
+          const raw = String(rawInputUrl || '').trim();
+          const combinedUrl = /^https?:\/\/.+\.json(\?.*)?$/i.test(raw) ? raw : base + 'sl_lottery_365_official.json';
+          try {
+            const combined = await fetchJsonLive(combinedUrl);
+            if (combined && combined.lotteries) {
+              dataset = combined;
+              sourceLabel = combinedUrl;
+            }
+          } catch (_) { /* handled below */ }
+        }
+
+        if (dataset) {
+          const stats = ingestOfficial365Dataset(dataset, sourceLabel);
+          if (stats.ticketsUpdated > 0) {
+            try { localStorage.setItem('sl_lotto_github_json_url_v1', rawInputUrl); } catch (_) {}
+            const hhmm = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            setBadge(
+              `✅ Live: ${stats.ticketsUpdated} tickets • ${stats.totalDrawsLoaded} draws • ${stats.totalTablesLoaded} prize tables (data ${dataset.updatedAt || 'latest'}, fetched ${hhmm})`,
+              'text-[11px] font-extrabold text-emerald-400'
+            );
             return true;
           }
-        } catch (_) {
-          // Try next candidate
         }
-      }
 
-      if (!silentOnFail && badge) {
-        badge.textContent = `⚠️ Could not fetch ${url} — check repo/URL or load JSON file below.`;
-        badge.className = 'text-[11px] font-semibold text-rose-400';
+        if (!silentOnFail) {
+          setBadge(`⚠️ Could not fetch ${base} — check repo/URL or load JSON file below.`, 'text-[11px] font-semibold text-rose-400');
+        } else if (badge) {
+          setBadge(`⚠️ GitHub fetch failed (${base}) — showing built-in data`, 'text-[11px] font-semibold text-amber-400');
+        }
+        return false;
+      } finally {
+        ghSyncInFlight = false;
       }
-      return false;
+    }
+
+    // Re-fetch every 5 minutes while the tab is visible + when the user comes back to the tab
+    function startGithubAutoRefresh(getInputValue) {
+      if (ghAutoRefreshTimer) clearInterval(ghAutoRefreshTimer);
+      let lastRun = Date.now();
+      const run = () => {
+        lastRun = Date.now();
+        syncFromGithubDatasetUrl(getInputValue(), true);
+      };
+      ghAutoRefreshTimer = setInterval(() => { if (!document.hidden) run(); }, GH_AUTO_REFRESH_MS);
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden && Date.now() - lastRun > GH_AUTO_REFRESH_MS) run();
+      });
     }
 
     function exportCurrentDatasetAsSeedJson() {
@@ -5683,7 +5777,7 @@
       if (savedGh) {
         await syncFromGithubDatasetUrl(savedGh, true);
       } else {
-        await syncFromGithubDatasetUrl('./data/sl_lottery_365_official.json', true);
+        await syncFromGithubDatasetUrl(GH_DEFAULT_RAW_URL, true);
       }
       appendSyncLog('Polling official endpoints via CORS relay (nlb.lk/results & dlb.lk/result/en)...');
 
@@ -6034,14 +6128,13 @@
       // GitHub 365-Draw JSON Sync Listeners
       const ghInput = document.getElementById('githubRepoOrUrlInput');
       try {
-        const savedUrl = localStorage.getItem('sl_lotto_github_json_url_v1') || 'teddy01-droid/lotry';
-        if (savedUrl && ghInput) {
-          ghInput.value = savedUrl;
-          syncFromGithubDatasetUrl(savedUrl, true);
-        } else {
-          syncFromGithubDatasetUrl('./data/sl_lottery_365_official.json', true);
-        }
-      } catch (_) {}
+        const savedUrl = localStorage.getItem('sl_lotto_github_json_url_v1') || GH_DEFAULT_RAW_URL;
+        if (ghInput) ghInput.value = savedUrl;
+        syncFromGithubDatasetUrl(savedUrl, true);
+        startGithubAutoRefresh(() => (ghInput && ghInput.value.trim()) || savedUrl);
+      } catch (_) {
+        syncFromGithubDatasetUrl(GH_DEFAULT_RAW_URL, true);
+      }
 
       const syncGhBtn = document.getElementById('syncFromGithubBtn');
       if (syncGhBtn && ghInput) {
