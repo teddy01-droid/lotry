@@ -1,0 +1,4116 @@
+{
+  "schemaVersion": "3.4",
+  "tickets": {
+    "mahajana-sampatha": {
+      "id": "mahajana-sampatha",
+      "name": "Mahajana Sampatha",
+      "board": "NLB",
+      "latestDraw": "6368",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 22835088.0,
+      "avgWinnersPerDraw": 251498,
+      "dailyPrizePayout": 20562640.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 229016,
+        "TIER_80_120": 10070,
+        "TIER_200": 11172,
+        "TIER_1000_2000": 1116,
+        "TIER_20000": 102,
+        "TIER_100000": 21,
+        "TIER_1M_PLUS": 1
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 20,757,264.00",
+          "unitPrize": 20757264.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 11
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 102
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1016
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10173
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 100759
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 100
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 999
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10070
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91541
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36716
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "6368",
+          "date": "2026-11-11",
+          "totalWinners": 251498,
+          "totalPayout": 20562640.0,
+          "tiers": {
+            "TIER_40": 229016,
+            "TIER_80_120": 10070,
+            "TIER_200": 11172,
+            "TIER_1000_2000": 1116,
+            "TIER_20000": 102,
+            "TIER_100000": 21,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6367",
+          "date": "2026-11-10",
+          "totalWinners": 250521,
+          "totalPayout": 20583760.0,
+          "tiers": {
+            "TIER_40": 228034,
+            "TIER_80_120": 10115,
+            "TIER_200": 11136,
+            "TIER_1000_2000": 1113,
+            "TIER_20000": 100,
+            "TIER_100000": 22,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6366",
+          "date": "2026-11-09",
+          "totalWinners": 245252,
+          "totalPayout": 20225120.0,
+          "tiers": {
+            "TIER_40": 223209,
+            "TIER_80_120": 9867,
+            "TIER_200": 10952,
+            "TIER_1000_2000": 1101,
+            "TIER_20000": 101,
+            "TIER_100000": 21,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6365",
+          "date": "2026-11-08",
+          "totalWinners": 206067,
+          "totalPayout": 36833720.0,
+          "tiers": {
+            "TIER_40": 187653,
+            "TIER_80_120": 8230,
+            "TIER_200": 9186,
+            "TIER_1000_2000": 901,
+            "TIER_20000": 82,
+            "TIER_100000": 13,
+            "TIER_1M_PLUS": 2
+          }
+        },
+        {
+          "draw": "6364",
+          "date": "2026-11-07",
+          "totalWinners": 244180,
+          "totalPayout": 40437368.0,
+          "tiers": {
+            "TIER_40": 222232,
+            "TIER_80_120": 9890,
+            "TIER_200": 10854,
+            "TIER_1000_2000": 1083,
+            "TIER_20000": 99,
+            "TIER_100000": 21,
+            "TIER_1M_PLUS": 1
+          }
+        }
+      ]
+    },
+    "govisetha": {
+      "id": "govisetha",
+      "name": "Govisetha",
+      "board": "NLB",
+      "latestDraw": "4610",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 61798808.0,
+      "avgWinnersPerDraw": 115543,
+      "dailyPrizePayout": 7472840.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 106291,
+        "TIER_80_120": 0,
+        "TIER_200": 8941,
+        "TIER_1000_2000": 309,
+        "TIER_20000": 0,
+        "TIER_100000": 2,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "Super Prize — Letter and 4 Numbers Correct",
+          "prize": "Rs. 61,518,581.60",
+          "unitPrize": 61518581.6,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "2 nd — Letter and  Any 3 Numbers Correct",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 5,000.00",
+          "unitPrize": 5000.0,
+          "avgWinners": 105
+        },
+        {
+          "tier": "4 th — Letter and  Any 2 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 204
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 5431
+        },
+        {
+          "tier": "6 th — Letter and  Any Number Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 3510
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 89838
+        },
+        {
+          "tier": "8 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 16453
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "4610",
+          "date": "2026-11-11",
+          "totalWinners": 115543,
+          "totalPayout": 7472840.0,
+          "tiers": {
+            "TIER_40": 106291,
+            "TIER_80_120": 0,
+            "TIER_200": 8941,
+            "TIER_1000_2000": 309,
+            "TIER_20000": 0,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4609",
+          "date": "2026-11-10",
+          "totalWinners": 114108,
+          "totalPayout": 7942440.0,
+          "tiers": {
+            "TIER_40": 104816,
+            "TIER_80_120": 0,
+            "TIER_200": 8964,
+            "TIER_1000_2000": 324,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4608",
+          "date": "2026-11-09",
+          "totalWinners": 111687,
+          "totalPayout": 8053760.0,
+          "tiers": {
+            "TIER_40": 102539,
+            "TIER_80_120": 0,
+            "TIER_200": 8821,
+            "TIER_1000_2000": 322,
+            "TIER_20000": 0,
+            "TIER_100000": 5,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4607",
+          "date": "2026-11-08",
+          "totalWinners": 91388,
+          "totalPayout": 5556920.0,
+          "tiers": {
+            "TIER_40": 83813,
+            "TIER_80_120": 0,
+            "TIER_200": 7327,
+            "TIER_1000_2000": 248,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4606",
+          "date": "2026-11-07",
+          "totalWinners": 111479,
+          "totalPayout": 8750760.0,
+          "tiers": {
+            "TIER_40": 102344,
+            "TIER_80_120": 0,
+            "TIER_200": 8825,
+            "TIER_1000_2000": 302,
+            "TIER_20000": 0,
+            "TIER_100000": 8,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "mega-power": {
+      "id": "mega-power",
+      "name": "Mega Power",
+      "board": "NLB",
+      "latestDraw": "2716",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 313214574.0,
+      "avgWinnersPerDraw": 117113,
+      "dailyPrizePayout": 9500480.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 109052,
+        "TIER_80_120": 0,
+        "TIER_200": 7787,
+        "TIER_1000_2000": 269,
+        "TIER_20000": 0,
+        "TIER_100000": 4,
+        "TIER_1M_PLUS": 1
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "Mega Super Prize — Letter and Super Number and 4 Numbers Correct",
+          "prize": "Rs. 313,214,574.00",
+          "unitPrize": 313214574.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "Power Super Prize — Letter and 4 Numbers Correct",
+          "prize": "Rs. 10,000,000.00",
+          "unitPrize": 10000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Letter and  Any 3 Numbers Correct",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 4
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 5,000.00",
+          "unitPrize": 5000.0,
+          "avgWinners": 81
+        },
+        {
+          "tier": "4 th — Letter and  Any 2 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 188
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 4680
+        },
+        {
+          "tier": "6 th — Letter and  Any Number Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 3107
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 77351
+        },
+        {
+          "tier": "8 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 14128
+        },
+        {
+          "tier": "9 th — Super Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 17573
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "2716",
+          "date": "2026-11-11",
+          "totalWinners": 117113,
+          "totalPayout": 9500480.0,
+          "tiers": {
+            "TIER_40": 109052,
+            "TIER_80_120": 0,
+            "TIER_200": 7787,
+            "TIER_1000_2000": 269,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "2715",
+          "date": "2026-11-10",
+          "totalWinners": 115202,
+          "totalPayout": 6885720.0,
+          "tiers": {
+            "TIER_40": 107083,
+            "TIER_80_120": 0,
+            "TIER_200": 7832,
+            "TIER_1000_2000": 286,
+            "TIER_20000": 0,
+            "TIER_100000": 1,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2714",
+          "date": "2026-11-09",
+          "totalWinners": 113535,
+          "totalPayout": 7087720.0,
+          "tiers": {
+            "TIER_40": 105698,
+            "TIER_80_120": 0,
+            "TIER_200": 7579,
+            "TIER_1000_2000": 255,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2713",
+          "date": "2026-11-08",
+          "totalWinners": 92924,
+          "totalPayout": 5686720.0,
+          "tiers": {
+            "TIER_40": 86508,
+            "TIER_80_120": 0,
+            "TIER_200": 6207,
+            "TIER_1000_2000": 207,
+            "TIER_20000": 0,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2712",
+          "date": "2026-11-07",
+          "totalWinners": 112740,
+          "totalPayout": 7481680.0,
+          "tiers": {
+            "TIER_40": 105032,
+            "TIER_80_120": 0,
+            "TIER_200": 7427,
+            "TIER_1000_2000": 276,
+            "TIER_20000": 0,
+            "TIER_100000": 5,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "dhana-nidhanaya": {
+      "id": "dhana-nidhanaya",
+      "name": "Dhana Nidhanaya",
+      "board": "NLB",
+      "latestDraw": "2398",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 97187935.2,
+      "avgWinnersPerDraw": 85076,
+      "dailyPrizePayout": 7574800.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 79470,
+        "TIER_80_120": 2225,
+        "TIER_200": 3205,
+        "TIER_1000_2000": 170,
+        "TIER_20000": 0,
+        "TIER_100000": 5,
+        "TIER_1M_PLUS": 1
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "Super Prize — Letter and 4 Numbers Correct",
+          "prize": "Rs. 97,187,935.20",
+          "unitPrize": 97187935.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Letter and  Any 3 Numbers Correct",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 5
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 6,000.00",
+          "unitPrize": 6000.0,
+          "avgWinners": 37
+        },
+        {
+          "tier": "4 th — Letter and  Any 2 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 133
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 3205
+        },
+        {
+          "tier": "6 th — Letter and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 2225
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 56199
+        },
+        {
+          "tier": "8 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 10498
+        },
+        {
+          "tier": "9 th — Special Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 12773
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "2398",
+          "date": "2026-11-11",
+          "totalWinners": 85076,
+          "totalPayout": 7574800.0,
+          "tiers": {
+            "TIER_40": 79470,
+            "TIER_80_120": 2225,
+            "TIER_200": 3205,
+            "TIER_1000_2000": 170,
+            "TIER_20000": 0,
+            "TIER_100000": 5,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "2397",
+          "date": "2026-11-10",
+          "totalWinners": 84362,
+          "totalPayout": 5070120.0,
+          "tiers": {
+            "TIER_40": 78572,
+            "TIER_80_120": 2262,
+            "TIER_200": 3349,
+            "TIER_1000_2000": 177,
+            "TIER_20000": 0,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2396",
+          "date": "2026-11-09",
+          "totalWinners": 82390,
+          "totalPayout": 5003640.0,
+          "tiers": {
+            "TIER_40": 76752,
+            "TIER_80_120": 2183,
+            "TIER_200": 3268,
+            "TIER_1000_2000": 185,
+            "TIER_20000": 0,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2395",
+          "date": "2026-11-08",
+          "totalWinners": 68893,
+          "totalPayout": 4380800.0,
+          "tiers": {
+            "TIER_40": 64229,
+            "TIER_80_120": 1772,
+            "TIER_200": 2735,
+            "TIER_1000_2000": 154,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2394",
+          "date": "2026-11-07",
+          "totalWinners": 82281,
+          "totalPayout": 7100280.0,
+          "tiers": {
+            "TIER_40": 76664,
+            "TIER_80_120": 2201,
+            "TIER_200": 3248,
+            "TIER_1000_2000": 164,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 1
+          }
+        }
+      ]
+    },
+    "handahana": {
+      "id": "handahana",
+      "name": "Handahana",
+      "board": "NLB",
+      "latestDraw": "1677",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 3591489.2,
+      "avgWinnersPerDraw": 123313,
+      "dailyPrizePayout": 7447560.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 108418,
+        "TIER_80_120": 7467,
+        "TIER_200": 7256,
+        "TIER_1000_2000": 162,
+        "TIER_20000": 10,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,470,691.60",
+          "unitPrize": 3470691.6,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 162
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 632
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6624
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7467
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82519
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25899
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "1677",
+          "date": "2026-11-11",
+          "totalWinners": 123313,
+          "totalPayout": 7447560.0,
+          "tiers": {
+            "TIER_40": 108418,
+            "TIER_80_120": 7467,
+            "TIER_200": 7256,
+            "TIER_1000_2000": 162,
+            "TIER_20000": 10,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "1676",
+          "date": "2026-11-10",
+          "totalWinners": 123178,
+          "totalPayout": 8513000.0,
+          "tiers": {
+            "TIER_40": 108257,
+            "TIER_80_120": 7496,
+            "TIER_200": 7260,
+            "TIER_1000_2000": 150,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1675",
+          "date": "2026-11-09",
+          "totalWinners": 120917,
+          "totalPayout": 8376380.0,
+          "tiers": {
+            "TIER_40": 106321,
+            "TIER_80_120": 7352,
+            "TIER_200": 7079,
+            "TIER_1000_2000": 150,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1674",
+          "date": "2026-11-08",
+          "totalWinners": 100918,
+          "totalPayout": 6239700.0,
+          "tiers": {
+            "TIER_40": 88674,
+            "TIER_80_120": 6112,
+            "TIER_200": 5995,
+            "TIER_1000_2000": 122,
+            "TIER_20000": 15,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "1673",
+          "date": "2026-11-07",
+          "totalWinners": 120105,
+          "totalPayout": 7366760.0,
+          "tiers": {
+            "TIER_40": 105473,
+            "TIER_80_120": 7402,
+            "TIER_200": 7066,
+            "TIER_1000_2000": 149,
+            "TIER_20000": 15,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "ada-sampatha": {
+      "id": "ada-sampatha",
+      "name": "Ada Sampatha",
+      "board": "NLB",
+      "latestDraw": "0943",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 250000.0,
+      "avgWinnersPerDraw": 23414,
+      "dailyPrizePayout": 10552680.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 18321,
+        "TIER_200": 0,
+        "TIER_1000_2000": 5048,
+        "TIER_20000": 43,
+        "TIER_100000": 2,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "1 st — 2 Numbers Correct",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 4585
+        },
+        {
+          "tier": "1 st — 3 Numbers Correct",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 463
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 43
+        },
+        {
+          "tier": "2 nd — 4 Numbers and Letter Correct",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "3 rd — Letter Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 18321
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "0943",
+          "date": "2026-11-11",
+          "totalWinners": 23414,
+          "totalPayout": 10552680.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18321,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5048,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0942",
+          "date": "2026-11-10",
+          "totalWinners": 23466,
+          "totalPayout": 10550840.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18373,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5048,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0941",
+          "date": "2026-11-09",
+          "totalWinners": 22916,
+          "totalPayout": 10421560.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 17932,
+            "TIER_200": 0,
+            "TIER_1000_2000": 4934,
+            "TIER_20000": 49,
+            "TIER_100000": 1,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0940",
+          "date": "2026-11-08",
+          "totalWinners": 19771,
+          "totalPayout": 8790320.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 15479,
+            "TIER_200": 0,
+            "TIER_1000_2000": 4253,
+            "TIER_20000": 38,
+            "TIER_100000": 1,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0939",
+          "date": "2026-11-07",
+          "totalWinners": 23052,
+          "totalPayout": 10362120.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18039,
+            "TIER_200": 0,
+            "TIER_1000_2000": 4969,
+            "TIER_20000": 42,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "nlb-jaya": {
+      "id": "nlb-jaya",
+      "name": "NLB Jaya",
+      "board": "NLB",
+      "latestDraw": "0636",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 500000.0,
+      "avgWinnersPerDraw": 66605,
+      "dailyPrizePayout": 5760360.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 60622,
+        "TIER_80_120": 2996,
+        "TIER_200": 2729,
+        "TIER_1000_2000": 225,
+        "TIER_20000": 32,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "1 st — Letter and 4 Numbers Correct",
+          "prize": "Rs. 500,000.00",
+          "unitPrize": 500000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — 4 Numbers Correct",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 32
+        },
+        {
+          "tier": "3 rd — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 225
+        },
+        {
+          "tier": "4 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 2420
+        },
+        {
+          "tier": "5 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 23591
+        },
+        {
+          "tier": "6 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 309
+        },
+        {
+          "tier": "7 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 2996
+        },
+        {
+          "tier": "8 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 26828
+        },
+        {
+          "tier": "9 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 10203
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "0636",
+          "date": "2026-11-11",
+          "totalWinners": 66605,
+          "totalPayout": 5760360.0,
+          "tiers": {
+            "TIER_40": 60622,
+            "TIER_80_120": 2996,
+            "TIER_200": 2729,
+            "TIER_1000_2000": 225,
+            "TIER_20000": 32,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0635",
+          "date": "2026-11-10",
+          "totalWinners": 66395,
+          "totalPayout": 6109680.0,
+          "tiers": {
+            "TIER_40": 60472,
+            "TIER_80_120": 2975,
+            "TIER_200": 2684,
+            "TIER_1000_2000": 233,
+            "TIER_20000": 29,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 2
+          }
+        },
+        {
+          "draw": "0634",
+          "date": "2026-11-09",
+          "totalWinners": 64957,
+          "totalPayout": 6135800.0,
+          "tiers": {
+            "TIER_40": 59157,
+            "TIER_80_120": 2914,
+            "TIER_200": 2622,
+            "TIER_1000_2000": 231,
+            "TIER_20000": 31,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 2
+          }
+        },
+        {
+          "draw": "0633",
+          "date": "2026-11-08",
+          "totalWinners": 54922,
+          "totalPayout": 4920880.0,
+          "tiers": {
+            "TIER_40": 49996,
+            "TIER_80_120": 2488,
+            "TIER_200": 2220,
+            "TIER_1000_2000": 189,
+            "TIER_20000": 28,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0632",
+          "date": "2026-11-07",
+          "totalWinners": 65171,
+          "totalPayout": 5677280.0,
+          "tiers": {
+            "TIER_40": 59372,
+            "TIER_80_120": 2920,
+            "TIER_200": 2624,
+            "TIER_1000_2000": 222,
+            "TIER_20000": 32,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        }
+      ]
+    },
+    "suba-dawasak": {
+      "id": "suba-dawasak",
+      "name": "Suba Dawasak",
+      "board": "NLB",
+      "latestDraw": "0484",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 500000.0,
+      "avgWinnersPerDraw": 92860,
+      "dailyPrizePayout": 8654580.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 84007,
+        "TIER_80_120": 0,
+        "TIER_200": 7124,
+        "TIER_1000_2000": 1687,
+        "TIER_20000": 41,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "1 st — Zodiac and 3 Numbers Correct",
+          "prize": "Rs. 500,000.00",
+          "unitPrize": 500000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — 3 Numbers Correct",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 5
+        },
+        {
+          "tier": "3 rd — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 2,500.00",
+          "unitPrize": 2500.0,
+          "avgWinners": 235
+        },
+        {
+          "tier": "4 th — Any 2 Numbers Correct",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 1119
+        },
+        {
+          "tier": "5 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 7124
+        },
+        {
+          "tier": "6 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 35273
+        },
+        {
+          "tier": "7 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 48734
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 30,000.00",
+          "unitPrize": 30000.0,
+          "avgWinners": 36
+        },
+        {
+          "tier": "1 st — 3 Numbers Correct",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 333
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "0484",
+          "date": "2026-11-11",
+          "totalWinners": 92860,
+          "totalPayout": 8654580.0,
+          "tiers": {
+            "TIER_40": 84007,
+            "TIER_80_120": 0,
+            "TIER_200": 7124,
+            "TIER_1000_2000": 1687,
+            "TIER_20000": 41,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0483",
+          "date": "2026-11-10",
+          "totalWinners": 91647,
+          "totalPayout": 8541180.0,
+          "tiers": {
+            "TIER_40": 82972,
+            "TIER_80_120": 0,
+            "TIER_200": 6969,
+            "TIER_1000_2000": 1665,
+            "TIER_20000": 40,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0482",
+          "date": "2026-11-09",
+          "totalWinners": 88929,
+          "totalPayout": 8305140.0,
+          "tiers": {
+            "TIER_40": 80476,
+            "TIER_80_120": 0,
+            "TIER_200": 6793,
+            "TIER_1000_2000": 1621,
+            "TIER_20000": 38,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0481",
+          "date": "2026-11-08",
+          "totalWinners": 72701,
+          "totalPayout": 5700640.0,
+          "tiers": {
+            "TIER_40": 66051,
+            "TIER_80_120": 0,
+            "TIER_200": 5573,
+            "TIER_1000_2000": 1074,
+            "TIER_20000": 2,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0480",
+          "date": "2026-11-07",
+          "totalWinners": 86283,
+          "totalPayout": 6727480.0,
+          "tiers": {
+            "TIER_40": 78537,
+            "TIER_80_120": 0,
+            "TIER_200": 6490,
+            "TIER_1000_2000": 1250,
+            "TIER_20000": 5,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        }
+      ]
+    },
+    "ayubo": {
+      "id": "ayubo",
+      "name": "Ayubo",
+      "board": "NLB",
+      "latestDraw": "0031",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "verifiedTableCount": 5,
+      "currentJackpot": 500000.0,
+      "avgWinnersPerDraw": 60362,
+      "dailyPrizePayout": 6332860.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 53157,
+        "TIER_80_120": 4119,
+        "TIER_200": 2462,
+        "TIER_1000_2000": 573,
+        "TIER_20000": 50,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "1 st — Letter and 4 Numbers Correct",
+          "prize": "Rs. 500,000.00",
+          "unitPrize": 500000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — 4 Numbers Correct",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "3 rd — Letter and Last 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 239
+        },
+        {
+          "tier": "5 th — Letter and Last 2 Numbers Correct",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 95
+        },
+        {
+          "tier": "6 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 2367
+        },
+        {
+          "tier": "7 th — Letter and Last Number Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 920
+        },
+        {
+          "tier": "8 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 23422
+        },
+        {
+          "tier": "9 th — Letter and First 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 12
+        },
+        {
+          "tier": "10 th — First 3 Numbers Correct",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 239
+        },
+        {
+          "tier": "11 th — Letter and First 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 95
+        },
+        {
+          "tier": "12 th — First 2 Numbers Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 2354
+        },
+        {
+          "tier": "13 th — Letter and First Number Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 845
+        },
+        {
+          "tier": "14 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 21235
+        },
+        {
+          "tier": "15 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 8500
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "0031",
+          "date": "2026-11-11",
+          "totalWinners": 60362,
+          "totalPayout": 6332860.0,
+          "tiers": {
+            "TIER_40": 53157,
+            "TIER_80_120": 4119,
+            "TIER_200": 2462,
+            "TIER_1000_2000": 573,
+            "TIER_20000": 50,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0030",
+          "date": "2026-11-10",
+          "totalWinners": 60838,
+          "totalPayout": 6281680.0,
+          "tiers": {
+            "TIER_40": 53495,
+            "TIER_80_120": 4253,
+            "TIER_200": 2472,
+            "TIER_1000_2000": 570,
+            "TIER_20000": 47,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0029",
+          "date": "2026-11-09",
+          "totalWinners": 59132,
+          "totalPayout": 6142640.0,
+          "tiers": {
+            "TIER_40": 52070,
+            "TIER_80_120": 4049,
+            "TIER_200": 2418,
+            "TIER_1000_2000": 548,
+            "TIER_20000": 46,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0028",
+          "date": "2026-11-08",
+          "totalWinners": 49355,
+          "totalPayout": 5151140.0,
+          "tiers": {
+            "TIER_40": 43477,
+            "TIER_80_120": 3362,
+            "TIER_200": 2019,
+            "TIER_1000_2000": 457,
+            "TIER_20000": 39,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "0027",
+          "date": "2026-11-07",
+          "totalWinners": 59766,
+          "totalPayout": 6206480.0,
+          "tiers": {
+            "TIER_40": 52614,
+            "TIER_80_120": 4097,
+            "TIER_200": 2454,
+            "TIER_1000_2000": 553,
+            "TIER_20000": 47,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        }
+      ]
+    },
+    "ada-kotipathi": {
+      "id": "ada-kotipathi",
+      "name": "Ada Kotipathi",
+      "board": "DLB",
+      "latestDraw": "3168",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 61188209.6,
+      "avgWinnersPerDraw": 106381,
+      "dailyPrizePayout": 8098680.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 97337,
+        "TIER_80_120": 0,
+        "TIER_200": 8706,
+        "TIER_1000_2000": 330,
+        "TIER_20000": 0,
+        "TIER_100000": 8,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "4 NOS, ENGLISH LETTER",
+          "prize": "Rs. 61,188,209.60",
+          "unitPrize": 61188209.6,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4 NOS",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "3 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 8
+        },
+        {
+          "tier": "3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 102
+        },
+        {
+          "tier": "2 NOS, ENGLISH LETTER",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 228
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 5394
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 3312
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 83000
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 14337
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "3168",
+          "date": "2026-11-11",
+          "totalWinners": 106381,
+          "totalPayout": 8098680.0,
+          "tiers": {
+            "TIER_40": 97337,
+            "TIER_80_120": 0,
+            "TIER_200": 8706,
+            "TIER_1000_2000": 330,
+            "TIER_20000": 0,
+            "TIER_100000": 8,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "shanida": {
+      "id": "shanida",
+      "name": "Shanida",
+      "board": "DLB",
+      "latestDraw": "5503",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 60679102.4,
+      "avgWinnersPerDraw": 88267,
+      "dailyPrizePayout": 6944520.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 81043,
+        "TIER_80_120": 0,
+        "TIER_200": 6924,
+        "TIER_1000_2000": 277,
+        "TIER_20000": 20,
+        "TIER_100000": 3,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "4 NOS, ENGLISH LETTER",
+          "prize": "Rs. 60,679,102.40",
+          "unitPrize": 60679102.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4 NOS",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "3 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 3
+        },
+        {
+          "tier": "3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 82
+        },
+        {
+          "tier": "2 NOS, ENGLISH LETTER",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 195
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 4225
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 2699
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 68709
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 12334
+        },
+        {
+          "tier": "RS.50,000/= SPECIAL DATES FOR LUCKY CHANCE",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 20
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "5503",
+          "date": "2026-11-11",
+          "totalWinners": 88267,
+          "totalPayout": 6944520.0,
+          "tiers": {
+            "TIER_40": 81043,
+            "TIER_80_120": 0,
+            "TIER_200": 6924,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 20,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "lagna-wasana": {
+      "id": "lagna-wasana",
+      "name": "Lagna Wasana",
+      "board": "DLB",
+      "latestDraw": "5054",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 13290156.4,
+      "avgWinnersPerDraw": 255731,
+      "dailyPrizePayout": 17363680.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 224762,
+        "TIER_80_120": 15630,
+        "TIER_200": 14983,
+        "TIER_1000_2000": 323,
+        "TIER_20000": 31,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 2
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "4NOS, ZODIAC SIGN",
+          "prize": "Rs. 13,290,156.40",
+          "unitPrize": 13290156.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4NOS",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "3NOS, ZODIAC SIGN",
+          "prize": "Rs. 20,000.00",
+          "unitPrize": 20000.0,
+          "avgWinners": 31
+        },
+        {
+          "tier": "3NOS",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 323
+        },
+        {
+          "tier": "2NOS, ZODIAC SIGN",
+          "prize": "Rs. 400.00",
+          "unitPrize": 400.0,
+          "avgWinners": 1175
+        },
+        {
+          "tier": "2NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 13808
+        },
+        {
+          "tier": "1NOS, ZODIAC SIGN",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 15630
+        },
+        {
+          "tier": "1NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 171225
+        },
+        {
+          "tier": "ZODIAC SIGN",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 53537
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "5054",
+          "date": "2026-11-11",
+          "totalWinners": 255731,
+          "totalPayout": 17363680.0,
+          "tiers": {
+            "TIER_40": 224762,
+            "TIER_80_120": 15630,
+            "TIER_200": 14983,
+            "TIER_1000_2000": 323,
+            "TIER_20000": 31,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 2
+          }
+        }
+      ]
+    },
+    "supiri-dhana-sampatha": {
+      "id": "supiri-dhana-sampatha",
+      "name": "Supiri Dhana Sampatha",
+      "board": "DLB",
+      "latestDraw": "1076",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 35009182.4,
+      "avgWinnersPerDraw": 48678,
+      "dailyPrizePayout": 3438600.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 44390,
+        "TIER_80_120": 1870,
+        "TIER_200": 2182,
+        "TIER_1000_2000": 216,
+        "TIER_20000": 18,
+        "TIER_100000": 2,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "6 NOS, LETTER",
+          "prize": "Rs. 35,009,182.40",
+          "unitPrize": 35009182.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "6 NOS",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 5 NOS",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 20,000.00",
+          "unitPrize": 20000.0,
+          "avgWinners": 18
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 193
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1962
+        },
+        {
+          "tier": "LAST 1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 19517
+        },
+        {
+          "tier": "FIRST 5 NOS",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "FIRST 4 NOS",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 23
+        },
+        {
+          "tier": "FIRST 3 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 186
+        },
+        {
+          "tier": "FIRST 2 NOS",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 1870
+        },
+        {
+          "tier": "FIRST 1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 17759
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 7114
+        },
+        {
+          "tier": "JUMBLE",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 34
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "1076",
+          "date": "2026-11-11",
+          "totalWinners": 48678,
+          "totalPayout": 3438600.0,
+          "tiers": {
+            "TIER_40": 44390,
+            "TIER_80_120": 1870,
+            "TIER_200": 2182,
+            "TIER_1000_2000": 216,
+            "TIER_20000": 18,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "super-ball": {
+      "id": "super-ball",
+      "name": "Super Ball",
+      "board": "DLB",
+      "latestDraw": "3342",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 93295146.4,
+      "avgWinnersPerDraw": 80405,
+      "dailyPrizePayout": 5507040.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 73921,
+        "TIER_80_120": 0,
+        "TIER_200": 6251,
+        "TIER_1000_2000": 200,
+        "TIER_20000": 22,
+        "TIER_100000": 1,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "4 NOS, ENGLISH LETTER",
+          "prize": "Rs. 93,295,146.40",
+          "unitPrize": 93295146.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4 NOS",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "3 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 65
+        },
+        {
+          "tier": "2 NOS, ENGLISH LETTER",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 135
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 3844
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 2407
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 62426
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 11495
+        },
+        {
+          "tier": "RS.25,000/= SPECIAL PRIZES FOR SUPER CASH",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 22
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "3342",
+          "date": "2026-11-11",
+          "totalWinners": 80405,
+          "totalPayout": 5507040.0,
+          "tiers": {
+            "TIER_40": 73921,
+            "TIER_80_120": 0,
+            "TIER_200": 6251,
+            "TIER_1000_2000": 200,
+            "TIER_20000": 22,
+            "TIER_100000": 1,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "kapruka": {
+      "id": "kapruka",
+      "name": "Kapruka",
+      "board": "DLB",
+      "latestDraw": "2518",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 403019451.0,
+      "avgWinnersPerDraw": 207743,
+      "dailyPrizePayout": 16451840.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 191831,
+        "TIER_80_120": 0,
+        "TIER_200": 15323,
+        "TIER_1000_2000": 577,
+        "TIER_20000": 0,
+        "TIER_100000": 11,
+        "TIER_1M_PLUS": 1
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "4NOS ,ENGLISH LETTER SUPER NO",
+          "prize": "Rs. 403,019,451.00",
+          "unitPrize": 403019451.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4NOS ,ENGLISH LETTER",
+          "prize": "Rs. 10,000,000.00",
+          "unitPrize": 10000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4NOS , SUPER NO",
+          "prize": "Rs. 10,000,000.00",
+          "unitPrize": 10000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4NOS",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "3NOS ,ENGLISH LETTER",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 11
+        },
+        {
+          "tier": "3NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 180
+        },
+        {
+          "tier": "2NOS ,ENGLISH LETTER",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 397
+        },
+        {
+          "tier": "2NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 9509
+        },
+        {
+          "tier": "1NOS,ENGLISH LETTER",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 5814
+        },
+        {
+          "tier": "1NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 146799
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 24781
+        },
+        {
+          "tier": "SUPER NO",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 20251
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "2518",
+          "date": "2026-11-11",
+          "totalWinners": 207743,
+          "totalPayout": 16451840.0,
+          "tiers": {
+            "TIER_40": 191831,
+            "TIER_80_120": 0,
+            "TIER_200": 15323,
+            "TIER_1000_2000": 577,
+            "TIER_20000": 0,
+            "TIER_100000": 11,
+            "TIER_1M_PLUS": 1
+          }
+        }
+      ]
+    },
+    "waasi": {
+      "id": "waasi",
+      "name": "Waasi",
+      "board": "DLB",
+      "latestDraw": "0042",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 1000000.0,
+      "avgWinnersPerDraw": 71735,
+      "dailyPrizePayout": 8855760.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 69248,
+        "TIER_80_120": 7,
+        "TIER_200": 2370,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 107,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 4
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "2 NOS, ENGLISH LETTER, SUPER NO",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "2 NOS, ENGLISH LETTER",
+          "prize": "Rs. 500,000.00",
+          "unitPrize": 500000.0,
+          "avgWinners": 4
+        },
+        {
+          "tier": "2 NOS, SUPER NO",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 98
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER, SUPER NO",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 739
+        },
+        {
+          "tier": "1 NOS, SUPER NO",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 1629
+        },
+        {
+          "tier": "ENGLISH LETTER, SUPER NO",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 17255
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 16434
+        },
+        {
+          "tier": "SUPER NUMBER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 35559
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "0042",
+          "date": "2026-11-11",
+          "totalWinners": 71735,
+          "totalPayout": 8855760.0,
+          "tiers": {
+            "TIER_40": 69248,
+            "TIER_80_120": 7,
+            "TIER_200": 2370,
+            "TIER_1000_2000": 0,
+            "TIER_20000": 107,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 4
+          }
+        }
+      ]
+    },
+    "sasiri": {
+      "id": "sasiri",
+      "name": "Sasiri",
+      "board": "DLB",
+      "latestDraw": "1172",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 200000.0,
+      "avgWinnersPerDraw": 32063,
+      "dailyPrizePayout": 3563120.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 30718,
+        "TIER_80_120": 0,
+        "TIER_200": 1336,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 9,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "3 NOS",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 400.00",
+          "unitPrize": 400.0,
+          "avgWinners": 1336
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 30718
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "1172",
+          "date": "2026-11-11",
+          "totalWinners": 32063,
+          "totalPayout": 3563120.0,
+          "tiers": {
+            "TIER_40": 30718,
+            "TIER_80_120": 0,
+            "TIER_200": 1336,
+            "TIER_1000_2000": 0,
+            "TIER_20000": 0,
+            "TIER_100000": 9,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    },
+    "jaya-sampatha": {
+      "id": "jaya-sampatha",
+      "name": "Jaya Sampatha",
+      "board": "DLB",
+      "latestDraw": "0550",
+      "latestDate": "2026-11-11",
+      "drawCount": 13,
+      "verifiedTableCount": 1,
+      "currentJackpot": 250000.0,
+      "avgWinnersPerDraw": 13534,
+      "dailyPrizePayout": 5972520.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "prizeStructureDetails": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "drawTierHistory": [
+        {
+          "draw": "0550",
+          "date": "2026-11-11",
+          "totalWinners": 13534,
+          "totalPayout": 5972520.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 10594,
+            "TIER_200": 0,
+            "TIER_1000_2000": 2912,
+            "TIER_20000": 28,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        }
+      ]
+    }
+  },
+  "windows": {
+    "1": [
+      {
+        "id": "lagna-wasana",
+        "name": "Lagna Wasana",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 255731,
+        "totalPayout": 17363680.0,
+        "currentJackpot": 13290156.4,
+        "tierTotals": {
+          "TIER_40": 224762,
+          "TIER_80_120": 15630,
+          "TIER_200": 14983,
+          "TIER_1000_2000": 323,
+          "TIER_20000": 31,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "mahajana-sampatha",
+        "name": "Mahajana Sampatha",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 251498,
+        "totalPayout": 20562640.0,
+        "currentJackpot": 22835088.0,
+        "tierTotals": {
+          "TIER_40": 229016,
+          "TIER_80_120": 10070,
+          "TIER_200": 11172,
+          "TIER_1000_2000": 1116,
+          "TIER_20000": 102,
+          "TIER_100000": 21,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "kapruka",
+        "name": "Kapruka",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 207743,
+        "totalPayout": 16451840.0,
+        "currentJackpot": 403019451.0,
+        "tierTotals": {
+          "TIER_40": 191831,
+          "TIER_80_120": 0,
+          "TIER_200": 15323,
+          "TIER_1000_2000": 577,
+          "TIER_20000": 0,
+          "TIER_100000": 11,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "handahana",
+        "name": "Handahana",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 123313,
+        "totalPayout": 7447560.0,
+        "currentJackpot": 3591489.2,
+        "tierTotals": {
+          "TIER_40": 108418,
+          "TIER_80_120": 7467,
+          "TIER_200": 7256,
+          "TIER_1000_2000": 162,
+          "TIER_20000": 10,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "mega-power",
+        "name": "Mega Power",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 117113,
+        "totalPayout": 9500480.0,
+        "currentJackpot": 313214574.0,
+        "tierTotals": {
+          "TIER_40": 109052,
+          "TIER_80_120": 0,
+          "TIER_200": 7787,
+          "TIER_1000_2000": 269,
+          "TIER_20000": 0,
+          "TIER_100000": 4,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "govisetha",
+        "name": "Govisetha",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 115543,
+        "totalPayout": 7472840.0,
+        "currentJackpot": 61798808.0,
+        "tierTotals": {
+          "TIER_40": 106291,
+          "TIER_80_120": 0,
+          "TIER_200": 8941,
+          "TIER_1000_2000": 309,
+          "TIER_20000": 0,
+          "TIER_100000": 2,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "ada-kotipathi",
+        "name": "Ada Kotipathi",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 106381,
+        "totalPayout": 8098680.0,
+        "currentJackpot": 61188209.6,
+        "tierTotals": {
+          "TIER_40": 97337,
+          "TIER_80_120": 0,
+          "TIER_200": 8706,
+          "TIER_1000_2000": 330,
+          "TIER_20000": 0,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "suba-dawasak",
+        "name": "Suba Dawasak",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 92860,
+        "totalPayout": 8654580.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 84007,
+          "TIER_80_120": 0,
+          "TIER_200": 7124,
+          "TIER_1000_2000": 1687,
+          "TIER_20000": 41,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "shanida",
+        "name": "Shanida",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 88267,
+        "totalPayout": 6944520.0,
+        "currentJackpot": 60679102.4,
+        "tierTotals": {
+          "TIER_40": 81043,
+          "TIER_80_120": 0,
+          "TIER_200": 6924,
+          "TIER_1000_2000": 277,
+          "TIER_20000": 20,
+          "TIER_100000": 3,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "dhana-nidhanaya",
+        "name": "Dhana Nidhanaya",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 85076,
+        "totalPayout": 7574800.0,
+        "currentJackpot": 97187935.2,
+        "tierTotals": {
+          "TIER_40": 79470,
+          "TIER_80_120": 2225,
+          "TIER_200": 3205,
+          "TIER_1000_2000": 170,
+          "TIER_20000": 0,
+          "TIER_100000": 5,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "super-ball",
+        "name": "Super Ball",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 80405,
+        "totalPayout": 5507040.0,
+        "currentJackpot": 93295146.4,
+        "tierTotals": {
+          "TIER_40": 73921,
+          "TIER_80_120": 0,
+          "TIER_200": 6251,
+          "TIER_1000_2000": 200,
+          "TIER_20000": 22,
+          "TIER_100000": 1,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "waasi",
+        "name": "Waasi",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 71735,
+        "totalPayout": 8855760.0,
+        "currentJackpot": 1000000.0,
+        "tierTotals": {
+          "TIER_40": 69248,
+          "TIER_80_120": 7,
+          "TIER_200": 2370,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 107,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 4
+        }
+      },
+      {
+        "id": "nlb-jaya",
+        "name": "NLB Jaya",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 66605,
+        "totalPayout": 5760360.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 60622,
+          "TIER_80_120": 2996,
+          "TIER_200": 2729,
+          "TIER_1000_2000": 225,
+          "TIER_20000": 32,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "ayubo",
+        "name": "Ayubo",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 60362,
+        "totalPayout": 6332860.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 53157,
+          "TIER_80_120": 4119,
+          "TIER_200": 2462,
+          "TIER_1000_2000": 573,
+          "TIER_20000": 50,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "supiri-dhana-sampatha",
+        "name": "Supiri Dhana Sampatha",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 48678,
+        "totalPayout": 3438600.0,
+        "currentJackpot": 35009182.4,
+        "tierTotals": {
+          "TIER_40": 44390,
+          "TIER_80_120": 1870,
+          "TIER_200": 2182,
+          "TIER_1000_2000": 216,
+          "TIER_20000": 18,
+          "TIER_100000": 2,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "sasiri",
+        "name": "Sasiri",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 32063,
+        "totalPayout": 3563120.0,
+        "currentJackpot": 200000.0,
+        "tierTotals": {
+          "TIER_40": 30718,
+          "TIER_80_120": 0,
+          "TIER_200": 1336,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 0,
+          "TIER_100000": 9,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "ada-sampatha",
+        "name": "Ada Sampatha",
+        "board": "NLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 23414,
+        "totalPayout": 10552680.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 18321,
+          "TIER_200": 0,
+          "TIER_1000_2000": 5048,
+          "TIER_20000": 43,
+          "TIER_100000": 2,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "jaya-sampatha",
+        "name": "Jaya Sampatha",
+        "board": "DLB",
+        "windowRequested": 1,
+        "drawsInWindow": 1,
+        "verifiedTableCount": 1,
+        "totalWinners": 13534,
+        "totalPayout": 5972520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 10594,
+          "TIER_200": 0,
+          "TIER_1000_2000": 2912,
+          "TIER_20000": 28,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 0
+        }
+      }
+    ],
+    "7": [
+      {
+        "id": "mahajana-sampatha",
+        "name": "Mahajana Sampatha",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 1197518,
+        "totalPayout": 138642608.0,
+        "currentJackpot": 22835088.0,
+        "tierTotals": {
+          "TIER_40": 1090144,
+          "TIER_80_120": 48172,
+          "TIER_200": 53300,
+          "TIER_1000_2000": 5314,
+          "TIER_20000": 484,
+          "TIER_100000": 98,
+          "TIER_1M_PLUS": 6
+        }
+      },
+      {
+        "id": "handahana",
+        "name": "Handahana",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 588431,
+        "totalPayout": 37943400.0,
+        "currentJackpot": 3591489.2,
+        "tierTotals": {
+          "TIER_40": 517143,
+          "TIER_80_120": 35829,
+          "TIER_200": 34656,
+          "TIER_1000_2000": 733,
+          "TIER_20000": 68,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "mega-power",
+        "name": "Mega Power",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 551514,
+        "totalPayout": 36642320.0,
+        "currentJackpot": 313214574.0,
+        "tierTotals": {
+          "TIER_40": 513373,
+          "TIER_80_120": 0,
+          "TIER_200": 36832,
+          "TIER_1000_2000": 1293,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "govisetha",
+        "name": "Govisetha",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 544205,
+        "totalPayout": 37776720.0,
+        "currentJackpot": 61798808.0,
+        "tierTotals": {
+          "TIER_40": 499803,
+          "TIER_80_120": 0,
+          "TIER_200": 42878,
+          "TIER_1000_2000": 1505,
+          "TIER_20000": 0,
+          "TIER_100000": 19,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "suba-dawasak",
+        "name": "Suba Dawasak",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 432420,
+        "totalPayout": 37929020.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 392043,
+          "TIER_80_120": 0,
+          "TIER_200": 32949,
+          "TIER_1000_2000": 7297,
+          "TIER_20000": 126,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "dhana-nidhanaya",
+        "name": "Dhana Nidhanaya",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 403002,
+        "totalPayout": 29129640.0,
+        "currentJackpot": 97187935.2,
+        "tierTotals": {
+          "TIER_40": 375687,
+          "TIER_80_120": 10643,
+          "TIER_200": 15805,
+          "TIER_1000_2000": 850,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "nlb-jaya",
+        "name": "NLB Jaya",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 318050,
+        "totalPayout": 28604000.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 289619,
+          "TIER_80_120": 14293,
+          "TIER_200": 12879,
+          "TIER_1000_2000": 1100,
+          "TIER_20000": 152,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 7
+        }
+      },
+      {
+        "id": "ayubo",
+        "name": "Ayubo",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 289453,
+        "totalPayout": 30114800.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 254813,
+          "TIER_80_120": 19880,
+          "TIER_200": 11825,
+          "TIER_1000_2000": 2701,
+          "TIER_20000": 229,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "lagna-wasana",
+        "name": "Lagna Wasana",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 255731,
+        "totalPayout": 17363680.0,
+        "currentJackpot": 13290156.4,
+        "tierTotals": {
+          "TIER_40": 224762,
+          "TIER_80_120": 15630,
+          "TIER_200": 14983,
+          "TIER_1000_2000": 323,
+          "TIER_20000": 31,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "kapruka",
+        "name": "Kapruka",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 207743,
+        "totalPayout": 16451840.0,
+        "currentJackpot": 403019451.0,
+        "tierTotals": {
+          "TIER_40": 191831,
+          "TIER_80_120": 0,
+          "TIER_200": 15323,
+          "TIER_1000_2000": 577,
+          "TIER_20000": 0,
+          "TIER_100000": 11,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "ada-sampatha",
+        "name": "Ada Sampatha",
+        "board": "NLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 112619,
+        "totalPayout": 50677520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 88144,
+          "TIER_200": 0,
+          "TIER_1000_2000": 24252,
+          "TIER_20000": 215,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "ada-kotipathi",
+        "name": "Ada Kotipathi",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 106381,
+        "totalPayout": 8098680.0,
+        "currentJackpot": 61188209.6,
+        "tierTotals": {
+          "TIER_40": 97337,
+          "TIER_80_120": 0,
+          "TIER_200": 8706,
+          "TIER_1000_2000": 330,
+          "TIER_20000": 0,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "shanida",
+        "name": "Shanida",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 88267,
+        "totalPayout": 6944520.0,
+        "currentJackpot": 60679102.4,
+        "tierTotals": {
+          "TIER_40": 81043,
+          "TIER_80_120": 0,
+          "TIER_200": 6924,
+          "TIER_1000_2000": 277,
+          "TIER_20000": 20,
+          "TIER_100000": 3,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "super-ball",
+        "name": "Super Ball",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 80405,
+        "totalPayout": 5507040.0,
+        "currentJackpot": 93295146.4,
+        "tierTotals": {
+          "TIER_40": 73921,
+          "TIER_80_120": 0,
+          "TIER_200": 6251,
+          "TIER_1000_2000": 200,
+          "TIER_20000": 22,
+          "TIER_100000": 1,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "waasi",
+        "name": "Waasi",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 71735,
+        "totalPayout": 8855760.0,
+        "currentJackpot": 1000000.0,
+        "tierTotals": {
+          "TIER_40": 69248,
+          "TIER_80_120": 7,
+          "TIER_200": 2370,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 107,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 4
+        }
+      },
+      {
+        "id": "supiri-dhana-sampatha",
+        "name": "Supiri Dhana Sampatha",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 48678,
+        "totalPayout": 3438600.0,
+        "currentJackpot": 35009182.4,
+        "tierTotals": {
+          "TIER_40": 44390,
+          "TIER_80_120": 1870,
+          "TIER_200": 2182,
+          "TIER_1000_2000": 216,
+          "TIER_20000": 18,
+          "TIER_100000": 2,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "sasiri",
+        "name": "Sasiri",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 32063,
+        "totalPayout": 3563120.0,
+        "currentJackpot": 200000.0,
+        "tierTotals": {
+          "TIER_40": 30718,
+          "TIER_80_120": 0,
+          "TIER_200": 1336,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 0,
+          "TIER_100000": 9,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "jaya-sampatha",
+        "name": "Jaya Sampatha",
+        "board": "DLB",
+        "windowRequested": 7,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 1,
+        "totalWinners": 13534,
+        "totalPayout": 5972520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 10594,
+          "TIER_200": 0,
+          "TIER_1000_2000": 2912,
+          "TIER_20000": 28,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 0
+        }
+      }
+    ],
+    "30": [
+      {
+        "id": "mahajana-sampatha",
+        "name": "Mahajana Sampatha",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 1197518,
+        "totalPayout": 138642608.0,
+        "currentJackpot": 22835088.0,
+        "tierTotals": {
+          "TIER_40": 1090144,
+          "TIER_80_120": 48172,
+          "TIER_200": 53300,
+          "TIER_1000_2000": 5314,
+          "TIER_20000": 484,
+          "TIER_100000": 98,
+          "TIER_1M_PLUS": 6
+        }
+      },
+      {
+        "id": "handahana",
+        "name": "Handahana",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 588431,
+        "totalPayout": 37943400.0,
+        "currentJackpot": 3591489.2,
+        "tierTotals": {
+          "TIER_40": 517143,
+          "TIER_80_120": 35829,
+          "TIER_200": 34656,
+          "TIER_1000_2000": 733,
+          "TIER_20000": 68,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "mega-power",
+        "name": "Mega Power",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 551514,
+        "totalPayout": 36642320.0,
+        "currentJackpot": 313214574.0,
+        "tierTotals": {
+          "TIER_40": 513373,
+          "TIER_80_120": 0,
+          "TIER_200": 36832,
+          "TIER_1000_2000": 1293,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "govisetha",
+        "name": "Govisetha",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 544205,
+        "totalPayout": 37776720.0,
+        "currentJackpot": 61798808.0,
+        "tierTotals": {
+          "TIER_40": 499803,
+          "TIER_80_120": 0,
+          "TIER_200": 42878,
+          "TIER_1000_2000": 1505,
+          "TIER_20000": 0,
+          "TIER_100000": 19,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "suba-dawasak",
+        "name": "Suba Dawasak",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 432420,
+        "totalPayout": 37929020.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 392043,
+          "TIER_80_120": 0,
+          "TIER_200": 32949,
+          "TIER_1000_2000": 7297,
+          "TIER_20000": 126,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "dhana-nidhanaya",
+        "name": "Dhana Nidhanaya",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 403002,
+        "totalPayout": 29129640.0,
+        "currentJackpot": 97187935.2,
+        "tierTotals": {
+          "TIER_40": 375687,
+          "TIER_80_120": 10643,
+          "TIER_200": 15805,
+          "TIER_1000_2000": 850,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "nlb-jaya",
+        "name": "NLB Jaya",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 318050,
+        "totalPayout": 28604000.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 289619,
+          "TIER_80_120": 14293,
+          "TIER_200": 12879,
+          "TIER_1000_2000": 1100,
+          "TIER_20000": 152,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 7
+        }
+      },
+      {
+        "id": "ayubo",
+        "name": "Ayubo",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 289453,
+        "totalPayout": 30114800.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 254813,
+          "TIER_80_120": 19880,
+          "TIER_200": 11825,
+          "TIER_1000_2000": 2701,
+          "TIER_20000": 229,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "lagna-wasana",
+        "name": "Lagna Wasana",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 255731,
+        "totalPayout": 17363680.0,
+        "currentJackpot": 13290156.4,
+        "tierTotals": {
+          "TIER_40": 224762,
+          "TIER_80_120": 15630,
+          "TIER_200": 14983,
+          "TIER_1000_2000": 323,
+          "TIER_20000": 31,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "kapruka",
+        "name": "Kapruka",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 207743,
+        "totalPayout": 16451840.0,
+        "currentJackpot": 403019451.0,
+        "tierTotals": {
+          "TIER_40": 191831,
+          "TIER_80_120": 0,
+          "TIER_200": 15323,
+          "TIER_1000_2000": 577,
+          "TIER_20000": 0,
+          "TIER_100000": 11,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "ada-sampatha",
+        "name": "Ada Sampatha",
+        "board": "NLB",
+        "windowRequested": 30,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 112619,
+        "totalPayout": 50677520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 88144,
+          "TIER_200": 0,
+          "TIER_1000_2000": 24252,
+          "TIER_20000": 215,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "ada-kotipathi",
+        "name": "Ada Kotipathi",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 106381,
+        "totalPayout": 8098680.0,
+        "currentJackpot": 61188209.6,
+        "tierTotals": {
+          "TIER_40": 97337,
+          "TIER_80_120": 0,
+          "TIER_200": 8706,
+          "TIER_1000_2000": 330,
+          "TIER_20000": 0,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "shanida",
+        "name": "Shanida",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 88267,
+        "totalPayout": 6944520.0,
+        "currentJackpot": 60679102.4,
+        "tierTotals": {
+          "TIER_40": 81043,
+          "TIER_80_120": 0,
+          "TIER_200": 6924,
+          "TIER_1000_2000": 277,
+          "TIER_20000": 20,
+          "TIER_100000": 3,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "super-ball",
+        "name": "Super Ball",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 80405,
+        "totalPayout": 5507040.0,
+        "currentJackpot": 93295146.4,
+        "tierTotals": {
+          "TIER_40": 73921,
+          "TIER_80_120": 0,
+          "TIER_200": 6251,
+          "TIER_1000_2000": 200,
+          "TIER_20000": 22,
+          "TIER_100000": 1,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "waasi",
+        "name": "Waasi",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 71735,
+        "totalPayout": 8855760.0,
+        "currentJackpot": 1000000.0,
+        "tierTotals": {
+          "TIER_40": 69248,
+          "TIER_80_120": 7,
+          "TIER_200": 2370,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 107,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 4
+        }
+      },
+      {
+        "id": "supiri-dhana-sampatha",
+        "name": "Supiri Dhana Sampatha",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 48678,
+        "totalPayout": 3438600.0,
+        "currentJackpot": 35009182.4,
+        "tierTotals": {
+          "TIER_40": 44390,
+          "TIER_80_120": 1870,
+          "TIER_200": 2182,
+          "TIER_1000_2000": 216,
+          "TIER_20000": 18,
+          "TIER_100000": 2,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "sasiri",
+        "name": "Sasiri",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 32063,
+        "totalPayout": 3563120.0,
+        "currentJackpot": 200000.0,
+        "tierTotals": {
+          "TIER_40": 30718,
+          "TIER_80_120": 0,
+          "TIER_200": 1336,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 0,
+          "TIER_100000": 9,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "jaya-sampatha",
+        "name": "Jaya Sampatha",
+        "board": "DLB",
+        "windowRequested": 30,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 13534,
+        "totalPayout": 5972520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 10594,
+          "TIER_200": 0,
+          "TIER_1000_2000": 2912,
+          "TIER_20000": 28,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 0
+        }
+      }
+    ],
+    "90": [
+      {
+        "id": "mahajana-sampatha",
+        "name": "Mahajana Sampatha",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 1197518,
+        "totalPayout": 138642608.0,
+        "currentJackpot": 22835088.0,
+        "tierTotals": {
+          "TIER_40": 1090144,
+          "TIER_80_120": 48172,
+          "TIER_200": 53300,
+          "TIER_1000_2000": 5314,
+          "TIER_20000": 484,
+          "TIER_100000": 98,
+          "TIER_1M_PLUS": 6
+        }
+      },
+      {
+        "id": "handahana",
+        "name": "Handahana",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 588431,
+        "totalPayout": 37943400.0,
+        "currentJackpot": 3591489.2,
+        "tierTotals": {
+          "TIER_40": 517143,
+          "TIER_80_120": 35829,
+          "TIER_200": 34656,
+          "TIER_1000_2000": 733,
+          "TIER_20000": 68,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "mega-power",
+        "name": "Mega Power",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 551514,
+        "totalPayout": 36642320.0,
+        "currentJackpot": 313214574.0,
+        "tierTotals": {
+          "TIER_40": 513373,
+          "TIER_80_120": 0,
+          "TIER_200": 36832,
+          "TIER_1000_2000": 1293,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "govisetha",
+        "name": "Govisetha",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 544205,
+        "totalPayout": 37776720.0,
+        "currentJackpot": 61798808.0,
+        "tierTotals": {
+          "TIER_40": 499803,
+          "TIER_80_120": 0,
+          "TIER_200": 42878,
+          "TIER_1000_2000": 1505,
+          "TIER_20000": 0,
+          "TIER_100000": 19,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "suba-dawasak",
+        "name": "Suba Dawasak",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 432420,
+        "totalPayout": 37929020.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 392043,
+          "TIER_80_120": 0,
+          "TIER_200": 32949,
+          "TIER_1000_2000": 7297,
+          "TIER_20000": 126,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "dhana-nidhanaya",
+        "name": "Dhana Nidhanaya",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 403002,
+        "totalPayout": 29129640.0,
+        "currentJackpot": 97187935.2,
+        "tierTotals": {
+          "TIER_40": 375687,
+          "TIER_80_120": 10643,
+          "TIER_200": 15805,
+          "TIER_1000_2000": 850,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "nlb-jaya",
+        "name": "NLB Jaya",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 318050,
+        "totalPayout": 28604000.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 289619,
+          "TIER_80_120": 14293,
+          "TIER_200": 12879,
+          "TIER_1000_2000": 1100,
+          "TIER_20000": 152,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 7
+        }
+      },
+      {
+        "id": "ayubo",
+        "name": "Ayubo",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 289453,
+        "totalPayout": 30114800.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 254813,
+          "TIER_80_120": 19880,
+          "TIER_200": 11825,
+          "TIER_1000_2000": 2701,
+          "TIER_20000": 229,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "lagna-wasana",
+        "name": "Lagna Wasana",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 255731,
+        "totalPayout": 17363680.0,
+        "currentJackpot": 13290156.4,
+        "tierTotals": {
+          "TIER_40": 224762,
+          "TIER_80_120": 15630,
+          "TIER_200": 14983,
+          "TIER_1000_2000": 323,
+          "TIER_20000": 31,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "kapruka",
+        "name": "Kapruka",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 207743,
+        "totalPayout": 16451840.0,
+        "currentJackpot": 403019451.0,
+        "tierTotals": {
+          "TIER_40": 191831,
+          "TIER_80_120": 0,
+          "TIER_200": 15323,
+          "TIER_1000_2000": 577,
+          "TIER_20000": 0,
+          "TIER_100000": 11,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "ada-sampatha",
+        "name": "Ada Sampatha",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 112619,
+        "totalPayout": 50677520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 88144,
+          "TIER_200": 0,
+          "TIER_1000_2000": 24252,
+          "TIER_20000": 215,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "ada-kotipathi",
+        "name": "Ada Kotipathi",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 106381,
+        "totalPayout": 8098680.0,
+        "currentJackpot": 61188209.6,
+        "tierTotals": {
+          "TIER_40": 97337,
+          "TIER_80_120": 0,
+          "TIER_200": 8706,
+          "TIER_1000_2000": 330,
+          "TIER_20000": 0,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "shanida",
+        "name": "Shanida",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 88267,
+        "totalPayout": 6944520.0,
+        "currentJackpot": 60679102.4,
+        "tierTotals": {
+          "TIER_40": 81043,
+          "TIER_80_120": 0,
+          "TIER_200": 6924,
+          "TIER_1000_2000": 277,
+          "TIER_20000": 20,
+          "TIER_100000": 3,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "super-ball",
+        "name": "Super Ball",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 80405,
+        "totalPayout": 5507040.0,
+        "currentJackpot": 93295146.4,
+        "tierTotals": {
+          "TIER_40": 73921,
+          "TIER_80_120": 0,
+          "TIER_200": 6251,
+          "TIER_1000_2000": 200,
+          "TIER_20000": 22,
+          "TIER_100000": 1,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "waasi",
+        "name": "Waasi",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 71735,
+        "totalPayout": 8855760.0,
+        "currentJackpot": 1000000.0,
+        "tierTotals": {
+          "TIER_40": 69248,
+          "TIER_80_120": 7,
+          "TIER_200": 2370,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 107,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 4
+        }
+      },
+      {
+        "id": "supiri-dhana-sampatha",
+        "name": "Supiri Dhana Sampatha",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 48678,
+        "totalPayout": 3438600.0,
+        "currentJackpot": 35009182.4,
+        "tierTotals": {
+          "TIER_40": 44390,
+          "TIER_80_120": 1870,
+          "TIER_200": 2182,
+          "TIER_1000_2000": 216,
+          "TIER_20000": 18,
+          "TIER_100000": 2,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "sasiri",
+        "name": "Sasiri",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 32063,
+        "totalPayout": 3563120.0,
+        "currentJackpot": 200000.0,
+        "tierTotals": {
+          "TIER_40": 30718,
+          "TIER_80_120": 0,
+          "TIER_200": 1336,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 0,
+          "TIER_100000": 9,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "jaya-sampatha",
+        "name": "Jaya Sampatha",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 13534,
+        "totalPayout": 5972520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 10594,
+          "TIER_200": 0,
+          "TIER_1000_2000": 2912,
+          "TIER_20000": 28,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 0
+        }
+      }
+    ],
+    "365": [
+      {
+        "id": "mahajana-sampatha",
+        "name": "Mahajana Sampatha",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 1197518,
+        "totalPayout": 138642608.0,
+        "currentJackpot": 22835088.0,
+        "tierTotals": {
+          "TIER_40": 1090144,
+          "TIER_80_120": 48172,
+          "TIER_200": 53300,
+          "TIER_1000_2000": 5314,
+          "TIER_20000": 484,
+          "TIER_100000": 98,
+          "TIER_1M_PLUS": 6
+        }
+      },
+      {
+        "id": "handahana",
+        "name": "Handahana",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 588431,
+        "totalPayout": 37943400.0,
+        "currentJackpot": 3591489.2,
+        "tierTotals": {
+          "TIER_40": 517143,
+          "TIER_80_120": 35829,
+          "TIER_200": 34656,
+          "TIER_1000_2000": 733,
+          "TIER_20000": 68,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "mega-power",
+        "name": "Mega Power",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 551514,
+        "totalPayout": 36642320.0,
+        "currentJackpot": 313214574.0,
+        "tierTotals": {
+          "TIER_40": 513373,
+          "TIER_80_120": 0,
+          "TIER_200": 36832,
+          "TIER_1000_2000": 1293,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "govisetha",
+        "name": "Govisetha",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 544205,
+        "totalPayout": 37776720.0,
+        "currentJackpot": 61798808.0,
+        "tierTotals": {
+          "TIER_40": 499803,
+          "TIER_80_120": 0,
+          "TIER_200": 42878,
+          "TIER_1000_2000": 1505,
+          "TIER_20000": 0,
+          "TIER_100000": 19,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "suba-dawasak",
+        "name": "Suba Dawasak",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 432420,
+        "totalPayout": 37929020.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 392043,
+          "TIER_80_120": 0,
+          "TIER_200": 32949,
+          "TIER_1000_2000": 7297,
+          "TIER_20000": 126,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "dhana-nidhanaya",
+        "name": "Dhana Nidhanaya",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 403002,
+        "totalPayout": 29129640.0,
+        "currentJackpot": 97187935.2,
+        "tierTotals": {
+          "TIER_40": 375687,
+          "TIER_80_120": 10643,
+          "TIER_200": 15805,
+          "TIER_1000_2000": 850,
+          "TIER_20000": 0,
+          "TIER_100000": 15,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "nlb-jaya",
+        "name": "NLB Jaya",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 318050,
+        "totalPayout": 28604000.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 289619,
+          "TIER_80_120": 14293,
+          "TIER_200": 12879,
+          "TIER_1000_2000": 1100,
+          "TIER_20000": 152,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 7
+        }
+      },
+      {
+        "id": "ayubo",
+        "name": "Ayubo",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 289453,
+        "totalPayout": 30114800.0,
+        "currentJackpot": 500000.0,
+        "tierTotals": {
+          "TIER_40": 254813,
+          "TIER_80_120": 19880,
+          "TIER_200": 11825,
+          "TIER_1000_2000": 2701,
+          "TIER_20000": 229,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 5
+        }
+      },
+      {
+        "id": "lagna-wasana",
+        "name": "Lagna Wasana",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 255731,
+        "totalPayout": 17363680.0,
+        "currentJackpot": 13290156.4,
+        "tierTotals": {
+          "TIER_40": 224762,
+          "TIER_80_120": 15630,
+          "TIER_200": 14983,
+          "TIER_1000_2000": 323,
+          "TIER_20000": 31,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 2
+        }
+      },
+      {
+        "id": "kapruka",
+        "name": "Kapruka",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 207743,
+        "totalPayout": 16451840.0,
+        "currentJackpot": 403019451.0,
+        "tierTotals": {
+          "TIER_40": 191831,
+          "TIER_80_120": 0,
+          "TIER_200": 15323,
+          "TIER_1000_2000": 577,
+          "TIER_20000": 0,
+          "TIER_100000": 11,
+          "TIER_1M_PLUS": 1
+        }
+      },
+      {
+        "id": "ada-sampatha",
+        "name": "Ada Sampatha",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 7,
+        "verifiedTableCount": 5,
+        "totalWinners": 112619,
+        "totalPayout": 50677520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 88144,
+          "TIER_200": 0,
+          "TIER_1000_2000": 24252,
+          "TIER_20000": 215,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "ada-kotipathi",
+        "name": "Ada Kotipathi",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 106381,
+        "totalPayout": 8098680.0,
+        "currentJackpot": 61188209.6,
+        "tierTotals": {
+          "TIER_40": 97337,
+          "TIER_80_120": 0,
+          "TIER_200": 8706,
+          "TIER_1000_2000": 330,
+          "TIER_20000": 0,
+          "TIER_100000": 8,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "shanida",
+        "name": "Shanida",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 88267,
+        "totalPayout": 6944520.0,
+        "currentJackpot": 60679102.4,
+        "tierTotals": {
+          "TIER_40": 81043,
+          "TIER_80_120": 0,
+          "TIER_200": 6924,
+          "TIER_1000_2000": 277,
+          "TIER_20000": 20,
+          "TIER_100000": 3,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "super-ball",
+        "name": "Super Ball",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 80405,
+        "totalPayout": 5507040.0,
+        "currentJackpot": 93295146.4,
+        "tierTotals": {
+          "TIER_40": 73921,
+          "TIER_80_120": 0,
+          "TIER_200": 6251,
+          "TIER_1000_2000": 200,
+          "TIER_20000": 22,
+          "TIER_100000": 1,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "waasi",
+        "name": "Waasi",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 71735,
+        "totalPayout": 8855760.0,
+        "currentJackpot": 1000000.0,
+        "tierTotals": {
+          "TIER_40": 69248,
+          "TIER_80_120": 7,
+          "TIER_200": 2370,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 107,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 4
+        }
+      },
+      {
+        "id": "supiri-dhana-sampatha",
+        "name": "Supiri Dhana Sampatha",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 48678,
+        "totalPayout": 3438600.0,
+        "currentJackpot": 35009182.4,
+        "tierTotals": {
+          "TIER_40": 44390,
+          "TIER_80_120": 1870,
+          "TIER_200": 2182,
+          "TIER_1000_2000": 216,
+          "TIER_20000": 18,
+          "TIER_100000": 2,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "sasiri",
+        "name": "Sasiri",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 32063,
+        "totalPayout": 3563120.0,
+        "currentJackpot": 200000.0,
+        "tierTotals": {
+          "TIER_40": 30718,
+          "TIER_80_120": 0,
+          "TIER_200": 1336,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 0,
+          "TIER_100000": 9,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "jaya-sampatha",
+        "name": "Jaya Sampatha",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 13,
+        "verifiedTableCount": 1,
+        "totalWinners": 13534,
+        "totalPayout": 5972520.0,
+        "currentJackpot": 250000.0,
+        "tierTotals": {
+          "TIER_40": 0,
+          "TIER_80_120": 10594,
+          "TIER_200": 0,
+          "TIER_1000_2000": 2912,
+          "TIER_20000": 28,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 0
+        }
+      }
+    ]
+  },
+  "updatedAt": "2026-11-12T09:42:16Z"
+}
