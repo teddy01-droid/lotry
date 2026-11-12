@@ -1,4 +1,4 @@
-name: Sync NLB & DLB 365-Draw Official Lottery Dataset
+name: Sync NLB & DLB 365-Draw Official Lottery Dataset (ticket-wise JSON)
 
 on:
   schedule:
@@ -40,12 +40,16 @@ jobs:
       - name: Create Live Scraper Script & Fetch Official NLB + DLB Draws
         env:
           MAX_DRAWS_PER_TICKET: ${{ github.event.inputs.max_draws || '30' }}
+          OUTPUT_DATA_DIR: data
           OUTPUT_JSON_PATH: data/sl_lottery_365_official.json
+          WRITE_COMBINED_JSON: '1'
         run: |
           mkdir -p scripts data
           cat << 'PYEOF' > scripts/fetch_nlb_dlb_365.py
           #!/usr/bin/env python3
           """100% Pure Live Official NLB & DLB Scraper for GitHub Actions (Zero Hardcoded Data).
+
+          Output is written TICKET-WISE: data/index.json + data/tickets/<id>.json (one JSON per lottery).
 
           Scrapes real draw results (Draw No, Draw Date, Letter/Zodiac Sign, Winning Numbers)
           and exact official Prize Breakdown ("MORE") tables directly from:
@@ -61,6 +65,7 @@ jobs:
           """
 
           import datetime
+          import glob
           import json
           import os
           import re
@@ -73,7 +78,17 @@ jobs:
               sync_playwright = None
 
           MAX_DRAWS = int(os.environ.get("MAX_DRAWS_PER_TICKET", "30"))
-          OUTPUT_PATH = os.environ.get("OUTPUT_JSON_PATH", "data/sl_lottery_365_official.json")
+
+          # ── Output layout (ticket-wise JSON) ────────────────────────────────────────
+          #   data/index.json                 -> manifest (list of tickets + per-ticket stats)
+          #   data/tickets/<ticket-id>.json   -> ONE json per lottery ticket (draws + prize tables)
+          #   data/sl_lottery_365_official.json -> legacy combined file (optional, kept for old links)
+          DATA_DIR = os.environ.get("OUTPUT_DATA_DIR", "data")
+          TICKETS_DIR = os.path.join(DATA_DIR, "tickets")
+          INDEX_PATH = os.path.join(DATA_DIR, "index.json")
+          OUTPUT_PATH = os.environ.get("OUTPUT_JSON_PATH", os.path.join(DATA_DIR, "sl_lottery_365_official.json"))
+          WRITE_COMBINED = os.environ.get("WRITE_COMBINED_JSON", "1") != "0"
+          SCHEMA_VERSION = "3.0"
 
           NLB_LOTTERIES = [
               {"id": "mahajana-sampatha", "name": "Mahajana Sampatha", "slug": "mahajana-sampatha"},
@@ -115,29 +130,139 @@ jobs:
           }
 
 
+          def _now_iso() -> str:
+              return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+          def _read_json(path: str) -> Any:
+              try:
+                  with open(path, "r", encoding="utf-8") as f:
+                      return json.load(f)
+              except Exception:
+                  return None
+
+
+          def _write_json_if_changed(path: str, payload: dict[str, Any]) -> str:
+              """Writes `payload` to `path` atomically. `updatedAt` only moves when the real content
+              changed, so git commits touch ONLY the tickets that actually got new data.
+              Returns the `updatedAt` that is stored in the file."""
+              existing = _read_json(path)
+              if isinstance(existing, dict):
+                  old_ts = existing.get("updatedAt", "")
+                  a = {k: v for k, v in existing.items() if k != "updatedAt"}
+                  b = {k: v for k, v in payload.items() if k != "updatedAt"}
+                  if a == b and old_ts:
+                      return old_ts
+              payload = {**payload, "updatedAt": _now_iso()}
+              os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+              tmp = path + ".tmp"
+              with open(tmp, "w", encoding="utf-8") as f:
+                  json.dump(payload, f, ensure_ascii=False, indent=2)
+              os.replace(tmp, path)
+              return payload["updatedAt"]
+
+
+          def _ticket_meta() -> dict[str, dict[str, str]]:
+              meta: dict[str, dict[str, str]] = {}
+              for l in NLB_LOTTERIES:
+                  meta[l["id"]] = {"name": l["name"], "board": "NLB"}
+              for l in DLB_LOTTERIES:
+                  meta[l["id"]] = {"name": l["name"], "board": "DLB"}
+              return meta
+
+
           def load_existing_dataset(path: str) -> dict[str, Any]:
-              if os.path.exists(path):
-                  try:
-                      with open(path, "r", encoding="utf-8") as f:
-                          data = json.load(f)
-                          if isinstance(data, dict) and isinstance(data.get("lotteries"), dict):
-                              return data
-                  except Exception as exc:
-                      print(f"[warn] Could not parse existing JSON at {path}: {exc}")
-              return {
-                  "schemaVersion": "2.0",
+              """Loads previous data so runs are incremental: first the ticket-wise files, then the
+              legacy combined JSON as a fallback."""
+              dataset: dict[str, Any] = {
+                  "schemaVersion": SCHEMA_VERSION,
                   "updatedAt": "",
                   "maxDrawsTarget": MAX_DRAWS,
                   "lotteries": {},
               }
+              for fp in sorted(glob.glob(os.path.join(TICKETS_DIR, "*.json"))):
+                  data = _read_json(fp)
+                  if isinstance(data, dict) and data.get("id"):
+                      dataset["lotteries"][data["id"]] = data
+
+              if not dataset["lotteries"] and os.path.exists(path):
+                  legacy = _read_json(path)
+                  if isinstance(legacy, dict) and isinstance(legacy.get("lotteries"), dict):
+                      dataset["lotteries"] = legacy["lotteries"]
+                  else:
+                      print(f"[warn] Could not parse existing JSON at {path}")
+
+              # back-fill name/board (older files had no `name`)
+              for t_id, m in _ticket_meta().items():
+                  entry = dataset["lotteries"].get(t_id)
+                  if entry is not None:
+                      entry.setdefault("name", m["name"])
+                      entry.setdefault("board", m["board"])
+                      entry.setdefault("draws", [])
+                      entry.setdefault("perDrawTables", {})
+              return dataset
 
 
           def save_dataset_checkpoint(dataset: dict[str, Any], path: str) -> None:
-              dataset["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+              """Writes one JSON per ticket + index.json (+ optional legacy combined file)."""
               dataset["maxDrawsTarget"] = MAX_DRAWS
-              os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-              with open(path, "w", encoding="utf-8") as f:
-                  json.dump(dataset, f, ensure_ascii=False, indent=2)
+              dataset["schemaVersion"] = SCHEMA_VERSION
+              order = [l["id"] for l in NLB_LOTTERIES] + [l["id"] for l in DLB_LOTTERIES]
+              index_items = []
+
+              for t_id in order:
+                  entry = dataset["lotteries"].get(t_id)
+                  if not entry:
+                      continue
+                  draws = entry.get("draws", [])
+                  tables = entry.get("perDrawTables", {})
+                  latest = draws[0] if draws else {}
+                  payload = {
+                      "schemaVersion": SCHEMA_VERSION,
+                      "id": t_id,
+                      "name": entry.get("name", t_id),
+                      "board": entry.get("board", ""),
+                      "latestDraw": latest.get("draw", ""),
+                      "latestDate": latest.get("date", ""),
+                      "drawCount": len(draws),
+                      "tableCount": len(tables),
+                      "draws": draws,
+                      "perDrawTables": tables,
+                  }
+                  if "currentJackpot" in entry:
+                      payload["currentJackpot"] = entry["currentJackpot"]
+                  file_rel = f"tickets/{t_id}.json"
+                  ts = _write_json_if_changed(os.path.join(DATA_DIR, file_rel), payload)
+                  index_items.append({
+                      "id": t_id,
+                      "name": payload["name"],
+                      "board": payload["board"],
+                      "file": file_rel,
+                      "latestDraw": payload["latestDraw"],
+                      "latestDate": payload["latestDate"],
+                      "drawCount": payload["drawCount"],
+                      "tableCount": payload["tableCount"],
+                      "updatedAt": ts,
+                  })
+
+              dataset["updatedAt"] = _write_json_if_changed(INDEX_PATH, {
+                  "schemaVersion": SCHEMA_VERSION,
+                  "maxDrawsTarget": MAX_DRAWS,
+                  "tickets": index_items,
+              })
+
+              if WRITE_COMBINED:
+                  _write_json_if_changed(path, {
+                      "schemaVersion": "2.0",
+                      "maxDrawsTarget": MAX_DRAWS,
+                      "lotteries": {
+                          i["id"]: {
+                              k: v for k, v in dataset["lotteries"][i["id"]].items()
+                              if k in ("id", "name", "board", "currentJackpot", "draws", "perDrawTables")
+                          }
+                          for i in index_items
+                      },
+                  })
 
 
           def parse_number(val: str) -> float:
@@ -697,7 +822,8 @@ jobs:
               save_dataset_checkpoint(dataset, OUTPUT_PATH)
               final_draws = sum(len(v.get("draws", [])) for v in dataset["lotteries"].values())
               final_tables = sum(len(v.get("perDrawTables", {})) for v in dataset["lotteries"].values())
-              print(f"[done] Wrote {OUTPUT_PATH} ({os.path.getsize(OUTPUT_PATH):,} bytes) — {final_draws} draws, {final_tables} official prize tables.")
+              n_files = len(glob.glob(os.path.join(TICKETS_DIR, "*.json")))
+              print(f"[done] Wrote {n_files} ticket JSON files in {TICKETS_DIR}/ + {INDEX_PATH} — {final_draws} draws, {final_tables} official prize tables.")
 
 
           if __name__ == "__main__":
@@ -709,7 +835,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add scripts/fetch_nlb_dlb_365.py data/sl_lottery_365_official.json
+          git add scripts/fetch_nlb_dlb_365.py data/
           if git diff --staged --quiet; then
             echo "No new lottery draws detected since last sync."
           else
