@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "3.4",
+  "id": "supiri-dhana-sampatha",
+  "name": "Supiri Dhana Sampatha",
+  "board": "DLB",
+  "latestDraw": "1076",
+  "latestDate": "2026-11-11",
+  "drawCount": 13,
+  "tableCount": 1,
+  "currentJackpot": 35009182.4,
+  "avgWinnersPerDraw": 48678,
+  "dailyPrizePayout": 3438600.0,
+  "tierWinnersPerDraw": {
+    "TIER_40": 44390,
+    "TIER_80_120": 1870,
+    "TIER_200": 2182,
+    "TIER_1000_2000": 216,
+    "TIER_20000": 18,
+    "TIER_100000": 2,
+    "TIER_1M_PLUS": 0
+  },
+  "prizeStructureDetails": [
+    {
+      "tier": "6 NOS, LETTER",
+      "prize": "Rs. 35,009,182.40",
+      "unitPrize": 35009182.4,
+      "avgWinners": 0
+    },
+    {
+      "tier": "6 NOS",
+      "prize": "Rs. 2,500,000.00",
+      "unitPrize": 2500000.0,
+      "avgWinners": 0
+    },
+    {
+      "tier": "LAST 5 NOS",
+      "prize": "Rs. 100,000.00",
+      "unitPrize": 100000.0,
+      "avgWinners": 2
+    },
+    {
+      "tier": "LAST 4 NOS",
+      "prize": "Rs. 20,000.00",
+      "unitPrize": 20000.0,
+      "avgWinners": 18
+    },
+    {
+      "tier": "LAST 3 NOS",
+      "prize": "Rs. 2,000.00",
+      "unitPrize": 2000.0,
+      "avgWinners": 193
+    },
+    {
+      "tier": "LAST 2 NOS",
+      "prize": "Rs. 200.00",
+      "unitPrize": 200.0,
+      "avgWinners": 1962
+    },
+    {
+      "tier": "LAST 1 NOS",
+      "prize": "Rs. 40.00",
+      "unitPrize": 40.0,
+      "avgWinners": 19517
+    },
+    {
+      "tier": "FIRST 5 NOS",
+      "prize": "Rs. 100,000.00",
+      "unitPrize": 100000.0,
+      "avgWinners": 0
+    },
+    {
+      "tier": "FIRST 4 NOS",
+      "prize": "Rs. 2,000.00",
+      "unitPrize": 2000.0,
+      "avgWinners": 23
+    },
+    {
+      "tier": "FIRST 3 NOS",
+      "prize": "Rs. 200.00",
+      "unitPrize": 200.0,
+      "avgWinners": 186
+    },
+    {
+      "tier": "FIRST 2 NOS",
+      "prize": "Rs. 120.00",
+      "unitPrize": 120.0,
+      "avgWinners": 1870
+    },
+    {
+      "tier": "FIRST 1 NOS",
+      "prize": "Rs. 40.00",
+      "unitPrize": 40.0,
+      "avgWinners": 17759
+    },
+    {
+      "tier": "LETTER",
+      "prize": "Rs. 40.00",
+      "unitPrize": 40.0,
+      "avgWinners": 7114
+    },
+    {
+      "tier": "JUMBLE",
+      "prize": "Rs. 500.00",
+      "unitPrize": 500.0,
+      "avgWinners": 34
+    }
+  ],
+  "drawTierHistory": [
+    {
+      "draw": "1076",
+      "date": "2026-11-11",
+      "totalWinners": 48678,
+      "totalPayout": 3438600.0,
+      "tiers": {
+        "TIER_40": 44390,
+        "TIER_80_120": 1870,
+        "TIER_200": 2182,
+        "TIER_1000_2000": 216,
+        "TIER_20000": 18,
+        "TIER_100000": 2,
+        "TIER_1M_PLUS": 0
+      }
+    }
+  ],
+  "draws": [
+    {
+      "draw": "1076",
+      "date": "2026-11-11",
+      "letter": "A",
+      "nums": [
+        "1",
+        "4",
+        "4",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "draw": "1075",
+      "date": "2026-11-10",
+      "letter": "V",
+      "nums": [
+        "6",
+        "5",
+        "3",
+        "8",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "draw": "1074",
+      "date": "2026-11-09",
+      "letter": "Y",
+      "nums": [
+        "9",
+        "9",
+        "0",
+        "6",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "draw": "1073",
+      "date": "2026-11-08",
+      "letter": "Z",
+      "nums": [
+        "8",
+        "8",
+        "8",
+        "2",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "draw": "1072",
+      "date": "2026-11-07",
+      "letter": "L",
+      "nums": [
+        "9",
+        "5",
+        "9",
+        "6",
+        "7",
+        "4"
+      ]
+    },
+    {
+      "draw": "1071",
+      "date": "2026-11-06",
+      "letter": "K",
+      "nums": [
+        "9",
+        "1",
+        "6",
+        "6",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "draw": "1070",
+      "date": "2026-11-05",
+      "letter": "S",
+      "nums": [
+        "6",
+        "1",
+        "2",
+        "1",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "draw": "1069",
+      "date": "2026-11-04",
+      "letter": "M",
+      "nums": [
+        "3",
+        "1",
+        "6",
+        "2",
+        "9",
+        "3"
+      ]
+    },
+    {
+      "draw": "1068",
+      "date": "2026-11-03",
+      "letter": "C",
+      "nums": [
+        "3",
+        "6",
+        "1",
+        "2",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "draw": "1067",
+      "date": "2026-11-02",
+      "letter": "F",
+      "nums": [
+        "4",
+        "7",
+        "8",
+        "6",
+        "8",
+        "8"
+      ]
+    },
+    {
+      "draw": "1066",
+      "date": "2026-11-01",
+      "letter": "V",
+      "nums": [
+        "0",
+        "1",
+        "0",
+        "1",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "draw": "1065",
+      "date": "2026-10-31",
+      "letter": "D",
+      "nums": [
+        "4",
+        "2",
+        "0",
+        "1",
+        "5",
+        "5"
+      ]
+    },
+    {
+      "draw": "1064",
+      "date": "2026-10-30",
+      "letter": "E",
+      "nums": [
+        "0",
+        "1",
+        "5",
+        "0",
+        "6",
+        "5"
+      ]
+    }
+  ],
+  "perDrawTables": {
+    "1076": {
+      "date": "2026-11-11",
+      "totalWinners": 48678,
+      "totalPayout": 3438600.0,
+      "rows": [
+        {
+          "tier": "6 NOS, LETTER",
+          "prize": "Rs. 35,009,182.40",
+          "unitPrize": 35009182.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "6 NOS",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 5 NOS",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 20,000.00",
+          "unitPrize": 20000.0,
+          "avgWinners": 18
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 193
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1962
+        },
+        {
+          "tier": "LAST 1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 19517
+        },
+        {
+          "tier": "FIRST 5 NOS",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "FIRST 4 NOS",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 23
+        },
+        {
+          "tier": "FIRST 3 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 186
+        },
+        {
+          "tier": "FIRST 2 NOS",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 1870
+        },
+        {
+          "tier": "FIRST 1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 17759
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 7114
+        },
+        {
+          "tier": "JUMBLE",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 34
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 44390,
+        "TIER_80_120": 1870,
+        "TIER_200": 2182,
+        "TIER_1000_2000": 216,
+        "TIER_20000": 18,
+        "TIER_100000": 2,
+        "TIER_1M_PLUS": 0
+      }
+    }
+  },
+  "updatedAt": "2026-11-12T10:01:28Z"
+}

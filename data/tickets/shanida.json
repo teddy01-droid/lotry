@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "3.4",
+  "id": "shanida",
+  "name": "Shanida",
+  "board": "DLB",
+  "latestDraw": "5503",
+  "latestDate": "2026-11-11",
+  "drawCount": 13,
+  "tableCount": 1,
+  "currentJackpot": 60679102.4,
+  "avgWinnersPerDraw": 88267,
+  "dailyPrizePayout": 6944520.0,
+  "tierWinnersPerDraw": {
+    "TIER_40": 81043,
+    "TIER_80_120": 0,
+    "TIER_200": 6924,
+    "TIER_1000_2000": 277,
+    "TIER_20000": 20,
+    "TIER_100000": 3,
+    "TIER_1M_PLUS": 0
+  },
+  "prizeStructureDetails": [
+    {
+      "tier": "4 NOS, ENGLISH LETTER",
+      "prize": "Rs. 60,679,102.40",
+      "unitPrize": 60679102.4,
+      "avgWinners": 0
+    },
+    {
+      "tier": "4 NOS",
+      "prize": "Rs. 2,000,000.00",
+      "unitPrize": 2000000.0,
+      "avgWinners": 0
+    },
+    {
+      "tier": "3 NOS, ENGLISH LETTER",
+      "prize": "Rs. 200,000.00",
+      "unitPrize": 200000.0,
+      "avgWinners": 3
+    },
+    {
+      "tier": "3 NOS",
+      "prize": "Rs. 4,000.00",
+      "unitPrize": 4000.0,
+      "avgWinners": 82
+    },
+    {
+      "tier": "2 NOS, ENGLISH LETTER",
+      "prize": "Rs. 2,000.00",
+      "unitPrize": 2000.0,
+      "avgWinners": 195
+    },
+    {
+      "tier": "2 NOS",
+      "prize": "Rs. 200.00",
+      "unitPrize": 200.0,
+      "avgWinners": 4225
+    },
+    {
+      "tier": "1 NOS, ENGLISH LETTER",
+      "prize": "Rs. 200.00",
+      "unitPrize": 200.0,
+      "avgWinners": 2699
+    },
+    {
+      "tier": "1 NOS",
+      "prize": "Rs. 40.00",
+      "unitPrize": 40.0,
+      "avgWinners": 68709
+    },
+    {
+      "tier": "ENGLISH LETTER",
+      "prize": "Rs. 40.00",
+      "unitPrize": 40.0,
+      "avgWinners": 12334
+    },
+    {
+      "tier": "RS.50,000/= SPECIAL DATES FOR LUCKY CHANCE",
+      "prize": "Rs. 50,000.00",
+      "unitPrize": 50000.0,
+      "avgWinners": 20
+    }
+  ],
+  "drawTierHistory": [
+    {
+      "draw": "5503",
+      "date": "2026-11-11",
+      "totalWinners": 88267,
+      "totalPayout": 6944520.0,
+      "tiers": {
+        "TIER_40": 81043,
+        "TIER_80_120": 0,
+        "TIER_200": 6924,
+        "TIER_1000_2000": 277,
+        "TIER_20000": 20,
+        "TIER_100000": 3,
+        "TIER_1M_PLUS": 0
+      }
+    }
+  ],
+  "draws": [
+    {
+      "draw": "5503",
+      "date": "2026-11-11",
+      "letter": "M",
+      "nums": [
+        "06",
+        "34",
+        "50",
+        "51"
+      ]
+    },
+    {
+      "draw": "5502",
+      "date": "2026-11-10",
+      "letter": "M",
+      "nums": [
+        "07",
+        "33",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "draw": "5501",
+      "date": "2026-11-09",
+      "letter": "K",
+      "nums": [
+        "27",
+        "39",
+        "71",
+        "73"
+      ]
+    },
+    {
+      "draw": "5500",
+      "date": "2026-11-08",
+      "letter": "L",
+      "nums": [
+        "12",
+        "30",
+        "51",
+        "58"
+      ]
+    },
+    {
+      "draw": "5499",
+      "date": "2026-11-07",
+      "letter": "A",
+      "nums": [
+        "03",
+        "04",
+        "54",
+        "65"
+      ]
+    },
+    {
+      "draw": "5498",
+      "date": "2026-11-06",
+      "letter": "K",
+      "nums": [
+        "28",
+        "33",
+        "58",
+        "66"
+      ]
+    },
+    {
+      "draw": "5497",
+      "date": "2026-11-05",
+      "letter": "O",
+      "nums": [
+        "03",
+        "18",
+        "38",
+        "79"
+      ]
+    },
+    {
+      "draw": "5496",
+      "date": "2026-11-04",
+      "letter": "A",
+      "nums": [
+        "08",
+        "19",
+        "51",
+        "70"
+      ]
+    },
+    {
+      "draw": "5495",
+      "date": "2026-11-03",
+      "letter": "V",
+      "nums": [
+        "15",
+        "25",
+        "66",
+        "79"
+      ]
+    },
+    {
+      "draw": "5494",
+      "date": "2026-11-02",
+      "letter": "—",
+      "nums": [
+        "10",
+        "11",
+        "29",
+        "72"
+      ]
+    },
+    {
+      "draw": "5493",
+      "date": "2026-11-01",
+      "letter": "A",
+      "nums": [
+        "18",
+        "35",
+        "57",
+        "71"
+      ]
+    },
+    {
+      "draw": "5492",
+      "date": "2026-10-31",
+      "letter": "N",
+      "nums": [
+        "01",
+        "48",
+        "58",
+        "64"
+      ]
+    },
+    {
+      "draw": "5491",
+      "date": "2026-10-30",
+      "letter": "S",
+      "nums": [
+        "18",
+        "23",
+        "37",
+        "78"
+      ]
+    }
+  ],
+  "perDrawTables": {
+    "5503": {
+      "date": "2026-11-11",
+      "totalWinners": 88267,
+      "totalPayout": 6944520.0,
+      "rows": [
+        {
+          "tier": "4 NOS, ENGLISH LETTER",
+          "prize": "Rs. 60,679,102.40",
+          "unitPrize": 60679102.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4 NOS",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "3 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 3
+        },
+        {
+          "tier": "3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 82
+        },
+        {
+          "tier": "2 NOS, ENGLISH LETTER",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 195
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 4225
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 2699
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 68709
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 12334
+        },
+        {
+          "tier": "RS.50,000/= SPECIAL DATES FOR LUCKY CHANCE",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 20
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 81043,
+        "TIER_80_120": 0,
+        "TIER_200": 6924,
+        "TIER_1000_2000": 277,
+        "TIER_20000": 20,
+        "TIER_100000": 3,
+        "TIER_1M_PLUS": 0
+      }
+    }
+  },
+  "updatedAt": "2026-11-12T10:01:15Z"
+}

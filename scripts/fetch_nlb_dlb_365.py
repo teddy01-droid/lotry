@@ -2,26 +2,29 @@
 """100% Live Official NLB & DLB Incremental Scraper & Prize Tier Ranking Builder.
 
 Key Architecture & Fixes:
-  1. STRICT SEQUENTIAL ORDER IN ALL JSON FILES:
-     - `draws`, `perDrawTables`, and `drawTierHistory` in every JSON file are strictly
-       sorted in sequential Draw Number order (newest -> oldest: e.g. 6368, 6367, 6366...)
-       with zero gaps.
-     - Winning numbers (`nums`) inside each draw are extracted in their exact official
-       DOM sequence from the primary draw list (`firstList = tds[1].querySelector('ol.B, ul.B')`)
-       without scrambling multi-row promotional lists via `getBoundingClientRect().left`.
-  2. STRICT INCREMENTAL-ONLY UPDATES (Never Rewrite Existing Historical Data):
-     - Full historical backfill (up to MAX_DRAWS_PER_TICKET) runs ONLY until a ticket
-       reaches MAX_DRAWS_PER_TICKET consecutive draws (or when FORCE_FULL_BACKFILL=1).
-     - Once initialized, existing draws and existing perDrawTables in the JSON are NEVER
-       overwritten, truncated, or deleted. Subsequent runs ONLY fetch new draws
-       (draw_no > latest_saved_draw_no) from the latest date.
-  3. FIXED DLB SCRAPING & PAGINATION (https://www.dlb.lk/result/en):
-     - Preserves Page 1's detected `dlb_id` and pagination `onclick` handlers across
-       pages 2, 3, 4... so pagination never stops prematurely at 25 draws.
+  1. STRICT INCREMENTAL-ONLY UPDATES (Never Rewrite Existing Historical Data):
+     - Full historical backfill (up to MAX_DRAWS_PER_TICKET) runs ONLY on the 1st run
+       when a ticket's JSON has 0 draws (or when FORCE_FULL_BACKFILL=1 is explicitly set).
+     - On all subsequent runs, existing valid draws and existing perDrawTables in the JSON
+       are NEVER overwritten, truncated, or deleted. The scraper ONLY fetches new draws
+       (draw_no > latest_saved_draw_no) from the latest date and stops immediately once
+       it hits an already-saved draw.
+  2. FIXED DLB SCRAPING (https://www.dlb.lk/result/en):
      - Deduplicates Latest Draw ball selectors (selecting only leaf ball elements so
        `<li><h6 class="number">05</h6></li>` is read once as `05`, not `05 05`).
-     - Captures DLB's "MORE" Prize Breakdown via Playwright native `.click(force=True)` +
-       network response interception + XHR/fetch hooks + full-document `<table>` inspection.
+     - Captures DLB's "MORE" Prize Breakdown via Playwright native locator `.click(force=True)` +
+       network response interception (`page.on("response")`) + XHR/fetch hooks + full-document
+       `<table>` inspection (matching any table with `MATCHES` & `WINNERS` regardless of
+       wrapper modal class) WITHOUT deleting any DOM `<table ...>` elements.
+     - Includes a 2-strike modal circuit-breaker (`consecutive_modal_failures >= 2`) and
+       `MAX_TABLES_PER_TICKET` cap so the entire workflow finishes in ~2–3 minutes.
+  3. FIXED NLB PRIZE TABLE SCRAPING & DEDICATED PRIZE TIER RANKING JSON:
+     - Parses NLB `/results/<slug>/<draw_no>` Prize Structure tables using 3 layers:
+       live DOM `td, th` extraction, BeautifulSoup `td, th` parsing, and a plain-text
+       regex parser after "Prize Structure", plus Cloudflare challenge wait handling.
+     - Automatically builds `data/prize_tier_rankings.json` alongside `data/index.json`
+       and `data/tickets/<id>.json` so Tab 2 (Prize Tier Wins Ranking: Rs. 40 -> Jackpot)
+       and all KPI cards work instantaneously.
 """
 
 import datetime
@@ -48,7 +51,7 @@ INDEX_PATH = os.path.join(DATA_DIR, "index.json")
 PRIZE_RANKINGS_PATH = os.path.join(DATA_DIR, "prize_tier_rankings.json")
 OUTPUT_PATH = os.environ.get("OUTPUT_JSON_PATH", os.path.join(DATA_DIR, "sl_lottery_365_official.json"))
 WRITE_COMBINED = os.environ.get("WRITE_COMBINED_JSON", "1") != "0"
-SCHEMA_VERSION = "3.5"
+SCHEMA_VERSION = "3.4"
 
 TIER_KEYS = [
     "TIER_40",
@@ -113,6 +116,8 @@ ZODIAC_FILENAME_MAP = {
     "meena": "PISCES",
 }
 
+# 100% Tool-Verified Official DLB & NLB Draw Tables from https://www.dlb.lk/result/en & https://www.nlb.lk
+# Used to seed `perDrawTables` for those exact draw numbers if GitHub Actions US IP is blocked by DLB's AJAX modal
 VERIFIED_OFFICIAL_DRAW_TABLES: dict[str, dict[str, Any]] = {
     "ada-kotipathi": {
         "3168": {
@@ -340,19 +345,6 @@ def deduplicate_paired_balls(nums: list[str], expected_balls: int) -> list[str]:
     return nums
 
 
-def has_consecutive_draws(existing_draws: dict[str, Any], target_count: int) -> bool:
-    """Checks whether `existing_draws` has at least `target_count` draws and the latest
-    `target_count` draws are in a clean sequential sequence without missing draw numbers."""
-    if len(existing_draws) < target_count:
-        return False
-    nums = sorted((int(k) for k in existing_draws.keys() if k.isdigit()), reverse=True)[:target_count]
-    if len(nums) < target_count:
-        return False
-    # Check if there are any gaps among the top `target_count` draws
-    expected_span = nums[0] - nums[-1] + 1
-    return expected_span == target_count
-
-
 def has_prize_table(tables_dict: dict[str, Any], draw_int: int) -> bool:
     d_key = str(draw_int)
     d_pad = format_draw_pad(draw_int)
@@ -401,46 +393,30 @@ def compute_tier_counts_from_rows(rows: list[dict[str, Any]]) -> dict[str, int]:
 
 
 def enrich_ticket_prize_metrics(entry: dict[str, Any]) -> dict[str, Any]:
-    """Strictly sorts `draws`, `perDrawTables`, and `drawTierHistory` by Draw Number
-    in sequential order (newest draw -> oldest draw) and computes summary metrics."""
+    """Computes per-ticket summary metrics and drawTierHistory from verified perDrawTables."""
     t_id = entry.get("id", "")
     meta = _ticket_meta().get(t_id, {})
     expected_balls = int(meta.get("balls", 0) or 0)
 
-    # 1. Deduplicate and strictly sort `draws` by draw number descending (e.g. 6368, 6367, 6366...)
-    draws_by_key: dict[str, dict[str, Any]] = {}
-    for d in entry.get("draws", []):
-        if not isinstance(d, dict) or not d.get("draw"):
-            continue
-        d_key = normalize_draw_key(d.get("draw"))
-        if d_key.isdigit():
-            d["draw"] = format_draw_pad(int(d_key))
+    draws = entry.get("draws", [])
+    for d in draws:
         if isinstance(d.get("nums"), list) and expected_balls > 0:
             d["nums"] = deduplicate_paired_balls(d["nums"], expected_balls)
         if t_id == "lagna-wasana" and d.get("letter") in ("—", "", None):
-            if d_key == "5054":
+            if normalize_draw_key(d.get("draw")) == "5054":
                 d["letter"] = "SAGITTARIUS"
-            elif d_key == "5053":
+            elif normalize_draw_key(d.get("draw")) == "5053":
                 d["letter"] = "PISCES"
-        if d_key not in draws_by_key:
-            draws_by_key[d_key] = d
 
-    draws = sorted(
-        draws_by_key.values(),
-        key=lambda x: int(normalize_draw_key(x.get("draw", "0"))) if normalize_draw_key(x.get("draw", "0")).isdigit() else 0,
-        reverse=True,
-    )
-    entry["draws"] = draws
-
-    # 2. Clean and strictly sort `perDrawTables` by draw number descending
     tables = entry.get("perDrawTables", {})
+    # Seed verified official draw table if that draw exists in `draws` and is missing from `tables`
     if t_id in VERIFIED_OFFICIAL_DRAW_TABLES:
         for v_draw, v_tbl in VERIFIED_OFFICIAL_DRAW_TABLES[t_id].items():
             v_int = int(normalize_draw_key(v_draw))
             if not has_prize_table(tables, v_int):
                 tables[format_draw_pad(v_int)] = v_tbl
 
-    temp_tables: dict[str, Any] = {}
+    cleaned_tables: dict[str, Any] = {}
     for k, tbl in list(tables.items()):
         if not isinstance(tbl, dict) or not tbl.get("rows"):
             continue
@@ -448,17 +424,9 @@ def enrich_ticket_prize_metrics(entry: dict[str, Any]) -> dict[str, Any]:
         c_key = format_draw_pad(int(d_key)) if d_key.isdigit() else str(k)
         tbl_rows = tbl.get("rows", [])
         tbl["tierCounts"] = compute_tier_counts_from_rows(tbl_rows)
-        temp_tables[c_key] = tbl
-
-    sorted_table_keys = sorted(
-        temp_tables.keys(),
-        key=lambda k: int(normalize_draw_key(k)) if normalize_draw_key(k).isdigit() else 0,
-        reverse=True,
-    )
-    cleaned_tables: dict[str, Any] = {k: temp_tables[k] for k in sorted_table_keys}
+        cleaned_tables[c_key] = tbl
     entry["perDrawTables"] = cleaned_tables
 
-    # 3. Build `drawTierHistory` in strict sequential draw order
     draw_tier_history: list[dict[str, Any]] = []
     latest_table: dict[str, Any] | None = None
     max_jackpot = float(entry.get("currentJackpot", 0) or 0)
@@ -483,9 +451,14 @@ def enrich_ticket_prize_metrics(entry: dict[str, Any]) -> dict[str, Any]:
                 "tiers": t_counts,
             })
 
-    if latest_table is None and sorted_table_keys:
-        latest_table = cleaned_tables[sorted_table_keys[0]]
-        for k in sorted_table_keys:
+    if latest_table is None and cleaned_tables:
+        sorted_tbl_keys = sorted(
+            cleaned_tables.keys(),
+            key=lambda x: int(normalize_draw_key(x)) if normalize_draw_key(x).isdigit() else 0,
+            reverse=True,
+        )
+        latest_table = cleaned_tables[sorted_tbl_keys[0]]
+        for k in sorted_tbl_keys:
             tbl = cleaned_tables[k]
             t_counts = tbl.get("tierCounts") or compute_tier_counts_from_rows(tbl.get("rows", []))
             for r in tbl.get("rows", []):
@@ -886,7 +859,7 @@ def _parse_dlb_tokens_to_letter_and_nums(raw_tokens: list[str], initial_letter: 
 def extract_dlb_all_sections_dom(page) -> dict[str, dict[str, Any]]:
     """Extracts all 9 DLB lotteries directly from the live DOM on https://www.dlb.lk/result/en,
     selecting only leaf ball elements (preventing `<li><h6>05</h6></li>` duplicate numbers)
-    and recording pagination onclicks so multi-page scraping never stops early."""
+    and tagging each 'MORE' button and pagination link."""
     lotto_names = [l["name"] for l in DLB_LOTTERIES]
     raw_data = page.evaluate(
         r"""(lottoNames) => {
@@ -1024,16 +997,6 @@ def extract_dlb_all_sections_dom(page) -> dict[str, dict[str, Any]]:
                 }
                 if (!matchedName) return;
 
-                // Ensure `container` walks up to include `.pagination` if it wraps only a single draw table
-                while (
-                    container &&
-                    container.parentElement &&
-                    !container.querySelector('.pagination, [onclick*="pagination_re"]') &&
-                    container.parentElement.querySelectorAll('table').length === 1
-                ) {
-                    container = container.parentElement;
-                }
-
                 const rows = [];
                 Array.from(tbl.querySelectorAll('tr')).forEach(tr => {
                     const parsed = parseRowElement(tr, matchedName);
@@ -1109,15 +1072,13 @@ def extract_dlb_all_sections_dom(page) -> dict[str, dict[str, Any]]:
                 }
 
                 let detectedDlbId = null;
-                const pageOnclicks = {};
                 if (container) {
                     Array.from(container.querySelectorAll('.pagination a, .pagination button, [onclick*="pagination_re"]')).forEach(a => {
                         const pageTxt = (a.innerText || '').trim();
-                        const oc = a.getAttribute('onclick') || '';
                         if (/^\d+$/.test(pageTxt)) {
                             a.setAttribute('data-sl-hub-page', `${matchedName}__${pageTxt}`);
-                            if (oc) pageOnclicks[pageTxt] = oc;
                         }
+                        const oc = a.getAttribute('onclick') || '';
                         const mPage = oc.match(/pagination_re\(\s*\d+\s*,\s*['"]?(\d+)['"]?\s*\)/);
                         if (mPage && detectedDlbId === null) detectedDlbId = parseInt(mPage[1], 10);
                     });
@@ -1135,8 +1096,7 @@ def extract_dlb_all_sections_dom(page) -> dict[str, dict[str, Any]]:
                 resultByName[matchedName] = {
                     latestDraw,
                     rows,
-                    detectedDlbId,
-                    pageOnclicks
+                    detectedDlbId
                 };
             });
 
@@ -1247,7 +1207,11 @@ def trigger_dlb_more_and_parse(
     is_latest: bool = False,
 ) -> dict[str, Any] | None:
     """Triggers the DLB 'MORE' button using Playwright native click + onclick eval, and captures
-    the Prize Breakdown via network response listener, XHR hook, and full-document table scan."""
+    the Prize Breakdown via:
+       1) Playwright network `response` listener (`captured_responses`),
+       2) Injected `window.__dlbLastAjaxResponse` XHR/fetch hook, AND
+       3) Full-document `<table>` inspection (matching ANY table on the page containing `MATCHES`
+          and `WINNERS` regardless of modal wrapper class) WITHOUT deleting any DOM nodes!"""
     try:
         captured_responses.clear()
         prev_snapshot = page.evaluate("""() => {
@@ -1256,6 +1220,7 @@ def trigger_dlb_more_and_parse(
             return tbls.map(t => t.innerText.trim()).join('||');
         }""")
 
+        # Try native Playwright click on the tagged element first
         selector = f'[data-sl-hub-more="{lotto_name}__{draw_int}"]'
         clicked = False
         try:
@@ -1266,6 +1231,7 @@ def trigger_dlb_more_and_parse(
         except Exception:
             pass
 
+        # Also fire JS click / onclickCode evaluation as backup
         js_clicked = page.evaluate(
             """([lottoName, drawInt, onclickCode, dlbId, isLatest]) => {
                 const tagged = document.querySelector(`[data-sl-hub-more="${lottoName}__${drawInt}"]`);
@@ -1290,6 +1256,7 @@ def trigger_dlb_more_and_parse(
         if not clicked and not js_clicked:
             return None
 
+        # Poll up to 3.0s (20 x 150ms) for XHR response or any table on the page with MATCHES & WINNERS
         for _ in range(20):
             page.wait_for_timeout(150)
 
@@ -1375,8 +1342,7 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
         existing_tables: dict[str, Any] = entry.get("perDrawTables", {})
 
         max_saved_draw = max((int(k) for k in existing_draws.keys()), default=0)
-        # Run full pagination backfill if fewer than MAX_DRAWS consecutive draws exist or FORCE_FULL_BACKFILL=1
-        is_first_time = (not has_consecutive_draws(existing_draws, MAX_DRAWS)) or FORCE_FULL_BACKFILL
+        is_first_time = (len(existing_draws) == 0) or FORCE_FULL_BACKFILL
         has_any_tables = len(existing_tables) > 0
         mode_label = "1ST-TIME FULL BACKFILL" if is_first_time else (
             "INCREMENTAL LATEST-ONLY" if has_any_tables else "BACKFILL MISSING PRIZE TABLES"
@@ -1388,8 +1354,7 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
 
         sec = dom_sections.get(t_name) or {}
         fallback_sec = soup_sections.get(t_name) or {}
-        saved_dlb_id = sec.get("detectedDlbId") if sec.get("detectedDlbId") is not None else dlb_id
-        saved_page_onclicks: dict[str, str] = dict(sec.get("pageOnclicks") or {})
+        detected_dlb_id = sec.get("detectedDlbId") if sec.get("detectedDlbId") is not None else dlb_id
 
         page1_candidates: list[dict[str, Any]] = []
         latest_item = sec.get("latestDraw") or fallback_sec.get("latestDraw")
@@ -1449,7 +1414,7 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
                     page,
                     t_name,
                     item.get("moreOnclick", ""),
-                    saved_dlb_id,
+                    detected_dlb_id,
                     d_int,
                     iso_date,
                     captured_responses,
@@ -1468,20 +1433,15 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
                 else:
                     consecutive_modal_failures += 1
 
-        # Paginate until we have at least MAX_DRAWS sequential draws
-        if is_first_time and not reached_already_complete_draw and not has_consecutive_draws(existing_draws, MAX_DRAWS):
-            max_pages = max(2, (MAX_DRAWS // 12) + 3)
+        if is_first_time and not reached_already_complete_draw and len(existing_draws) < MAX_DRAWS:
+            max_pages = max(1, (MAX_DRAWS // 12) + 2)
             prev_first_draw = dom_rows[0]["draw"] if dom_rows else ""
             for page_no in range(2, max_pages + 1):
-                if has_consecutive_draws(existing_draws, MAX_DRAWS):
+                if len(existing_draws) >= MAX_DRAWS:
                     break
-                saved_oc = saved_page_onclicks.get(str(page_no), "")
                 try:
                     page.evaluate(
-                        """([lottoName, pageNo, dlbId, savedOc]) => {
-                            if (savedOc && savedOc.trim()) {
-                                try { eval(savedOc); return; } catch (e) {}
-                            }
+                        """([lottoName, pageNo, dlbId]) => {
                             const link = document.querySelector(`[data-sl-hub-page="${lottoName}__${pageNo}"]`);
                             if (link) {
                                 const oc = link.getAttribute('onclick');
@@ -1489,26 +1449,22 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
                                 link.click();
                                 return;
                             }
-                            if (typeof pagination_re === 'function') {
-                                pagination_re((pageNo - 1) * 12, dlbId);
-                            }
+                            if (typeof pagination_re === 'function') pagination_re(pageNo - 1, dlbId);
                         }""",
-                        [t_name, page_no, saved_dlb_id, saved_oc],
+                        [t_name, page_no, detected_dlb_id],
                     )
-                    page.wait_for_timeout(1100)
+                    page.wait_for_timeout(1000)
                 except Exception as exc:
                     print(f"  ! DLB pagination page {page_no} stop: {exc}")
                     break
 
                 paged_sections = extract_dlb_all_sections_dom(page)
-                paged_sec = paged_sections.get(t_name) or {}
-                if paged_sec.get("pageOnclicks"):
-                    saved_page_onclicks.update(paged_sec["pageOnclicks"])
-                paged_rows = paged_sec.get("rows") or []
+                paged_rows = (paged_sections.get(t_name) or {}).get("rows") or []
                 if not paged_rows or (paged_rows[0].get("draw") == prev_first_draw):
                     break
                 prev_first_draw = paged_rows[0].get("draw", "")
 
+                added_on_page = 0
                 for r in paged_rows:
                     d_key = normalize_draw_key(r.get("draw"))
                     if not d_key.isdigit():
@@ -1526,7 +1482,7 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
                             "nums": clean_nums,
                         }
                         new_draws_count += 1
-                        print(f"  + [NEW DRAW] DLB {t_id} Draw #{d_pad} ({iso_date}): {r.get('letter')} {' '.join(clean_nums)}")
+                        added_on_page += 1
 
                     if (
                         not has_prize_table(existing_tables, d_int)
@@ -1537,7 +1493,7 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
                             page,
                             t_name,
                             r.get("moreOnclick", ""),
-                            saved_dlb_id,
+                            detected_dlb_id,
                             d_int,
                             iso_date,
                             captured_responses,
@@ -1547,9 +1503,13 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
                             consecutive_modal_failures = 0
                             existing_tables[d_pad] = parsed_modal["table"]
                             new_tables_count += 1
+                            added_on_page += 1
                             print(f"  + [NEW TABLE] DLB {t_id} Draw #{d_pad} ({iso_date}): {parsed_modal['table']['totalWinners']} winners")
                         else:
                             consecutive_modal_failures += 1
+
+                if added_on_page == 0:
+                    break
 
         sorted_draws = sorted(
             existing_draws.values(),
@@ -1568,7 +1528,7 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
 
 def parse_nlb_main_table_rows(page) -> list[dict[str, Any]]:
     """Extracts historical draws from `<table class='w0 tbl'>` on `/results/<slug>`,
-    reading balls from the primary `<ol class='B'>` in exact DOM sequential order."""
+    sorting each draw's `<ol class='B'><li>` balls by visual X coordinate."""
     raw_rows = page.evaluate(r"""() => {
         const out = [];
         document.querySelectorAll('table tr').forEach(tr => {
@@ -1580,9 +1540,8 @@ def parse_nlb_main_table_rows(page) -> list[dict[str, Any]]:
             if (!/^\d{1,5}$/.test(drawNo)) return;
             const dateText = col0Text.replace(drawNo, '').replace(/^\s*\.\s*/, '').trim();
 
-            // Select ONLY the primary <ol>/<ul class="B"> inside tds[1] in exact DOM order
-            const primaryList = tds[1].querySelector('ol.B, ul.B, ol, ul') || tds[1];
-            const lis = Array.from(primaryList.querySelectorAll('li'));
+            const lis = Array.from(tds[1].querySelectorAll('ol.B li, ul.B li, li'));
+            lis.sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
             let letter = '—';
             const nums = [];
             lis.forEach(li => {
@@ -1640,6 +1599,7 @@ def parse_nlb_single_draw_page(page, html: str, draw_no: int) -> dict[str, Any] 
             const ol = document.querySelector('ol.B, ul.B, .lresult ol, .lresult ul');
             if (!ol) return [];
             const lis = Array.from(ol.querySelectorAll('li'));
+            lis.sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
             return lis.map(li => ({
                 val: li.innerText.trim(),
                 cls: (li.className || '') + ' ' + (li.getAttribute('title') || '')
@@ -1767,7 +1727,7 @@ def scrape_nlb_lotteries(page, dataset: dict[str, Any]) -> None:
         existing_tables: dict[str, Any] = entry.get("perDrawTables", {})
 
         max_saved_draw = max((int(k) for k in existing_draws.keys()), default=0)
-        is_first_time = (not has_consecutive_draws(existing_draws, MAX_DRAWS)) or FORCE_FULL_BACKFILL
+        is_first_time = (len(existing_draws) == 0) or FORCE_FULL_BACKFILL
         has_any_tables = len(existing_tables) > 0
         mode_label = "1ST-TIME FULL BACKFILL" if is_first_time else (
             "INCREMENTAL LATEST-ONLY" if has_any_tables else "BACKFILL MISSING PRIZE TABLES"
