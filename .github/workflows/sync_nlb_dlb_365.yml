@@ -9,7 +9,7 @@ on:
       max_draws:
         description: 'Number of real historical draws to backfill per ticket (1 to 365)'
         required: false
-        default: '365'
+        default: '30'
         type: string
 
 permissions:
@@ -18,7 +18,7 @@ permissions:
 jobs:
   scrape-and-sync-nlb-dlb:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 55
 
     steps:
       - name: Checkout repository
@@ -30,20 +30,27 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install Playwright & BeautifulSoup4
         run: |
-          pip install --upgrade pip
-          pip install playwright beautifulsoup4 lxml requests
-          playwright install --with-deps chromium
+          python3 -m pip install --upgrade pip
+          python3 -m pip install playwright beautifulsoup4 lxml requests
+          python3 -m playwright install --with-deps chromium
 
-      - name: Fetch 100% Official NLB & DLB Draws + Prize Breakdown Tables (Up to 365 Draws)
+      - name: Fetch 100% Official NLB & DLB Draws + Prize Breakdown Tables
         env:
-          MAX_DRAWS_PER_TICKET: ${{ github.event.inputs.max_draws || '365' }}
+          MAX_DRAWS_PER_TICKET: ${{ github.event.inputs.max_draws || '30' }}
           OUTPUT_JSON_PATH: data/sl_lottery_365_official.json
         run: |
-          python3 scripts/fetch_nlb_dlb_365.py
+          mkdir -p data
+          if [ -f "scripts/fetch_nlb_dlb_365.py" ]; then
+            python3 scripts/fetch_nlb_dlb_365.py
+          elif [ -f "fetch_nlb_dlb_365.py" ]; then
+            python3 fetch_nlb_dlb_365.py
+          else
+            echo "ERROR: fetch_nlb_dlb_365.py not found in root or scripts/ folder! Please upload fetch_nlb_dlb_365.py to your repository."
+            exit 1
+          fi
 
       - name: Commit & Push Updated Official JSON Dataset
         run: |
@@ -54,5 +61,6 @@ jobs:
             echo "No new lottery draws detected since last sync."
           else
             git commit -m "chore(data): auto-sync official NLB & DLB draws ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git pull --rebase || true
             git push
           fi
