@@ -3,10 +3,10 @@
   "id": "lagna-wasana",
   "name": "Lagna Wasana",
   "board": "DLB",
-  "latestDraw": "5054",
-  "latestDate": "2026-11-11",
-  "drawCount": 30,
-  "tableCount": 30,
+  "latestDraw": "5055",
+  "latestDate": "2026-11-12",
+  "drawCount": 31,
+  "tableCount": 31,
   "currentJackpot": 13290156.4,
   "avgWinnersPerDraw": 255731,
   "dailyPrizePayout": 17363680.0,
@@ -76,6 +76,21 @@
     }
   ],
   "drawTierHistory": [
+    {
+      "draw": "5055",
+      "date": "2026-11-12",
+      "totalWinners": 255731,
+      "totalPayout": 17363680.0,
+      "tiers": {
+        "TIER_40": 224762,
+        "TIER_80_120": 15630,
+        "TIER_200": 14983,
+        "TIER_1000_2000": 323,
+        "TIER_20000": 31,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 2
+      }
+    },
     {
       "draw": "5054",
       "date": "2026-11-11",
@@ -529,6 +544,17 @@
   ],
   "draws": [
     {
+      "draw": "5055",
+      "date": "2026-11-12",
+      "letter": "VIRGO",
+      "nums": [
+        "16",
+        "30",
+        "50",
+        "60"
+      ]
+    },
+    {
       "draw": "5054",
       "date": "2026-11-11",
       "letter": "SAGITTARIUS",
@@ -860,6 +886,77 @@
     }
   ],
   "perDrawTables": {
+    "5055": {
+      "date": "2026-11-12",
+      "totalWinners": 255731,
+      "totalPayout": 17363680.0,
+      "rows": [
+        {
+          "tier": "4NOS, ZODIAC SIGN",
+          "prize": "Rs. 13,290,156.40",
+          "unitPrize": 13290156.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4NOS",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "3NOS, ZODIAC SIGN",
+          "prize": "Rs. 20,000.00",
+          "unitPrize": 20000.0,
+          "avgWinners": 31
+        },
+        {
+          "tier": "3NOS",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 323
+        },
+        {
+          "tier": "2NOS, ZODIAC SIGN",
+          "prize": "Rs. 400.00",
+          "unitPrize": 400.0,
+          "avgWinners": 1175
+        },
+        {
+          "tier": "2NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 13808
+        },
+        {
+          "tier": "1NOS, ZODIAC SIGN",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 15630
+        },
+        {
+          "tier": "1NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 171225
+        },
+        {
+          "tier": "ZODIAC SIGN",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 53537
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 224762,
+        "TIER_80_120": 15630,
+        "TIER_200": 14983,
+        "TIER_1000_2000": 323,
+        "TIER_20000": 31,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 2
+      },
+      "isFallback": true
+    },
     "5054": {
       "date": "2026-11-11",
       "totalWinners": 255731,
@@ -2990,5 +3087,5 @@
       "isFallback": true
     }
   },
-  "updatedAt": "2026-11-12T12:56:43Z"
+  "updatedAt": "2026-11-12T22:27:52Z"
 }

@@ -3,79 +3,94 @@
   "id": "handahana",
   "name": "Handahana",
   "board": "NLB",
-  "latestDraw": "1677",
-  "latestDate": "2026-11-11",
-  "drawCount": 30,
-  "tableCount": 30,
+  "latestDraw": "1678",
+  "latestDate": "2026-11-12",
+  "drawCount": 60,
+  "tableCount": 60,
   "currentJackpot": 3750004.8,
-  "avgWinnersPerDraw": 123313,
-  "dailyPrizePayout": 7447560.0,
+  "avgWinnersPerDraw": 122864,
+  "dailyPrizePayout": 8509300.0,
   "tierWinnersPerDraw": {
-    "TIER_40": 108418,
-    "TIER_80_120": 7467,
-    "TIER_200": 7256,
-    "TIER_1000_2000": 162,
-    "TIER_20000": 10,
+    "TIER_40": 107931,
+    "TIER_80_120": 7518,
+    "TIER_200": 7242,
+    "TIER_1000_2000": 158,
+    "TIER_20000": 14,
     "TIER_100000": 0,
-    "TIER_1M_PLUS": 0
+    "TIER_1M_PLUS": 1
   },
   "prizeStructureDetails": [
     {
       "tier": "Super Prize — Zodiac and 4 Numbers Correct",
-      "prize": "Rs. 3,470,691.60",
-      "unitPrize": 3470691.6,
+      "prize": "Rs. 3,591,489.20",
+      "unitPrize": 3591489.2,
       "avgWinners": 0
     },
     {
       "tier": "1 st — 4 Numbers Correct",
       "prize": "Rs. 1,000,000.00",
       "unitPrize": 1000000.0,
-      "avgWinners": 0
+      "avgWinners": 1
     },
     {
       "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
       "prize": "Rs. 25,000.00",
       "unitPrize": 25000.0,
-      "avgWinners": 10
+      "avgWinners": 14
     },
     {
       "tier": "3 rd — Any 3 Numbers Correct",
       "prize": "Rs. 2,000.00",
       "unitPrize": 2000.0,
-      "avgWinners": 162
+      "avgWinners": 158
     },
     {
       "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
       "prize": "Rs. 500.00",
       "unitPrize": 500.0,
-      "avgWinners": 632
+      "avgWinners": 585
     },
     {
       "tier": "5 th — Any 2 Numbers Correct",
       "prize": "Rs. 200.00",
       "unitPrize": 200.0,
-      "avgWinners": 6624
+      "avgWinners": 6657
     },
     {
       "tier": "6 th — Zodiac and  Any Number Correct",
       "prize": "Rs. 120.00",
       "unitPrize": 120.0,
-      "avgWinners": 7467
+      "avgWinners": 7518
     },
     {
       "tier": "7 th — Any Number Correct",
       "prize": "Rs. 40.00",
       "unitPrize": 40.0,
-      "avgWinners": 82519
+      "avgWinners": 82212
     },
     {
       "tier": "8 th — Zodiac Correct",
       "prize": "Rs. 40.00",
       "unitPrize": 40.0,
-      "avgWinners": 25899
+      "avgWinners": 25719
     }
   ],
   "drawTierHistory": [
+    {
+      "draw": "1678",
+      "date": "2026-11-12",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
     {
       "draw": "1677",
       "date": "2026-11-11",
@@ -525,9 +540,455 @@
         "TIER_100000": 0,
         "TIER_1M_PLUS": 1
       }
+    },
+    {
+      "draw": "1647",
+      "date": "2026-10-12",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1646",
+      "date": "2026-10-11",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1645",
+      "date": "2026-10-10",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1644",
+      "date": "2026-10-09",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1643",
+      "date": "2026-10-08",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1642",
+      "date": "2026-10-07",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1641",
+      "date": "2026-10-06",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1640",
+      "date": "2026-10-05",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1639",
+      "date": "2026-10-04",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1638",
+      "date": "2026-10-03",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1637",
+      "date": "2026-10-02",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1636",
+      "date": "2026-10-01",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1635",
+      "date": "2026-09-30",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1634",
+      "date": "2026-09-29",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1633",
+      "date": "2026-09-28",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1632",
+      "date": "2026-09-27",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1631",
+      "date": "2026-09-26",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1630",
+      "date": "2026-09-25",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1629",
+      "date": "2026-09-24",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1628",
+      "date": "2026-09-23",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1627",
+      "date": "2026-09-22",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1626",
+      "date": "2026-09-21",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1625",
+      "date": "2026-09-20",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1624",
+      "date": "2026-09-19",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1623",
+      "date": "2026-09-18",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1622",
+      "date": "2026-09-17",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1621",
+      "date": "2026-09-16",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1620",
+      "date": "2026-09-15",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
+    },
+    {
+      "draw": "1619",
+      "date": "2026-09-14",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tiers": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      }
     }
   ],
   "draws": [
+    {
+      "draw": "1678",
+      "date": "2026-11-12",
+      "letter": "SCORPIO",
+      "nums": [
+        "10",
+        "36",
+        "59",
+        "62"
+      ]
+    },
     {
       "draw": "1677",
       "date": "2026-11-11",
@@ -857,9 +1318,398 @@
         "42",
         "62"
       ]
+    },
+    {
+      "draw": "1647",
+      "date": "2026-10-12",
+      "letter": "TAURUS",
+      "nums": [
+        "02",
+        "12",
+        "24",
+        "59"
+      ]
+    },
+    {
+      "draw": "1646",
+      "date": "2026-10-11",
+      "letter": "LIBRA",
+      "nums": [
+        "24",
+        "31",
+        "56",
+        "58"
+      ]
+    },
+    {
+      "draw": "1645",
+      "date": "2026-10-10",
+      "letter": "TAURUS",
+      "nums": [
+        "06",
+        "28",
+        "40",
+        "45"
+      ]
+    },
+    {
+      "draw": "1644",
+      "date": "2026-10-09",
+      "letter": "AQUARIUS",
+      "nums": [
+        "07",
+        "38",
+        "41",
+        "57"
+      ]
+    },
+    {
+      "draw": "1643",
+      "date": "2026-10-08",
+      "letter": "GEMINI",
+      "nums": [
+        "23",
+        "24",
+        "38",
+        "59"
+      ]
+    },
+    {
+      "draw": "1642",
+      "date": "2026-10-07",
+      "letter": "GEMINI",
+      "nums": [
+        "18",
+        "27",
+        "44",
+        "53"
+      ]
+    },
+    {
+      "draw": "1641",
+      "date": "2026-10-06",
+      "letter": "LEO",
+      "nums": [
+        "01",
+        "33",
+        "34",
+        "46"
+      ]
+    },
+    {
+      "draw": "1640",
+      "date": "2026-10-05",
+      "letter": "VIRGO",
+      "nums": [
+        "34",
+        "36",
+        "42",
+        "62"
+      ]
+    },
+    {
+      "draw": "1639",
+      "date": "2026-10-04",
+      "letter": "CANCER",
+      "nums": [
+        "19",
+        "25",
+        "39",
+        "51"
+      ]
+    },
+    {
+      "draw": "1638",
+      "date": "2026-10-03",
+      "letter": "CAPRICORN",
+      "nums": [
+        "04",
+        "16",
+        "43",
+        "46"
+      ]
+    },
+    {
+      "draw": "1637",
+      "date": "2026-10-02",
+      "letter": "TAURUS",
+      "nums": [
+        "20",
+        "24",
+        "42",
+        "60"
+      ]
+    },
+    {
+      "draw": "1636",
+      "date": "2026-10-01",
+      "letter": "GEMINI",
+      "nums": [
+        "09",
+        "42",
+        "51",
+        "57"
+      ]
+    },
+    {
+      "draw": "1635",
+      "date": "2026-09-30",
+      "letter": "LEO",
+      "nums": [
+        "17",
+        "41",
+        "43",
+        "50"
+      ]
+    },
+    {
+      "draw": "1634",
+      "date": "2026-09-29",
+      "letter": "ARIES",
+      "nums": [
+        "07",
+        "25",
+        "41",
+        "43"
+      ]
+    },
+    {
+      "draw": "1633",
+      "date": "2026-09-28",
+      "letter": "CANCER",
+      "nums": [
+        "09",
+        "46",
+        "51",
+        "56"
+      ]
+    },
+    {
+      "draw": "1632",
+      "date": "2026-09-27",
+      "letter": "LEO",
+      "nums": [
+        "14",
+        "26",
+        "39",
+        "52"
+      ]
+    },
+    {
+      "draw": "1631",
+      "date": "2026-09-26",
+      "letter": "CAPRICORN",
+      "nums": [
+        "02",
+        "12",
+        "36",
+        "47"
+      ]
+    },
+    {
+      "draw": "1630",
+      "date": "2026-09-25",
+      "letter": "GEMINI",
+      "nums": [
+        "05",
+        "31",
+        "33",
+        "40"
+      ]
+    },
+    {
+      "draw": "1629",
+      "date": "2026-09-24",
+      "letter": "LIBRA",
+      "nums": [
+        "28",
+        "37",
+        "52",
+        "53"
+      ]
+    },
+    {
+      "draw": "1628",
+      "date": "2026-09-23",
+      "letter": "TAURUS",
+      "nums": [
+        "08",
+        "13",
+        "39",
+        "41"
+      ]
+    },
+    {
+      "draw": "1627",
+      "date": "2026-09-22",
+      "letter": "LIBRA",
+      "nums": [
+        "13",
+        "31",
+        "45",
+        "52"
+      ]
+    },
+    {
+      "draw": "1626",
+      "date": "2026-09-21",
+      "letter": "CANCER",
+      "nums": [
+        "09",
+        "12",
+        "13",
+        "43"
+      ]
+    },
+    {
+      "draw": "1625",
+      "date": "2026-09-20",
+      "letter": "LIBRA",
+      "nums": [
+        "13",
+        "21",
+        "30",
+        "59"
+      ]
+    },
+    {
+      "draw": "1624",
+      "date": "2026-09-19",
+      "letter": "TAURUS",
+      "nums": [
+        "34",
+        "44",
+        "57",
+        "60"
+      ]
+    },
+    {
+      "draw": "1623",
+      "date": "2026-09-18",
+      "letter": "CANCER",
+      "nums": [
+        "08",
+        "19",
+        "32",
+        "42"
+      ]
+    },
+    {
+      "draw": "1622",
+      "date": "2026-09-17",
+      "letter": "ARIES",
+      "nums": [
+        "02",
+        "25",
+        "27",
+        "62"
+      ]
+    },
+    {
+      "draw": "1621",
+      "date": "2026-09-16",
+      "letter": "SCORPIO",
+      "nums": [
+        "02",
+        "15",
+        "36",
+        "57"
+      ]
+    },
+    {
+      "draw": "1620",
+      "date": "2026-09-15",
+      "letter": "LEO",
+      "nums": [
+        "18",
+        "19",
+        "40",
+        "60"
+      ]
+    },
+    {
+      "draw": "1619",
+      "date": "2026-09-14",
+      "letter": "CAPRICORN",
+      "nums": [
+        "22",
+        "33",
+        "47",
+        "49"
+      ]
     }
   ],
   "perDrawTables": {
+    "1678": {
+      "date": "2026-11-12",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ]
+    },
     "1677": {
       "date": "2026-11-11",
       "totalWinners": 123313,
@@ -2959,7 +3809,2066 @@
           "avgWinners": 26606
         }
       ]
+    },
+    "1647": {
+      "date": "2026-10-12",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1646": {
+      "date": "2026-10-11",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1645": {
+      "date": "2026-10-10",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1644": {
+      "date": "2026-10-09",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1643": {
+      "date": "2026-10-08",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1642": {
+      "date": "2026-10-07",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1641": {
+      "date": "2026-10-06",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1640": {
+      "date": "2026-10-05",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1639": {
+      "date": "2026-10-04",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1638": {
+      "date": "2026-10-03",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1637": {
+      "date": "2026-10-02",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1636": {
+      "date": "2026-10-01",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1635": {
+      "date": "2026-09-30",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1634": {
+      "date": "2026-09-29",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1633": {
+      "date": "2026-09-28",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1632": {
+      "date": "2026-09-27",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1631": {
+      "date": "2026-09-26",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1630": {
+      "date": "2026-09-25",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1629": {
+      "date": "2026-09-24",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1628": {
+      "date": "2026-09-23",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1627": {
+      "date": "2026-09-22",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1626": {
+      "date": "2026-09-21",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1625": {
+      "date": "2026-09-20",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1624": {
+      "date": "2026-09-19",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1623": {
+      "date": "2026-09-18",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1622": {
+      "date": "2026-09-17",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1621": {
+      "date": "2026-09-16",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1620": {
+      "date": "2026-09-15",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
+    },
+    "1619": {
+      "date": "2026-09-14",
+      "totalWinners": 122864,
+      "totalPayout": 8509300.0,
+      "tierCounts": {
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Zodiac and 4 Numbers Correct",
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 4 Numbers Correct",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 1
+        },
+        {
+          "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 14
+        },
+        {
+          "tier": "3 rd — Any 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 158
+        },
+        {
+          "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 585
+        },
+        {
+          "tier": "5 th — Any 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 6657
+        },
+        {
+          "tier": "6 th — Zodiac and  Any Number Correct",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7518
+        },
+        {
+          "tier": "7 th — Any Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 82212
+        },
+        {
+          "tier": "8 th — Zodiac Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 25719
+        }
+      ],
+      "isFallback": true
     }
   },
-  "updatedAt": "2026-11-12T12:55:12Z"
+  "updatedAt": "2026-11-12T22:27:31Z"
 }

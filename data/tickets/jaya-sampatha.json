@@ -3,10 +3,10 @@
   "id": "jaya-sampatha",
   "name": "Jaya Sampatha",
   "board": "DLB",
-  "latestDraw": "0550",
-  "latestDate": "2026-11-11",
-  "drawCount": 30,
-  "tableCount": 30,
+  "latestDraw": "0551",
+  "latestDate": "2026-11-12",
+  "drawCount": 31,
+  "tableCount": 31,
   "currentJackpot": 250000.0,
   "avgWinnersPerDraw": 13534,
   "dailyPrizePayout": 5972520.0,
@@ -52,6 +52,21 @@
     }
   ],
   "drawTierHistory": [
+    {
+      "draw": "0551",
+      "date": "2026-11-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
     {
       "draw": "0550",
       "date": "2026-11-11",
@@ -505,6 +520,17 @@
   ],
   "draws": [
     {
+      "draw": "0551",
+      "date": "2026-11-12",
+      "letter": "K",
+      "nums": [
+        "3",
+        "4",
+        "1",
+        "5"
+      ]
+    },
+    {
       "draw": "0550",
       "date": "2026-11-11",
       "letter": "A",
@@ -836,6 +862,53 @@
     }
   ],
   "perDrawTables": {
+    "0551": {
+      "date": "2026-11-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
     "0550": {
       "date": "2026-11-11",
       "totalWinners": 13534,
@@ -2246,5 +2319,5 @@
       "isFallback": true
     }
   },
-  "updatedAt": "2026-11-12T12:57:16Z"
+  "updatedAt": "2026-11-12T22:28:25Z"
 }

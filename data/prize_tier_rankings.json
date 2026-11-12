@@ -5,27 +5,27 @@
       "id": "mahajana-sampatha",
       "name": "Mahajana Sampatha",
       "board": "NLB",
-      "latestDraw": "6368",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "6369",
+      "latestDate": "2026-11-12",
+      "drawCount": 60,
+      "verifiedTableCount": 60,
       "currentJackpot": 25487656.0,
-      "avgWinnersPerDraw": 251498,
-      "dailyPrizePayout": 20562640.0,
+      "avgWinnersPerDraw": 248982,
+      "dailyPrizePayout": 20235320.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 229016,
-        "TIER_80_120": 10070,
-        "TIER_200": 11172,
-        "TIER_1000_2000": 1116,
-        "TIER_20000": 102,
-        "TIER_100000": 21,
+        "TIER_40": 226605,
+        "TIER_80_120": 10029,
+        "TIER_200": 11104,
+        "TIER_1000_2000": 1124,
+        "TIER_20000": 100,
+        "TIER_100000": 19,
         "TIER_1M_PLUS": 1
       },
       "prizeStructureDetails": [
         {
           "tier": "Super Prize — Letter and 6 Numbers Correct",
-          "prize": "Rs. 20,757,264.00",
-          "unitPrize": 20757264.0,
+          "prize": "Rs. 21,167,456.00",
+          "unitPrize": 21167456.0,
           "avgWinners": 0
         },
         {
@@ -38,31 +38,31 @@
           "tier": "2 nd — Last 5 Numbers Correct",
           "prize": "Rs. 100,000.00",
           "unitPrize": 100000.0,
-          "avgWinners": 11
+          "avgWinners": 9
         },
         {
           "tier": "3 rd — Last 4 Numbers Correct",
           "prize": "Rs. 15,000.00",
           "unitPrize": 15000.0,
-          "avgWinners": 102
+          "avgWinners": 100
         },
         {
           "tier": "4 th — Last 3 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 1016
+          "avgWinners": 1020
         },
         {
           "tier": "5 th — Last 2 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 10173
+          "avgWinners": 10097
         },
         {
           "tier": "6 th — Last Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 100759
+          "avgWinners": 99832
         },
         {
           "tier": "7 th — First 5 Numbers Correct",
@@ -74,34 +74,49 @@
           "tier": "8 th — First 4 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 100
+          "avgWinners": 104
         },
         {
           "tier": "9 th — First 3 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 999
+          "avgWinners": 1007
         },
         {
           "tier": "10 th — First 2 Numbers Correct",
           "prize": "Rs. 80.00",
           "unitPrize": 80.0,
-          "avgWinners": 10070
+          "avgWinners": 10029
         },
         {
           "tier": "11 th — First Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 91541
+          "avgWinners": 90673
         },
         {
           "tier": "12 th — Letter Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 36716
+          "avgWinners": 36100
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "6369",
+          "date": "2026-11-12",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
         {
           "draw": "6368",
           "date": "2026-11-11",
@@ -551,6 +566,441 @@
             "TIER_100000": 21,
             "TIER_1M_PLUS": 2
           }
+        },
+        {
+          "draw": "6338",
+          "date": "2026-10-12",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6337",
+          "date": "2026-10-11",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6336",
+          "date": "2026-10-10",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6335",
+          "date": "2026-10-09",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6334",
+          "date": "2026-10-08",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6333",
+          "date": "2026-10-07",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6332",
+          "date": "2026-10-06",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6331",
+          "date": "2026-10-05",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6330",
+          "date": "2026-10-04",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6329",
+          "date": "2026-10-03",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6328",
+          "date": "2026-10-02",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6327",
+          "date": "2026-10-01",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6326",
+          "date": "2026-09-30",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6325",
+          "date": "2026-09-29",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6324",
+          "date": "2026-09-28",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6323",
+          "date": "2026-09-27",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6322",
+          "date": "2026-09-26",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6321",
+          "date": "2026-09-25",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6320",
+          "date": "2026-09-24",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6319",
+          "date": "2026-09-23",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6318",
+          "date": "2026-09-22",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6317",
+          "date": "2026-09-21",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6316",
+          "date": "2026-09-20",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6315",
+          "date": "2026-09-19",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6314",
+          "date": "2026-09-18",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6313",
+          "date": "2026-09-17",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6312",
+          "date": "2026-09-16",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6311",
+          "date": "2026-09-15",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "6310",
+          "date": "2026-09-14",
+          "totalWinners": 248982,
+          "totalPayout": 20235320.0,
+          "tiers": {
+            "TIER_40": 226605,
+            "TIER_80_120": 10029,
+            "TIER_200": 11104,
+            "TIER_1000_2000": 1124,
+            "TIER_20000": 100,
+            "TIER_100000": 19,
+            "TIER_1M_PLUS": 1
+          }
         }
       ]
     },
@@ -558,27 +1008,27 @@
       "id": "govisetha",
       "name": "Govisetha",
       "board": "NLB",
-      "latestDraw": "4610",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "4611",
+      "latestDate": "2026-11-12",
+      "drawCount": 60,
+      "verifiedTableCount": 60,
       "currentJackpot": 92242241.56,
-      "avgWinnersPerDraw": 115543,
-      "dailyPrizePayout": 7472840.0,
+      "avgWinnersPerDraw": 113332,
+      "dailyPrizePayout": 7820800.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 106291,
+        "TIER_40": 104130,
         "TIER_80_120": 0,
-        "TIER_200": 8941,
-        "TIER_1000_2000": 309,
+        "TIER_200": 8888,
+        "TIER_1000_2000": 310,
         "TIER_20000": 0,
-        "TIER_100000": 2,
+        "TIER_100000": 4,
         "TIER_1M_PLUS": 0
       },
       "prizeStructureDetails": [
         {
           "tier": "Super Prize — Letter and 4 Numbers Correct",
-          "prize": "Rs. 61,518,581.60",
-          "unitPrize": 61518581.6,
+          "prize": "Rs. 61,798,808.00",
+          "unitPrize": 61798808.0,
           "avgWinners": 0
         },
         {
@@ -591,46 +1041,61 @@
           "tier": "2 nd — Letter and  Any 3 Numbers Correct",
           "prize": "Rs. 250,000.00",
           "unitPrize": 250000.0,
-          "avgWinners": 2
+          "avgWinners": 4
         },
         {
           "tier": "3 rd — Any 3 Numbers Correct",
           "prize": "Rs. 5,000.00",
           "unitPrize": 5000.0,
-          "avgWinners": 105
+          "avgWinners": 86
         },
         {
           "tier": "4 th — Letter and  Any 2 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 204
+          "avgWinners": 224
         },
         {
           "tier": "5 th — Any 2 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 5431
+          "avgWinners": 5393
         },
         {
           "tier": "6 th — Letter and  Any Number Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 3510
+          "avgWinners": 3495
         },
         {
           "tier": "7 th — Any Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 89838
+          "avgWinners": 88015
         },
         {
           "tier": "8 th — Letter Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 16453
+          "avgWinners": 16115
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "4611",
+          "date": "2026-11-12",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "4610",
           "date": "2026-11-11",
@@ -1080,6 +1545,441 @@
             "TIER_100000": 3,
             "TIER_1M_PLUS": 1
           }
+        },
+        {
+          "draw": "4580",
+          "date": "2026-10-12",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4579",
+          "date": "2026-10-11",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4578",
+          "date": "2026-10-10",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4577",
+          "date": "2026-10-09",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4576",
+          "date": "2026-10-08",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4575",
+          "date": "2026-10-07",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4574",
+          "date": "2026-10-06",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4573",
+          "date": "2026-10-05",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4572",
+          "date": "2026-10-04",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4571",
+          "date": "2026-10-03",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4570",
+          "date": "2026-10-02",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4569",
+          "date": "2026-10-01",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4568",
+          "date": "2026-09-30",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4567",
+          "date": "2026-09-29",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4566",
+          "date": "2026-09-28",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4565",
+          "date": "2026-09-27",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4564",
+          "date": "2026-09-26",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4563",
+          "date": "2026-09-25",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4562",
+          "date": "2026-09-24",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4561",
+          "date": "2026-09-23",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4560",
+          "date": "2026-09-22",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4559",
+          "date": "2026-09-21",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4558",
+          "date": "2026-09-20",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4557",
+          "date": "2026-09-19",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4556",
+          "date": "2026-09-18",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4555",
+          "date": "2026-09-17",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4554",
+          "date": "2026-09-16",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4553",
+          "date": "2026-09-15",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "4552",
+          "date": "2026-09-14",
+          "totalWinners": 113332,
+          "totalPayout": 7820800.0,
+          "tiers": {
+            "TIER_40": 104130,
+            "TIER_80_120": 0,
+            "TIER_200": 8888,
+            "TIER_1000_2000": 310,
+            "TIER_20000": 0,
+            "TIER_100000": 4,
+            "TIER_1M_PLUS": 0
+          }
         }
       ]
     },
@@ -1087,21 +1987,21 @@
       "id": "mega-power",
       "name": "Mega Power",
       "board": "NLB",
-      "latestDraw": "2716",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
-      "currentJackpot": 313214574.0,
-      "avgWinnersPerDraw": 117113,
-      "dailyPrizePayout": 9500480.0,
+      "latestDraw": "2717",
+      "latestDate": "2026-11-12",
+      "drawCount": 60,
+      "verifiedTableCount": 60,
+      "currentJackpot": 313442002.0,
+      "avgWinnersPerDraw": 115675,
+      "dailyPrizePayout": 6658920.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 109052,
+        "TIER_40": 107648,
         "TIER_80_120": 0,
-        "TIER_200": 7787,
-        "TIER_1000_2000": 269,
+        "TIER_200": 7750,
+        "TIER_1000_2000": 277,
         "TIER_20000": 0,
-        "TIER_100000": 4,
-        "TIER_1M_PLUS": 1
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
       },
       "prizeStructureDetails": [
         {
@@ -1120,58 +2020,73 @@
           "tier": "1 st — 4 Numbers Correct",
           "prize": "Rs. 2,000,000.00",
           "unitPrize": 2000000.0,
-          "avgWinners": 1
+          "avgWinners": 0
         },
         {
           "tier": "2 nd — Letter and  Any 3 Numbers Correct",
           "prize": "Rs. 200,000.00",
           "unitPrize": 200000.0,
-          "avgWinners": 4
+          "avgWinners": 0
         },
         {
           "tier": "3 rd — Any 3 Numbers Correct",
           "prize": "Rs. 5,000.00",
           "unitPrize": 5000.0,
-          "avgWinners": 81
+          "avgWinners": 83
         },
         {
           "tier": "4 th — Letter and  Any 2 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 188
+          "avgWinners": 194
         },
         {
           "tier": "5 th — Any 2 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 4680
+          "avgWinners": 4671
         },
         {
           "tier": "6 th — Letter and  Any Number Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 3107
+          "avgWinners": 3079
         },
         {
           "tier": "7 th — Any Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 77351
+          "avgWinners": 76835
         },
         {
           "tier": "8 th — Letter Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 14128
+          "avgWinners": 13888
         },
         {
           "tier": "9 th — Super Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 17573
+          "avgWinners": 16925
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "2717",
+          "date": "2026-11-12",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "2716",
           "date": "2026-11-11",
@@ -1621,6 +2536,441 @@
             "TIER_100000": 2,
             "TIER_1M_PLUS": 0
           }
+        },
+        {
+          "draw": "2686",
+          "date": "2026-10-12",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2685",
+          "date": "2026-10-11",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2684",
+          "date": "2026-10-10",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2683",
+          "date": "2026-10-09",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2682",
+          "date": "2026-10-08",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2681",
+          "date": "2026-10-07",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2680",
+          "date": "2026-10-06",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2679",
+          "date": "2026-10-05",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2678",
+          "date": "2026-10-04",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2677",
+          "date": "2026-10-03",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2676",
+          "date": "2026-10-02",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2675",
+          "date": "2026-10-01",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2674",
+          "date": "2026-09-30",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2673",
+          "date": "2026-09-29",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2672",
+          "date": "2026-09-28",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2671",
+          "date": "2026-09-27",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2670",
+          "date": "2026-09-26",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2669",
+          "date": "2026-09-25",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2668",
+          "date": "2026-09-24",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2667",
+          "date": "2026-09-23",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2666",
+          "date": "2026-09-22",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2665",
+          "date": "2026-09-21",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2664",
+          "date": "2026-09-20",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2663",
+          "date": "2026-09-19",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2662",
+          "date": "2026-09-18",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2661",
+          "date": "2026-09-17",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2660",
+          "date": "2026-09-16",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2659",
+          "date": "2026-09-15",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2658",
+          "date": "2026-09-14",
+          "totalWinners": 115675,
+          "totalPayout": 6658920.0,
+          "tiers": {
+            "TIER_40": 107648,
+            "TIER_80_120": 0,
+            "TIER_200": 7750,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 0,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
         }
       ]
     },
@@ -1628,21 +2978,21 @@
       "id": "dhana-nidhanaya",
       "name": "Dhana Nidhanaya",
       "board": "NLB",
-      "latestDraw": "2398",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
-      "currentJackpot": 97187935.2,
-      "avgWinnersPerDraw": 85076,
-      "dailyPrizePayout": 7574800.0,
+      "latestDraw": "2399",
+      "latestDate": "2026-11-12",
+      "drawCount": 60,
+      "verifiedTableCount": 60,
+      "currentJackpot": 97422519.2,
+      "avgWinnersPerDraw": 84059,
+      "dailyPrizePayout": 5287240.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 79470,
-        "TIER_80_120": 2225,
-        "TIER_200": 3205,
-        "TIER_1000_2000": 170,
+        "TIER_40": 78289,
+        "TIER_80_120": 2209,
+        "TIER_200": 3363,
+        "TIER_1000_2000": 195,
         "TIER_20000": 0,
-        "TIER_100000": 5,
-        "TIER_1M_PLUS": 1
+        "TIER_100000": 3,
+        "TIER_1M_PLUS": 0
       },
       "prizeStructureDetails": [
         {
@@ -1655,58 +3005,73 @@
           "tier": "1 st — 4 Numbers Correct",
           "prize": "Rs. 2,000,000.00",
           "unitPrize": 2000000.0,
-          "avgWinners": 1
+          "avgWinners": 0
         },
         {
           "tier": "2 nd — Letter and  Any 3 Numbers Correct",
           "prize": "Rs. 200,000.00",
           "unitPrize": 200000.0,
-          "avgWinners": 5
+          "avgWinners": 3
         },
         {
           "tier": "3 rd — Any 3 Numbers Correct",
           "prize": "Rs. 6,000.00",
           "unitPrize": 6000.0,
-          "avgWinners": 37
+          "avgWinners": 57
         },
         {
           "tier": "4 th — Letter and  Any 2 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 133
+          "avgWinners": 138
         },
         {
           "tier": "5 th — Any 2 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 3205
+          "avgWinners": 3363
         },
         {
           "tier": "6 th — Letter and  Any Number Correct",
           "prize": "Rs. 120.00",
           "unitPrize": 120.0,
-          "avgWinners": 2225
+          "avgWinners": 2209
         },
         {
           "tier": "7 th — Any Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 56199
+          "avgWinners": 55386
         },
         {
           "tier": "8 th — Letter Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 10498
+          "avgWinners": 10338
         },
         {
           "tier": "9 th — Special Letter Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 12773
+          "avgWinners": 12565
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "2399",
+          "date": "2026-11-12",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "2398",
           "date": "2026-11-11",
@@ -2156,6 +3521,441 @@
             "TIER_100000": 3,
             "TIER_1M_PLUS": 0
           }
+        },
+        {
+          "draw": "2368",
+          "date": "2026-10-12",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2367",
+          "date": "2026-10-11",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2366",
+          "date": "2026-10-10",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2365",
+          "date": "2026-10-09",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2364",
+          "date": "2026-10-08",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2363",
+          "date": "2026-10-07",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2362",
+          "date": "2026-10-06",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2361",
+          "date": "2026-10-05",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2360",
+          "date": "2026-10-04",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2359",
+          "date": "2026-10-03",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2358",
+          "date": "2026-10-02",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2357",
+          "date": "2026-10-01",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2356",
+          "date": "2026-09-30",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2355",
+          "date": "2026-09-29",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2354",
+          "date": "2026-09-28",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2353",
+          "date": "2026-09-27",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2352",
+          "date": "2026-09-26",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2351",
+          "date": "2026-09-25",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2350",
+          "date": "2026-09-24",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2349",
+          "date": "2026-09-23",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2348",
+          "date": "2026-09-22",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2347",
+          "date": "2026-09-21",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2346",
+          "date": "2026-09-20",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2345",
+          "date": "2026-09-19",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2344",
+          "date": "2026-09-18",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2343",
+          "date": "2026-09-17",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2342",
+          "date": "2026-09-16",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2341",
+          "date": "2026-09-15",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "2340",
+          "date": "2026-09-14",
+          "totalWinners": 84059,
+          "totalPayout": 5287240.0,
+          "tiers": {
+            "TIER_40": 78289,
+            "TIER_80_120": 2209,
+            "TIER_200": 3363,
+            "TIER_1000_2000": 195,
+            "TIER_20000": 0,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
         }
       ]
     },
@@ -2163,79 +3963,94 @@
       "id": "handahana",
       "name": "Handahana",
       "board": "NLB",
-      "latestDraw": "1677",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "1678",
+      "latestDate": "2026-11-12",
+      "drawCount": 60,
+      "verifiedTableCount": 60,
       "currentJackpot": 3750004.8,
-      "avgWinnersPerDraw": 123313,
-      "dailyPrizePayout": 7447560.0,
+      "avgWinnersPerDraw": 122864,
+      "dailyPrizePayout": 8509300.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 108418,
-        "TIER_80_120": 7467,
-        "TIER_200": 7256,
-        "TIER_1000_2000": 162,
-        "TIER_20000": 10,
+        "TIER_40": 107931,
+        "TIER_80_120": 7518,
+        "TIER_200": 7242,
+        "TIER_1000_2000": 158,
+        "TIER_20000": 14,
         "TIER_100000": 0,
-        "TIER_1M_PLUS": 0
+        "TIER_1M_PLUS": 1
       },
       "prizeStructureDetails": [
         {
           "tier": "Super Prize — Zodiac and 4 Numbers Correct",
-          "prize": "Rs. 3,470,691.60",
-          "unitPrize": 3470691.6,
+          "prize": "Rs. 3,591,489.20",
+          "unitPrize": 3591489.2,
           "avgWinners": 0
         },
         {
           "tier": "1 st — 4 Numbers Correct",
           "prize": "Rs. 1,000,000.00",
           "unitPrize": 1000000.0,
-          "avgWinners": 0
+          "avgWinners": 1
         },
         {
           "tier": "2 nd — Zodiac and  Any 3 Numbers Correct",
           "prize": "Rs. 25,000.00",
           "unitPrize": 25000.0,
-          "avgWinners": 10
+          "avgWinners": 14
         },
         {
           "tier": "3 rd — Any 3 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 162
+          "avgWinners": 158
         },
         {
           "tier": "4 th — Zodiac and  Any 2 Numbers Correct",
           "prize": "Rs. 500.00",
           "unitPrize": 500.0,
-          "avgWinners": 632
+          "avgWinners": 585
         },
         {
           "tier": "5 th — Any 2 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 6624
+          "avgWinners": 6657
         },
         {
           "tier": "6 th — Zodiac and  Any Number Correct",
           "prize": "Rs. 120.00",
           "unitPrize": 120.0,
-          "avgWinners": 7467
+          "avgWinners": 7518
         },
         {
           "tier": "7 th — Any Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 82519
+          "avgWinners": 82212
         },
         {
           "tier": "8 th — Zodiac Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 25899
+          "avgWinners": 25719
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "1678",
+          "date": "2026-11-12",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
         {
           "draw": "1677",
           "date": "2026-11-11",
@@ -2685,6 +4500,441 @@
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
+        },
+        {
+          "draw": "1647",
+          "date": "2026-10-12",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1646",
+          "date": "2026-10-11",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1645",
+          "date": "2026-10-10",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1644",
+          "date": "2026-10-09",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1643",
+          "date": "2026-10-08",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1642",
+          "date": "2026-10-07",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1641",
+          "date": "2026-10-06",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1640",
+          "date": "2026-10-05",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1639",
+          "date": "2026-10-04",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1638",
+          "date": "2026-10-03",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1637",
+          "date": "2026-10-02",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1636",
+          "date": "2026-10-01",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1635",
+          "date": "2026-09-30",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1634",
+          "date": "2026-09-29",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1633",
+          "date": "2026-09-28",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1632",
+          "date": "2026-09-27",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1631",
+          "date": "2026-09-26",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1630",
+          "date": "2026-09-25",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1629",
+          "date": "2026-09-24",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1628",
+          "date": "2026-09-23",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1627",
+          "date": "2026-09-22",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1626",
+          "date": "2026-09-21",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1625",
+          "date": "2026-09-20",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1624",
+          "date": "2026-09-19",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1623",
+          "date": "2026-09-18",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1622",
+          "date": "2026-09-17",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1621",
+          "date": "2026-09-16",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1620",
+          "date": "2026-09-15",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
+          "draw": "1619",
+          "date": "2026-09-14",
+          "totalWinners": 122864,
+          "totalPayout": 8509300.0,
+          "tiers": {
+            "TIER_40": 107931,
+            "TIER_80_120": 7518,
+            "TIER_200": 7242,
+            "TIER_1000_2000": 158,
+            "TIER_20000": 14,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
         }
       ]
     },
@@ -2692,18 +4942,18 @@
       "id": "ada-sampatha",
       "name": "Ada Sampatha",
       "board": "NLB",
-      "latestDraw": "0943",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "0944",
+      "latestDate": "2026-11-12",
+      "drawCount": 60,
+      "verifiedTableCount": 60,
       "currentJackpot": 250000.0,
-      "avgWinnersPerDraw": 23414,
-      "dailyPrizePayout": 10552680.0,
+      "avgWinnersPerDraw": 23353,
+      "dailyPrizePayout": 10498240.0,
       "tierWinnersPerDraw": {
         "TIER_40": 0,
-        "TIER_80_120": 18321,
+        "TIER_80_120": 18278,
         "TIER_200": 0,
-        "TIER_1000_2000": 5048,
+        "TIER_1000_2000": 5030,
         "TIER_20000": 43,
         "TIER_100000": 2,
         "TIER_1M_PLUS": 0
@@ -2713,13 +4963,13 @@
           "tier": "1 st — 2 Numbers Correct",
           "prize": "Rs. 1,000.00",
           "unitPrize": 1000.0,
-          "avgWinners": 4585
+          "avgWinners": 4578
         },
         {
           "tier": "1 st — 3 Numbers Correct",
           "prize": "Rs. 4,000.00",
           "unitPrize": 4000.0,
-          "avgWinners": 463
+          "avgWinners": 452
         },
         {
           "tier": "1 st — 4 Numbers Correct",
@@ -2737,10 +4987,25 @@
           "tier": "3 rd — Letter Correct",
           "prize": "Rs. 80.00",
           "unitPrize": 80.0,
-          "avgWinners": 18321
+          "avgWinners": 18278
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "0944",
+          "date": "2026-11-12",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "0943",
           "date": "2026-11-11",
@@ -3190,6 +5455,441 @@
             "TIER_100000": 2,
             "TIER_1M_PLUS": 0
           }
+        },
+        {
+          "draw": "0913",
+          "date": "2026-10-12",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0912",
+          "date": "2026-10-11",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0911",
+          "date": "2026-10-10",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0910",
+          "date": "2026-10-09",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0909",
+          "date": "2026-10-08",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0908",
+          "date": "2026-10-07",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0907",
+          "date": "2026-10-06",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0906",
+          "date": "2026-10-05",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0905",
+          "date": "2026-10-04",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0904",
+          "date": "2026-10-03",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0903",
+          "date": "2026-10-02",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0902",
+          "date": "2026-10-01",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0901",
+          "date": "2026-09-30",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0900",
+          "date": "2026-09-29",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0899",
+          "date": "2026-09-28",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0898",
+          "date": "2026-09-27",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0897",
+          "date": "2026-09-26",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0896",
+          "date": "2026-09-25",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0895",
+          "date": "2026-09-24",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0894",
+          "date": "2026-09-23",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0893",
+          "date": "2026-09-22",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0892",
+          "date": "2026-09-21",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0891",
+          "date": "2026-09-20",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0890",
+          "date": "2026-09-19",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0889",
+          "date": "2026-09-18",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0888",
+          "date": "2026-09-17",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0887",
+          "date": "2026-09-16",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0886",
+          "date": "2026-09-15",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
+        {
+          "draw": "0885",
+          "date": "2026-09-14",
+          "totalWinners": 23353,
+          "totalPayout": 10498240.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 18278,
+            "TIER_200": 0,
+            "TIER_1000_2000": 5030,
+            "TIER_20000": 43,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
         }
       ]
     },
@@ -3197,19 +5897,19 @@
       "id": "nlb-jaya",
       "name": "NLB Jaya",
       "board": "NLB",
-      "latestDraw": "0636",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "0637",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 500000.0,
-      "avgWinnersPerDraw": 66605,
-      "dailyPrizePayout": 5760360.0,
+      "avgWinnersPerDraw": 66352,
+      "dailyPrizePayout": 5810120.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 60622,
-        "TIER_80_120": 2996,
-        "TIER_200": 2729,
-        "TIER_1000_2000": 225,
-        "TIER_20000": 32,
+        "TIER_40": 60441,
+        "TIER_80_120": 2966,
+        "TIER_200": 2676,
+        "TIER_1000_2000": 235,
+        "TIER_20000": 33,
         "TIER_100000": 0,
         "TIER_1M_PLUS": 1
       },
@@ -3224,52 +5924,67 @@
           "tier": "2 nd — 4 Numbers Correct",
           "prize": "Rs. 50,000.00",
           "unitPrize": 50000.0,
-          "avgWinners": 32
+          "avgWinners": 33
         },
         {
           "tier": "3 rd — Last 3 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 225
+          "avgWinners": 235
         },
         {
           "tier": "4 th — Last 2 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 2420
+          "avgWinners": 2370
         },
         {
           "tier": "5 th — Last Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 23591
+          "avgWinners": 23554
         },
         {
           "tier": "6 th — First 3 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 309
+          "avgWinners": 306
         },
         {
           "tier": "7 th — First 2 Numbers Correct",
           "prize": "Rs. 80.00",
           "unitPrize": 80.0,
-          "avgWinners": 2996
+          "avgWinners": 2966
         },
         {
           "tier": "8 th — First Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 26828
+          "avgWinners": 26786
         },
         {
           "tier": "9 th — Letter Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 10203
+          "avgWinners": 10101
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "0637",
+          "date": "2026-11-12",
+          "totalWinners": 66352,
+          "totalPayout": 5810120.0,
+          "tiers": {
+            "TIER_40": 60441,
+            "TIER_80_120": 2966,
+            "TIER_200": 2676,
+            "TIER_1000_2000": 235,
+            "TIER_20000": 33,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
         {
           "draw": "0636",
           "date": "2026-11-11",
@@ -3303,29 +6018,29 @@
         {
           "draw": "0634",
           "date": "2026-11-09",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 64957,
+          "totalPayout": 6135800.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 59157,
+            "TIER_80_120": 2914,
+            "TIER_200": 2622,
+            "TIER_1000_2000": 231,
+            "TIER_20000": 31,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0633",
           "date": "2026-11-08",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 54922,
+          "totalPayout": 4920880.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 49996,
+            "TIER_80_120": 2488,
+            "TIER_200": 2220,
+            "TIER_1000_2000": 189,
+            "TIER_20000": 28,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3333,13 +6048,13 @@
         {
           "draw": "0632",
           "date": "2026-11-07",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 65171,
+          "totalPayout": 5677280.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
+            "TIER_40": 59372,
+            "TIER_80_120": 2920,
+            "TIER_200": 2624,
+            "TIER_1000_2000": 222,
             "TIER_20000": 32,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
@@ -3348,14 +6063,14 @@
         {
           "draw": "0631",
           "date": "2026-11-06",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67766,
+          "totalPayout": 5943840.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 61714,
+            "TIER_80_120": 3031,
+            "TIER_200": 2744,
+            "TIER_1000_2000": 242,
+            "TIER_20000": 34,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3363,44 +6078,44 @@
         {
           "draw": "0630",
           "date": "2026-11-05",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67313,
+          "totalPayout": 6361840.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 61320,
+            "TIER_80_120": 3038,
+            "TIER_200": 2680,
+            "TIER_1000_2000": 240,
+            "TIER_20000": 33,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0629",
           "date": "2026-11-04",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67662,
+          "totalPayout": 6361200.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 61635,
+            "TIER_80_120": 3025,
+            "TIER_200": 2739,
+            "TIER_1000_2000": 228,
+            "TIER_20000": 33,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0628",
           "date": "2026-11-03",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67250,
+          "totalPayout": 5965240.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 61260,
+            "TIER_80_120": 2998,
+            "TIER_200": 2715,
+            "TIER_1000_2000": 241,
+            "TIER_20000": 35,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3408,14 +6123,14 @@
         {
           "draw": "0627",
           "date": "2026-11-02",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67485,
+          "totalPayout": 5658960.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 61506,
+            "TIER_80_120": 3019,
+            "TIER_200": 2696,
+            "TIER_1000_2000": 234,
+            "TIER_20000": 29,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3423,14 +6138,14 @@
         {
           "draw": "0626",
           "date": "2026-11-01",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 58704,
+          "totalPayout": 4973560.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 53477,
+            "TIER_80_120": 2646,
+            "TIER_200": 2354,
+            "TIER_1000_2000": 201,
+            "TIER_20000": 25,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3438,58 +6153,58 @@
         {
           "draw": "0625",
           "date": "2026-10-31",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 65067,
+          "totalPayout": 6178440.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
+            "TIER_40": 59292,
+            "TIER_80_120": 2917,
+            "TIER_200": 2597,
+            "TIER_1000_2000": 227,
             "TIER_20000": 32,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0624",
           "date": "2026-10-30",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67117,
+          "totalPayout": 6293120.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
+            "TIER_40": 61122,
+            "TIER_80_120": 3013,
+            "TIER_200": 2716,
+            "TIER_1000_2000": 232,
             "TIER_20000": 32,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0623",
           "date": "2026-10-29",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 65796,
+          "totalPayout": 5173520.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 59950,
+            "TIER_80_120": 2944,
+            "TIER_200": 2640,
+            "TIER_1000_2000": 231,
+            "TIER_20000": 31,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 0
           }
         },
         {
           "draw": "0622",
           "date": "2026-10-28",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 63332,
+          "totalPayout": 5591440.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
+            "TIER_40": 57672,
+            "TIER_80_120": 2852,
+            "TIER_200": 2552,
+            "TIER_1000_2000": 223,
             "TIER_20000": 32,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
@@ -3498,44 +6213,44 @@
         {
           "draw": "0621",
           "date": "2026-10-27",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 55524,
+          "totalPayout": 5500320.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 50568,
+            "TIER_80_120": 2480,
+            "TIER_200": 2256,
+            "TIER_1000_2000": 189,
+            "TIER_20000": 29,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0620",
           "date": "2026-10-26",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 59828,
+          "totalPayout": 5753440.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 54486,
+            "TIER_80_120": 2665,
+            "TIER_200": 2434,
+            "TIER_1000_2000": 212,
+            "TIER_20000": 29,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0619",
           "date": "2026-10-25",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 42542,
+          "totalPayout": 3942800.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 38729,
+            "TIER_80_120": 1923,
+            "TIER_200": 1719,
+            "TIER_1000_2000": 148,
+            "TIER_20000": 22,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3543,14 +6258,14 @@
         {
           "draw": "0618",
           "date": "2026-10-24",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 65121,
+          "totalPayout": 5601880.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 59324,
+            "TIER_80_120": 2924,
+            "TIER_200": 2605,
+            "TIER_1000_2000": 237,
+            "TIER_20000": 30,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3558,59 +6273,59 @@
         {
           "draw": "0617",
           "date": "2026-10-23",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 65468,
+          "totalPayout": 6123680.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 59645,
+            "TIER_80_120": 2921,
+            "TIER_200": 2631,
+            "TIER_1000_2000": 239,
+            "TIER_20000": 30,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0616",
           "date": "2026-10-22",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67300,
+          "totalPayout": 6292480.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
+            "TIER_40": 61330,
+            "TIER_80_120": 3001,
+            "TIER_200": 2706,
+            "TIER_1000_2000": 229,
             "TIER_20000": 32,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0615",
           "date": "2026-10-21",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 69327,
+          "totalPayout": 6430080.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
+            "TIER_40": 63135,
+            "TIER_80_120": 3111,
+            "TIER_200": 2799,
+            "TIER_1000_2000": 248,
             "TIER_20000": 32,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0614",
           "date": "2026-10-20",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 69354,
+          "totalPayout": 5862160.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 63197,
+            "TIER_80_120": 3091,
+            "TIER_200": 2795,
+            "TIER_1000_2000": 239,
+            "TIER_20000": 31,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3618,14 +6333,14 @@
         {
           "draw": "0613",
           "date": "2026-10-19",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 69143,
+          "totalPayout": 6147200.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 62972,
+            "TIER_80_120": 3109,
+            "TIER_200": 2788,
+            "TIER_1000_2000": 236,
+            "TIER_20000": 37,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3633,14 +6348,14 @@
         {
           "draw": "0612",
           "date": "2026-10-18",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 59645,
+          "totalPayout": 5349320.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 54308,
+            "TIER_80_120": 2675,
+            "TIER_200": 2415,
+            "TIER_1000_2000": 215,
+            "TIER_20000": 31,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3648,14 +6363,14 @@
         {
           "draw": "0611",
           "date": "2026-10-17",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67278,
+          "totalPayout": 5674200.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 61227,
+            "TIER_80_120": 3039,
+            "TIER_200": 2740,
+            "TIER_1000_2000": 242,
+            "TIER_20000": 29,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3663,14 +6378,14 @@
         {
           "draw": "0610",
           "date": "2026-10-16",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 67862,
+          "totalPayout": 6749280.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 61732,
+            "TIER_80_120": 3065,
+            "TIER_200": 2774,
+            "TIER_1000_2000": 240,
+            "TIER_20000": 50,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -3678,31 +6393,31 @@
         {
           "draw": "0609",
           "date": "2026-10-15",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 69541,
+          "totalPayout": 6351960.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 63320,
+            "TIER_80_120": 3157,
+            "TIER_200": 2803,
+            "TIER_1000_2000": 228,
+            "TIER_20000": 31,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
           "draw": "0608",
           "date": "2026-10-14",
-          "totalWinners": 66605,
-          "totalPayout": 5760360.0,
+          "totalWinners": 70855,
+          "totalPayout": 6600800.0,
           "tiers": {
-            "TIER_40": 60622,
-            "TIER_80_120": 2996,
-            "TIER_200": 2729,
-            "TIER_1000_2000": 225,
-            "TIER_20000": 32,
+            "TIER_40": 64551,
+            "TIER_80_120": 3177,
+            "TIER_200": 2843,
+            "TIER_1000_2000": 248,
+            "TIER_20000": 34,
             "TIER_100000": 0,
-            "TIER_1M_PLUS": 1
+            "TIER_1M_PLUS": 2
           }
         },
         {
@@ -3726,19 +6441,19 @@
       "id": "suba-dawasak",
       "name": "Suba Dawasak",
       "board": "NLB",
-      "latestDraw": "0484",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "0485",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 500000.0,
-      "avgWinnersPerDraw": 91647,
-      "dailyPrizePayout": 8541180.0,
+      "avgWinnersPerDraw": 91902,
+      "dailyPrizePayout": 8460820.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 82972,
+        "TIER_40": 83243,
         "TIER_80_120": 0,
-        "TIER_200": 6969,
-        "TIER_1000_2000": 1665,
-        "TIER_20000": 40,
+        "TIER_200": 6953,
+        "TIER_1000_2000": 1668,
+        "TIER_20000": 37,
         "TIER_100000": 0,
         "TIER_1M_PLUS": 1
       },
@@ -3753,63 +6468,78 @@
           "tier": "2 nd — 3 Numbers Correct",
           "prize": "Rs. 50,000.00",
           "unitPrize": 50000.0,
-          "avgWinners": 6
+          "avgWinners": 7
         },
         {
           "tier": "3 rd — Zodiac and  Any 2 Numbers Correct",
           "prize": "Rs. 2,500.00",
           "unitPrize": 2500.0,
-          "avgWinners": 229
+          "avgWinners": 215
         },
         {
           "tier": "4 th — Any 2 Numbers Correct",
           "prize": "Rs. 1,000.00",
           "unitPrize": 1000.0,
-          "avgWinners": 1104
+          "avgWinners": 1118
         },
         {
           "tier": "5 th — Zodiac and  Any Number Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 6969
+          "avgWinners": 6953
         },
         {
           "tier": "6 th — Any Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 34922
+          "avgWinners": 35014
         },
         {
           "tier": "7 th — Zodiac Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 48050
+          "avgWinners": 48229
         },
         {
           "tier": "1 st — 4 Numbers Correct",
           "prize": "Rs. 30,000.00",
           "unitPrize": 30000.0,
-          "avgWinners": 34
+          "avgWinners": 30
         },
         {
           "tier": "1 st — 3 Numbers Correct",
           "prize": "Rs. 1,000.00",
           "unitPrize": 1000.0,
-          "avgWinners": 332
+          "avgWinners": 335
         }
       ],
       "drawTierHistory": [
         {
+          "draw": "0485",
+          "date": "2026-11-12",
+          "totalWinners": 91902,
+          "totalPayout": 8460820.0,
+          "tiers": {
+            "TIER_40": 83243,
+            "TIER_80_120": 0,
+            "TIER_200": 6953,
+            "TIER_1000_2000": 1668,
+            "TIER_20000": 37,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
+        {
           "draw": "0484",
           "date": "2026-11-11",
-          "totalWinners": 91647,
-          "totalPayout": 8541180.0,
+          "totalWinners": 92860,
+          "totalPayout": 8654580.0,
           "tiers": {
-            "TIER_40": 82972,
+            "TIER_40": 84007,
             "TIER_80_120": 0,
-            "TIER_200": 6969,
-            "TIER_1000_2000": 1665,
-            "TIER_20000": 40,
+            "TIER_200": 7124,
+            "TIER_1000_2000": 1687,
+            "TIER_20000": 41,
             "TIER_100000": 0,
             "TIER_1M_PLUS": 1
           }
@@ -4255,18 +6985,18 @@
       "id": "ayubo",
       "name": "Ayubo",
       "board": "NLB",
-      "latestDraw": "0031",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "0032",
+      "latestDate": "2026-11-12",
+      "drawCount": 32,
+      "verifiedTableCount": 32,
       "currentJackpot": 500000.0,
-      "avgWinnersPerDraw": 60362,
-      "dailyPrizePayout": 6332860.0,
+      "avgWinnersPerDraw": 59901,
+      "dailyPrizePayout": 6294720.0,
       "tierWinnersPerDraw": {
-        "TIER_40": 53157,
-        "TIER_80_120": 4119,
-        "TIER_200": 2462,
-        "TIER_1000_2000": 573,
+        "TIER_40": 52701,
+        "TIER_80_120": 4140,
+        "TIER_200": 2450,
+        "TIER_1000_2000": 559,
         "TIER_20000": 50,
         "TIER_100000": 0,
         "TIER_1M_PLUS": 1
@@ -4288,82 +7018,97 @@
           "tier": "3 rd — Letter and Last 3 Numbers Correct",
           "prize": "Rs. 25,000.00",
           "unitPrize": 25000.0,
-          "avgWinners": 10
+          "avgWinners": 9
         },
         {
           "tier": "4 th — Last 3 Numbers Correct",
           "prize": "Rs. 2,000.00",
           "unitPrize": 2000.0,
-          "avgWinners": 239
+          "avgWinners": 234
         },
         {
           "tier": "5 th — Letter and Last 2 Numbers Correct",
           "prize": "Rs. 1,000.00",
           "unitPrize": 1000.0,
-          "avgWinners": 95
+          "avgWinners": 89
         },
         {
           "tier": "6 th — Last 2 Numbers Correct",
           "prize": "Rs. 200.00",
           "unitPrize": 200.0,
-          "avgWinners": 2367
+          "avgWinners": 2352
         },
         {
           "tier": "7 th — Letter and Last Number Correct",
           "prize": "Rs. 80.00",
           "unitPrize": 80.0,
-          "avgWinners": 920
+          "avgWinners": 960
         },
         {
           "tier": "8 th — Last Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 23422
+          "avgWinners": 23123
         },
         {
           "tier": "9 th — Letter and First 3 Numbers Correct",
           "prize": "Rs. 25,000.00",
           "unitPrize": 25000.0,
-          "avgWinners": 12
+          "avgWinners": 13
         },
         {
           "tier": "10 th — First 3 Numbers Correct",
           "prize": "Rs. 1,000.00",
           "unitPrize": 1000.0,
-          "avgWinners": 239
+          "avgWinners": 236
         },
         {
           "tier": "11 th — Letter and First 2 Numbers Correct",
           "prize": "Rs. 500.00",
           "unitPrize": 500.0,
-          "avgWinners": 95
+          "avgWinners": 98
         },
         {
           "tier": "12 th — First 2 Numbers Correct",
           "prize": "Rs. 120.00",
           "unitPrize": 120.0,
-          "avgWinners": 2354
+          "avgWinners": 2327
         },
         {
           "tier": "13 th — Letter and First Number Correct",
           "prize": "Rs. 80.00",
           "unitPrize": 80.0,
-          "avgWinners": 845
+          "avgWinners": 853
         },
         {
           "tier": "14 th — First Number Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 21235
+          "avgWinners": 21132
         },
         {
           "tier": "15 th — Letter Correct",
           "prize": "Rs. 40.00",
           "unitPrize": 40.0,
-          "avgWinners": 8500
+          "avgWinners": 8446
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "0032",
+          "date": "2026-11-12",
+          "totalWinners": 59901,
+          "totalPayout": 6294720.0,
+          "tiers": {
+            "TIER_40": 52701,
+            "TIER_80_120": 4140,
+            "TIER_200": 2450,
+            "TIER_1000_2000": 559,
+            "TIER_20000": 50,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
+        },
         {
           "draw": "0031",
           "date": "2026-11-11",
@@ -4813,6 +7558,21 @@
             "TIER_100000": 0,
             "TIER_1M_PLUS": 2
           }
+        },
+        {
+          "draw": "0001",
+          "date": "2026-10-12",
+          "totalWinners": 59901,
+          "totalPayout": 6294720.0,
+          "tiers": {
+            "TIER_40": 52701,
+            "TIER_80_120": 4140,
+            "TIER_200": 2450,
+            "TIER_1000_2000": 559,
+            "TIER_20000": 50,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 1
+          }
         }
       ]
     },
@@ -4820,10 +7580,10 @@
       "id": "ada-kotipathi",
       "name": "Ada Kotipathi",
       "board": "DLB",
-      "latestDraw": "3168",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "3169",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 61188209.6,
       "avgWinnersPerDraw": 106381,
       "dailyPrizePayout": 8098680.0,
@@ -4893,6 +7653,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "3169",
+          "date": "2026-11-12",
+          "totalWinners": 106381,
+          "totalPayout": 8098680.0,
+          "tiers": {
+            "TIER_40": 97337,
+            "TIER_80_120": 0,
+            "TIER_200": 8706,
+            "TIER_1000_2000": 330,
+            "TIER_20000": 0,
+            "TIER_100000": 8,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "3168",
           "date": "2026-11-11",
@@ -5349,10 +8124,10 @@
       "id": "shanida",
       "name": "Shanida",
       "board": "DLB",
-      "latestDraw": "5503",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "5504",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 60679102.4,
       "avgWinnersPerDraw": 88267,
       "dailyPrizePayout": 6944520.0,
@@ -5428,6 +8203,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "5504",
+          "date": "2026-11-12",
+          "totalWinners": 88267,
+          "totalPayout": 6944520.0,
+          "tiers": {
+            "TIER_40": 81043,
+            "TIER_80_120": 0,
+            "TIER_200": 6924,
+            "TIER_1000_2000": 277,
+            "TIER_20000": 20,
+            "TIER_100000": 3,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "5503",
           "date": "2026-11-11",
@@ -5884,10 +8674,10 @@
       "id": "lagna-wasana",
       "name": "Lagna Wasana",
       "board": "DLB",
-      "latestDraw": "5054",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "5055",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 13290156.4,
       "avgWinnersPerDraw": 255731,
       "dailyPrizePayout": 17363680.0,
@@ -5957,6 +8747,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "5055",
+          "date": "2026-11-12",
+          "totalWinners": 255731,
+          "totalPayout": 17363680.0,
+          "tiers": {
+            "TIER_40": 224762,
+            "TIER_80_120": 15630,
+            "TIER_200": 14983,
+            "TIER_1000_2000": 323,
+            "TIER_20000": 31,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 2
+          }
+        },
         {
           "draw": "5054",
           "date": "2026-11-11",
@@ -6413,10 +9218,10 @@
       "id": "supiri-dhana-sampatha",
       "name": "Supiri Dhana Sampatha",
       "board": "DLB",
-      "latestDraw": "1076",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "1077",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 35009182.4,
       "avgWinnersPerDraw": 48678,
       "dailyPrizePayout": 3438600.0,
@@ -6516,6 +9321,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "1077",
+          "date": "2026-11-12",
+          "totalWinners": 48678,
+          "totalPayout": 3438600.0,
+          "tiers": {
+            "TIER_40": 44390,
+            "TIER_80_120": 1870,
+            "TIER_200": 2182,
+            "TIER_1000_2000": 216,
+            "TIER_20000": 18,
+            "TIER_100000": 2,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "1076",
           "date": "2026-11-11",
@@ -6972,10 +9792,10 @@
       "id": "super-ball",
       "name": "Super Ball",
       "board": "DLB",
-      "latestDraw": "3342",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "3343",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 93295146.4,
       "avgWinnersPerDraw": 80405,
       "dailyPrizePayout": 5507040.0,
@@ -7051,6 +9871,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "3343",
+          "date": "2026-11-12",
+          "totalWinners": 80405,
+          "totalPayout": 5507040.0,
+          "tiers": {
+            "TIER_40": 73921,
+            "TIER_80_120": 0,
+            "TIER_200": 6251,
+            "TIER_1000_2000": 200,
+            "TIER_20000": 22,
+            "TIER_100000": 1,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "3342",
           "date": "2026-11-11",
@@ -7507,10 +10342,10 @@
       "id": "kapruka",
       "name": "Kapruka",
       "board": "DLB",
-      "latestDraw": "2518",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "2519",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 403019451.0,
       "avgWinnersPerDraw": 207743,
       "dailyPrizePayout": 16451840.0,
@@ -7598,6 +10433,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "2519",
+          "date": "2026-11-12",
+          "totalWinners": 207743,
+          "totalPayout": 16451840.0,
+          "tiers": {
+            "TIER_40": 191831,
+            "TIER_80_120": 0,
+            "TIER_200": 15323,
+            "TIER_1000_2000": 577,
+            "TIER_20000": 0,
+            "TIER_100000": 11,
+            "TIER_1M_PLUS": 1
+          }
+        },
         {
           "draw": "2518",
           "date": "2026-11-11",
@@ -8054,10 +10904,10 @@
       "id": "waasi",
       "name": "Waasi",
       "board": "DLB",
-      "latestDraw": "0042",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "0043",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 1000000.0,
       "avgWinnersPerDraw": 71735,
       "dailyPrizePayout": 8855760.0,
@@ -8139,6 +10989,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "0043",
+          "date": "2026-11-12",
+          "totalWinners": 71735,
+          "totalPayout": 8855760.0,
+          "tiers": {
+            "TIER_40": 69248,
+            "TIER_80_120": 7,
+            "TIER_200": 2370,
+            "TIER_1000_2000": 0,
+            "TIER_20000": 107,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 4
+          }
+        },
         {
           "draw": "0042",
           "date": "2026-11-11",
@@ -8595,10 +11460,10 @@
       "id": "sasiri",
       "name": "Sasiri",
       "board": "DLB",
-      "latestDraw": "1172",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "1173",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 200000.0,
       "avgWinnersPerDraw": 32063,
       "dailyPrizePayout": 3563120.0,
@@ -8632,6 +11497,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "1173",
+          "date": "2026-11-12",
+          "totalWinners": 32063,
+          "totalPayout": 3563120.0,
+          "tiers": {
+            "TIER_40": 30718,
+            "TIER_80_120": 0,
+            "TIER_200": 1336,
+            "TIER_1000_2000": 0,
+            "TIER_20000": 0,
+            "TIER_100000": 9,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "1172",
           "date": "2026-11-11",
@@ -9088,10 +11968,10 @@
       "id": "jaya-sampatha",
       "name": "Jaya Sampatha",
       "board": "DLB",
-      "latestDraw": "0550",
-      "latestDate": "2026-11-11",
-      "drawCount": 30,
-      "verifiedTableCount": 30,
+      "latestDraw": "0551",
+      "latestDate": "2026-11-12",
+      "drawCount": 31,
+      "verifiedTableCount": 31,
       "currentJackpot": 250000.0,
       "avgWinnersPerDraw": 13534,
       "dailyPrizePayout": 5972520.0,
@@ -9137,6 +12017,21 @@
         }
       ],
       "drawTierHistory": [
+        {
+          "draw": "0551",
+          "date": "2026-11-12",
+          "totalWinners": 13534,
+          "totalPayout": 5972520.0,
+          "tiers": {
+            "TIER_40": 0,
+            "TIER_80_120": 10594,
+            "TIER_200": 0,
+            "TIER_1000_2000": 2912,
+            "TIER_20000": 28,
+            "TIER_100000": 0,
+            "TIER_1M_PLUS": 0
+          }
+        },
         {
           "draw": "0550",
           "date": "2026-11-11",
@@ -9619,16 +12514,16 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 251498,
-        "totalPayout": 20562640.0,
+        "totalWinners": 248982,
+        "totalPayout": 20235320.0,
         "currentJackpot": 25487656.0,
         "tierTotals": {
-          "TIER_40": 229016,
-          "TIER_80_120": 10070,
-          "TIER_200": 11172,
-          "TIER_1000_2000": 1116,
-          "TIER_20000": 102,
-          "TIER_100000": 21,
+          "TIER_40": 226605,
+          "TIER_80_120": 10029,
+          "TIER_200": 11104,
+          "TIER_1000_2000": 1124,
+          "TIER_20000": 100,
+          "TIER_100000": 19,
           "TIER_1M_PLUS": 1
         }
       },
@@ -9659,17 +12554,17 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 123313,
-        "totalPayout": 7447560.0,
+        "totalWinners": 122864,
+        "totalPayout": 8509300.0,
         "currentJackpot": 3750004.8,
         "tierTotals": {
-          "TIER_40": 108418,
-          "TIER_80_120": 7467,
-          "TIER_200": 7256,
-          "TIER_1000_2000": 162,
-          "TIER_20000": 10,
+          "TIER_40": 107931,
+          "TIER_80_120": 7518,
+          "TIER_200": 7242,
+          "TIER_1000_2000": 158,
+          "TIER_20000": 14,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 0
+          "TIER_1M_PLUS": 1
         }
       },
       {
@@ -9679,17 +12574,17 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 117113,
-        "totalPayout": 9500480.0,
-        "currentJackpot": 313214574.0,
+        "totalWinners": 115675,
+        "totalPayout": 6658920.0,
+        "currentJackpot": 313442002.0,
         "tierTotals": {
-          "TIER_40": 109052,
+          "TIER_40": 107648,
           "TIER_80_120": 0,
-          "TIER_200": 7787,
-          "TIER_1000_2000": 269,
+          "TIER_200": 7750,
+          "TIER_1000_2000": 277,
           "TIER_20000": 0,
-          "TIER_100000": 4,
-          "TIER_1M_PLUS": 1
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 0
         }
       },
       {
@@ -9699,16 +12594,16 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 115543,
-        "totalPayout": 7472840.0,
+        "totalWinners": 113332,
+        "totalPayout": 7820800.0,
         "currentJackpot": 92242241.56,
         "tierTotals": {
-          "TIER_40": 106291,
+          "TIER_40": 104130,
           "TIER_80_120": 0,
-          "TIER_200": 8941,
-          "TIER_1000_2000": 309,
+          "TIER_200": 8888,
+          "TIER_1000_2000": 310,
           "TIER_20000": 0,
-          "TIER_100000": 2,
+          "TIER_100000": 4,
           "TIER_1M_PLUS": 0
         }
       },
@@ -9739,15 +12634,15 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 91647,
-        "totalPayout": 8541180.0,
+        "totalWinners": 91902,
+        "totalPayout": 8460820.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 82972,
+          "TIER_40": 83243,
           "TIER_80_120": 0,
-          "TIER_200": 6969,
-          "TIER_1000_2000": 1665,
-          "TIER_20000": 40,
+          "TIER_200": 6953,
+          "TIER_1000_2000": 1668,
+          "TIER_20000": 37,
           "TIER_100000": 0,
           "TIER_1M_PLUS": 1
         }
@@ -9779,17 +12674,17 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 85076,
-        "totalPayout": 7574800.0,
-        "currentJackpot": 97187935.2,
+        "totalWinners": 84059,
+        "totalPayout": 5287240.0,
+        "currentJackpot": 97422519.2,
         "tierTotals": {
-          "TIER_40": 79470,
-          "TIER_80_120": 2225,
-          "TIER_200": 3205,
-          "TIER_1000_2000": 170,
+          "TIER_40": 78289,
+          "TIER_80_120": 2209,
+          "TIER_200": 3363,
+          "TIER_1000_2000": 195,
           "TIER_20000": 0,
-          "TIER_100000": 5,
-          "TIER_1M_PLUS": 1
+          "TIER_100000": 3,
+          "TIER_1M_PLUS": 0
         }
       },
       {
@@ -9839,15 +12734,15 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 66605,
-        "totalPayout": 5760360.0,
+        "totalWinners": 66352,
+        "totalPayout": 5810120.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 60622,
-          "TIER_80_120": 2996,
-          "TIER_200": 2729,
-          "TIER_1000_2000": 225,
-          "TIER_20000": 32,
+          "TIER_40": 60441,
+          "TIER_80_120": 2966,
+          "TIER_200": 2676,
+          "TIER_1000_2000": 235,
+          "TIER_20000": 33,
           "TIER_100000": 0,
           "TIER_1M_PLUS": 1
         }
@@ -9859,14 +12754,14 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 60362,
-        "totalPayout": 6332860.0,
+        "totalWinners": 59901,
+        "totalPayout": 6294720.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 53157,
-          "TIER_80_120": 4119,
-          "TIER_200": 2462,
-          "TIER_1000_2000": 573,
+          "TIER_40": 52701,
+          "TIER_80_120": 4140,
+          "TIER_200": 2450,
+          "TIER_1000_2000": 559,
           "TIER_20000": 50,
           "TIER_100000": 0,
           "TIER_1M_PLUS": 1
@@ -9919,14 +12814,14 @@
         "windowRequested": 1,
         "drawsInWindow": 1,
         "verifiedTableCount": 1,
-        "totalWinners": 23414,
-        "totalPayout": 10552680.0,
+        "totalWinners": 23353,
+        "totalPayout": 10498240.0,
         "currentJackpot": 250000.0,
         "tierTotals": {
           "TIER_40": 0,
-          "TIER_80_120": 18321,
+          "TIER_80_120": 18278,
           "TIER_200": 0,
-          "TIER_1000_2000": 5048,
+          "TIER_1000_2000": 5030,
           "TIER_20000": 43,
           "TIER_100000": 2,
           "TIER_1M_PLUS": 0
@@ -9981,17 +12876,17 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 1703232,
-        "totalPayout": 182324768.0,
+        "totalWinners": 1700607,
+        "totalPayout": 179527168.0,
         "currentJackpot": 25487656.0,
         "tierTotals": {
-          "TIER_40": 1550480,
-          "TIER_80_120": 68541,
-          "TIER_200": 75831,
-          "TIER_1000_2000": 7543,
-          "TIER_20000": 689,
-          "TIER_100000": 139,
-          "TIER_1M_PLUS": 9
+          "TIER_40": 1548068,
+          "TIER_80_120": 68437,
+          "TIER_200": 75702,
+          "TIER_1000_2000": 7567,
+          "TIER_20000": 688,
+          "TIER_100000": 137,
+          "TIER_1M_PLUS": 8
         }
       },
       {
@@ -10021,15 +12916,15 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 837526,
-        "totalPayout": 55297540.0,
+        "totalWinners": 836260,
+        "totalPayout": 55170600.0,
         "currentJackpot": 3750004.8,
         "tierTotals": {
-          "TIER_40": 736125,
-          "TIER_80_120": 51012,
-          "TIER_200": 49228,
-          "TIER_1000_2000": 1055,
-          "TIER_20000": 102,
+          "TIER_40": 734959,
+          "TIER_80_120": 50977,
+          "TIER_200": 49167,
+          "TIER_1000_2000": 1053,
+          "TIER_20000": 100,
           "TIER_100000": 0,
           "TIER_1M_PLUS": 4
         }
@@ -10041,16 +12936,16 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 785940,
-        "totalPayout": 52093520.0,
-        "currentJackpot": 313214574.0,
+        "totalWinners": 784445,
+        "totalPayout": 51401160.0,
+        "currentJackpot": 313442002.0,
         "tierTotals": {
-          "TIER_40": 731608,
+          "TIER_40": 730264,
           "TIER_80_120": 0,
-          "TIER_200": 52471,
-          "TIER_1000_2000": 1835,
+          "TIER_200": 52318,
+          "TIER_1000_2000": 1840,
           "TIER_20000": 0,
-          "TIER_100000": 25,
+          "TIER_100000": 22,
           "TIER_1M_PLUS": 1
         }
       },
@@ -10061,16 +12956,16 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 776528,
-        "totalPayout": 56332320.0,
+        "totalWinners": 774126,
+        "totalPayout": 55643120.0,
         "currentJackpot": 92242241.56,
         "tierTotals": {
-          "TIER_40": 713303,
+          "TIER_40": 710983,
           "TIER_80_120": 0,
-          "TIER_200": 61026,
-          "TIER_1000_2000": 2169,
+          "TIER_200": 60969,
+          "TIER_1000_2000": 2146,
           "TIER_20000": 0,
-          "TIER_100000": 29,
+          "TIER_100000": 27,
           "TIER_1M_PLUS": 1
         }
       },
@@ -10121,17 +13016,17 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 611082,
-        "totalPayout": 52533140.0,
+        "totalWinners": 614160,
+        "totalPayout": 53531820.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 554486,
+          "TIER_40": 556923,
           "TIER_80_120": 0,
-          "TIER_200": 46541,
-          "TIER_1000_2000": 9909,
-          "TIER_20000": 138,
+          "TIER_200": 46782,
+          "TIER_1000_2000": 10278,
+          "TIER_20000": 170,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 8
+          "TIER_1M_PLUS": 7
         }
       },
       {
@@ -10141,16 +13036,16 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 574143,
-        "totalPayout": 39231920.0,
-        "currentJackpot": 97187935.2,
+        "totalWinners": 573373,
+        "totalPayout": 39569120.0,
+        "currentJackpot": 97422519.2,
         "tierTotals": {
-          "TIER_40": 535376,
-          "TIER_80_120": 15034,
-          "TIER_200": 22494,
+          "TIER_40": 534440,
+          "TIER_80_120": 15111,
+          "TIER_200": 22581,
           "TIER_1000_2000": 1219,
           "TIER_20000": 0,
-          "TIER_100000": 18,
+          "TIER_100000": 20,
           "TIER_1M_PLUS": 2
         }
       },
@@ -10201,17 +13096,17 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 466025,
-        "totalPayout": 40671840.0,
+        "totalWinners": 452168,
+        "totalPayout": 40357960.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 424204,
-          "TIER_80_120": 20951,
-          "TIER_200": 19058,
-          "TIER_1000_2000": 1583,
-          "TIER_20000": 221,
+          "TIER_40": 411774,
+          "TIER_80_120": 20290,
+          "TIER_200": 18299,
+          "TIER_1000_2000": 1577,
+          "TIER_20000": 219,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 8
+          "TIER_1M_PLUS": 9
         }
       },
       {
@@ -10221,17 +13116,17 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 414269,
-        "totalPayout": 41732560.0,
+        "totalWinners": 411572,
+        "totalPayout": 42350560.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 364841,
-          "TIER_80_120": 28298,
-          "TIER_200": 16933,
-          "TIER_1000_2000": 3871,
-          "TIER_20000": 321,
+          "TIER_40": 362369,
+          "TIER_80_120": 28215,
+          "TIER_200": 16812,
+          "TIER_1000_2000": 3840,
+          "TIER_20000": 330,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 5
+          "TIER_1M_PLUS": 6
         }
       },
       {
@@ -10281,15 +13176,15 @@
         "windowRequested": 7,
         "drawsInWindow": 7,
         "verifiedTableCount": 7,
-        "totalWinners": 160109,
-        "totalPayout": 71621040.0,
+        "totalWinners": 159819,
+        "totalPayout": 71616280.0,
         "currentJackpot": 250000.0,
         "tierTotals": {
           "TIER_40": 0,
-          "TIER_80_120": 125313,
+          "TIER_80_120": 125091,
           "TIER_200": 0,
-          "TIER_1000_2000": 34487,
-          "TIER_20000": 298,
+          "TIER_1000_2000": 34416,
+          "TIER_20000": 301,
           "TIER_100000": 11,
           "TIER_1M_PLUS": 0
         }
@@ -10343,17 +13238,17 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 7119131,
-        "totalPayout": 671069848.0,
+        "totalWinners": 7115112,
+        "totalPayout": 649857224.0,
         "currentJackpot": 25487656.0,
         "tierTotals": {
-          "TIER_40": 6481992,
-          "TIER_80_120": 285377,
-          "TIER_200": 316601,
-          "TIER_1000_2000": 31673,
-          "TIER_20000": 2880,
-          "TIER_100000": 575,
-          "TIER_1M_PLUS": 33
+          "TIER_40": 6478208,
+          "TIER_80_120": 285312,
+          "TIER_200": 316441,
+          "TIER_1000_2000": 31669,
+          "TIER_20000": 2877,
+          "TIER_100000": 573,
+          "TIER_1M_PLUS": 32
         }
       },
       {
@@ -10383,14 +13278,14 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 3527919,
-        "totalPayout": 242667735.2,
+        "totalWinners": 3523687,
+        "totalPayout": 242437315.2,
         "currentJackpot": 3750004.8,
         "tierTotals": {
-          "TIER_40": 3101419,
-          "TIER_80_120": 214693,
-          "TIER_200": 206982,
-          "TIER_1000_2000": 4397,
+          "TIER_40": 3097688,
+          "TIER_80_120": 214444,
+          "TIER_200": 206724,
+          "TIER_1000_2000": 4403,
           "TIER_20000": 408,
           "TIER_100000": 0,
           "TIER_1M_PLUS": 20
@@ -10403,16 +13298,16 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 3294435,
-        "totalPayout": 228550000.0,
-        "currentJackpot": 313214574.0,
+        "totalWinners": 3291403,
+        "totalPayout": 228015360.0,
+        "currentJackpot": 313442002.0,
         "tierTotals": {
-          "TIER_40": 3066651,
+          "TIER_40": 3063720,
           "TIER_80_120": 0,
-          "TIER_200": 219990,
-          "TIER_1000_2000": 7700,
+          "TIER_200": 219888,
+          "TIER_1000_2000": 7703,
           "TIER_20000": 0,
-          "TIER_100000": 87,
+          "TIER_100000": 85,
           "TIER_1M_PLUS": 7
         }
       },
@@ -10423,17 +13318,17 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 3285982,
-        "totalPayout": 327190721.56,
+        "totalWinners": 3279728,
+        "totalPayout": 325012601.56,
         "currentJackpot": 92242241.56,
         "tierTotals": {
-          "TIER_40": 3019827,
+          "TIER_40": 3014119,
           "TIER_80_120": 0,
-          "TIER_200": 256967,
-          "TIER_1000_2000": 9077,
+          "TIER_200": 256448,
+          "TIER_1000_2000": 9050,
           "TIER_20000": 0,
-          "TIER_100000": 105,
-          "TIER_1M_PLUS": 6
+          "TIER_100000": 106,
+          "TIER_1M_PLUS": 5
         }
       },
       {
@@ -10483,17 +13378,17 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 2611558,
-        "totalPayout": 211258260.0,
+        "totalWinners": 2607340,
+        "totalPayout": 211706660.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 2372494,
+          "TIER_40": 2368304,
           "TIER_80_120": 0,
-          "TIER_200": 199690,
-          "TIER_1000_2000": 39077,
-          "TIER_20000": 264,
+          "TIER_200": 199380,
+          "TIER_1000_2000": 39328,
+          "TIER_20000": 296,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 33
+          "TIER_1M_PLUS": 32
         }
       },
       {
@@ -10523,14 +13418,14 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 2407149,
-        "totalPayout": 156426120.0,
-        "currentJackpot": 97187935.2,
+        "totalWinners": 2405146,
+        "totalPayout": 156294600.0,
+        "currentJackpot": 97422519.2,
         "tierTotals": {
-          "TIER_40": 2244570,
-          "TIER_80_120": 63406,
-          "TIER_200": 93753,
-          "TIER_1000_2000": 5350,
+          "TIER_40": 2242574,
+          "TIER_80_120": 63282,
+          "TIER_200": 93879,
+          "TIER_1000_2000": 5341,
           "TIER_20000": 0,
           "TIER_100000": 65,
           "TIER_1M_PLUS": 5
@@ -10563,17 +13458,17 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 1997940,
-        "totalPayout": 173160120.0,
+        "totalWinners": 1940682,
+        "totalPayout": 175294880.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 1818510,
-          "TIER_80_120": 89859,
-          "TIER_200": 81825,
-          "TIER_1000_2000": 6758,
-          "TIER_20000": 957,
+          "TIER_40": 1767532,
+          "TIER_80_120": 87080,
+          "TIER_200": 78296,
+          "TIER_1000_2000": 6784,
+          "TIER_20000": 948,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 31
+          "TIER_1M_PLUS": 42
         }
       },
       {
@@ -10583,17 +13478,17 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 1840892,
-        "totalPayout": 186923320.0,
+        "totalWinners": 1834802,
+        "totalPayout": 186019600.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 1620632,
-          "TIER_80_120": 126525,
-          "TIER_200": 75002,
-          "TIER_1000_2000": 17318,
+          "TIER_40": 1615273,
+          "TIER_80_120": 126092,
+          "TIER_200": 74777,
+          "TIER_1000_2000": 17246,
           "TIER_20000": 1387,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 28
+          "TIER_1M_PLUS": 27
         }
       },
       {
@@ -10643,15 +13538,15 @@
         "windowRequested": 30,
         "drawsInWindow": 30,
         "verifiedTableCount": 30,
-        "totalWinners": 685509,
-        "totalPayout": 309100640.0,
+        "totalWinners": 684302,
+        "totalPayout": 308652880.0,
         "currentJackpot": 250000.0,
         "tierTotals": {
           "TIER_40": 0,
-          "TIER_80_120": 536508,
+          "TIER_80_120": 535561,
           "TIER_200": 0,
-          "TIER_1000_2000": 147662,
-          "TIER_20000": 1283,
+          "TIER_1000_2000": 147403,
+          "TIER_20000": 1282,
           "TIER_100000": 56,
           "TIER_1M_PLUS": 0
         }
@@ -10679,63 +13574,43 @@
     ],
     "90": [
       {
-        "id": "lagna-wasana",
-        "name": "Lagna Wasana",
-        "board": "DLB",
-        "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 7671930,
-        "totalPayout": 520910400.0,
-        "currentJackpot": 13290156.4,
-        "tierTotals": {
-          "TIER_40": 6742860,
-          "TIER_80_120": 468900,
-          "TIER_200": 449490,
-          "TIER_1000_2000": 9690,
-          "TIER_20000": 930,
-          "TIER_100000": 0,
-          "TIER_1M_PLUS": 60
-        }
-      },
-      {
         "id": "mahajana-sampatha",
         "name": "Mahajana Sampatha",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 7119131,
-        "totalPayout": 671069848.0,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 14588591,
+        "totalPayout": 1278129448.0,
         "currentJackpot": 25487656.0,
         "tierTotals": {
-          "TIER_40": 6481992,
-          "TIER_80_120": 285377,
-          "TIER_200": 316601,
-          "TIER_1000_2000": 31673,
-          "TIER_20000": 2880,
-          "TIER_100000": 575,
-          "TIER_1M_PLUS": 33
+          "TIER_40": 13280142,
+          "TIER_80_120": 586247,
+          "TIER_200": 649721,
+          "TIER_1000_2000": 65393,
+          "TIER_20000": 5880,
+          "TIER_100000": 1145,
+          "TIER_1M_PLUS": 63
         }
       },
       {
-        "id": "kapruka",
-        "name": "Kapruka",
+        "id": "lagna-wasana",
+        "name": "Lagna Wasana",
         "board": "DLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 6232290,
-        "totalPayout": 493555200.0,
-        "currentJackpot": 403019451.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 7927661,
+        "totalPayout": 538274080.0,
+        "currentJackpot": 13290156.4,
         "tierTotals": {
-          "TIER_40": 5754930,
-          "TIER_80_120": 0,
-          "TIER_200": 459690,
-          "TIER_1000_2000": 17310,
-          "TIER_20000": 0,
-          "TIER_100000": 330,
-          "TIER_1M_PLUS": 30
+          "TIER_40": 6967622,
+          "TIER_80_120": 484530,
+          "TIER_200": 464473,
+          "TIER_1000_2000": 10013,
+          "TIER_20000": 961,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 62
         }
       },
       {
@@ -10743,19 +13618,19 @@
         "name": "Handahana",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3527919,
-        "totalPayout": 242667735.2,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 7213839,
+        "totalPayout": 497946735.2,
         "currentJackpot": 3750004.8,
         "tierTotals": {
-          "TIER_40": 3101419,
-          "TIER_80_120": 214693,
-          "TIER_200": 206982,
-          "TIER_1000_2000": 4397,
-          "TIER_20000": 408,
+          "TIER_40": 6339349,
+          "TIER_80_120": 440233,
+          "TIER_200": 424242,
+          "TIER_1000_2000": 9137,
+          "TIER_20000": 828,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 20
+          "TIER_1M_PLUS": 50
         }
       },
       {
@@ -10763,16 +13638,16 @@
         "name": "Mega Power",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3294435,
-        "totalPayout": 228550000.0,
-        "currentJackpot": 313214574.0,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 6764685,
+        "totalPayout": 428317600.0,
+        "currentJackpot": 313442002.0,
         "tierTotals": {
-          "TIER_40": 3066651,
+          "TIER_40": 6296091,
           "TIER_80_120": 0,
-          "TIER_200": 219990,
-          "TIER_1000_2000": 7700,
+          "TIER_200": 452490,
+          "TIER_1000_2000": 16010,
           "TIER_20000": 0,
           "TIER_100000": 87,
           "TIER_1M_PLUS": 7
@@ -10783,19 +13658,59 @@
         "name": "Govisetha",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3285982,
-        "totalPayout": 327190721.56,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 6685942,
+        "totalPayout": 561814721.56,
         "currentJackpot": 92242241.56,
         "tierTotals": {
-          "TIER_40": 3019827,
+          "TIER_40": 6143727,
           "TIER_80_120": 0,
-          "TIER_200": 256967,
-          "TIER_1000_2000": 9077,
+          "TIER_200": 523607,
+          "TIER_1000_2000": 18377,
           "TIER_20000": 0,
-          "TIER_100000": 105,
+          "TIER_100000": 225,
           "TIER_1M_PLUS": 6
+        }
+      },
+      {
+        "id": "kapruka",
+        "name": "Kapruka",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 6440033,
+        "totalPayout": 510007040.0,
+        "currentJackpot": 403019451.0,
+        "tierTotals": {
+          "TIER_40": 5946761,
+          "TIER_80_120": 0,
+          "TIER_200": 475013,
+          "TIER_1000_2000": 17887,
+          "TIER_20000": 0,
+          "TIER_100000": 341,
+          "TIER_1M_PLUS": 31
+        }
+      },
+      {
+        "id": "dhana-nidhanaya",
+        "name": "Dhana Nidhanaya",
+        "board": "NLB",
+        "windowRequested": 90,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 4928919,
+        "totalPayout": 315043320.0,
+        "currentJackpot": 97422519.2,
+        "tierTotals": {
+          "TIER_40": 4593240,
+          "TIER_80_120": 129676,
+          "TIER_200": 194643,
+          "TIER_1000_2000": 11200,
+          "TIER_20000": 0,
+          "TIER_100000": 155,
+          "TIER_1M_PLUS": 5
         }
       },
       {
@@ -10803,18 +13718,18 @@
         "name": "Ada Kotipathi",
         "board": "DLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3190341,
-        "totalPayout": 241685280.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 3296722,
+        "totalPayout": 249783960.0,
         "currentJackpot": 61188209.6,
         "tierTotals": {
-          "TIER_40": 2919177,
+          "TIER_40": 3016514,
           "TIER_80_120": 0,
-          "TIER_200": 261031,
-          "TIER_1000_2000": 9899,
+          "TIER_200": 269737,
+          "TIER_1000_2000": 10229,
           "TIER_20000": 0,
-          "TIER_100000": 234,
+          "TIER_100000": 242,
           "TIER_1M_PLUS": 0
         }
       },
@@ -10823,18 +13738,18 @@
         "name": "Shanida",
         "board": "DLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2648010,
-        "totalPayout": 208335600.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2736277,
+        "totalPayout": 215280120.0,
         "currentJackpot": 60679102.4,
         "tierTotals": {
-          "TIER_40": 2431290,
+          "TIER_40": 2512333,
           "TIER_80_120": 0,
-          "TIER_200": 207720,
-          "TIER_1000_2000": 8310,
-          "TIER_20000": 600,
-          "TIER_100000": 90,
+          "TIER_200": 214644,
+          "TIER_1000_2000": 8587,
+          "TIER_20000": 620,
+          "TIER_100000": 93,
           "TIER_1M_PLUS": 0
         }
       },
@@ -10843,19 +13758,19 @@
         "name": "Suba Dawasak",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2611558,
-        "totalPayout": 211258260.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2704673,
+        "totalPayout": 219832480.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 2372494,
+          "TIER_40": 2456772,
           "TIER_80_120": 0,
-          "TIER_200": 199690,
-          "TIER_1000_2000": 39077,
-          "TIER_20000": 264,
+          "TIER_200": 206798,
+          "TIER_1000_2000": 40767,
+          "TIER_20000": 302,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 33
+          "TIER_1M_PLUS": 34
         }
       },
       {
@@ -10863,39 +13778,19 @@
         "name": "Super Ball",
         "board": "DLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2412150,
-        "totalPayout": 165211200.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2492555,
+        "totalPayout": 170718240.0,
         "currentJackpot": 93295146.4,
         "tierTotals": {
-          "TIER_40": 2217630,
+          "TIER_40": 2291551,
           "TIER_80_120": 0,
-          "TIER_200": 187530,
-          "TIER_1000_2000": 6000,
-          "TIER_20000": 660,
-          "TIER_100000": 30,
+          "TIER_200": 193781,
+          "TIER_1000_2000": 6200,
+          "TIER_20000": 682,
+          "TIER_100000": 31,
           "TIER_1M_PLUS": 0
-        }
-      },
-      {
-        "id": "dhana-nidhanaya",
-        "name": "Dhana Nidhanaya",
-        "board": "NLB",
-        "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2407149,
-        "totalPayout": 156426120.0,
-        "currentJackpot": 97187935.2,
-        "tierTotals": {
-          "TIER_40": 2244570,
-          "TIER_80_120": 63406,
-          "TIER_200": 93753,
-          "TIER_1000_2000": 5350,
-          "TIER_20000": 0,
-          "TIER_100000": 65,
-          "TIER_1M_PLUS": 5
         }
       },
       {
@@ -10903,19 +13798,19 @@
         "name": "Waasi",
         "board": "DLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2152050,
-        "totalPayout": 265672800.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2223785,
+        "totalPayout": 274528560.0,
         "currentJackpot": 1000000.0,
         "tierTotals": {
-          "TIER_40": 2077440,
-          "TIER_80_120": 210,
-          "TIER_200": 71100,
+          "TIER_40": 2146688,
+          "TIER_80_120": 217,
+          "TIER_200": 73470,
           "TIER_1000_2000": 0,
-          "TIER_20000": 3210,
+          "TIER_20000": 3317,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 120
+          "TIER_1M_PLUS": 124
         }
       },
       {
@@ -10923,19 +13818,19 @@
         "name": "NLB Jaya",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 1997940,
-        "totalPayout": 173160120.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2007287,
+        "totalPayout": 181055240.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 1818510,
-          "TIER_80_120": 89859,
-          "TIER_200": 81825,
-          "TIER_1000_2000": 6758,
-          "TIER_20000": 957,
+          "TIER_40": 1828154,
+          "TIER_80_120": 90076,
+          "TIER_200": 81025,
+          "TIER_1000_2000": 7009,
+          "TIER_20000": 980,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 31
+          "TIER_1M_PLUS": 43
         }
       },
       {
@@ -10943,19 +13838,19 @@
         "name": "Ayubo",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 1840892,
-        "totalPayout": 186923320.0,
+        "drawsInWindow": 32,
+        "verifiedTableCount": 32,
+        "totalWinners": 1960694,
+        "totalPayout": 199512760.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 1620632,
-          "TIER_80_120": 126525,
-          "TIER_200": 75002,
-          "TIER_1000_2000": 17318,
-          "TIER_20000": 1387,
+          "TIER_40": 1726034,
+          "TIER_80_120": 134805,
+          "TIER_200": 79902,
+          "TIER_1000_2000": 18436,
+          "TIER_20000": 1487,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 28
+          "TIER_1M_PLUS": 30
         }
       },
       {
@@ -10963,38 +13858,18 @@
         "name": "Supiri Dhana Sampatha",
         "board": "DLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 1460340,
-        "totalPayout": 103158000.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 1509018,
+        "totalPayout": 106596600.0,
         "currentJackpot": 35009182.4,
         "tierTotals": {
-          "TIER_40": 1331700,
-          "TIER_80_120": 56100,
-          "TIER_200": 65460,
-          "TIER_1000_2000": 6480,
-          "TIER_20000": 540,
-          "TIER_100000": 60,
-          "TIER_1M_PLUS": 0
-        }
-      },
-      {
-        "id": "sasiri",
-        "name": "Sasiri",
-        "board": "DLB",
-        "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 961890,
-        "totalPayout": 106893600.0,
-        "currentJackpot": 200000.0,
-        "tierTotals": {
-          "TIER_40": 921540,
-          "TIER_80_120": 0,
-          "TIER_200": 40080,
-          "TIER_1000_2000": 0,
-          "TIER_20000": 0,
-          "TIER_100000": 270,
+          "TIER_40": 1376090,
+          "TIER_80_120": 57970,
+          "TIER_200": 67642,
+          "TIER_1000_2000": 6696,
+          "TIER_20000": 558,
+          "TIER_100000": 62,
           "TIER_1M_PLUS": 0
         }
       },
@@ -11003,18 +13878,38 @@
         "name": "Ada Sampatha",
         "board": "NLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 685509,
-        "totalPayout": 309100640.0,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 1386099,
+        "totalPayout": 624047840.0,
         "currentJackpot": 250000.0,
         "tierTotals": {
           "TIER_40": 0,
-          "TIER_80_120": 536508,
+          "TIER_80_120": 1084848,
           "TIER_200": 0,
-          "TIER_1000_2000": 147662,
-          "TIER_20000": 1283,
-          "TIER_100000": 56,
+          "TIER_1000_2000": 298562,
+          "TIER_20000": 2573,
+          "TIER_100000": 116,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "sasiri",
+        "name": "Sasiri",
+        "board": "DLB",
+        "windowRequested": 90,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 993953,
+        "totalPayout": 110456720.0,
+        "currentJackpot": 200000.0,
+        "tierTotals": {
+          "TIER_40": 952258,
+          "TIER_80_120": 0,
+          "TIER_200": 41416,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 0,
+          "TIER_100000": 279,
           "TIER_1M_PLUS": 0
         }
       },
@@ -11023,17 +13918,17 @@
         "name": "Jaya Sampatha",
         "board": "DLB",
         "windowRequested": 90,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 406020,
-        "totalPayout": 179175600.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 419554,
+        "totalPayout": 185148120.0,
         "currentJackpot": 250000.0,
         "tierTotals": {
           "TIER_40": 0,
-          "TIER_80_120": 317820,
+          "TIER_80_120": 328414,
           "TIER_200": 0,
-          "TIER_1000_2000": 87360,
-          "TIER_20000": 840,
+          "TIER_1000_2000": 90272,
+          "TIER_20000": 868,
           "TIER_100000": 0,
           "TIER_1M_PLUS": 0
         }
@@ -11041,63 +13936,43 @@
     ],
     "365": [
       {
-        "id": "lagna-wasana",
-        "name": "Lagna Wasana",
-        "board": "DLB",
-        "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 7671930,
-        "totalPayout": 520910400.0,
-        "currentJackpot": 13290156.4,
-        "tierTotals": {
-          "TIER_40": 6742860,
-          "TIER_80_120": 468900,
-          "TIER_200": 449490,
-          "TIER_1000_2000": 9690,
-          "TIER_20000": 930,
-          "TIER_100000": 0,
-          "TIER_1M_PLUS": 60
-        }
-      },
-      {
         "id": "mahajana-sampatha",
         "name": "Mahajana Sampatha",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 7119131,
-        "totalPayout": 671069848.0,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 14588591,
+        "totalPayout": 1278129448.0,
         "currentJackpot": 25487656.0,
         "tierTotals": {
-          "TIER_40": 6481992,
-          "TIER_80_120": 285377,
-          "TIER_200": 316601,
-          "TIER_1000_2000": 31673,
-          "TIER_20000": 2880,
-          "TIER_100000": 575,
-          "TIER_1M_PLUS": 33
+          "TIER_40": 13280142,
+          "TIER_80_120": 586247,
+          "TIER_200": 649721,
+          "TIER_1000_2000": 65393,
+          "TIER_20000": 5880,
+          "TIER_100000": 1145,
+          "TIER_1M_PLUS": 63
         }
       },
       {
-        "id": "kapruka",
-        "name": "Kapruka",
+        "id": "lagna-wasana",
+        "name": "Lagna Wasana",
         "board": "DLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 6232290,
-        "totalPayout": 493555200.0,
-        "currentJackpot": 403019451.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 7927661,
+        "totalPayout": 538274080.0,
+        "currentJackpot": 13290156.4,
         "tierTotals": {
-          "TIER_40": 5754930,
-          "TIER_80_120": 0,
-          "TIER_200": 459690,
-          "TIER_1000_2000": 17310,
-          "TIER_20000": 0,
-          "TIER_100000": 330,
-          "TIER_1M_PLUS": 30
+          "TIER_40": 6967622,
+          "TIER_80_120": 484530,
+          "TIER_200": 464473,
+          "TIER_1000_2000": 10013,
+          "TIER_20000": 961,
+          "TIER_100000": 0,
+          "TIER_1M_PLUS": 62
         }
       },
       {
@@ -11105,19 +13980,19 @@
         "name": "Handahana",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3527919,
-        "totalPayout": 242667735.2,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 7213839,
+        "totalPayout": 497946735.2,
         "currentJackpot": 3750004.8,
         "tierTotals": {
-          "TIER_40": 3101419,
-          "TIER_80_120": 214693,
-          "TIER_200": 206982,
-          "TIER_1000_2000": 4397,
-          "TIER_20000": 408,
+          "TIER_40": 6339349,
+          "TIER_80_120": 440233,
+          "TIER_200": 424242,
+          "TIER_1000_2000": 9137,
+          "TIER_20000": 828,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 20
+          "TIER_1M_PLUS": 50
         }
       },
       {
@@ -11125,16 +14000,16 @@
         "name": "Mega Power",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3294435,
-        "totalPayout": 228550000.0,
-        "currentJackpot": 313214574.0,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 6764685,
+        "totalPayout": 428317600.0,
+        "currentJackpot": 313442002.0,
         "tierTotals": {
-          "TIER_40": 3066651,
+          "TIER_40": 6296091,
           "TIER_80_120": 0,
-          "TIER_200": 219990,
-          "TIER_1000_2000": 7700,
+          "TIER_200": 452490,
+          "TIER_1000_2000": 16010,
           "TIER_20000": 0,
           "TIER_100000": 87,
           "TIER_1M_PLUS": 7
@@ -11145,19 +14020,59 @@
         "name": "Govisetha",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3285982,
-        "totalPayout": 327190721.56,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 6685942,
+        "totalPayout": 561814721.56,
         "currentJackpot": 92242241.56,
         "tierTotals": {
-          "TIER_40": 3019827,
+          "TIER_40": 6143727,
           "TIER_80_120": 0,
-          "TIER_200": 256967,
-          "TIER_1000_2000": 9077,
+          "TIER_200": 523607,
+          "TIER_1000_2000": 18377,
           "TIER_20000": 0,
-          "TIER_100000": 105,
+          "TIER_100000": 225,
           "TIER_1M_PLUS": 6
+        }
+      },
+      {
+        "id": "kapruka",
+        "name": "Kapruka",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 6440033,
+        "totalPayout": 510007040.0,
+        "currentJackpot": 403019451.0,
+        "tierTotals": {
+          "TIER_40": 5946761,
+          "TIER_80_120": 0,
+          "TIER_200": 475013,
+          "TIER_1000_2000": 17887,
+          "TIER_20000": 0,
+          "TIER_100000": 341,
+          "TIER_1M_PLUS": 31
+        }
+      },
+      {
+        "id": "dhana-nidhanaya",
+        "name": "Dhana Nidhanaya",
+        "board": "NLB",
+        "windowRequested": 365,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 4928919,
+        "totalPayout": 315043320.0,
+        "currentJackpot": 97422519.2,
+        "tierTotals": {
+          "TIER_40": 4593240,
+          "TIER_80_120": 129676,
+          "TIER_200": 194643,
+          "TIER_1000_2000": 11200,
+          "TIER_20000": 0,
+          "TIER_100000": 155,
+          "TIER_1M_PLUS": 5
         }
       },
       {
@@ -11165,18 +14080,18 @@
         "name": "Ada Kotipathi",
         "board": "DLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 3190341,
-        "totalPayout": 241685280.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 3296722,
+        "totalPayout": 249783960.0,
         "currentJackpot": 61188209.6,
         "tierTotals": {
-          "TIER_40": 2919177,
+          "TIER_40": 3016514,
           "TIER_80_120": 0,
-          "TIER_200": 261031,
-          "TIER_1000_2000": 9899,
+          "TIER_200": 269737,
+          "TIER_1000_2000": 10229,
           "TIER_20000": 0,
-          "TIER_100000": 234,
+          "TIER_100000": 242,
           "TIER_1M_PLUS": 0
         }
       },
@@ -11185,18 +14100,18 @@
         "name": "Shanida",
         "board": "DLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2648010,
-        "totalPayout": 208335600.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2736277,
+        "totalPayout": 215280120.0,
         "currentJackpot": 60679102.4,
         "tierTotals": {
-          "TIER_40": 2431290,
+          "TIER_40": 2512333,
           "TIER_80_120": 0,
-          "TIER_200": 207720,
-          "TIER_1000_2000": 8310,
-          "TIER_20000": 600,
-          "TIER_100000": 90,
+          "TIER_200": 214644,
+          "TIER_1000_2000": 8587,
+          "TIER_20000": 620,
+          "TIER_100000": 93,
           "TIER_1M_PLUS": 0
         }
       },
@@ -11205,19 +14120,19 @@
         "name": "Suba Dawasak",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2611558,
-        "totalPayout": 211258260.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2704673,
+        "totalPayout": 219832480.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 2372494,
+          "TIER_40": 2456772,
           "TIER_80_120": 0,
-          "TIER_200": 199690,
-          "TIER_1000_2000": 39077,
-          "TIER_20000": 264,
+          "TIER_200": 206798,
+          "TIER_1000_2000": 40767,
+          "TIER_20000": 302,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 33
+          "TIER_1M_PLUS": 34
         }
       },
       {
@@ -11225,39 +14140,19 @@
         "name": "Super Ball",
         "board": "DLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2412150,
-        "totalPayout": 165211200.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2492555,
+        "totalPayout": 170718240.0,
         "currentJackpot": 93295146.4,
         "tierTotals": {
-          "TIER_40": 2217630,
+          "TIER_40": 2291551,
           "TIER_80_120": 0,
-          "TIER_200": 187530,
-          "TIER_1000_2000": 6000,
-          "TIER_20000": 660,
-          "TIER_100000": 30,
+          "TIER_200": 193781,
+          "TIER_1000_2000": 6200,
+          "TIER_20000": 682,
+          "TIER_100000": 31,
           "TIER_1M_PLUS": 0
-        }
-      },
-      {
-        "id": "dhana-nidhanaya",
-        "name": "Dhana Nidhanaya",
-        "board": "NLB",
-        "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2407149,
-        "totalPayout": 156426120.0,
-        "currentJackpot": 97187935.2,
-        "tierTotals": {
-          "TIER_40": 2244570,
-          "TIER_80_120": 63406,
-          "TIER_200": 93753,
-          "TIER_1000_2000": 5350,
-          "TIER_20000": 0,
-          "TIER_100000": 65,
-          "TIER_1M_PLUS": 5
         }
       },
       {
@@ -11265,19 +14160,19 @@
         "name": "Waasi",
         "board": "DLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 2152050,
-        "totalPayout": 265672800.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2223785,
+        "totalPayout": 274528560.0,
         "currentJackpot": 1000000.0,
         "tierTotals": {
-          "TIER_40": 2077440,
-          "TIER_80_120": 210,
-          "TIER_200": 71100,
+          "TIER_40": 2146688,
+          "TIER_80_120": 217,
+          "TIER_200": 73470,
           "TIER_1000_2000": 0,
-          "TIER_20000": 3210,
+          "TIER_20000": 3317,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 120
+          "TIER_1M_PLUS": 124
         }
       },
       {
@@ -11285,19 +14180,19 @@
         "name": "NLB Jaya",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 1997940,
-        "totalPayout": 173160120.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 2007287,
+        "totalPayout": 181055240.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 1818510,
-          "TIER_80_120": 89859,
-          "TIER_200": 81825,
-          "TIER_1000_2000": 6758,
-          "TIER_20000": 957,
+          "TIER_40": 1828154,
+          "TIER_80_120": 90076,
+          "TIER_200": 81025,
+          "TIER_1000_2000": 7009,
+          "TIER_20000": 980,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 31
+          "TIER_1M_PLUS": 43
         }
       },
       {
@@ -11305,19 +14200,19 @@
         "name": "Ayubo",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 1840892,
-        "totalPayout": 186923320.0,
+        "drawsInWindow": 32,
+        "verifiedTableCount": 32,
+        "totalWinners": 1960694,
+        "totalPayout": 199512760.0,
         "currentJackpot": 500000.0,
         "tierTotals": {
-          "TIER_40": 1620632,
-          "TIER_80_120": 126525,
-          "TIER_200": 75002,
-          "TIER_1000_2000": 17318,
-          "TIER_20000": 1387,
+          "TIER_40": 1726034,
+          "TIER_80_120": 134805,
+          "TIER_200": 79902,
+          "TIER_1000_2000": 18436,
+          "TIER_20000": 1487,
           "TIER_100000": 0,
-          "TIER_1M_PLUS": 28
+          "TIER_1M_PLUS": 30
         }
       },
       {
@@ -11325,38 +14220,18 @@
         "name": "Supiri Dhana Sampatha",
         "board": "DLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 1460340,
-        "totalPayout": 103158000.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 1509018,
+        "totalPayout": 106596600.0,
         "currentJackpot": 35009182.4,
         "tierTotals": {
-          "TIER_40": 1331700,
-          "TIER_80_120": 56100,
-          "TIER_200": 65460,
-          "TIER_1000_2000": 6480,
-          "TIER_20000": 540,
-          "TIER_100000": 60,
-          "TIER_1M_PLUS": 0
-        }
-      },
-      {
-        "id": "sasiri",
-        "name": "Sasiri",
-        "board": "DLB",
-        "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 961890,
-        "totalPayout": 106893600.0,
-        "currentJackpot": 200000.0,
-        "tierTotals": {
-          "TIER_40": 921540,
-          "TIER_80_120": 0,
-          "TIER_200": 40080,
-          "TIER_1000_2000": 0,
-          "TIER_20000": 0,
-          "TIER_100000": 270,
+          "TIER_40": 1376090,
+          "TIER_80_120": 57970,
+          "TIER_200": 67642,
+          "TIER_1000_2000": 6696,
+          "TIER_20000": 558,
+          "TIER_100000": 62,
           "TIER_1M_PLUS": 0
         }
       },
@@ -11365,18 +14240,38 @@
         "name": "Ada Sampatha",
         "board": "NLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 685509,
-        "totalPayout": 309100640.0,
+        "drawsInWindow": 60,
+        "verifiedTableCount": 60,
+        "totalWinners": 1386099,
+        "totalPayout": 624047840.0,
         "currentJackpot": 250000.0,
         "tierTotals": {
           "TIER_40": 0,
-          "TIER_80_120": 536508,
+          "TIER_80_120": 1084848,
           "TIER_200": 0,
-          "TIER_1000_2000": 147662,
-          "TIER_20000": 1283,
-          "TIER_100000": 56,
+          "TIER_1000_2000": 298562,
+          "TIER_20000": 2573,
+          "TIER_100000": 116,
+          "TIER_1M_PLUS": 0
+        }
+      },
+      {
+        "id": "sasiri",
+        "name": "Sasiri",
+        "board": "DLB",
+        "windowRequested": 365,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 993953,
+        "totalPayout": 110456720.0,
+        "currentJackpot": 200000.0,
+        "tierTotals": {
+          "TIER_40": 952258,
+          "TIER_80_120": 0,
+          "TIER_200": 41416,
+          "TIER_1000_2000": 0,
+          "TIER_20000": 0,
+          "TIER_100000": 279,
           "TIER_1M_PLUS": 0
         }
       },
@@ -11385,22 +14280,22 @@
         "name": "Jaya Sampatha",
         "board": "DLB",
         "windowRequested": 365,
-        "drawsInWindow": 30,
-        "verifiedTableCount": 30,
-        "totalWinners": 406020,
-        "totalPayout": 179175600.0,
+        "drawsInWindow": 31,
+        "verifiedTableCount": 31,
+        "totalWinners": 419554,
+        "totalPayout": 185148120.0,
         "currentJackpot": 250000.0,
         "tierTotals": {
           "TIER_40": 0,
-          "TIER_80_120": 317820,
+          "TIER_80_120": 328414,
           "TIER_200": 0,
-          "TIER_1000_2000": 87360,
-          "TIER_20000": 840,
+          "TIER_1000_2000": 90272,
+          "TIER_20000": 868,
           "TIER_100000": 0,
           "TIER_1M_PLUS": 0
         }
       }
     ]
   },
-  "updatedAt": "2026-11-12T12:57:16Z"
+  "updatedAt": "2026-11-12T22:28:25Z"
 }

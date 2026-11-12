@@ -3,10 +3,10 @@
   "id": "sasiri",
   "name": "Sasiri",
   "board": "DLB",
-  "latestDraw": "1172",
-  "latestDate": "2026-11-11",
-  "drawCount": 30,
-  "tableCount": 30,
+  "latestDraw": "1173",
+  "latestDate": "2026-11-12",
+  "drawCount": 31,
+  "tableCount": 31,
   "currentJackpot": 200000.0,
   "avgWinnersPerDraw": 32063,
   "dailyPrizePayout": 3563120.0,
@@ -40,6 +40,21 @@
     }
   ],
   "drawTierHistory": [
+    {
+      "draw": "1173",
+      "date": "2026-11-12",
+      "totalWinners": 32063,
+      "totalPayout": 3563120.0,
+      "tiers": {
+        "TIER_40": 30718,
+        "TIER_80_120": 0,
+        "TIER_200": 1336,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 9,
+        "TIER_1M_PLUS": 0
+      }
+    },
     {
       "draw": "1172",
       "date": "2026-11-11",
@@ -493,6 +508,16 @@
   ],
   "draws": [
     {
+      "draw": "1173",
+      "date": "2026-11-12",
+      "letter": "—",
+      "nums": [
+        "07",
+        "37",
+        "43"
+      ]
+    },
+    {
       "draw": "1172",
       "date": "2026-11-11",
       "letter": "—",
@@ -794,6 +819,41 @@
     }
   ],
   "perDrawTables": {
+    "1173": {
+      "date": "2026-11-12",
+      "totalWinners": 32063,
+      "totalPayout": 3563120.0,
+      "rows": [
+        {
+          "tier": "3 NOS",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 400.00",
+          "unitPrize": 400.0,
+          "avgWinners": 1336
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 30718
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 30718,
+        "TIER_80_120": 0,
+        "TIER_200": 1336,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 9,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
     "1172": {
       "date": "2026-11-11",
       "totalWinners": 32063,
@@ -1844,5 +1904,5 @@
       "isFallback": true
     }
   },
-  "updatedAt": "2026-11-12T12:57:12Z"
+  "updatedAt": "2026-11-12T22:28:21Z"
 }
