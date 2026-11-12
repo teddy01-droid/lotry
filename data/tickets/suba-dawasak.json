@@ -1,11 +1,11 @@
 {
-  "schemaVersion": "3.2",
+  "schemaVersion": "3.4",
   "id": "suba-dawasak",
   "name": "Suba Dawasak",
   "board": "NLB",
   "latestDraw": "0484",
   "latestDate": "2026-11-11",
-  "drawCount": 14,
+  "drawCount": 24,
   "tableCount": 7,
   "currentJackpot": 500000.0,
   "avgWinnersPerDraw": 92860,
@@ -342,6 +342,106 @@
         "08",
         "20",
         "63"
+      ]
+    },
+    {
+      "draw": "0470",
+      "date": "2026-10-28",
+      "letter": "GEMINI",
+      "nums": [
+        "12",
+        "22",
+        "29"
+      ]
+    },
+    {
+      "draw": "0469",
+      "date": "2026-10-27",
+      "letter": "PISCES",
+      "nums": [
+        "21",
+        "34",
+        "50"
+      ]
+    },
+    {
+      "draw": "0468",
+      "date": "2026-10-26",
+      "letter": "CANCER",
+      "nums": [
+        "30",
+        "38",
+        "46"
+      ]
+    },
+    {
+      "draw": "0467",
+      "date": "2026-10-25",
+      "letter": "SCORPIO",
+      "nums": [
+        "28",
+        "60",
+        "66"
+      ]
+    },
+    {
+      "draw": "0466",
+      "date": "2026-10-24",
+      "letter": "CAPRICORN",
+      "nums": [
+        "15",
+        "20",
+        "25"
+      ]
+    },
+    {
+      "draw": "0465",
+      "date": "2026-10-23",
+      "letter": "SAGITTARIUS",
+      "nums": [
+        "14",
+        "15",
+        "24"
+      ]
+    },
+    {
+      "draw": "0464",
+      "date": "2026-10-22",
+      "letter": "LEO",
+      "nums": [
+        "4",
+        "19",
+        "37"
+      ]
+    },
+    {
+      "draw": "0463",
+      "date": "2026-10-21",
+      "letter": "SCORPIO",
+      "nums": [
+        "31",
+        "44",
+        "49"
+      ]
+    },
+    {
+      "draw": "0462",
+      "date": "2026-10-20",
+      "letter": "PISCES",
+      "nums": [
+        "15",
+        "35",
+        "37"
+      ]
+    },
+    {
+      "draw": "0461",
+      "date": "2026-10-19",
+      "letter": "ARIES",
+      "nums": [
+        "05",
+        "13",
+        "31"
       ]
     }
   ],
@@ -789,5 +889,5 @@
       ]
     }
   },
-  "updatedAt": "2026-11-12T09:12:32Z"
+  "updatedAt": "2026-11-12T09:31:07Z"
 }

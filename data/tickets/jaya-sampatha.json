@@ -1,26 +1,73 @@
 {
-  "schemaVersion": "3.2",
+  "schemaVersion": "3.4",
   "id": "jaya-sampatha",
   "name": "Jaya Sampatha",
   "board": "DLB",
   "latestDraw": "0550",
   "latestDate": "2026-11-11",
   "drawCount": 25,
-  "tableCount": 0,
-  "currentJackpot": 0,
-  "avgWinnersPerDraw": 0,
-  "dailyPrizePayout": 0,
+  "tableCount": 1,
+  "currentJackpot": 250000.0,
+  "avgWinnersPerDraw": 13534,
+  "dailyPrizePayout": 5972520.0,
   "tierWinnersPerDraw": {
     "TIER_40": 0,
-    "TIER_80_120": 0,
+    "TIER_80_120": 10594,
     "TIER_200": 0,
-    "TIER_1000_2000": 0,
-    "TIER_20000": 0,
+    "TIER_1000_2000": 2912,
+    "TIER_20000": 28,
     "TIER_100000": 0,
     "TIER_1M_PLUS": 0
   },
-  "prizeStructureDetails": [],
-  "drawTierHistory": [],
+  "prizeStructureDetails": [
+    {
+      "tier": "LAST 4 NOS,LETTER",
+      "prize": "Rs. 250,000.00",
+      "unitPrize": 250000.0,
+      "avgWinners": 0
+    },
+    {
+      "tier": "LAST 4 NOS",
+      "prize": "Rs. 50,000.00",
+      "unitPrize": 50000.0,
+      "avgWinners": 28
+    },
+    {
+      "tier": "LAST 3 NOS",
+      "prize": "Rs. 4,000.00",
+      "unitPrize": 4000.0,
+      "avgWinners": 271
+    },
+    {
+      "tier": "LAST 2 NOS",
+      "prize": "Rs. 1,000.00",
+      "unitPrize": 1000.0,
+      "avgWinners": 2641
+    },
+    {
+      "tier": "LETTER",
+      "prize": "Rs. 80.00",
+      "unitPrize": 80.0,
+      "avgWinners": 10594
+    }
+  ],
+  "drawTierHistory": [
+    {
+      "draw": "0550",
+      "date": "2026-11-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    }
+  ],
   "draws": [
     {
       "draw": "0550",
@@ -28,12 +75,8 @@
       "letter": "A",
       "nums": [
         "4",
-        "4",
-        "0",
         "0",
         "9",
-        "9",
-        "0",
         "0"
       ]
     },
@@ -302,6 +345,53 @@
       ]
     }
   ],
-  "perDrawTables": {},
-  "updatedAt": "2026-11-12T09:11:37Z"
+  "perDrawTables": {
+    "0550": {
+      "date": "2026-11-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    }
+  },
+  "updatedAt": "2026-11-12T09:30:55Z"
 }

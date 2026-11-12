@@ -1,46 +1,113 @@
 {
-  "schemaVersion": "3.2",
+  "schemaVersion": "3.4",
   "id": "lagna-wasana",
   "name": "Lagna Wasana",
   "board": "DLB",
   "latestDraw": "5054",
   "latestDate": "2026-11-11",
   "drawCount": 25,
-  "tableCount": 0,
-  "currentJackpot": 0,
-  "avgWinnersPerDraw": 0,
-  "dailyPrizePayout": 0,
+  "tableCount": 1,
+  "currentJackpot": 13290156.4,
+  "avgWinnersPerDraw": 255731,
+  "dailyPrizePayout": 17363680.0,
   "tierWinnersPerDraw": {
-    "TIER_40": 0,
-    "TIER_80_120": 0,
-    "TIER_200": 0,
-    "TIER_1000_2000": 0,
-    "TIER_20000": 0,
+    "TIER_40": 224762,
+    "TIER_80_120": 15630,
+    "TIER_200": 14983,
+    "TIER_1000_2000": 323,
+    "TIER_20000": 31,
     "TIER_100000": 0,
-    "TIER_1M_PLUS": 0
+    "TIER_1M_PLUS": 2
   },
-  "prizeStructureDetails": [],
-  "drawTierHistory": [],
+  "prizeStructureDetails": [
+    {
+      "tier": "4NOS, ZODIAC SIGN",
+      "prize": "Rs. 13,290,156.40",
+      "unitPrize": 13290156.4,
+      "avgWinners": 0
+    },
+    {
+      "tier": "4NOS",
+      "prize": "Rs. 1,000,000.00",
+      "unitPrize": 1000000.0,
+      "avgWinners": 2
+    },
+    {
+      "tier": "3NOS, ZODIAC SIGN",
+      "prize": "Rs. 20,000.00",
+      "unitPrize": 20000.0,
+      "avgWinners": 31
+    },
+    {
+      "tier": "3NOS",
+      "prize": "Rs. 2,000.00",
+      "unitPrize": 2000.0,
+      "avgWinners": 323
+    },
+    {
+      "tier": "2NOS, ZODIAC SIGN",
+      "prize": "Rs. 400.00",
+      "unitPrize": 400.0,
+      "avgWinners": 1175
+    },
+    {
+      "tier": "2NOS",
+      "prize": "Rs. 200.00",
+      "unitPrize": 200.0,
+      "avgWinners": 13808
+    },
+    {
+      "tier": "1NOS, ZODIAC SIGN",
+      "prize": "Rs. 120.00",
+      "unitPrize": 120.0,
+      "avgWinners": 15630
+    },
+    {
+      "tier": "1NOS",
+      "prize": "Rs. 40.00",
+      "unitPrize": 40.0,
+      "avgWinners": 171225
+    },
+    {
+      "tier": "ZODIAC SIGN",
+      "prize": "Rs. 40.00",
+      "unitPrize": 40.0,
+      "avgWinners": 53537
+    }
+  ],
+  "drawTierHistory": [
+    {
+      "draw": "5054",
+      "date": "2026-11-11",
+      "totalWinners": 255731,
+      "totalPayout": 17363680.0,
+      "tiers": {
+        "TIER_40": 224762,
+        "TIER_80_120": 15630,
+        "TIER_200": 14983,
+        "TIER_1000_2000": 323,
+        "TIER_20000": 31,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 2
+      }
+    }
+  ],
   "draws": [
     {
       "draw": "5054",
       "date": "2026-11-11",
-      "letter": "—",
+      "letter": "SAGITTARIUS",
       "nums": [
         "07",
-        "07",
-        "19",
         "19",
         "27",
-        "27",
-        "57",
         "57"
       ]
     },
     {
       "draw": "5053",
       "date": "2026-11-10",
-      "letter": "—",
+      "letter": "PISCES",
       "nums": [
         "38",
         "42",
@@ -51,7 +118,7 @@
     {
       "draw": "5052",
       "date": "2026-11-09",
-      "letter": "—",
+      "letter": "CAPRICORN",
       "nums": [
         "03",
         "06",
@@ -62,7 +129,7 @@
     {
       "draw": "5051",
       "date": "2026-11-08",
-      "letter": "—",
+      "letter": "GEMINI",
       "nums": [
         "49",
         "53",
@@ -73,7 +140,7 @@
     {
       "draw": "5050",
       "date": "2026-11-07",
-      "letter": "—",
+      "letter": "GEMINI",
       "nums": [
         "02",
         "17",
@@ -95,7 +162,7 @@
     {
       "draw": "5048",
       "date": "2026-11-05",
-      "letter": "—",
+      "letter": "LEO",
       "nums": [
         "07",
         "33",
@@ -117,7 +184,7 @@
     {
       "draw": "5046",
       "date": "2026-11-03",
-      "letter": "—",
+      "letter": "CAPRICORN",
       "nums": [
         "08",
         "33",
@@ -128,7 +195,7 @@
     {
       "draw": "5045",
       "date": "2026-11-02",
-      "letter": "—",
+      "letter": "CAPRICORN",
       "nums": [
         "05",
         "17",
@@ -139,7 +206,7 @@
     {
       "draw": "5044",
       "date": "2026-11-01",
-      "letter": "—",
+      "letter": "VIRGO",
       "nums": [
         "04",
         "27",
@@ -150,7 +217,7 @@
     {
       "draw": "5043",
       "date": "2026-10-31",
-      "letter": "—",
+      "letter": "LIBRA",
       "nums": [
         "13",
         "17",
@@ -302,6 +369,77 @@
       ]
     }
   ],
-  "perDrawTables": {},
-  "updatedAt": "2026-11-12T08:52:40Z"
+  "perDrawTables": {
+    "5054": {
+      "date": "2026-11-11",
+      "totalWinners": 255731,
+      "totalPayout": 17363680.0,
+      "rows": [
+        {
+          "tier": "4NOS, ZODIAC SIGN",
+          "prize": "Rs. 13,290,156.40",
+          "unitPrize": 13290156.4,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4NOS",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "3NOS, ZODIAC SIGN",
+          "prize": "Rs. 20,000.00",
+          "unitPrize": 20000.0,
+          "avgWinners": 31
+        },
+        {
+          "tier": "3NOS",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 323
+        },
+        {
+          "tier": "2NOS, ZODIAC SIGN",
+          "prize": "Rs. 400.00",
+          "unitPrize": 400.0,
+          "avgWinners": 1175
+        },
+        {
+          "tier": "2NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 13808
+        },
+        {
+          "tier": "1NOS, ZODIAC SIGN",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 15630
+        },
+        {
+          "tier": "1NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 171225
+        },
+        {
+          "tier": "ZODIAC SIGN",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 53537
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 224762,
+        "TIER_80_120": 15630,
+        "TIER_200": 14983,
+        "TIER_1000_2000": 323,
+        "TIER_20000": 31,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 2
+      }
+    }
+  },
+  "updatedAt": "2026-11-12T09:31:33Z"
 }
