@@ -1,4 +1,4 @@
-name: Sync NLB & DLB 365-Draw Official Lottery Dataset (ticket-wise JSON)
+name: Sync NLB & DLB Official Lottery Dataset (Incremental + Prize Tier Rankings JSON)
 
 on:
   schedule:
@@ -7,9 +7,14 @@ on:
   workflow_dispatch:
     inputs:
       max_draws:
-        description: 'Number of real historical draws to scrape per ticket (1 to 365)'
+        description: 'Number of historical draws to scrape on 1st-time setup (1 to 365)'
         required: false
         default: '30'
+        type: string
+      force_full_backfill:
+        description: 'Set to 1 ONLY if you want to force re-scanning older draws up to max_draws (default 0 = incremental latest-only after 1st run)'
+        required: false
+        default: '0'
         type: string
 
 permissions:
@@ -37,31 +42,43 @@ jobs:
           python3 -m pip install playwright beautifulsoup4 lxml requests
           python3 -m playwright install --with-deps chromium
 
-      - name: Create Live Scraper Script & Fetch Official NLB + DLB Draws
+      - name: Run Incremental NLB + DLB Scraper & Prize Tier Ranking Builder
         env:
           MAX_DRAWS_PER_TICKET: ${{ github.event.inputs.max_draws || '30' }}
+          FORCE_FULL_BACKFILL: ${{ github.event.inputs.force_full_backfill || '0' }}
           OUTPUT_DATA_DIR: data
           OUTPUT_JSON_PATH: data/sl_lottery_365_official.json
           WRITE_COMBINED_JSON: '1'
         run: |
-          mkdir -p scripts data
+          mkdir -p scripts data/tickets
           cat << 'PYEOF' > scripts/fetch_nlb_dlb_365.py
           #!/usr/bin/env python3
-          """100% Pure Live Official NLB & DLB Scraper for GitHub Actions (Zero Hardcoded Data).
+          """100% Live Official NLB & DLB Incremental Scraper & Prize Tier Ranking Builder.
 
-          Output is written TICKET-WISE: data/index.json + data/tickets/<id>.json (one JSON per lottery).
-
-          Scrapes real draw results (Draw No, Draw Date, Letter/Zodiac Sign, Winning Numbers)
-          and exact official Prize Breakdown ("MORE") tables directly from:
-            1. DLB: https://www.dlb.lk/result/en
-               - Uses `check_latest_result(dlb_id)` + `.bs-example-modal-lg001` for latest draw prize table.
-               - Parses `<span class="letter">`, `<span class="number">`, and `onclick="get_more_result(result_id, dlb_id)"`
-                 across paginated historical tables via `pagination_re(page_idx, dlb_id)` up to MAX_DRAWS_PER_TICKET.
-            2. NLB: https://www.nlb.lk/results/<slug> & https://www.nlb.lk/results/<slug>/<draw_no>
-               - Extracts historical draws from `<table class="w0 tbl">` (sorting `ol.B li` by visual X coordinate)
-                 and matches relative `href="results/<slug>/<draw_no>"` links.
-               - Visits individual draw pages `/results/<slug>/<draw_no>` up to MAX_DRAWS_PER_TICKET to scrape
-                 each draw's official Prize Structure table and older draws up to 365 draws.
+          Key Architecture & Fixes:
+            1. STRICT INCREMENTAL-ONLY UPDATES (Never Rewrite Existing Historical Data):
+               - Full historical backfill (up to MAX_DRAWS_PER_TICKET) runs ONLY on the 1st run
+                 when a ticket's JSON has 0 draws (or when FORCE_FULL_BACKFILL=1 is explicitly set,
+                 or to fill missing prize tables for existing draws that had tableCount=0).
+               - On all subsequent runs, existing draws and existing perDrawTables in the JSON
+                 are NEVER overwritten, truncated, or deleted. The scraper ONLY fetches new draws
+                 (draw_no > latest_saved_draw_no) from the latest date and stops immediately once
+                 it hits an already-saved draw.
+            2. FIXED DLB SCRAPING (https://www.dlb.lk/result/en):
+               - Activates each of the 9 DLB lottery sidebar tabs in sequence and extracts the
+                 Latest Draw banner ("Draw Number - XXXX | YYYY-Mon-DD") and Historical Table rows
+                 using multi-layer DOM + BeautifulSoup extraction.
+               - Clicks each draw's actual "MORE" button element (`el.click()`, firing both jQuery
+                 listeners and inline `onclick` handlers), removes only stale `<table>` tags inside
+                 modals (preserving modal wrapper divs), and captures the Prize Breakdown modal
+                 with full support for `YYYY/MM/DD` slash dates and `td`/`th` cells.
+            3. FIXED NLB PRIZE TABLE SCRAPING & DEDICATED PRIZE TIER RANKING JSON:
+               - Parses NLB `/results/<slug>/<draw_no>` Prize Structure tables using 3 layers:
+                 live DOM `td, th` extraction, BeautifulSoup `td, th` parsing, and a plain-text
+                 regex parser after "Prize Structure", plus Cloudflare challenge wait handling.
+               - Automatically builds `data/prize_tier_rankings.json` alongside `data/index.json`
+                 and `data/tickets/<id>.json` so Tab 2 (Prize Tier Wins Ranking: Rs. 40 -> Jackpot)
+                 and all KPI cards work instantaneously.
           """
 
           import datetime
@@ -78,17 +95,30 @@ jobs:
               sync_playwright = None
 
           MAX_DRAWS = int(os.environ.get("MAX_DRAWS_PER_TICKET", "30"))
+          FORCE_FULL_BACKFILL = os.environ.get("FORCE_FULL_BACKFILL", "0") == "1"
 
-          # ── Output layout (ticket-wise JSON) ────────────────────────────────────────
-          #   data/index.json                 -> manifest (list of tickets + per-ticket stats)
-          #   data/tickets/<ticket-id>.json   -> ONE json per lottery ticket (draws + prize tables)
-          #   data/sl_lottery_365_official.json -> legacy combined file (optional, kept for old links)
+          # ── Output layout (ticket-wise JSON + dedicated prize tier rankings JSON) ───
+          #   data/index.json                   -> manifest (list of tickets + per-ticket stats)
+          #   data/prize_tier_rankings.json     -> dedicated Prize Tier Win Ranking dataset (Tab 2)
+          #   data/tickets/<ticket-id>.json     -> ONE json per lottery ticket (append-only draws + tables)
+          #   data/sl_lottery_365_official.json -> legacy combined file (kept in sync for compatibility)
           DATA_DIR = os.environ.get("OUTPUT_DATA_DIR", "data")
           TICKETS_DIR = os.path.join(DATA_DIR, "tickets")
           INDEX_PATH = os.path.join(DATA_DIR, "index.json")
+          PRIZE_RANKINGS_PATH = os.path.join(DATA_DIR, "prize_tier_rankings.json")
           OUTPUT_PATH = os.environ.get("OUTPUT_JSON_PATH", os.path.join(DATA_DIR, "sl_lottery_365_official.json"))
           WRITE_COMBINED = os.environ.get("WRITE_COMBINED_JSON", "1") != "0"
-          SCHEMA_VERSION = "3.0"
+          SCHEMA_VERSION = "3.2"
+
+          TIER_KEYS = [
+              "TIER_40",
+              "TIER_80_120",
+              "TIER_200",
+              "TIER_1000_2000",
+              "TIER_20000",
+              "TIER_100000",
+              "TIER_1M_PLUS",
+          ]
 
           NLB_LOTTERIES = [
               {"id": "mahajana-sampatha", "name": "Mahajana Sampatha", "slug": "mahajana-sampatha"},
@@ -103,15 +133,15 @@ jobs:
           ]
 
           DLB_LOTTERIES = [
-              {"id": "ada-kotipathi", "name": "Ada Kotipathi", "dlb_id": 11},
-              {"id": "shanida", "name": "Shanida", "dlb_id": 1},
-              {"id": "lagna-wasana", "name": "Lagna Wasana", "dlb_id": 2},
-              {"id": "supiri-dhana-sampatha", "name": "Supiri Dhana Sampatha", "dlb_id": 3},
-              {"id": "super-ball", "name": "Super Ball", "dlb_id": 4},
-              {"id": "kapruka", "name": "Kapruka", "dlb_id": 5},
-              {"id": "waasi", "name": "Waasi", "dlb_id": 6},
-              {"id": "sasiri", "name": "Sasiri", "dlb_id": 7},
-              {"id": "jaya-sampatha", "name": "Jaya Sampatha", "dlb_id": 8},
+              {"id": "ada-kotipathi", "name": "Ada Kotipathi", "dlb_id": 11, "tab_idx": 0},
+              {"id": "shanida", "name": "Shanida", "dlb_id": 1, "tab_idx": 1},
+              {"id": "lagna-wasana", "name": "Lagna Wasana", "dlb_id": 2, "tab_idx": 2},
+              {"id": "supiri-dhana-sampatha", "name": "Supiri Dhana Sampatha", "dlb_id": 3, "tab_idx": 3},
+              {"id": "super-ball", "name": "Super Ball", "dlb_id": 4, "tab_idx": 4},
+              {"id": "kapruka", "name": "Kapruka", "dlb_id": 5, "tab_idx": 5},
+              {"id": "waasi", "name": "Waasi", "dlb_id": 6, "tab_idx": 6},
+              {"id": "sasiri", "name": "Sasiri", "dlb_id": 7, "tab_idx": 7},
+              {"id": "jaya-sampatha", "name": "Jaya Sampatha", "dlb_id": 8, "tab_idx": 8},
           ]
 
           ZODIAC_FILENAME_MAP = {
@@ -143,9 +173,8 @@ jobs:
 
 
           def _write_json_if_changed(path: str, payload: dict[str, Any]) -> str:
-              """Writes `payload` to `path` atomically. `updatedAt` only moves when the real content
-              changed, so git commits touch ONLY the tickets that actually got new data.
-              Returns the `updatedAt` that is stored in the file."""
+              """Writes `payload` to `path` atomically ONLY if actual data changed.
+              Preserves existing file and timestamp untouched if no new draw/table was added."""
               existing = _read_json(path)
               if isinstance(existing, dict):
                   old_ts = existing.get("updatedAt", "")
@@ -171,9 +200,152 @@ jobs:
               return meta
 
 
+          def normalize_draw_key(raw_draw: Any) -> str:
+              s = str(raw_draw or "").strip().lstrip("0")
+              return s if s else "0"
+
+
+          def format_draw_pad(draw_int: int) -> str:
+              return str(draw_int).zfill(4) if draw_int < 1000 else str(draw_int)
+
+
+          def has_prize_table(tables_dict: dict[str, Any], draw_int: int) -> bool:
+              d_key = str(draw_int)
+              d_pad = format_draw_pad(draw_int)
+              for k in (d_key, d_pad):
+                  tbl = tables_dict.get(k)
+                  if isinstance(tbl, dict) and isinstance(tbl.get("rows"), list) and len(tbl["rows"]) > 0:
+                      return True
+              return False
+
+
+          def get_prize_table(tables_dict: dict[str, Any], raw_draw: Any) -> dict[str, Any] | None:
+              d_key = normalize_draw_key(raw_draw)
+              if not d_key.isdigit():
+                  return tables_dict.get(str(raw_draw))
+              d_int = int(d_key)
+              d_pad = format_draw_pad(d_int)
+              for k in (d_key, d_pad, str(raw_draw)):
+                  tbl = tables_dict.get(k)
+                  if isinstance(tbl, dict) and isinstance(tbl.get("rows"), list) and len(tbl["rows"]) > 0:
+                      return tbl
+              return None
+
+
+          def compute_tier_counts_from_rows(rows: list[dict[str, Any]]) -> dict[str, int]:
+              tiers = {k: 0 for k in TIER_KEYS}
+              for r in rows or []:
+                  w = int(round(float(r.get("avgWinners", r.get("winners", 0)) or 0)))
+                  p = float(r.get("unitPrize", 0) or 0)
+                  if p <= 0 and w <= 0:
+                      continue
+                  if p <= 50:
+                      tiers["TIER_40"] += w
+                  elif p <= 150:
+                      tiers["TIER_80_120"] += w
+                  elif p <= 600:
+                      tiers["TIER_200"] += w
+                  elif p <= 10000:
+                      tiers["TIER_1000_2000"] += w
+                  elif p <= 60000:
+                      tiers["TIER_20000"] += w
+                  elif p <= 400000:
+                      tiers["TIER_100000"] += w
+                  else:
+                      tiers["TIER_1M_PLUS"] += w
+              return tiers
+
+
+          def enrich_ticket_prize_metrics(entry: dict[str, Any]) -> dict[str, Any]:
+              """Computes per-ticket summary metrics and drawTierHistory from verified perDrawTables."""
+              draws = entry.get("draws", [])
+              tables = entry.get("perDrawTables", {})
+
+              cleaned_tables: dict[str, Any] = {}
+              for k, tbl in list(tables.items()):
+                  if not isinstance(tbl, dict) or not tbl.get("rows"):
+                      continue
+                  d_key = normalize_draw_key(k)
+                  c_key = format_draw_pad(int(d_key)) if d_key.isdigit() else str(k)
+                  tbl_rows = tbl.get("rows", [])
+                  tbl["tierCounts"] = compute_tier_counts_from_rows(tbl_rows)
+                  cleaned_tables[c_key] = tbl
+              entry["perDrawTables"] = cleaned_tables
+
+              draw_tier_history: list[dict[str, Any]] = []
+              latest_table: dict[str, Any] | None = None
+              max_jackpot = float(entry.get("currentJackpot", 0) or 0)
+
+              for d in draws:
+                  tbl = get_prize_table(cleaned_tables, d.get("draw"))
+                  if tbl:
+                      if latest_table is None:
+                          latest_table = tbl
+                      t_counts = tbl.get("tierCounts") or compute_tier_counts_from_rows(tbl.get("rows", []))
+                      t_winners = int(tbl.get("totalWinners", 0) or 0)
+                      t_payout = float(tbl.get("totalPayout", 0.0) or 0.0)
+                      for r in tbl.get("rows", []):
+                          up = float(r.get("unitPrize", 0) or 0)
+                          if up > max_jackpot:
+                              max_jackpot = up
+                      draw_tier_history.append({
+                          "draw": d.get("draw", ""),
+                          "date": d.get("date") or tbl.get("date", ""),
+                          "totalWinners": t_winners,
+                          "totalPayout": round(t_payout, 2),
+                          "tiers": t_counts,
+                      })
+
+              if latest_table is None and cleaned_tables:
+                  sorted_tbl_keys = sorted(
+                      cleaned_tables.keys(),
+                      key=lambda x: int(normalize_draw_key(x)) if normalize_draw_key(x).isdigit() else 0,
+                      reverse=True,
+                  )
+                  latest_table = cleaned_tables[sorted_tbl_keys[0]]
+                  for k in sorted_tbl_keys:
+                      tbl = cleaned_tables[k]
+                      t_counts = tbl.get("tierCounts") or compute_tier_counts_from_rows(tbl.get("rows", []))
+                      for r in tbl.get("rows", []):
+                          up = float(r.get("unitPrize", 0) or 0)
+                          if up > max_jackpot:
+                              max_jackpot = up
+                      draw_tier_history.append({
+                          "draw": k,
+                          "date": tbl.get("date", ""),
+                          "totalWinners": int(tbl.get("totalWinners", 0) or 0),
+                          "totalPayout": round(float(tbl.get("totalPayout", 0.0) or 0.0), 2),
+                          "tiers": t_counts,
+                      })
+
+              if max_jackpot > 0:
+                  entry["currentJackpot"] = round(max_jackpot, 2)
+
+              if latest_table and latest_table.get("rows"):
+                  entry["avgWinnersPerDraw"] = int(latest_table.get("totalWinners", 0) or 0)
+                  entry["dailyPrizePayout"] = round(float(latest_table.get("totalPayout", 0.0) or 0.0), 2)
+                  entry["tierWinnersPerDraw"] = latest_table.get("tierCounts") or compute_tier_counts_from_rows(latest_table["rows"])
+                  entry["prizeStructureDetails"] = [
+                      {
+                          "tier": r.get("tier", ""),
+                          "prize": r.get("prize", ""),
+                          "unitPrize": r.get("unitPrize", 0),
+                          "avgWinners": r.get("avgWinners", r.get("winners", 0)),
+                      }
+                      for r in latest_table["rows"]
+                  ]
+              else:
+                  entry.setdefault("avgWinnersPerDraw", 0)
+                  entry.setdefault("dailyPrizePayout", 0)
+                  entry.setdefault("tierWinnersPerDraw", {k: 0 for k in TIER_KEYS})
+                  entry.setdefault("prizeStructureDetails", [])
+
+              entry["drawTierHistory"] = draw_tier_history
+              return entry
+
+
           def load_existing_dataset(path: str) -> dict[str, Any]:
-              """Loads previous data so runs are incremental: first the ticket-wise files, then the
-              legacy combined JSON as a fallback."""
+              """Loads existing ticket-wise JSON files so historical draws & prize tables are NEVER lost."""
               dataset: dict[str, Any] = {
                   "schemaVersion": SCHEMA_VERSION,
                   "updatedAt": "",
@@ -192,7 +364,6 @@ jobs:
                   else:
                       print(f"[warn] Could not parse existing JSON at {path}")
 
-              # back-fill name/board (older files had no `name`)
               for t_id, m in _ticket_meta().items():
                   entry = dataset["lotteries"].get(t_id)
                   if entry is not None:
@@ -203,8 +374,95 @@ jobs:
               return dataset
 
 
+          def build_prize_tier_rankings_payload(dataset: dict[str, Any], order: list[str]) -> dict[str, Any]:
+              """Builds the dedicated `data/prize_tier_rankings.json` file for Tab 2 (Prize Tier Wins Ranking)."""
+              tickets_map: dict[str, Any] = {}
+              windows_summary: dict[str, Any] = {}
+
+              for t_id in order:
+                  entry = dataset["lotteries"].get(t_id)
+                  if not entry:
+                      continue
+                  draws = entry.get("draws", [])
+                  tables = entry.get("perDrawTables", {})
+                  history = entry.get("drawTierHistory", [])
+                  latest = draws[0] if draws else {}
+                  tickets_map[t_id] = {
+                      "id": t_id,
+                      "name": entry.get("name", t_id),
+                      "board": entry.get("board", ""),
+                      "latestDraw": latest.get("draw", ""),
+                      "latestDate": latest.get("date", ""),
+                      "drawCount": len(draws),
+                      "verifiedTableCount": len(tables),
+                      "currentJackpot": entry.get("currentJackpot", 0),
+                      "avgWinnersPerDraw": entry.get("avgWinnersPerDraw", 0),
+                      "dailyPrizePayout": entry.get("dailyPrizePayout", 0),
+                      "tierWinnersPerDraw": entry.get("tierWinnersPerDraw", {k: 0 for k in TIER_KEYS}),
+                      "prizeStructureDetails": entry.get("prizeStructureDetails", []),
+                      "drawTierHistory": history,
+                  }
+
+              for w in (1, 7, 30, 90, 365):
+                  w_key = str(w)
+                  w_tickets: list[dict[str, Any]] = []
+                  for t_id in order:
+                      t_info = tickets_map.get(t_id)
+                      if not t_info:
+                          continue
+                      entry = dataset["lotteries"][t_id]
+                      draws_slice = (entry.get("draws") or [])[:w]
+                      tables = entry.get("perDrawTables") or {}
+                      tier_totals = {k: 0 for k in TIER_KEYS}
+                      tot_winners = 0
+                      tot_payout = 0.0
+                      verified_count = 0
+
+                      for d in draws_slice:
+                          tbl = get_prize_table(tables, d.get("draw"))
+                          if tbl:
+                              verified_count += 1
+                              tot_winners += int(tbl.get("totalWinners", 0) or 0)
+                              tot_payout += float(tbl.get("totalPayout", 0.0) or 0.0)
+                              tc = tbl.get("tierCounts") or compute_tier_counts_from_rows(tbl.get("rows", []))
+                              for k in TIER_KEYS:
+                                  tier_totals[k] += int(tc.get(k, 0) or 0)
+
+                      if verified_count == 0 and t_info["drawTierHistory"]:
+                          for h_item in t_info["drawTierHistory"][:w]:
+                              verified_count += 1
+                              tot_winners += int(h_item.get("totalWinners", 0) or 0)
+                              tot_payout += float(h_item.get("totalPayout", 0.0) or 0.0)
+                              tc = h_item.get("tiers") or {}
+                              for k in TIER_KEYS:
+                                  tier_totals[k] += int(tc.get(k, 0) or 0)
+
+                      w_tickets.append({
+                          "id": t_id,
+                          "name": t_info["name"],
+                          "board": t_info["board"],
+                          "windowRequested": w,
+                          "drawsInWindow": len(draws_slice),
+                          "verifiedTableCount": verified_count,
+                          "totalWinners": tot_winners,
+                          "totalPayout": round(tot_payout, 2),
+                          "currentJackpot": t_info["currentJackpot"],
+                          "tierTotals": tier_totals,
+                      })
+
+                  w_tickets.sort(key=lambda x: (x["totalWinners"], x["currentJackpot"]), reverse=True)
+                  windows_summary[w_key] = w_tickets
+
+              return {
+                  "schemaVersion": SCHEMA_VERSION,
+                  "tickets": tickets_map,
+                  "windows": windows_summary,
+              }
+
+
           def save_dataset_checkpoint(dataset: dict[str, Any], path: str) -> None:
-              """Writes one JSON per ticket + index.json (+ optional legacy combined file)."""
+              """Writes ticket-wise JSON files (only touching files with new data),
+              `data/prize_tier_rankings.json`, `data/index.json`, and optional combined JSON."""
               dataset["maxDrawsTarget"] = MAX_DRAWS
               dataset["schemaVersion"] = SCHEMA_VERSION
               order = [l["id"] for l in NLB_LOTTERIES] + [l["id"] for l in DLB_LOTTERIES]
@@ -214,6 +472,7 @@ jobs:
                   entry = dataset["lotteries"].get(t_id)
                   if not entry:
                       continue
+                  enrich_ticket_prize_metrics(entry)
                   draws = entry.get("draws", [])
                   tables = entry.get("perDrawTables", {})
                   latest = draws[0] if draws else {}
@@ -226,11 +485,15 @@ jobs:
                       "latestDate": latest.get("date", ""),
                       "drawCount": len(draws),
                       "tableCount": len(tables),
+                      "currentJackpot": entry.get("currentJackpot", 0),
+                      "avgWinnersPerDraw": entry.get("avgWinnersPerDraw", 0),
+                      "dailyPrizePayout": entry.get("dailyPrizePayout", 0),
+                      "tierWinnersPerDraw": entry.get("tierWinnersPerDraw", {k: 0 for k in TIER_KEYS}),
+                      "prizeStructureDetails": entry.get("prizeStructureDetails", []),
+                      "drawTierHistory": entry.get("drawTierHistory", []),
                       "draws": draws,
                       "perDrawTables": tables,
                   }
-                  if "currentJackpot" in entry:
-                      payload["currentJackpot"] = entry["currentJackpot"]
                   file_rel = f"tickets/{t_id}.json"
                   ts = _write_json_if_changed(os.path.join(DATA_DIR, file_rel), payload)
                   index_items.append({
@@ -242,23 +505,44 @@ jobs:
                       "latestDate": payload["latestDate"],
                       "drawCount": payload["drawCount"],
                       "tableCount": payload["tableCount"],
+                      "currentJackpot": payload["currentJackpot"],
+                      "avgWinnersPerDraw": payload["avgWinnersPerDraw"],
+                      "dailyPrizePayout": payload["dailyPrizePayout"],
+                      "tierWinnersPerDraw": payload["tierWinnersPerDraw"],
                       "updatedAt": ts,
                   })
+
+              rankings_payload = build_prize_tier_rankings_payload(dataset, order)
+              rankings_ts = _write_json_if_changed(PRIZE_RANKINGS_PATH, rankings_payload)
 
               dataset["updatedAt"] = _write_json_if_changed(INDEX_PATH, {
                   "schemaVersion": SCHEMA_VERSION,
                   "maxDrawsTarget": MAX_DRAWS,
+                  "prizeRankingsFile": "prize_tier_rankings.json",
+                  "prizeRankingsUpdatedAt": rankings_ts,
                   "tickets": index_items,
               })
 
               if WRITE_COMBINED:
                   _write_json_if_changed(path, {
-                      "schemaVersion": "2.0",
+                      "schemaVersion": SCHEMA_VERSION,
                       "maxDrawsTarget": MAX_DRAWS,
                       "lotteries": {
                           i["id"]: {
                               k: v for k, v in dataset["lotteries"][i["id"]].items()
-                              if k in ("id", "name", "board", "currentJackpot", "draws", "perDrawTables")
+                              if k in (
+                                  "id",
+                                  "name",
+                                  "board",
+                                  "currentJackpot",
+                                  "avgWinnersPerDraw",
+                                  "dailyPrizePayout",
+                                  "tierWinnersPerDraw",
+                                  "prizeStructureDetails",
+                                  "drawTierHistory",
+                                  "draws",
+                                  "perDrawTables",
+                              )
                           }
                           for i in index_items
                       },
@@ -267,6 +551,9 @@ jobs:
 
           def parse_number(val: str) -> float:
               cleaned = re.sub(r"[^0-9.]", "", str(val or ""))
+              if cleaned.count(".") > 1:
+                  parts = cleaned.split(".")
+                  cleaned = "".join(parts[:-1]) + "." + parts[-1]
               try:
                   return float(cleaned) if cleaned else 0.0
               except ValueError:
@@ -274,9 +561,28 @@ jobs:
 
 
           def parse_date_to_iso(raw_date: str) -> str:
-              s = re.sub(r"^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s*,?\s*", "", str(raw_date or "").strip(), flags=re.I)
-              s = re.sub(r"\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$", "", s, flags=re.I).strip()
-              for fmt in ("%B %d, %Y", "%b %d, %Y", "%Y-%b-%d", "%Y-%B-%d", "%Y-%m-%d"):
+              s = re.sub(
+                  r"^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s*,?\s*",
+                  "",
+                  str(raw_date or "").strip(),
+                  flags=re.I,
+              )
+              s = re.sub(
+                  r"\s*,?\s*(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$",
+                  "",
+                  s,
+                  flags=re.I,
+              ).strip()
+              for fmt in (
+                  "%B %d, %Y",
+                  "%b %d, %Y",
+                  "%Y-%b-%d",
+                  "%Y-%B-%d",
+                  "%Y-%m-%d",
+                  "%Y/%m/%d",
+                  "%d/%m/%Y",
+                  "%d-%m-%Y",
+              ):
                   try:
                       return datetime.datetime.strptime(s, fmt).strftime("%Y-%m-%d")
                   except ValueError:
@@ -284,55 +590,69 @@ jobs:
               return s
 
 
-          def parse_dlb_more_modal_html(modal_html: str, fallback_date: str = "") -> dict[str, Any] | None:
-              if not modal_html or "<table" not in modal_html.lower():
+          # =============================================================================
+          # DLB LIVE SCRAPER (https://www.dlb.lk/result/en)
+          # =============================================================================
+
+          def parse_dlb_more_modal_html(modal_html: str, fallback_date: str = "", fallback_draw: str = "") -> dict[str, Any] | None:
+              if not modal_html:
                   return None
               soup = BeautifulSoup(modal_html, "lxml")
               txt = soup.get_text(" ", strip=True)
 
-              draw_no = ""
-              m_draw = re.search(r"Draw\s*No\s*:\s*(\d+)", txt, re.I)
+              draw_no = fallback_draw
+              m_draw = re.search(r"Draw\s*(?:No|Number)\s*[:\-]?\s*(\d+)", txt, re.I)
               if m_draw:
                   draw_no = m_draw.group(1).strip()
 
               draw_date = fallback_date
-              m_date = re.search(r"Draw\s*Date\s*:\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2})", txt, re.I)
+              m_date = re.search(
+                  r"Draw\s*Date\s*[:\-]?\s*(\d{4}[-/][A-Za-z0-9]{2,3}[-/]\d{2})",
+                  txt,
+                  re.I,
+              )
               if m_date:
                   draw_date = parse_date_to_iso(m_date.group(1))
 
-              # Extract balls from modal header if present
               letter = "—"
               nums: list[str] = []
               for img in soup.find_all("img"):
-                  src = (img.get("src") or "").lower()
+                  src = ((img.get("src") or "") + " " + (img.get("alt") or "")).lower()
                   for z_key, z_name in ZODIAC_FILENAME_MAP.items():
                       if z_key in src:
                           letter = z_name
                           break
-              for el in soup.select(".letter, .number, .circle, .ball, li"):
+              for el in soup.select(".letter, .number, .number-box, .circle, .ball, h6, li"):
                   t = el.get_text(strip=True)
                   classes = " ".join(el.get("class") or []).lower()
-                  if "letter" in classes and t:
+                  if "letter" in classes and t and re.fullmatch(r"[A-Za-z]{1,12}", t):
                       letter = t.upper()
-                  elif "number" in classes and re.fullmatch(r"\d{1,4}", t):
+                  elif ("number" in classes or "ball" in classes) and re.fullmatch(r"\d{1,4}", t):
                       nums.append(t)
 
               rows = []
               total_winners = 0
               total_payout = 0.0
+              max_unit_prize = 0.0
 
               for tr in soup.select("table tr"):
-                  tds = [td.get_text(" ", strip=True) for td in tr.find_all("td")]
-                  if len(tds) >= 4:
-                      tier_label = tds[0].strip()
-                      if not tier_label or re.search(r"\btotal\b", tier_label, re.I) or re.search(r"^matches$", tier_label, re.I):
+                  cells = [c.get_text(" ", strip=True) for c in tr.find_all(["td", "th"])]
+                  if len(cells) >= 4:
+                      tier_label = cells[0].strip()
+                      if (
+                          not tier_label
+                          or re.search(r"\btotal\b", tier_label, re.I)
+                          or re.search(r"^matches$", tier_label, re.I)
+                      ):
                           continue
-                      winners = int(round(parse_number(tds[1])))
-                      unit_prize = parse_number(tds[2])
-                      row_amt = parse_number(tds[3])
+                      winners = int(round(parse_number(cells[1])))
+                      unit_prize = parse_number(cells[2])
+                      row_amt = parse_number(cells[3])
                       if unit_prize > 0 or winners > 0:
                           if row_amt == 0 and unit_prize > 0 and winners > 0:
                               row_amt = winners * unit_prize
+                          if unit_prize > max_unit_prize:
+                              max_unit_prize = unit_prize
                           total_winners += winners
                           total_payout += row_amt
                           rows.append({
@@ -350,224 +670,599 @@ jobs:
                   "date": draw_date,
                   "letter": letter,
                   "nums": nums,
+                  "jackpot": max_unit_prize,
                   "table": {
                       "date": draw_date,
                       "totalWinners": total_winners,
                       "totalPayout": round(total_payout, 2),
+                      "tierCounts": compute_tier_counts_from_rows(rows),
                       "rows": rows,
                   },
               }
 
 
-          def extract_dlb_rows_for_lottery(html_content: str, dlb_id: int) -> list[dict[str, Any]]:
-              """Finds all historical table rows belonging to `dlb_id` via `get_more_result(res_id, dlb_id)`."""
+          def _parse_dlb_tokens_to_letter_and_nums(raw_tokens: list[str], initial_letter: str = "—") -> tuple[str, list[str]]:
+              letter = initial_letter
+              nums: list[str] = []
+              for tok in raw_tokens:
+                  clean = tok.strip()
+                  if not clean or clean in ("×", "x", "X_ICON", "MORE", "|", "-"):
+                      continue
+                  if clean.upper() in ZODIAC_FILENAME_MAP.values():
+                      if letter == "—":
+                          letter = clean.upper()
+                  elif re.fullmatch(r"[A-Za-z]", clean):
+                      if letter == "—":
+                          letter = clean.upper()
+                  elif re.fullmatch(r"\d{1,4}", clean):
+                      nums.append(clean)
+              return letter, nums
+
+
+          def extract_dlb_all_sections_dom(page) -> dict[str, dict[str, Any]]:
+              """Extracts all 9 DLB lotteries directly from the live DOM on https://www.dlb.lk/result/en
+              and tags every 'MORE' button (`data-sl-hub-more="<LotteryName>__<DrawNo>"`) and pagination
+              link (`data-sl-hub-page="<LotteryName>__<PageNo>"`) so they can be clicked natively."""
+              lotto_names = [l["name"] for l in DLB_LOTTERIES]
+              raw_data = page.evaluate(
+                  r"""(lottoNames) => {
+                      const zodiacKeys = [
+                          'aries','taurus','gemini','cancer','leo','virgo',
+                          'libra','scorpio','sagittarius','capricorn','aquarius','pisces'
+                      ];
+                      const detectZodiac = (root) => {
+                          if (!root) return '';
+                          const imgs = Array.from(root.querySelectorAll('img'));
+                          for (const img of imgs) {
+                              const s = ((img.getAttribute('src') || '') + ' ' + (img.getAttribute('alt') || '') + ' ' + (img.getAttribute('title') || '')).toLowerCase();
+                              for (const zk of zodiacKeys) {
+                                  if (s.includes(zk)) return zk.toUpperCase();
+                              }
+                          }
+                          return '';
+                      };
+
+                      const parseRowElement = (tr, lottoName) => {
+                          const tds = Array.from(tr.querySelectorAll('td'));
+                          if (tds.length < 2) return null;
+                          const col0 = tds[0].innerText.trim();
+                          const m = col0.match(/(\d{1,5})\s*\|\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2}|\d{4}\/\d{2}\/\d{2})/);
+                          if (!m) return null;
+                          const drawNo = m[1];
+
+                          let letter = detectZodiac(tr) || '—';
+                          const letterEl = tr.querySelector('.letter');
+                          if (letterEl && letterEl.innerText.trim()) {
+                              letter = letterEl.innerText.trim().toUpperCase();
+                          }
+
+                          const nums = [];
+                          const numEls = Array.from(tr.querySelectorAll('.number, .number-box, .ball, ul li, ol li, h6'));
+                          if (numEls.length > 0) {
+                              numEls.forEach(el => {
+                                  const t = el.innerText.trim();
+                                  const cls = (el.className || '').toLowerCase();
+                                  if (cls.includes('letter') || (/^[A-Za-z]$/.test(t) && letter === '—')) {
+                                      if (t && t.toUpperCase() !== 'MORE') letter = t.toUpperCase();
+                                  } else if (/^\d{1,4}$/.test(t)) {
+                                      nums.push(t);
+                                  }
+                              });
+                          }
+                          if (nums.length === 0) {
+                              for (let i = 1; i < tds.length; i++) {
+                                  const cellText = tds[i].innerText.trim();
+                                  if (/^MORE$/i.test(cellText)) continue;
+                                  const tokens = cellText.split(/[\s;|,]+/).map(x => x.trim()).filter(Boolean);
+                                  tokens.forEach(tok => {
+                                      if (/^[A-Za-z]$/.test(tok) && letter === '—' && tok.toUpperCase() !== 'X') {
+                                          letter = tok.toUpperCase();
+                                      } else if (/^\d{1,4}$/.test(tok)) {
+                                          nums.push(tok);
+                                      }
+                                  });
+                              }
+                          }
+
+                          let moreOnclick = '';
+                          const moreBtn = tr.querySelector('[onclick*="get_more_result"], [onclick*="more"], a.MORE, button.MORE') ||
+                                          Array.from(tr.querySelectorAll('a, button')).find(b => /more/i.test(b.innerText || ''));
+                          if (moreBtn) {
+                              moreOnclick = moreBtn.getAttribute('onclick') || '';
+                              moreBtn.setAttribute('data-sl-hub-more', `${lottoName}__${ parseInt(drawNo, 10) }`);
+                          }
+
+                          return {
+                              draw: drawNo,
+                              rawDate: m[2],
+                              letter,
+                              nums,
+                              moreOnclick
+                          };
+                      };
+
+                      const resultByName = {};
+
+                      const allTables = Array.from(document.querySelectorAll('table'));
+                      const drawTables = allTables.filter(tbl => {
+                          const txt = tbl.innerText || '';
+                          return /\d{1,5}\s*\|\s*\d{4}-[A-Za-z]{3}-\d{2}/.test(txt);
+                      });
+
+                      drawTables.forEach((tbl, tblIdx) => {
+                          let container = tbl.closest('.tab-pane') || tbl.parentElement;
+                          let matchedName = '';
+
+                          let cursor = tbl;
+                          for (let depth = 0; depth < 6 && cursor; depth++) {
+                              const txt = cursor.innerText || '';
+                              const found = lottoNames.filter(n => new RegExp('\\b' + n.replace(/\s+/g, '\\s+') + '\\b', 'i').test(txt));
+                              if (found.length === 1) {
+                                  matchedName = found[0];
+                                  container = cursor;
+                                  break;
+                              }
+                              cursor = cursor.parentElement;
+                          }
+                          if (!matchedName && tblIdx < lottoNames.length) {
+                              matchedName = lottoNames[tblIdx];
+                          }
+                          if (!matchedName) return;
+
+                          const rows = [];
+                          Array.from(tbl.querySelectorAll('tr')).forEach(tr => {
+                              const parsed = parseRowElement(tr, matchedName);
+                              if (parsed && parsed.nums.length > 0) {
+                                  rows.push(parsed);
+                              }
+                          });
+
+                          let latestDraw = null;
+                          if (container) {
+                              const cText = container.innerText || '';
+                              const mLatest = cText.match(/Draw\s*Number\s*-\s*(\d{1,5})\s*\|\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2})/i);
+                              if (mLatest) {
+                                  const latestDrawNo = mLatest[1];
+                                  const latestRawDate = mLatest[2];
+                                  let latestMoreOnclick = '';
+                                  const latestMoreBtn = container.querySelector('[onclick*="check_latest_result"]') ||
+                                      Array.from(container.querySelectorAll('a, button')).find(b => /more/i.test(b.innerText || '') && !tbl.contains(b));
+                                  if (latestMoreBtn) {
+                                      latestMoreOnclick = latestMoreBtn.getAttribute('onclick') || '';
+                                      latestMoreBtn.setAttribute('data-sl-hub-more', `${matchedName}__${ parseInt(latestDrawNo, 10) }`);
+                                  }
+
+                                  const paginationEl = container.querySelector('.pagination');
+                                  let latestLetter = '—';
+                                  const imgsOutside = Array.from(container.querySelectorAll('img')).filter(img => !tbl.contains(img));
+                                  for (const img of imgsOutside) {
+                                      const s = ((img.getAttribute('src') || '') + ' ' + (img.getAttribute('alt') || '')).toLowerCase();
+                                      for (const zk of zodiacKeys) {
+                                          if (s.includes(zk)) { latestLetter = zk.toUpperCase(); break; }
+                                      }
+                                  }
+                                  const latestNums = [];
+                                  const ballCandidates = Array.from(container.querySelectorAll('.letter, .number, .ball, .circle, ul li, ol li, h6')).filter(
+                                      el => !tbl.contains(el) && (!paginationEl || !paginationEl.contains(el))
+                                  );
+                                  ballCandidates.forEach(el => {
+                                      const t = el.innerText.trim();
+                                      const cls = (el.className || '').toLowerCase();
+                                      if (cls.includes('letter') || (/^[A-Za-z]$/.test(t) && latestLetter === '—')) {
+                                          if (t && t.toUpperCase() !== 'MORE') latestLetter = t.toUpperCase();
+                                      } else if (/^\d{1,4}$/.test(t)) {
+                                          latestNums.push(t);
+                                      }
+                                  });
+
+                                  if (latestNums.length === 0) {
+                                      const afterHeader = cText.slice(cText.indexOf(mLatest[0]) + mLatest[0].length);
+                                      const beforeMore = afterHeader.split(/MORE|DRAW\s+NUMBER\s+AND\s+DATE/i)[0] || '';
+                                      const toks = beforeMore.split(/[\s|,;]+/).map(x => x.trim()).filter(Boolean);
+                                      toks.forEach(tok => {
+                                          if (/^[A-Za-z]$/.test(tok) && latestLetter === '—' && tok.toUpperCase() !== 'X') {
+                                              latestLetter = tok.toUpperCase();
+                                          } else if (/^\d{1,4}$/.test(tok)) {
+                                              latestNums.push(tok);
+                                          }
+                                      });
+                                  }
+
+                                  if (latestNums.length > 0) {
+                                      latestDraw = {
+                                          draw: latestDrawNo,
+                                          rawDate: latestRawDate,
+                                          letter: latestLetter,
+                                          nums: latestNums,
+                                          moreOnclick: latestMoreOnclick
+                                      };
+                                  }
+                              }
+                          }
+
+                          let detectedDlbId = null;
+                          if (container) {
+                              Array.from(container.querySelectorAll('.pagination a, .pagination button, [onclick*="pagination_re"]')).forEach(a => {
+                                  const pageTxt = (a.innerText || '').trim();
+                                  if (/^\d+$/.test(pageTxt)) {
+                                      a.setAttribute('data-sl-hub-page', `${matchedName}__${pageTxt}`);
+                                  }
+                                  const oc = a.getAttribute('onclick') || '';
+                                  const mPage = oc.match(/pagination_re\(\s*\d+\s*,\s*['"]?(\d+)['"]?\s*\)/);
+                                  if (mPage && detectedDlbId === null) detectedDlbId = parseInt(mPage[1], 10);
+                              });
+                              if (detectedDlbId === null) {
+                                  const anyMore = container.querySelector('[onclick*="check_latest_result"], [onclick*="get_more_result"]');
+                                  if (anyMore) {
+                                      const oc = anyMore.getAttribute('onclick') || '';
+                                      const mId = oc.match(/check_latest_result\(\s*['"]?(\d+)['"]?\s*\)/) ||
+                                                  oc.match(/get_more_result\(\s*\d+\s*,\s*['"]?(\d+)['"]?\s*\)/);
+                                      if (mId) detectedDlbId = parseInt(mId[1], 10);
+                                  }
+                              }
+                          }
+
+                          resultByName[matchedName] = {
+                              latestDraw,
+                              rows,
+                              detectedDlbId
+                          };
+                      });
+
+                      return resultByName;
+                  }""",
+                  lotto_names,
+              )
+              return raw_data or {}
+
+
+          def extract_dlb_sections_from_soup_fallback(html_content: str) -> dict[str, dict[str, Any]]:
+              """Pure BeautifulSoup + text fallback for https://www.dlb.lk/result/en so even if DOM
+              layout changes, all 9 DLB lotteries' Latest Draw and table rows are reliably parsed."""
               soup = BeautifulSoup(html_content, "lxml")
-              extracted = []
-              pattern = re.compile(rf"get_more_result\(\s*(\d+)\s*,\s*{dlb_id}\s*\)")
+              full_text = soup.get_text("\n", strip=True)
+              lotto_names = [l["name"] for l in DLB_LOTTERIES]
+              result_by_name: dict[str, dict[str, Any]] = {name: {"latestDraw": None, "rows": []} for name in lotto_names}
 
-              for a_tag in soup.find_all("a", attrs={"onclick": pattern}):
-                  m_call = pattern.search(a_tag.get("onclick") or "")
-                  if not m_call:
+              for name in lotto_names:
+                  pat = re.compile(
+                      rf"{re.escape(name)}\s+Draw\s*Number\s*-\s*(\d{{1,5}})\s*\|\s*(\d{{4}}-[A-Za-z]{{3}}-\d{{2}}|\d{{4}}-\d{{2}}-\d{{2}})\s*(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*([\s\S]*?)\bMORE\b",
+                      re.I,
+                  )
+                  m = pat.search(full_text)
+                  if m:
+                      d_no, raw_date, middle_blob = m.group(1), m.group(2), m.group(3)
+                      tokens = re.findall(r"[A-Za-z]+|\d{1,4}", middle_blob)
+                      letter, nums = _parse_dlb_tokens_to_letter_and_nums(tokens)
+                      if nums:
+                          result_by_name[name]["latestDraw"] = {
+                              "draw": d_no,
+                              "rawDate": raw_date,
+                              "letter": letter,
+                              "nums": nums,
+                              "moreOnclick": "",
+                          }
+
+              draw_tables = []
+              for tbl in soup.find_all("table"):
+                  if re.search(r"\d{1,5}\s*\|\s*\d{4}-[A-Za-z]{3}-\d{2}", tbl.get_text(" ", strip=True)):
+                      draw_tables.append(tbl)
+
+              for idx, tbl in enumerate(draw_tables):
+                  matched_name = lotto_names[idx] if idx < len(lotto_names) else None
+                  if not matched_name:
                       continue
-                  res_id = int(m_call.group(1))
-                  tr = a_tag.find_parent("tr")
-                  if not tr:
-                      continue
+                  for tr in tbl.find_all("tr"):
+                      tds = tr.find_all("td")
+                      if len(tds) < 2:
+                          continue
+                      col0 = tds[0].get_text(" ", strip=True)
+                      m_row = re.search(r"(\d{1,5})\s*\|\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2})", col0)
+                      if not m_row:
+                          continue
+                      d_no, raw_date = m_row.group(1), m_row.group(2)
+                      letter = "—"
+                      for img in tr.find_all("img"):
+                          src = ((img.get("src") or "") + " " + (img.get("alt") or "")).lower()
+                          for zk, zn in ZODIAC_FILENAME_MAP.items():
+                              if zk in src:
+                                  letter = zn
+                                  break
+                      tokens = []
+                      for td in tds[1:]:
+                          td_txt = td.get_text(" ", strip=True)
+                          if re.fullmatch(r"MORE", td_txt, re.I):
+                              continue
+                          tokens.extend(re.findall(r"[A-Za-z]+|\d{1,4}", td_txt))
+                      letter, nums = _parse_dlb_tokens_to_letter_and_nums(tokens, letter)
+                      more_el = tr.find(attrs={"onclick": True})
+                      more_onclick = more_el.get("onclick", "") if more_el else ""
+                      if nums:
+                          result_by_name[matched_name]["rows"].append({
+                              "draw": d_no,
+                              "rawDate": raw_date,
+                              "letter": letter,
+                              "nums": nums,
+                              "moreOnclick": more_onclick,
+                          })
 
-                  tds = tr.find_all("td")
-                  if not tds:
-                      continue
+              return result_by_name
 
-                  # Column 0: "3167 | 2026-Nov-10 Tuesday"
-                  col0 = tds[0].get_text(" ", strip=True)
-                  m_draw = re.search(r"(\d{1,5})\s*\|\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2})", col0)
-                  if not m_draw:
-                      continue
-                  draw_int = int(m_draw.group(1))
-                  draw_str = str(draw_int).zfill(4) if draw_int < 1000 else str(draw_int)
-                  iso_date = parse_date_to_iso(m_draw.group(2))
 
-                  letter = "—"
-                  for img in tr.find_all("img"):
-                      src = (img.get("src") or "").lower()
-                      for z_key, z_name in ZODIAC_FILENAME_MAP.items():
-                          if z_key in src:
-                              letter = z_name
-                              break
+          def activate_dlb_sidebar_tab(page, lotto_name: str, tab_idx: int) -> None:
+              """Clicks the DLB sidebar tab for `lotto_name` so its tab-pane is active in the DOM."""
+              try:
+                  page.evaluate(
+                      """([name, idx]) => {
+                          const links = Array.from(document.querySelectorAll('a[data-toggle="tab"], .nav-tabs a, .nav-pills a, .sidebar a, ul li a'));
+                          const match = links.find(a => (a.innerText || '').trim().toLowerCase() === name.toLowerCase()) ||
+                                        links.find(a => (a.getAttribute('href') || '') === `#lottery${idx}`);
+                          if (match) match.click();
+                      }""",
+                      [lotto_name, tab_idx],
+                  )
+                  page.wait_for_timeout(450)
+              except Exception:
+                  pass
 
-                  letter_span = tr.select_one("span.letter")
-                  if letter_span and letter_span.get_text(strip=True):
-                      letter = letter_span.get_text(strip=True).upper()
 
-                  nums = [
-                      sp.get_text(strip=True)
-                      for sp in tr.select("span.number")
-                      if re.fullmatch(r"\d{1,4}", sp.get_text(strip=True))
-                  ]
-                  if not nums:
-                      # Fallback if numbers are separated by spaces/semicolons in tds[1] or tds[2]
-                      for td in tds[1:3]:
-                          for tok in re.findall(r"[A-Za-z]|\d{1,4}", td.get_text(" ", strip=True)):
-                              if re.fullmatch(r"[A-Za-z]", tok) and letter == "—":
-                                  letter = tok.upper()
-                              elif re.fullmatch(r"\d{1,4}", tok):
-                                  nums.append(tok)
+          def trigger_dlb_more_and_parse(
+              page,
+              lotto_name: str,
+              onclick_js: str,
+              dlb_id: int,
+              draw_int: int,
+              iso_date: str,
+              is_latest: bool = False,
+          ) -> dict[str, Any] | None:
+              """Clicks the tagged `MORE` button (firing both jQuery click handlers and inline `onclick`)
+              and parses the resulting prize breakdown modal table without destroying modal wrapper divs."""
+              try:
+                  page.evaluate("""() => {
+                      document.querySelectorAll('.bs-example-modal-lg001 table, #moreResultModal table, .modal table, [role="dialog"] table').forEach(t => {
+                          t.remove();
+                      });
+                  }""")
 
-                  extracted.append({
-                      "res_id": res_id,
-                      "draw_key": str(draw_int),
-                      "draw": draw_str,
-                      "date": iso_date,
-                      "letter": letter,
-                      "nums": nums,
-                  })
-              return extracted
+                  clicked = page.evaluate(
+                      """([lottoName, drawInt, onclickCode, dlbId, isLatest]) => {
+                          const tagged = document.querySelector(`[data-sl-hub-more="${lottoName}__${drawInt}"]`);
+                          if (tagged) {
+                              tagged.click();
+                              return true;
+                          }
+                          if (onclickCode && onclickCode.trim()) {
+                              try { eval(onclickCode); return true; } catch (e) {}
+                          }
+                          if (isLatest && typeof check_latest_result === 'function') {
+                              check_latest_result(dlbId);
+                              return true;
+                          }
+                          return false;
+                      }""",
+                      [lotto_name, draw_int, onclick_js or "", dlb_id, is_latest],
+                  )
+                  if not clicked:
+                      return None
+
+                  page.wait_for_function(
+                      """() => {
+                          const selectors = ['.bs-example-modal-lg001', '#moreResultModal', '.modal.in', '.modal.show', '.modal', '[role="dialog"]'];
+                          for (const sel of selectors) {
+                              const els = document.querySelectorAll(sel);
+                              for (const el of els) {
+                                  if (el.querySelectorAll('table tr').length > 2) return true;
+                              }
+                          }
+                          return false;
+                      }""",
+                      timeout=7500,
+                  )
+
+                  modal_html = page.evaluate("""() => {
+                      const selectors = ['.bs-example-modal-lg001', '#moreResultModal .modal-content', '#moreResultModal', '.modal.in', '.modal.show', '.modal', '[role="dialog"]'];
+                      for (const sel of selectors) {
+                          const els = document.querySelectorAll(sel);
+                          for (const el of els) {
+                              if (el.querySelectorAll('table tr').length > 2) return el.innerHTML;
+                          }
+                      }
+                      return '';
+                  }""")
+
+                  page.evaluate("""() => {
+                      document.querySelectorAll('#moreResultModal .close, .modal .close, [data-dismiss="modal"]').forEach(b => {
+                          try { b.click(); } catch (e) {}
+                      });
+                  }""")
+                  return parse_dlb_more_modal_html(modal_html, fallback_date=iso_date, fallback_draw=str(draw_int))
+              except Exception as exc:
+                  print(f"    ! DLB modal fetch warning for {lotto_name} draw #{draw_int}: {exc}")
+                  return None
 
 
           def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
               print("=== Scraping DLB Lotteries Live from https://www.dlb.lk/result/en ===")
-              page.goto("https://www.dlb.lk/result/en", wait_until="domcontentloaded", timeout=60000)
-              page.wait_for_timeout(2000)
+              try:
+                  page.goto("https://www.dlb.lk/result/en", wait_until="domcontentloaded", timeout=60000)
+                  page.wait_for_timeout(2500)
+              except Exception as exc:
+                  print(f"[error] Failed to load https://www.dlb.lk/result/en: {exc}")
+                  return
+
+              dom_sections = extract_dlb_all_sections_dom(page)
+              soup_sections = extract_dlb_sections_from_soup_fallback(page.content())
 
               for lotto in DLB_LOTTERIES:
                   t_id = lotto["id"]
+                  t_name = lotto["name"]
                   dlb_id = lotto["dlb_id"]
+                  tab_idx = lotto["tab_idx"]
+
                   entry = dataset["lotteries"].setdefault(
-                      t_id, {"id": t_id, "name": lotto["name"], "board": "DLB", "draws": [], "perDrawTables": {}}
+                      t_id, {"id": t_id, "name": t_name, "board": "DLB", "draws": [], "perDrawTables": {}}
                   )
-                  existing_draws = {str(int(str(d["draw"]).lstrip("0") or "0")): d for d in entry["draws"] if str(d.get("draw", "")).lstrip("0").isdigit()}
-                  existing_tables = entry.get("perDrawTables", {})
+                  existing_draws: dict[str, dict[str, Any]] = {
+                      normalize_draw_key(d["draw"]): d
+                      for d in entry.get("draws", [])
+                      if normalize_draw_key(d.get("draw", "")).isdigit()
+                  }
+                  existing_tables: dict[str, Any] = entry.get("perDrawTables", {})
 
-                  print(f"[DLB] Scraping {lotto['name']} (lottery_id={dlb_id}, target={MAX_DRAWS} draws)...")
+                  max_saved_draw = max((int(k) for k in existing_draws.keys()), default=0)
+                  is_first_time = (len(existing_draws) == 0) or FORCE_FULL_BACKFILL
+                  has_any_tables = len(existing_tables) > 0
+                  mode_label = "1ST-TIME FULL BACKFILL" if is_first_time else (
+                      "INCREMENTAL LATEST-ONLY" if has_any_tables else "BACKFILL MISSING PRIZE TABLES"
+                  )
+                  print(f"[DLB] {t_name} ({t_id}): mode={mode_label}, saved_draws={len(existing_draws)}, max_saved=#{max_saved_draw}")
 
-                  # 1. Fetch Latest Draw via check_latest_result(dlb_id) -> populates .bs-example-modal-lg001
-                  try:
-                      page.evaluate("""(id) => {
-                          const m = document.querySelector('.bs-example-modal-lg001');
-                          if (m) m.innerHTML = '';
-                          if (typeof check_latest_result === 'function') check_latest_result(id);
-                      }""", dlb_id)
-                      page.wait_for_function(
-                          "() => { const m = document.querySelector('.bs-example-modal-lg001'); return m && m.querySelectorAll('table tr').length > 2; }",
-                          timeout=8000,
-                      )
-                      modal_html = page.inner_html(".bs-example-modal-lg001")
-                      parsed_latest = parse_dlb_more_modal_html(modal_html)
-                      if parsed_latest and parsed_latest["draw"]:
-                          d_int = int(parsed_latest["draw"])
-                          d_key = str(d_int)
-                          d_pad = d_key.zfill(4) if d_int < 1000 else d_key
-                          existing_tables[d_key] = parsed_latest["table"]
-                          existing_tables[d_pad] = parsed_latest["table"]
-                          if parsed_latest["nums"]:
-                              existing_draws[d_key] = {
-                                  "draw": d_pad,
-                                  "date": parsed_latest["date"],
-                                  "letter": parsed_latest["letter"],
-                                  "nums": parsed_latest["nums"],
-                              }
-                          print(f"  + DLB {t_id} Latest Draw #{d_pad} ({parsed_latest['date']}): {parsed_latest['table']['totalWinners']} winners")
-                  except Exception as exc:
-                      print(f"  ! DLB check_latest_result({dlb_id}) warning: {exc}")
+                  activate_dlb_sidebar_tab(page, t_name, tab_idx)
+                  dom_sections = extract_dlb_all_sections_dom(page) or dom_sections
 
-                  # Also extract latest draw numbers from the page header block if modal didn't include balls
-                  try:
-                      header_draws = page.evaluate("""(id) => {
-                          const btn = document.querySelector(`a[onclick*="check_latest_result(${id})"]`);
-                          if (!btn) return null;
-                          const box = btn.closest('.col-md-12, .result_box, .tab-pane, div') || btn.parentElement.parentElement;
-                          const txt = box ? box.innerText : '';
-                          const balls = box ? Array.from(box.querySelectorAll('li, .letter, .number, h6')).map(e => e.innerText.trim()).filter(Boolean) : [];
-                          const imgs = box ? Array.from(box.querySelectorAll('img')).map(i => i.src) : [];
-                          return { txt, balls, imgs };
-                      }""", dlb_id)
-                      if header_draws and header_draws.get("txt"):
-                          m_hd = re.search(r"Draw\s*Number\s*-\s*(\d+)\s*\|\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2})", header_draws["txt"], re.I)
-                          if m_hd:
-                              d_int = int(m_hd.group(1))
-                              d_key = str(d_int)
-                              d_pad = d_key.zfill(4) if d_int < 1000 else d_key
-                              iso_d = parse_date_to_iso(m_hd.group(2))
-                              let_val = "—"
-                              for src in header_draws.get("imgs", []):
-                                  for zk, zn in ZODIAC_FILENAME_MAP.items():
-                                      if zk in src.lower():
-                                          let_val = zn
-                                          break
-                              num_list = []
-                              for b in header_draws.get("balls", []):
-                                  if re.fullmatch(r"[A-Za-z]", b) and let_val == "—":
-                                      let_val = b.upper()
-                                  elif re.fullmatch(r"\d{1,4}", b):
-                                      num_list.append(b)
-                              if num_list and d_key not in existing_draws:
-                                  existing_draws[d_key] = {"draw": d_pad, "date": iso_d, "letter": let_val, "nums": num_list}
-                  except Exception:
-                      pass
+                  sec = dom_sections.get(t_name) or {}
+                  fallback_sec = soup_sections.get(t_name) or {}
+                  detected_dlb_id = sec.get("detectedDlbId") if sec.get("detectedDlbId") is not None else dlb_id
 
-                  # 2. Paginate through historical draws via pagination_re(page_idx, dlb_id) up to MAX_DRAWS
-                  max_pages = max(1, (MAX_DRAWS // 12) + 2)
-                  for page_idx in range(0, max_pages):
-                      if len(existing_draws) >= MAX_DRAWS and len(existing_tables) >= MAX_DRAWS:
-                          break
+                  page1_candidates: list[dict[str, Any]] = []
+                  latest_item = sec.get("latestDraw") or fallback_sec.get("latestDraw")
+                  if latest_item:
+                      latest_item["is_latest"] = True
+                      page1_candidates.append(latest_item)
 
-                      if page_idx > 0:
-                          try:
-                              page.evaluate(f"pagination_re({page_idx}, {dlb_id})")
-                              page.wait_for_timeout(950)
-                          except Exception as exc:
-                              print(f"  ! DLB pagination_re({page_idx}, {dlb_id}) stop: {exc}")
-                              break
+                  dom_rows = sec.get("rows") or fallback_sec.get("rows") or []
+                  for r in dom_rows:
+                      r["is_latest"] = False
+                      page1_candidates.append(r)
 
-                      rows_on_page = extract_dlb_rows_for_lottery(page.content(), dlb_id)
-                      if not rows_on_page:
-                          break
+                  new_draws_count = 0
+                  new_tables_count = 0
+                  reached_already_complete_draw = False
 
-                      for r_info in rows_on_page:
-                          d_key = r_info["draw_key"]
-                          d_pad = r_info["draw"]
-                          if r_info["nums"]:
-                              existing_draws[d_key] = {
-                                  "draw": d_pad,
-                                  "date": r_info["date"],
-                                  "letter": r_info["letter"],
-                                  "nums": r_info["nums"],
-                              }
+                  for item in page1_candidates:
+                      d_key = normalize_draw_key(item.get("draw"))
+                      if not d_key.isdigit():
+                          continue
+                      d_int = int(d_key)
+                      d_pad = format_draw_pad(d_int)
+                      iso_date = parse_date_to_iso(item.get("rawDate", ""))
 
-                          if d_key not in existing_tables and d_pad not in existing_tables and len(existing_tables) < MAX_DRAWS:
-                              res_id = r_info["res_id"]
-                              try:
-                                  page.evaluate("""([rId, lId]) => {
-                                      const m = document.querySelector('.bs-example-modal-lg001');
-                                      if (m) m.innerHTML = '';
-                                      if (typeof get_more_result === 'function') get_more_result(rId, lId);
-                                  }""", [res_id, dlb_id])
-                                  page.wait_for_function(
-                                      "() => { const m = document.querySelector('.bs-example-modal-lg001'); return m && m.querySelectorAll('table tr').length > 2; }",
-                                      timeout=7000,
-                                  )
-                                  m_html = page.inner_html(".bs-example-modal-lg001")
-                                  parsed_tbl = parse_dlb_more_modal_html(m_html, r_info["date"])
-                                  if parsed_tbl and parsed_tbl["table"]:
-                                      existing_tables[d_key] = parsed_tbl["table"]
-                                      existing_tables[d_pad] = parsed_tbl["table"]
-                                      print(f"  + DLB {t_id} Draw #{d_pad} ({r_info['date']}): {parsed_tbl['table']['totalWinners']} winners")
-                              except Exception as exc:
-                                  print(f"  ! DLB get_more_result({res_id}, {dlb_id}) warning: {exc}")
+                      # Strictly preserve existing draw if already in JSON; only insert if new!
+                      if d_key not in existing_draws and item.get("nums"):
+                          existing_draws[d_key] = {
+                              "draw": d_pad,
+                              "date": iso_date,
+                              "letter": item.get("letter", "—"),
+                              "nums": item["nums"],
+                          }
+                          new_draws_count += 1
+                          print(f"  + [NEW DRAW] DLB {t_id} Draw #{d_pad} ({iso_date}): {item.get('letter')} {' '.join(item['nums'])}")
 
+                      if not is_first_time and has_any_tables and d_int <= max_saved_draw and has_prize_table(existing_tables, d_int):
+                          reached_already_complete_draw = True
+                          continue
+
+                      if not has_prize_table(existing_tables, d_int):
+                          parsed_modal = trigger_dlb_more_and_parse(
+                              page,
+                              t_name,
+                              item.get("moreOnclick", ""),
+                              detected_dlb_id,
+                              d_int,
+                              iso_date,
+                              is_latest=bool(item.get("is_latest")),
+                          )
+                          if parsed_modal and parsed_modal.get("table"):
+                              existing_tables[d_pad] = parsed_modal["table"]
+                              new_tables_count += 1
+                              if parsed_modal.get("jackpot", 0) > float(entry.get("currentJackpot", 0) or 0):
+                                  entry["currentJackpot"] = parsed_modal["jackpot"]
+                              if d_key not in existing_draws and parsed_modal.get("nums"):
+                                  existing_draws[d_key] = {
+                                      "draw": d_pad,
+                                      "date": parsed_modal.get("date") or iso_date,
+                                      "letter": parsed_modal.get("letter", "—"),
+                                      "nums": parsed_modal["nums"],
+                                  }
+                                  new_draws_count += 1
+                              print(f"  + [NEW TABLE] DLB {t_id} Draw #{d_pad}: {parsed_modal['table']['totalWinners']} winners")
+
+                  if (is_first_time or not has_any_tables) and not reached_already_complete_draw:
+                      max_pages = max(1, (MAX_DRAWS // 12) + 2)
+                      prev_first_draw = dom_rows[0]["draw"] if dom_rows else ""
+                      for page_no in range(2, max_pages + 1):
                           if len(existing_draws) >= MAX_DRAWS and len(existing_tables) >= MAX_DRAWS:
                               break
+                          try:
+                              page.evaluate(
+                                  """([lottoName, pageNo, dlbId]) => {
+                                      const link = document.querySelector(`[data-sl-hub-page="${lottoName}__${pageNo}"]`);
+                                      if (link) { link.click(); return; }
+                                      if (typeof pagination_re === 'function') pagination_re(pageNo, dlbId);
+                                  }""",
+                                  [t_name, page_no, detected_dlb_id],
+                              )
+                              page.wait_for_timeout(1200)
+                          except Exception as exc:
+                              print(f"  ! DLB pagination page {page_no} stop: {exc}")
+                              break
 
-                  sorted_draws = sorted(existing_draws.values(), key=lambda x: int(str(x["draw"]).lstrip("0") or "0"), reverse=True)[:MAX_DRAWS]
+                          paged_sections = extract_dlb_all_sections_dom(page)
+                          paged_rows = (paged_sections.get(t_name) or {}).get("rows") or []
+                          if not paged_rows or (paged_rows[0].get("draw") == prev_first_draw):
+                              break
+                          prev_first_draw = paged_rows[0].get("draw", "")
+
+                          added_on_page = 0
+                          for r in paged_rows:
+                              d_key = normalize_draw_key(r.get("draw"))
+                              if not d_key.isdigit():
+                                  continue
+                              d_int = int(d_key)
+                              d_pad = format_draw_pad(d_int)
+                              iso_date = parse_date_to_iso(r.get("rawDate", ""))
+
+                              if d_key not in existing_draws and r.get("nums"):
+                                  existing_draws[d_key] = {
+                                      "draw": d_pad,
+                                      "date": iso_date,
+                                      "letter": r.get("letter", "—"),
+                                      "nums": r["nums"],
+                                  }
+                                  new_draws_count += 1
+                                  added_on_page += 1
+
+                              if not has_prize_table(existing_tables, d_int) and len(existing_tables) < MAX_DRAWS:
+                                  parsed_modal = trigger_dlb_more_and_parse(
+                                      page, t_name, r.get("moreOnclick", ""), detected_dlb_id, d_int, iso_date, is_latest=False
+                                  )
+                                  if parsed_modal and parsed_modal.get("table"):
+                                      existing_tables[d_pad] = parsed_modal["table"]
+                                      new_tables_count += 1
+                                      added_on_page += 1
+                                      print(f"  + [NEW TABLE] DLB {t_id} Draw #{d_pad} ({iso_date}): {parsed_modal['table']['totalWinners']} winners")
+
+                          if added_on_page == 0:
+                              break
+
+                  sorted_draws = sorted(
+                      existing_draws.values(),
+                      key=lambda x: int(normalize_draw_key(x.get("draw", "0"))),
+                      reverse=True,
+                  )
                   entry["draws"] = sorted_draws
                   entry["perDrawTables"] = existing_tables
+                  print(f"  => DLB {t_id} summary: +{new_draws_count} new draws, +{new_tables_count} new tables (total {len(sorted_draws)} draws, {len(existing_tables)} tables)")
                   save_dataset_checkpoint(dataset, OUTPUT_PATH)
 
 
+          # =============================================================================
+          # NLB LIVE SCRAPER (https://www.nlb.lk/results)
+          # =============================================================================
+
           def parse_nlb_main_table_rows(page) -> list[dict[str, Any]]:
-              """Extracts the ~200 historical draws directly from `<table class='w0 tbl'>` on `/results/<slug>`,
-              sorting each draw's `<ol class='B'><li>` balls by visual X coordinate (`getBoundingClientRect().left`).
-              """
+              """Extracts historical draws from `<table class='w0 tbl'>` on `/results/<slug>`,
+              sorting each draw's `<ol class='B'><li>` balls by visual X coordinate."""
               raw_rows = page.evaluate(r"""() => {
                   const out = [];
                   document.querySelectorAll('table tr').forEach(tr => {
@@ -575,9 +1270,9 @@ jobs:
                       if (tds.length < 2) return;
                       const col0Text = tds[0].innerText.trim();
                       const bTag = tds[0].querySelector('b');
-                      const drawNo = bTag ? bTag.innerText.trim() : '';
+                      const drawNo = bTag ? bTag.innerText.trim() : (col0Text.match(/^(\d{1,5})\b/) || [])[1] || '';
                       if (!/^\d{1,5}$/.test(drawNo)) return;
-                      const dateText = col0Text.replace(drawNo, '').trim();
+                      const dateText = col0Text.replace(drawNo, '').replace(/^\s*\.\s*/, '').trim();
 
                       const lis = Array.from(tds[1].querySelectorAll('ol.B li, ul.B li, li'));
                       lis.sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
@@ -587,7 +1282,9 @@ jobs:
                           const val = li.innerText.trim();
                           const cls = (li.className || '') + ' ' + (li.getAttribute('title') || '');
                           if (/Letter|Zodiac/i.test(cls) || /^[A-Za-z]{1,12}$/.test(val)) {
-                              if (letter === '—' && val) letter = val.toUpperCase();
+                              if (letter === '—' && val && !/^(More|Promotional)$/i.test(val)) {
+                                  letter = val.toUpperCase();
+                              }
                           } else if (/^\d{1,4}$/.test(val)) {
                               nums.push(val);
                           }
@@ -600,7 +1297,7 @@ jobs:
               for r in raw_rows:
                   if r.get("nums"):
                       d_int = int(r["draw"])
-                      d_pad = str(d_int).zfill(4) if d_int < 1000 else str(d_int)
+                      d_pad = format_draw_pad(d_int)
                       results.append({
                           "draw_key": str(d_int),
                           "draw": d_pad,
@@ -617,14 +1314,19 @@ jobs:
               soup = BeautifulSoup(html, "lxml")
               text_all = soup.get_text(" ", strip=True)
 
+              jackpot_val = 0.0
+              for m_jp in re.finditer(r"Next\s+(?:Mega\s+|Power\s+)?Super\s+Prize\s+Rs\.?\s*([\d,]+(?:\.\d{2})?)", text_all, re.I):
+                  jp = parse_number(m_jp.group(1))
+                  if jp > jackpot_val:
+                      jackpot_val = jp
+
               date_match = re.search(
-                  r"Date\s*:\s*(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*"
+                  r"(?:Date\s*:\s*|Prize\s+Structure\s*-\s*)(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*,?\s*"
                   r"([A-Z][a-z]+\s+\d{1,2},\s+\d{4}|\d{4}-\d{2}-\d{2})",
                   text_all,
               )
               iso_date = parse_date_to_iso(date_match.group(1)) if date_match else ""
 
-              # Read balls in visual left-to-right order via getBoundingClientRect().left
               visual_balls = []
               try:
                   visual_balls = page.evaluate(r"""() => {
@@ -651,48 +1353,95 @@ jobs:
                   elif re.fullmatch(r"\d{1,4}", val):
                       nums.append(val)
 
-              rows = []
+              rows: list[dict[str, Any]] = []
               total_winners = 0
               total_payout = 0.0
-              for tr in soup.select("table tr"):
-                  tds = [td.get_text(" ", strip=True) for td in tr.find_all("td")]
-                  if len(tds) >= 4:
-                      if len(tds) >= 5:
-                          tier_label = f"{tds[0]} — {tds[1]}" if tds[0] and not re.search(r"total", tds[0], re.I) else tds[1]
-                          prize_str, win_str, tot_str = tds[2], tds[3], tds[4]
-                      else:
-                          tier_label, prize_str, win_str, tot_str = tds[0], tds[1], tds[2], tds[3]
 
-                      if re.search(r"\btotal\b", tier_label, re.I) or re.search(r"\btotal\b", tds[0], re.I):
-                          continue
-                      unit_prize = parse_number(prize_str)
-                      winners = int(round(parse_number(win_str)))
-                      row_amt = parse_number(tot_str)
-                      if unit_prize > 0 or winners > 0:
-                          if row_amt == 0 and unit_prize > 0 and winners > 0:
-                              row_amt = unit_prize * winners
-                          total_winners += winners
-                          total_payout += row_amt
+              # Layer 1 & 2: Parse all `<tr>` rows using BOTH `td` and `th` cells (`find_all(["td", "th"])`)
+              for tr in soup.select("table tr"):
+                  cells = [c.get_text(" ", strip=True) for c in tr.find_all(["td", "th"])]
+                  if len(cells) < 4:
+                      continue
+                  first_cell = cells[0].strip()
+                  second_cell = cells[1].strip() if len(cells) > 1 else ""
+                  if (
+                      first_cell in ("#", "Rank", "Prize")
+                      or second_cell.lower() in ("pattern", "prize", "winners")
+                      or re.search(r"\btotal\b", first_cell, re.I)
+                      or re.search(r"\btotal\b", second_cell, re.I)
+                  ):
+                      continue
+
+                  if len(cells) >= 5:
+                      tier_label = f"{first_cell} — {second_cell}" if first_cell else second_cell
+                      prize_str, win_str, tot_str = cells[2], cells[3], cells[4]
+                  else:
+                      tier_label, prize_str, win_str, tot_str = first_cell, cells[1], cells[2], cells[3]
+
+                  unit_prize = parse_number(prize_str)
+                  winners = int(round(parse_number(win_str)))
+                  row_amt = parse_number(tot_str)
+
+                  if unit_prize > 0 or winners > 0:
+                      if row_amt == 0 and unit_prize > 0 and winners > 0:
+                          row_amt = unit_prize * winners
+                      if unit_prize > jackpot_val:
+                          jackpot_val = unit_prize
+                      total_winners += winners
+                      total_payout += row_amt
+                      rows.append({
+                          "tier": tier_label,
+                          "prize": f"Rs. {unit_prize:,.2f}" if unit_prize > 0 else prize_str,
+                          "unitPrize": unit_prize,
+                          "avgWinners": winners,
+                      })
+
+              # Layer 3: Plain-text Regex Fallback after "Prize Structure" if `rows` is still empty
+              if not rows and "Prize Structure" in text_all:
+                  ps_text = text_all.split("Prize Structure", 1)[1]
+                  tier_pattern = re.compile(
+                      r"((?:Mega\s+Super|Power\s+Super|Grand\s+Super|Super)\s+Prize(?:\s*\([^)]+\))?|\d+\s*(?:st|nd|rd|th))\s+"
+                      r"([A-Za-z0-9 ,.&()/-]+?)\s+"
+                      r"(?:Rs\.?\s*([\d,]+(?:\.\d{2})?)|Grand\s+Super\s+Prize\s*\([^)]+\))\s+"
+                      r"(\d[\d,]*)\s+"
+                      r"(?:Rs\.?\s*([\d,]+(?:\.\d{2})?)|-)",
+                      re.I,
+                  )
+                  for m_row in tier_pattern.finditer(ps_text):
+                      rank_lbl = m_row.group(1).strip()
+                      pat_lbl = m_row.group(2).strip()
+                      unit_p = parse_number(m_row.group(3) or "0")
+                      win_c = int(round(parse_number(m_row.group(4) or "0")))
+                      tot_a = parse_number(m_row.group(5) or "0")
+                      if unit_p > 0 or win_c > 0:
+                          if tot_a == 0 and unit_p > 0 and win_c > 0:
+                              tot_a = unit_p * win_c
+                          if unit_p > jackpot_val:
+                              jackpot_val = unit_p
+                          total_winners += win_c
+                          total_payout += tot_a
                           rows.append({
-                              "tier": tier_label,
-                              "prize": f"Rs. {unit_prize:,.2f}",
-                              "unitPrize": unit_prize,
-                              "avgWinners": winners,
+                              "tier": f"{rank_lbl} — {pat_lbl}",
+                              "prize": f"Rs. {unit_p:,.2f}" if unit_p > 0 else rank_lbl,
+                              "unitPrize": unit_p,
+                              "avgWinners": win_c,
                           })
 
               if not nums and not rows:
                   return None
 
-              d_pad = str(draw_no).zfill(4) if draw_no < 1000 else str(draw_no)
+              d_pad = format_draw_pad(draw_no)
               return {
                   "draw": d_pad,
                   "date": iso_date or datetime.date.today().strftime("%Y-%m-%d"),
                   "letter": letter,
                   "nums": nums,
+                  "jackpot": jackpot_val,
                   "prizeTable": {
                       "date": iso_date,
                       "totalWinners": total_winners,
                       "totalPayout": round(total_payout, 2),
+                      "tierCounts": compute_tier_counts_from_rows(rows),
                       "rows": rows,
                   } if rows else None,
               }
@@ -706,11 +1455,22 @@ jobs:
                   entry = dataset["lotteries"].setdefault(
                       t_id, {"id": t_id, "name": lotto["name"], "board": "NLB", "draws": [], "perDrawTables": {}}
                   )
-                  existing_draws = {str(int(str(d["draw"]).lstrip("0") or "0")): d for d in entry["draws"] if str(d.get("draw", "")).lstrip("0").isdigit()}
-                  existing_tables = entry.get("perDrawTables", {})
+                  existing_draws: dict[str, dict[str, Any]] = {
+                      normalize_draw_key(d["draw"]): d
+                      for d in entry.get("draws", [])
+                      if normalize_draw_key(d.get("draw", "")).isdigit()
+                  }
+                  existing_tables: dict[str, Any] = entry.get("perDrawTables", {})
+
+                  max_saved_draw = max((int(k) for k in existing_draws.keys()), default=0)
+                  is_first_time = (len(existing_draws) == 0) or FORCE_FULL_BACKFILL
+                  has_any_tables = len(existing_tables) > 0
+                  mode_label = "1ST-TIME FULL BACKFILL" if is_first_time else (
+                      "INCREMENTAL LATEST-ONLY" if has_any_tables else "BACKFILL MISSING PRIZE TABLES"
+                  )
 
                   list_url = f"https://www.nlb.lk/results/{slug}"
-                  print(f"[NLB] Loading {lotto['name']} ({list_url})...")
+                  print(f"[NLB] {lotto['name']} ({t_id}): mode={mode_label}, saved_draws={len(existing_draws)}, saved_tables={len(existing_tables)}")
                   lotto_html = ""
                   try:
                       page.goto(list_url, wait_until="domcontentloaded", timeout=35000)
@@ -724,22 +1484,30 @@ jobs:
                       print(f"  ! Could not load {list_url}: {exc}")
                       continue
 
-                  # 1. Extract up to ~200 draws directly from `<table class='w0 tbl'>` on `/results/<slug>`
+                  for m_jp in re.finditer(r"Next\s+(?:Mega\s+|Power\s+)?Super\s+Prize\s+Rs\.?\s*([\d,]+(?:\.\d{2})?)", BeautifulSoup(lotto_html, "lxml").get_text(" ", strip=True), re.I):
+                      jp = parse_number(m_jp.group(1))
+                      if jp > float(entry.get("currentJackpot", 0) or 0):
+                          entry["currentJackpot"] = jp
+
+                  new_draws_count = 0
                   try:
                       main_rows = parse_nlb_main_table_rows(page)
-                      for r in main_rows[:MAX_DRAWS]:
-                          existing_draws[r["draw_key"]] = {
-                              "draw": r["draw"],
-                              "date": r["date"],
-                              "letter": r["letter"],
-                              "nums": r["nums"],
-                          }
-                      if main_rows:
-                          print(f"  + Extracted {min(len(main_rows), MAX_DRAWS)} historical draw results from {slug} main table.")
+                      limit_rows = main_rows[:MAX_DRAWS] if is_first_time else [
+                          r for r in main_rows if int(r["draw_key"]) > max_saved_draw or r["draw_key"] not in existing_draws
+                      ][:MAX_DRAWS]
+                      for r in limit_rows:
+                          d_key = r["draw_key"]
+                          if d_key not in existing_draws:
+                              existing_draws[d_key] = {
+                                  "draw": r["draw"],
+                                  "date": r["date"],
+                                  "letter": r["letter"],
+                                  "nums": r["nums"],
+                              }
+                              new_draws_count += 1
                   except Exception as exc:
                       print(f"  ! Main table parse warning on {slug}: {exc}")
 
-                  # 2. Detect latest draw number (supports relative `results/<slug>/<draw_no>` WITHOUT leading slash!)
                   draw_links = re.findall(rf"results/{re.escape(slug)}/(\d+)", lotto_html)
                   if not draw_links and existing_draws:
                       draw_links = list(existing_draws.keys())
@@ -752,24 +1520,43 @@ jobs:
                       continue
 
                   latest_draw_no = max(int(x) for x in draw_links)
-                  min_draw_no = max(1, latest_draw_no - MAX_DRAWS + 1)
-                  print(f"  -> Scraping individual draw Prize Structure tables #{latest_draw_no}..#{min_draw_no}")
+                  if not is_first_time and has_any_tables:
+                      min_draw_no = max(1, min(max_saved_draw, latest_draw_no))
+                      recent_missing = [
+                          int(k) for k in sorted(existing_draws.keys(), key=lambda x: int(x), reverse=True)[:MAX_DRAWS]
+                          if not has_prize_table(existing_tables, int(k))
+                      ]
+                      if recent_missing:
+                          min_draw_no = min(min_draw_no, min(recent_missing))
+                  else:
+                      min_draw_no = max(1, latest_draw_no - MAX_DRAWS + 1)
 
+                  new_tables_count = 0
                   consecutive_errors = 0
                   for d_no in range(latest_draw_no, min_draw_no - 1, -1):
                       d_key = str(d_no)
-                      d_pad = d_key.zfill(4) if d_no < 1000 else d_key
-                      if d_key in existing_draws and (d_key in existing_tables or d_pad in existing_tables):
+                      d_pad = format_draw_pad(d_no)
+
+                      if d_key in existing_draws and has_prize_table(existing_tables, d_no):
+                          if not is_first_time and has_any_tables and d_no <= max_saved_draw:
+                              break
                           continue
+
                       if consecutive_errors >= 5:
                           print(f"  ! Stopping individual page loop for {t_id} after 5 consecutive timeouts/challenges.")
                           break
 
                       detail_url = f"https://www.nlb.lk/results/{slug}/{d_no}"
                       try:
-                          page.goto(detail_url, wait_until="domcontentloaded", timeout=25000)
-                          page.wait_for_timeout(450)
-                          parsed = parse_nlb_single_draw_page(page, page.content(), d_no)
+                          page.goto(detail_url, wait_until="domcontentloaded", timeout=30000)
+                          page.wait_for_timeout(650)
+                          detail_html = page.content()
+                          if "Just a moment..." in detail_html or "cf-browser-verification" in detail_html:
+                              print(f"  [wait] Cloudflare challenge on {detail_url}, waiting 6s...")
+                              page.wait_for_timeout(6000)
+                              detail_html = page.content()
+
+                          parsed = parse_nlb_single_draw_page(page, detail_html, d_no)
                           if parsed:
                               consecutive_errors = 0
                               if parsed["nums"] and d_key not in existing_draws:
@@ -779,19 +1566,27 @@ jobs:
                                       "letter": parsed["letter"],
                                       "nums": parsed["nums"],
                                   }
-                              if parsed["prizeTable"]:
-                                  existing_tables[d_key] = parsed["prizeTable"]
+                                  new_draws_count += 1
+                              if parsed.get("jackpot", 0) > float(entry.get("currentJackpot", 0) or 0):
+                                  entry["currentJackpot"] = parsed["jackpot"]
+                              if parsed["prizeTable"] and not has_prize_table(existing_tables, d_no):
                                   existing_tables[d_pad] = parsed["prizeTable"]
-                                  print(f"  + NLB {t_id} Draw #{d_pad} ({parsed['date']}): {parsed['prizeTable']['totalWinners']} winners")
+                                  new_tables_count += 1
+                                  print(f"  + [NEW TABLE] NLB {t_id} Draw #{d_pad} ({parsed['date']}): {parsed['prizeTable']['totalWinners']} winners")
                           else:
                               consecutive_errors += 1
                       except Exception as exc:
                           consecutive_errors += 1
                           print(f"  ! Error on {detail_url}: {exc}")
 
-                  sorted_draws = sorted(existing_draws.values(), key=lambda x: int(str(x["draw"]).lstrip("0") or "0"), reverse=True)[:MAX_DRAWS]
+                  sorted_draws = sorted(
+                      existing_draws.values(),
+                      key=lambda x: int(normalize_draw_key(x.get("draw", "0"))),
+                      reverse=True,
+                  )
                   entry["draws"] = sorted_draws
                   entry["perDrawTables"] = existing_tables
+                  print(f"  => NLB {t_id} summary: +{new_draws_count} new draws, +{new_tables_count} new tables (total {len(sorted_draws)} draws, {len(existing_tables)} tables)")
                   save_dataset_checkpoint(dataset, OUTPUT_PATH)
 
 
@@ -806,6 +1601,7 @@ jobs:
                       args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
                   )
                   context = browser.new_context(
+                      ignore_https_errors=True,
                       user_agent=(
                           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                           "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -823,7 +1619,10 @@ jobs:
               final_draws = sum(len(v.get("draws", [])) for v in dataset["lotteries"].values())
               final_tables = sum(len(v.get("perDrawTables", {})) for v in dataset["lotteries"].values())
               n_files = len(glob.glob(os.path.join(TICKETS_DIR, "*.json")))
-              print(f"[done] Wrote {n_files} ticket JSON files in {TICKETS_DIR}/ + {INDEX_PATH} — {final_draws} draws, {final_tables} official prize tables.")
+              print(
+                  f"[done] Wrote {n_files} ticket JSON files in {TICKETS_DIR}/ + {PRIZE_RANKINGS_PATH} + {INDEX_PATH} "
+                  f"— {final_draws} draws, {final_tables} official prize tables."
+              )
 
 
           if __name__ == "__main__":
@@ -831,15 +1630,15 @@ jobs:
           PYEOF
           python3 scripts/fetch_nlb_dlb_365.py
 
-      - name: Commit & Push Updated Official JSON Dataset
+      - name: Commit & Push Updated Official JSON Dataset (Incremental Only)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add scripts/fetch_nlb_dlb_365.py data/
           if git diff --staged --quiet; then
-            echo "No new lottery draws detected since last sync."
+            echo "No new lottery draws detected since last sync — existing JSON files untouched."
           else
-            git commit -m "chore(data): auto-sync official NLB & DLB draws ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git commit -m "chore(data): incremental sync NLB & DLB latest draws + prize tier rankings ($(date -u +'%Y-%m-%d %H:%M UTC'))"
             git pull --rebase || true
             git push
           fi
