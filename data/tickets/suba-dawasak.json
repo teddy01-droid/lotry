@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "3.0",
+  "id": "suba-dawasak",
+  "name": "Suba Dawasak",
+  "board": "NLB",
+  "latestDraw": "0484",
+  "latestDate": "2026-11-11",
+  "drawCount": 7,
+  "tableCount": 0,
+  "draws": [
+    {
+      "draw": "0484",
+      "date": "2026-11-11",
+      "letter": "CAPRICORN",
+      "nums": [
+        "4",
+        "7",
+        "7",
+        "5",
+        "5",
+        "6",
+        "6",
+        "55",
+        "57",
+        "66"
+      ]
+    },
+    {
+      "draw": "0483",
+      "date": "2026-11-10",
+      "letter": "SAGITTARIUS",
+      "nums": [
+        "0",
+        "0",
+        "0",
+        "9",
+        "9",
+        "2",
+        "2",
+        "07",
+        "19",
+        "60"
+      ]
+    },
+    {
+      "draw": "0482",
+      "date": "2026-11-09",
+      "letter": "CANCER",
+      "nums": [
+        "3",
+        "7",
+        "7",
+        "0",
+        "0",
+        "3",
+        "3",
+        "32",
+        "46",
+        "51"
+      ]
+    },
+    {
+      "draw": "0481",
+      "date": "2026-11-08",
+      "letter": "SAGITTARIUS",
+      "nums": [
+        "14",
+        "19",
+        "31"
+      ]
+    },
+    {
+      "draw": "0480",
+      "date": "2026-11-07",
+      "letter": "SCORPIO",
+      "nums": [
+        "11",
+        "29",
+        "47"
+      ]
+    },
+    {
+      "draw": "0479",
+      "date": "2026-11-06",
+      "letter": "PISCES",
+      "nums": [
+        "11",
+        "52",
+        "63"
+      ]
+    },
+    {
+      "draw": "0478",
+      "date": "2026-11-05",
+      "letter": "SCORPIO",
+      "nums": [
+        "15",
+        "37",
+        "67"
+      ]
+    }
+  ],
+  "perDrawTables": {},
+  "updatedAt": "2026-11-12T07:16:33Z"
+}

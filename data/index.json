@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "3.0",
+  "maxDrawsTarget": 7,
+  "tickets": [
+    {
+      "id": "mahajana-sampatha",
+      "name": "Mahajana Sampatha",
+      "board": "NLB",
+      "file": "tickets/mahajana-sampatha.json",
+      "latestDraw": "6368",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:15:54Z"
+    },
+    {
+      "id": "govisetha",
+      "name": "Govisetha",
+      "board": "NLB",
+      "file": "tickets/govisetha.json",
+      "latestDraw": "4610",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:00Z"
+    },
+    {
+      "id": "mega-power",
+      "name": "Mega Power",
+      "board": "NLB",
+      "file": "tickets/mega-power.json",
+      "latestDraw": "2716",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:05Z"
+    },
+    {
+      "id": "dhana-nidhanaya",
+      "name": "Dhana Nidhanaya",
+      "board": "NLB",
+      "file": "tickets/dhana-nidhanaya.json",
+      "latestDraw": "2398",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:11Z"
+    },
+    {
+      "id": "handahana",
+      "name": "Handahana",
+      "board": "NLB",
+      "file": "tickets/handahana.json",
+      "latestDraw": "1677",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:16Z"
+    },
+    {
+      "id": "ada-sampatha",
+      "name": "Ada Sampatha",
+      "board": "NLB",
+      "file": "tickets/ada-sampatha.json",
+      "latestDraw": "0943",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:22Z"
+    },
+    {
+      "id": "nlb-jaya",
+      "name": "NLB Jaya",
+      "board": "NLB",
+      "file": "tickets/nlb-jaya.json",
+      "latestDraw": "0636",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:27Z"
+    },
+    {
+      "id": "suba-dawasak",
+      "name": "Suba Dawasak",
+      "board": "NLB",
+      "file": "tickets/suba-dawasak.json",
+      "latestDraw": "0484",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:33Z"
+    },
+    {
+      "id": "ayubo",
+      "name": "Ayubo",
+      "board": "NLB",
+      "file": "tickets/ayubo.json",
+      "latestDraw": "0031",
+      "latestDate": "2026-11-11",
+      "drawCount": 7,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:16:38Z"
+    },
+    {
+      "id": "ada-kotipathi",
+      "name": "Ada Kotipathi",
+      "board": "DLB",
+      "file": "tickets/ada-kotipathi.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "shanida",
+      "name": "Shanida",
+      "board": "DLB",
+      "file": "tickets/shanida.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "lagna-wasana",
+      "name": "Lagna Wasana",
+      "board": "DLB",
+      "file": "tickets/lagna-wasana.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "supiri-dhana-sampatha",
+      "name": "Supiri Dhana Sampatha",
+      "board": "DLB",
+      "file": "tickets/supiri-dhana-sampatha.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "super-ball",
+      "name": "Super Ball",
+      "board": "DLB",
+      "file": "tickets/super-ball.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "kapruka",
+      "name": "Kapruka",
+      "board": "DLB",
+      "file": "tickets/kapruka.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "waasi",
+      "name": "Waasi",
+      "board": "DLB",
+      "file": "tickets/waasi.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "sasiri",
+      "name": "Sasiri",
+      "board": "DLB",
+      "file": "tickets/sasiri.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    },
+    {
+      "id": "jaya-sampatha",
+      "name": "Jaya Sampatha",
+      "board": "DLB",
+      "file": "tickets/jaya-sampatha.json",
+      "latestDraw": "",
+      "latestDate": "",
+      "drawCount": 0,
+      "tableCount": 0,
+      "updatedAt": "2026-11-12T07:14:43Z"
+    }
+  ],
+  "updatedAt": "2026-11-12T07:16:38Z"
+}

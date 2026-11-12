@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "3.0",
+  "id": "handahana",
+  "name": "Handahana",
+  "board": "NLB",
+  "latestDraw": "1677",
+  "latestDate": "2026-11-11",
+  "drawCount": 7,
+  "tableCount": 0,
+  "draws": [
+    {
+      "draw": "1677",
+      "date": "2026-11-11",
+      "letter": "CAPRICORN",
+      "nums": [
+        "30",
+        "45",
+        "50",
+        "54"
+      ]
+    },
+    {
+      "draw": "1676",
+      "date": "2026-11-10",
+      "letter": "GEMINI",
+      "nums": [
+        "38",
+        "43",
+        "51",
+        "53"
+      ]
+    },
+    {
+      "draw": "1675",
+      "date": "2026-11-09",
+      "letter": "LIBRA",
+      "nums": [
+        "03",
+        "20",
+        "23",
+        "52"
+      ]
+    },
+    {
+      "draw": "1674",
+      "date": "2026-11-08",
+      "letter": "VIRGO",
+      "nums": [
+        "22",
+        "24",
+        "48",
+        "58"
+      ]
+    },
+    {
+      "draw": "1673",
+      "date": "2026-11-07",
+      "letter": "LIBRA",
+      "nums": [
+        "03",
+        "06",
+        "10",
+        "16"
+      ]
+    },
+    {
+      "draw": "1672",
+      "date": "2026-11-06",
+      "letter": "LIBRA",
+      "nums": [
+        "12",
+        "31",
+        "40",
+        "46"
+      ]
+    },
+    {
+      "draw": "1671",
+      "date": "2026-11-05",
+      "letter": "AQUARIUS",
+      "nums": [
+        "09",
+        "13",
+        "33",
+        "52"
+      ]
+    }
+  ],
+  "perDrawTables": {},
+  "updatedAt": "2026-11-12T07:16:16Z"
+}
