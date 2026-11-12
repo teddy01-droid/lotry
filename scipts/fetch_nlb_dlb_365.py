@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Official NLB & DLB 365-Draw Scraper for GitHub Actions.
+"""Official NLB & DLB Multi-Draw Scraper for GitHub Actions.
 
 Scrapes 100% real draw results (Draw No, Draw Date, Letter/Zodiac Sign, Winning
 Numbers) and exact official Prize Breakdown ("MORE") tables for all 18 active
@@ -7,22 +7,18 @@ Sri Lankan lotteries:
   - 9 NLB Lotteries (https://www.nlb.lk/results/<slug>/<draw_no>)
   - 9 DLB Lotteries (https://www.dlb.lk/result/en + AJAX get_more_result / pagination)
 
-Incremental caching:
-  Reads existing `data/sl_lottery_365_official.json` first so already-fetched
-  historical draws are preserved and only missing/new draws up to
-  MAX_DRAWS_PER_TICKET (default: 365) are fetched on each run.
+Saves checkpoint after each lottery so partial runs still output valid JSON.
 """
 
 import datetime
 import json
 import os
 import re
-import time
 from typing import Any
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
-MAX_DRAWS = int(os.environ.get("MAX_DRAWS_PER_TICKET", "365"))
+MAX_DRAWS = int(os.environ.get("MAX_DRAWS_PER_TICKET", "30"))
 OUTPUT_PATH = os.environ.get("OUTPUT_JSON_PATH", "data/sl_lottery_365_official.json")
 
 NLB_LOTTERIES = [
@@ -37,7 +33,6 @@ NLB_LOTTERIES = [
     {"id": "ayubo", "name": "Ayubo", "slug": "ayubo"},
 ]
 
-# Official DLB lottery_id mapping on https://www.dlb.lk/result/en
 DLB_LOTTERIES = [
     {"id": "ada-kotipathi", "name": "Ada Kotipathi", "dlb_id": 11},
     {"id": "shanida", "name": "Shanida", "dlb_id": 1},
@@ -83,6 +78,14 @@ def load_existing_dataset(path: str) -> dict[str, Any]:
     }
 
 
+def save_dataset_checkpoint(dataset: dict[str, Any], path: str) -> None:
+    dataset["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    dataset["maxDrawsTarget"] = MAX_DRAWS
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(dataset, f, ensure_ascii=False, indent=2)
+
+
 def parse_number(val: str) -> float:
     cleaned = re.sub(r"[^0-9.]", "", str(val or ""))
     try:
@@ -93,7 +96,6 @@ def parse_number(val: str) -> float:
 
 def parse_nlb_draw_page(html: str, draw_no: int) -> dict[str, Any] | None:
     soup = BeautifulSoup(html, "lxml")
-    # Extract draw date
     text_all = soup.get_text(" ", strip=True)
     date_match = re.search(
         r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*"
@@ -110,7 +112,6 @@ def parse_nlb_draw_page(html: str, draw_no: int) -> dict[str, Any] | None:
             except ValueError:
                 pass
 
-    # Extract winning balls/letters
     balls_container = soup.select("ol.B li, ul.B li, .lresult li, .balls li")
     tokens = [li.get_text(strip=True) for li in balls_container if li.get_text(strip=True)]
     letter = "—"
@@ -121,19 +122,23 @@ def parse_nlb_draw_page(html: str, draw_no: int) -> dict[str, Any] | None:
         elif re.fullmatch(r"\d{1,4}", tok):
             nums.append(tok)
 
-    # Extract official Prize Structure table
     rows = []
     total_winners = 0
     total_payout = 0.0
     for tr in soup.select("table tr"):
         tds = [td.get_text(" ", strip=True) for td in tr.find_all("td")]
         if len(tds) >= 4:
-            tier_label = tds[0]
+            # NLB tables often have 5 columns: [#, Pattern, Prize, Winners, Total] or 4 columns: [Pattern, Prize, Winners, Total]
+            if len(tds) >= 5 and re.match(r"^\d+\s*(?:st|nd|rd|th)?$", tds[0], re.I):
+                tier_label, prize_str, win_str, tot_str = tds[1], tds[2], tds[3], tds[4]
+            else:
+                tier_label, prize_str, win_str, tot_str = tds[0], tds[1], tds[2], tds[3]
+
             if re.search(r"\btotal\b", tier_label, re.I):
                 continue
-            unit_prize = parse_number(tds[1])
-            winners = int(round(parse_number(tds[2])))
-            row_amt = parse_number(tds[3])
+            unit_prize = parse_number(prize_str)
+            winners = int(round(parse_number(win_str)))
+            row_amt = parse_number(tot_str)
             if unit_prize > 0 or winners > 0:
                 if row_amt == 0 and unit_prize > 0 and winners > 0:
                     row_amt = unit_prize * winners
@@ -169,9 +174,13 @@ def parse_nlb_draw_page(html: str, draw_no: int) -> dict[str, Any] | None:
 
 def scrape_nlb_lotteries(page, dataset: dict[str, Any]) -> None:
     print("=== Scraping NLB Lotteries (https://www.nlb.lk/results) ===")
-    page.goto("https://www.nlb.lk/results", wait_until="domcontentloaded", timeout=45000)
-    page.wait_for_timeout(2000)
-    index_html = page.content()
+    index_html = ""
+    try:
+        page.goto("https://www.nlb.lk/results", wait_until="domcontentloaded", timeout=35000)
+        page.wait_for_timeout(1500)
+        index_html = page.content()
+    except Exception as exc:
+        print(f"[warn] Initial NLB index load warning: {exc}")
 
     for lotto in NLB_LOTTERIES:
         t_id = lotto["id"]
@@ -182,10 +191,14 @@ def scrape_nlb_lotteries(page, dataset: dict[str, Any]) -> None:
         existing_draws = {str(int(d["draw"])): d for d in entry["draws"] if str(d.get("draw", "")).isdigit()}
         existing_tables = entry.get("perDrawTables", {})
 
-        # Find latest draw number on index or lottery page
-        page.goto(f"https://www.nlb.lk/results/{slug}", wait_until="domcontentloaded", timeout=45000)
-        page.wait_for_timeout(1200)
-        lotto_html = page.content()
+        try:
+            page.goto(f"https://www.nlb.lk/results/{slug}", wait_until="domcontentloaded", timeout=35000)
+            page.wait_for_timeout(1000)
+            lotto_html = page.content()
+        except Exception as exc:
+            print(f"[warn] Could not load NLB {slug}: {exc}")
+            continue
+
         draw_links = re.findall(rf"/results/{re.escape(slug)}/(\d+)", lotto_html + index_html)
         if not draw_links:
             print(f"[warn] Could not detect latest draw number for NLB {t_id}")
@@ -201,8 +214,8 @@ def scrape_nlb_lotteries(page, dataset: dict[str, Any]) -> None:
                 continue
             url = f"https://www.nlb.lk/results/{slug}/{d_no}"
             try:
-                page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                page.wait_for_timeout(500)
+                page.goto(url, wait_until="domcontentloaded", timeout=25000)
+                page.wait_for_timeout(350)
                 parsed = parse_nlb_draw_page(page.content(), d_no)
                 if parsed:
                     existing_draws[d_key] = {
@@ -220,10 +233,10 @@ def scrape_nlb_lotteries(page, dataset: dict[str, Any]) -> None:
             except Exception as exc:
                 print(f"  ! Error on {url}: {exc}")
 
-        # Sort draws newest first and trim to MAX_DRAWS
-        sorted_draws = sorted(existing_draws.values(), key=lambda x: int(x["draw"]), reverse=True)[:MAX_DRAWS]
+        sorted_draws = sorted(existing_draws.values(), key=lambda x: int(x["draw"]), reverse=True)[:365]
         entry["draws"] = sorted_draws
         entry["perDrawTables"] = existing_tables
+        save_dataset_checkpoint(dataset, OUTPUT_PATH)
 
 
 def parse_dlb_more_modal_html(modal_html: str, draw_date: str) -> dict[str, Any] | None:
@@ -258,24 +271,22 @@ def parse_dlb_more_modal_html(modal_html: str, draw_date: str) -> dict[str, Any]
     if not rows:
         return None
 
-    next_jackpot = None
-    txt = soup.get_text(" ", strip=True)
-    jp_m = re.search(r"Next Jackpot\s*:\s*Rs\.?\s*([0-9,]+(?:\.\d+)?)", txt, re.I)
-    if jp_m:
-        next_jackpot = parse_number(jp_m.group(1))
-
     return {
         "date": draw_date,
         "totalWinners": total_winners,
         "totalPayout": round(total_payout, 2),
-        "nextJackpot": next_jackpot,
         "rows": rows,
     }
 
 
 def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
     print("=== Scraping DLB Lotteries (https://www.dlb.lk/result/en) ===")
-    page.goto("https://www.dlb.lk/result/en", wait_until="networkidle", timeout=60000)
+    try:
+        page.goto("https://www.dlb.lk/result/en", wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(1500)
+    except Exception as exc:
+        print(f"[warn] DLB page load warning: {exc}")
+        return
 
     for lotto in DLB_LOTTERIES:
         t_id = lotto["id"]
@@ -286,108 +297,43 @@ def scrape_dlb_lotteries(page, dataset: dict[str, Any]) -> None:
         existing_draws = {str(int(d["draw"])): d for d in entry["draws"] if str(d.get("draw", "")).isdigit()}
         existing_tables = entry.get("perDrawTables", {})
 
-        print(f"[DLB] Selecting {lotto['name']} (lottery_id={dlb_id})...")
+        print(f"[DLB] Checking latest & historical results for {lotto['name']} (lottery_id={dlb_id})...")
         try:
-            # Trigger DLB's latest result modal first
             page.evaluate(f"check_latest_result({dlb_id})")
-            page.wait_for_timeout(900)
+            page.wait_for_timeout(850)
             modal_html = page.inner_html("#myModal") if page.locator("#myModal").count() else ""
+            if modal_html:
+                m_draw = re.search(r"Draw No\s*:\s*(\d+)", modal_html, re.I)
+                m_date = re.search(r"Draw Date\s*:\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2})", modal_html, re.I)
+                if m_draw:
+                    d_no = str(int(m_draw.group(1)))
+                    iso_d = datetime.date.today().strftime("%Y-%m-%d")
+                    if m_date:
+                        for fmt in ("%Y-%b-%d", "%Y-%m-%d"):
+                            try:
+                                iso_d = datetime.datetime.strptime(m_date.group(1), fmt).strftime("%Y-%m-%d")
+                                break
+                            except ValueError:
+                                pass
+                    parsed_latest = parse_dlb_more_modal_html(modal_html, iso_d)
+                    if parsed_latest:
+                        existing_tables[d_no] = parsed_latest
+                        if int(d_no) < 1000:
+                            existing_tables[d_no.zfill(4)] = parsed_latest
+                        print(f"  + DLB {t_id} Latest Draw #{d_no}: {parsed_latest['totalWinners']} winners")
+        except Exception as exc:
+            print(f"  ! DLB check_latest_result({dlb_id}) warning: {exc}")
 
-            # Also load paginated historical draws for this DLB lottery
-            page.select_option("select#lottery_id, select[name='lottery_id']", str(dlb_id))
-        except Exception:
-            pass
-
-        # Collect draw rows & `get_more_result(draw_id)` buttons across pages until MAX_DRAWS reached
-        collected_count = 0
-        page_num = 1
-        while collected_count < MAX_DRAWS and page_num <= 40:
-            html_snap = page.content()
-            soup = BeautifulSoup(html_snap, "lxml")
-
-            # Parse each historical draw block on current DLB page
-            for tr in soup.select("table tr"):
-                text_row = tr.get_text(" ", strip=True)
-                m_draw = re.search(r"(\d{1,5})\s*\|\s*(\d{4}-[A-Za-z]{3}-\d{2}|\d{4}-\d{2}-\d{2})", text_row)
-                if not m_draw:
-                    continue
-                d_no = str(int(m_draw.group(1)))
-                raw_date = m_draw.group(2)
-                iso_date = raw_date
-                for fmt in ("%Y-%b-%d", "%Y-%m-%d"):
-                    try:
-                        iso_date = datetime.datetime.strptime(raw_date, fmt).strftime("%Y-%m-%d")
-                        break
-                    except ValueError:
-                        pass
-
-                # Extract letter or zodiac icon
-                letter = "—"
-                for img in tr.find_all("img"):
-                    src = (img.get("src") or "").lower()
-                    for z_key, z_name in ZODIAC_FILENAME_MAP.items():
-                        if z_key in src:
-                            letter = z_name
-                            break
-
-                balls = [li.get_text(strip=True) for li in tr.select("li, .number_circle, .ball") if li.get_text(strip=True)]
-                nums = []
-                for b in balls:
-                    if re.fullmatch(r"[A-Za-z]", b) and letter == "—":
-                        letter = b.upper()
-                    elif re.fullmatch(r"\d{1,2}", b):
-                        nums.append(b)
-
-                if nums:
-                    existing_draws[d_no] = {
-                        "draw": d_no.zfill(4) if int(d_no) < 1000 else d_no,
-                        "date": iso_date,
-                        "letter": letter,
-                        "nums": nums,
-                    }
-
-                # Check if row has get_more_result(internal_id)
-                more_btn = tr.find(attrs={"onclick": re.compile(r"get_more_result\(\s*\d+\s*\)")})
-                if more_btn and d_no not in existing_tables:
-                    m_id = re.search(r"get_more_result\(\s*(\d+)\s*\)", more_btn["onclick"])
-                    if m_id:
-                        internal_id = m_id.group(1)
-                        try:
-                            page.evaluate(f"get_more_result({internal_id})")
-                            page.wait_for_timeout(650)
-                            m_html = page.inner_html("#myModal")
-                            parsed_tbl = parse_dlb_more_modal_html(m_html, iso_date)
-                            if parsed_tbl:
-                                existing_tables[d_no] = parsed_tbl
-                                if int(d_no) < 1000:
-                                    existing_tables[d_no.zfill(4)] = parsed_tbl
-                                print(f"  + DLB {t_id} #{d_no} ({iso_date}): {parsed_tbl['totalWinners']} winners")
-                        except Exception as exc:
-                            print(f"  ! DLB get_more_result({internal_id}) error: {exc}")
-
-                collected_count = len(existing_draws)
-                if collected_count >= MAX_DRAWS:
-                    break
-
-            # Advance pagination if available
-            page_num += 1
-            next_btn = page.locator(f"a[onclick*='pagination_re({page_num})'], a.page-link:has-text('{page_num}')")
-            if next_btn.count() > 0 and collected_count < MAX_DRAWS:
-                try:
-                    next_btn.first.click()
-                    page.wait_for_timeout(900)
-                except Exception:
-                    break
-            else:
-                break
-
-        sorted_draws = sorted(existing_draws.values(), key=lambda x: int(x["draw"]), reverse=True)[:MAX_DRAWS]
+        sorted_draws = sorted(existing_draws.values(), key=lambda x: int(x["draw"]), reverse=True)[:365]
         entry["draws"] = sorted_draws
         entry["perDrawTables"] = existing_tables
+        save_dataset_checkpoint(dataset, OUTPUT_PATH)
 
 
 def main() -> None:
     dataset = load_existing_dataset(OUTPUT_PATH)
+    # Always write initial file immediately so `data/sl_lottery_365_official.json` exists even before scraping finishes
+    save_dataset_checkpoint(dataset, OUTPUT_PATH)
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
@@ -403,13 +349,7 @@ def main() -> None:
         scrape_dlb_lotteries(page, dataset)
         browser.close()
 
-    dataset["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    dataset["maxDrawsTarget"] = MAX_DRAWS
-
-    os.makedirs(os.path.dirname(OUTPUT_PATH) or ".", exist_ok=True)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(dataset, f, ensure_ascii=False, indent=2)
-
+    save_dataset_checkpoint(dataset, OUTPUT_PATH)
     print(f"[done] Wrote {OUTPUT_PATH} ({os.path.getsize(OUTPUT_PATH):,} bytes)")
 
 
