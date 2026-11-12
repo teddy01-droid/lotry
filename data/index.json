@@ -1,6 +1,8 @@
 {
-  "schemaVersion": "3.0",
+  "schemaVersion": "3.2",
   "maxDrawsTarget": 7,
+  "prizeRankingsFile": "prize_tier_rankings.json",
+  "prizeRankingsUpdatedAt": "2026-11-12T09:12:39Z",
   "tickets": [
     {
       "id": "mahajana-sampatha",
@@ -9,9 +11,21 @@
       "file": "tickets/mahajana-sampatha.json",
       "latestDraw": "6368",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:15:54Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 22835088.0,
+      "avgWinnersPerDraw": 251498,
+      "dailyPrizePayout": 20562640.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 229016,
+        "TIER_80_120": 10070,
+        "TIER_200": 11172,
+        "TIER_1000_2000": 1116,
+        "TIER_20000": 102,
+        "TIER_100000": 21,
+        "TIER_1M_PLUS": 1
+      },
+      "updatedAt": "2026-11-12T09:11:44Z"
     },
     {
       "id": "govisetha",
@@ -20,9 +34,21 @@
       "file": "tickets/govisetha.json",
       "latestDraw": "4610",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:00Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 61798808.0,
+      "avgWinnersPerDraw": 115543,
+      "dailyPrizePayout": 7472840.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 106291,
+        "TIER_80_120": 0,
+        "TIER_200": 8941,
+        "TIER_1000_2000": 309,
+        "TIER_20000": 0,
+        "TIER_100000": 2,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T09:11:51Z"
     },
     {
       "id": "mega-power",
@@ -31,9 +57,21 @@
       "file": "tickets/mega-power.json",
       "latestDraw": "2716",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:05Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 313214574.0,
+      "avgWinnersPerDraw": 117113,
+      "dailyPrizePayout": 9500480.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 109052,
+        "TIER_80_120": 0,
+        "TIER_200": 7787,
+        "TIER_1000_2000": 269,
+        "TIER_20000": 0,
+        "TIER_100000": 4,
+        "TIER_1M_PLUS": 1
+      },
+      "updatedAt": "2026-11-12T09:11:58Z"
     },
     {
       "id": "dhana-nidhanaya",
@@ -42,9 +80,21 @@
       "file": "tickets/dhana-nidhanaya.json",
       "latestDraw": "2398",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:11Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 97187935.2,
+      "avgWinnersPerDraw": 85076,
+      "dailyPrizePayout": 7574800.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 79470,
+        "TIER_80_120": 2225,
+        "TIER_200": 3205,
+        "TIER_1000_2000": 170,
+        "TIER_20000": 0,
+        "TIER_100000": 5,
+        "TIER_1M_PLUS": 1
+      },
+      "updatedAt": "2026-11-12T09:12:05Z"
     },
     {
       "id": "handahana",
@@ -53,9 +103,21 @@
       "file": "tickets/handahana.json",
       "latestDraw": "1677",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:16Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 3591489.2,
+      "avgWinnersPerDraw": 123313,
+      "dailyPrizePayout": 7447560.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 108418,
+        "TIER_80_120": 7467,
+        "TIER_200": 7256,
+        "TIER_1000_2000": 162,
+        "TIER_20000": 10,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T09:12:11Z"
     },
     {
       "id": "ada-sampatha",
@@ -64,9 +126,21 @@
       "file": "tickets/ada-sampatha.json",
       "latestDraw": "0943",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:22Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 250000.0,
+      "avgWinnersPerDraw": 23414,
+      "dailyPrizePayout": 10552680.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 18321,
+        "TIER_200": 0,
+        "TIER_1000_2000": 5048,
+        "TIER_20000": 43,
+        "TIER_100000": 2,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T09:12:18Z"
     },
     {
       "id": "nlb-jaya",
@@ -75,9 +149,21 @@
       "file": "tickets/nlb-jaya.json",
       "latestDraw": "0636",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:27Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 500000.0,
+      "avgWinnersPerDraw": 66605,
+      "dailyPrizePayout": 5760360.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 60622,
+        "TIER_80_120": 2996,
+        "TIER_200": 2729,
+        "TIER_1000_2000": 225,
+        "TIER_20000": 32,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "updatedAt": "2026-11-12T09:12:25Z"
     },
     {
       "id": "suba-dawasak",
@@ -86,9 +172,21 @@
       "file": "tickets/suba-dawasak.json",
       "latestDraw": "0484",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:33Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 500000.0,
+      "avgWinnersPerDraw": 92860,
+      "dailyPrizePayout": 8654580.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 84007,
+        "TIER_80_120": 0,
+        "TIER_200": 7124,
+        "TIER_1000_2000": 1687,
+        "TIER_20000": 41,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "updatedAt": "2026-11-12T09:12:32Z"
     },
     {
       "id": "ayubo",
@@ -97,109 +195,229 @@
       "file": "tickets/ayubo.json",
       "latestDraw": "0031",
       "latestDate": "2026-11-11",
-      "drawCount": 7,
-      "tableCount": 0,
-      "updatedAt": "2026-11-12T07:16:38Z"
+      "drawCount": 14,
+      "tableCount": 7,
+      "currentJackpot": 500000.0,
+      "avgWinnersPerDraw": 60362,
+      "dailyPrizePayout": 6332860.0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 53157,
+        "TIER_80_120": 4119,
+        "TIER_200": 2462,
+        "TIER_1000_2000": 573,
+        "TIER_20000": 50,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 1
+      },
+      "updatedAt": "2026-11-12T09:12:39Z"
     },
     {
       "id": "ada-kotipathi",
       "name": "Ada Kotipathi",
       "board": "DLB",
       "file": "tickets/ada-kotipathi.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "3168",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T08:46:21Z"
     },
     {
       "id": "shanida",
       "name": "Shanida",
       "board": "DLB",
       "file": "tickets/shanida.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "5503",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T08:49:31Z"
     },
     {
       "id": "lagna-wasana",
       "name": "Lagna Wasana",
       "board": "DLB",
       "file": "tickets/lagna-wasana.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "5054",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T08:52:40Z"
     },
     {
       "id": "supiri-dhana-sampatha",
       "name": "Supiri Dhana Sampatha",
       "board": "DLB",
       "file": "tickets/supiri-dhana-sampatha.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "1076",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T08:55:50Z"
     },
     {
       "id": "super-ball",
       "name": "Super Ball",
       "board": "DLB",
       "file": "tickets/super-ball.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "3342",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T08:58:59Z"
     },
     {
       "id": "kapruka",
       "name": "Kapruka",
       "board": "DLB",
       "file": "tickets/kapruka.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "2518",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T09:02:08Z"
     },
     {
       "id": "waasi",
       "name": "Waasi",
       "board": "DLB",
       "file": "tickets/waasi.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "0042",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T09:05:18Z"
     },
     {
       "id": "sasiri",
       "name": "Sasiri",
       "board": "DLB",
       "file": "tickets/sasiri.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "1172",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T09:08:27Z"
     },
     {
       "id": "jaya-sampatha",
       "name": "Jaya Sampatha",
       "board": "DLB",
       "file": "tickets/jaya-sampatha.json",
-      "latestDraw": "",
-      "latestDate": "",
-      "drawCount": 0,
+      "latestDraw": "0550",
+      "latestDate": "2026-11-11",
+      "drawCount": 25,
       "tableCount": 0,
-      "updatedAt": "2026-11-12T07:14:43Z"
+      "currentJackpot": 0,
+      "avgWinnersPerDraw": 0,
+      "dailyPrizePayout": 0,
+      "tierWinnersPerDraw": {
+        "TIER_40": 0,
+        "TIER_80_120": 0,
+        "TIER_200": 0,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 0,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "updatedAt": "2026-11-12T09:11:37Z"
     }
   ],
-  "updatedAt": "2026-11-12T07:16:38Z"
+  "updatedAt": "2026-11-12T09:12:39Z"
 }
