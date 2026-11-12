@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.4",
+  "schemaVersion": "3.6",
   "id": "ayubo",
   "name": "Ayubo",
   "board": "NLB",
@@ -1080,5 +1080,5 @@
       ]
     }
   },
-  "updatedAt": "2026-11-12T10:53:58Z"
+  "updatedAt": "2026-11-12T11:14:48Z"
 }
