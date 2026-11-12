@@ -1,0 +1,58 @@
+name: Sync NLB & DLB 365-Draw Official Lottery Dataset
+
+on:
+  schedule:
+    # Runs automatically every day at 10:15 PM Sri Lanka Time (16:45 UTC) after NLB & DLB daily draws conclude
+    - cron: '45 16 * * *'
+  workflow_dispatch:
+    inputs:
+      max_draws:
+        description: 'Number of real historical draws to backfill per ticket (1 to 365)'
+        required: false
+        default: '365'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-sync-nlb-dlb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Playwright & BeautifulSoup4
+        run: |
+          pip install --upgrade pip
+          pip install playwright beautifulsoup4 lxml requests
+          playwright install --with-deps chromium
+
+      - name: Fetch 100% Official NLB & DLB Draws + Prize Breakdown Tables (Up to 365 Draws)
+        env:
+          MAX_DRAWS_PER_TICKET: ${{ github.event.inputs.max_draws || '365' }}
+          OUTPUT_JSON_PATH: data/sl_lottery_365_official.json
+        run: |
+          python3 scripts/fetch_nlb_dlb_365.py
+
+      - name: Commit & Push Updated Official JSON Dataset
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sl_lottery_365_official.json
+          if git diff --staged --quiet; then
+            echo "No new lottery draws detected since last sync."
+          else
+            git commit -m "chore(data): auto-sync official NLB & DLB draws ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
