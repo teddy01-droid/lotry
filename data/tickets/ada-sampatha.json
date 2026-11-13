@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "3.8",
+  "id": "ada-sampatha",
+  "name": "Ada Sampatha",
+  "board": "NLB",
+  "latestDraw": "",
+  "latestDate": "",
+  "drawCount": 0,
+  "tableCount": 0,
+  "currentJackpot": 0,
+  "avgWinnersPerDraw": 0,
+  "dailyPrizePayout": 0,
+  "tierWinnersPerDraw": {
+    "TIER_40": 0,
+    "TIER_80_120": 0,
+    "TIER_200": 0,
+    "TIER_1000_2000": 0,
+    "TIER_20000": 0,
+    "TIER_100000": 0,
+    "TIER_1M_PLUS": 0
+  },
+  "prizeStructureDetails": [],
+  "drawTierHistory": [],
+  "draws": [],
+  "perDrawTables": {},
+  "updatedAt": "2026-11-13T01:11:34Z"
+}

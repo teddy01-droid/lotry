@@ -1,0 +1,6630 @@
+{
+  "schemaVersion": "3.8",
+  "id": "jaya-sampatha",
+  "name": "Jaya Sampatha",
+  "board": "DLB",
+  "latestDraw": "0551",
+  "latestDate": "2026-11-12",
+  "drawCount": 90,
+  "tableCount": 90,
+  "currentJackpot": 250000.0,
+  "avgWinnersPerDraw": 13534,
+  "dailyPrizePayout": 5972520.0,
+  "tierWinnersPerDraw": {
+    "TIER_40": 0,
+    "TIER_80_120": 10594,
+    "TIER_200": 0,
+    "TIER_1000_2000": 2912,
+    "TIER_20000": 28,
+    "TIER_100000": 0,
+    "TIER_1M_PLUS": 0
+  },
+  "prizeStructureDetails": [
+    {
+      "tier": "LAST 4 NOS,LETTER",
+      "prize": "Rs. 250,000.00",
+      "unitPrize": 250000.0,
+      "avgWinners": 0
+    },
+    {
+      "tier": "LAST 4 NOS",
+      "prize": "Rs. 50,000.00",
+      "unitPrize": 50000.0,
+      "avgWinners": 28
+    },
+    {
+      "tier": "LAST 3 NOS",
+      "prize": "Rs. 4,000.00",
+      "unitPrize": 4000.0,
+      "avgWinners": 271
+    },
+    {
+      "tier": "LAST 2 NOS",
+      "prize": "Rs. 1,000.00",
+      "unitPrize": 1000.0,
+      "avgWinners": 2641
+    },
+    {
+      "tier": "LETTER",
+      "prize": "Rs. 80.00",
+      "unitPrize": 80.0,
+      "avgWinners": 10594
+    }
+  ],
+  "drawTierHistory": [
+    {
+      "draw": "0551",
+      "date": "2026-11-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0550",
+      "date": "2026-11-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0549",
+      "date": "2026-11-10",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0548",
+      "date": "2026-11-09",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0547",
+      "date": "2026-11-08",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0546",
+      "date": "2026-11-07",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0545",
+      "date": "2026-11-06",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0544",
+      "date": "2026-11-05",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0543",
+      "date": "2026-11-04",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0542",
+      "date": "2026-11-03",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0541",
+      "date": "2026-11-02",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0540",
+      "date": "2026-11-01",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0539",
+      "date": "2026-10-31",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0538",
+      "date": "2026-10-30",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0537",
+      "date": "2026-10-29",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0536",
+      "date": "2026-10-28",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0535",
+      "date": "2026-10-27",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0534",
+      "date": "2026-10-26",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0533",
+      "date": "2026-10-25",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0532",
+      "date": "2026-10-24",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0531",
+      "date": "2026-10-23",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0530",
+      "date": "2026-10-22",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0529",
+      "date": "2026-10-21",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0528",
+      "date": "2026-10-20",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0527",
+      "date": "2026-10-19",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0526",
+      "date": "2026-10-18",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0525",
+      "date": "2026-10-17",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0524",
+      "date": "2026-10-16",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0523",
+      "date": "2026-10-15",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0522",
+      "date": "2026-10-14",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0521",
+      "date": "2026-10-13",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0520",
+      "date": "2026-10-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0519",
+      "date": "2026-10-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0518",
+      "date": "2026-10-10",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0517",
+      "date": "2026-10-09",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0516",
+      "date": "2026-10-08",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0515",
+      "date": "2026-10-07",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0514",
+      "date": "2026-10-06",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0513",
+      "date": "2026-10-05",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0512",
+      "date": "2026-10-04",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0511",
+      "date": "2026-10-03",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0510",
+      "date": "2026-10-02",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0509",
+      "date": "2026-10-01",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0508",
+      "date": "2026-09-30",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0507",
+      "date": "2026-09-29",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0506",
+      "date": "2026-09-28",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0505",
+      "date": "2026-09-27",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0504",
+      "date": "2026-09-26",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0503",
+      "date": "2026-09-25",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0502",
+      "date": "2026-09-24",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0501",
+      "date": "2026-09-23",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0500",
+      "date": "2026-09-22",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0499",
+      "date": "2026-09-21",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0498",
+      "date": "2026-09-20",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0497",
+      "date": "2026-09-19",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0496",
+      "date": "2026-09-18",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0495",
+      "date": "2026-09-17",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0494",
+      "date": "2026-09-16",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0493",
+      "date": "2026-09-15",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0492",
+      "date": "2026-09-14",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0491",
+      "date": "2026-09-13",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0490",
+      "date": "2026-09-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0489",
+      "date": "2026-09-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0488",
+      "date": "2026-09-10",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0487",
+      "date": "2026-09-09",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0486",
+      "date": "2026-09-08",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0485",
+      "date": "2026-09-07",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0484",
+      "date": "2026-09-06",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0483",
+      "date": "2026-09-05",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0482",
+      "date": "2026-09-04",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0481",
+      "date": "2026-09-03",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0480",
+      "date": "2026-09-02",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0479",
+      "date": "2026-09-01",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0478",
+      "date": "2026-08-31",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0477",
+      "date": "2026-08-30",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0476",
+      "date": "2026-08-29",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0475",
+      "date": "2026-08-28",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0474",
+      "date": "2026-08-27",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0473",
+      "date": "2026-08-26",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0472",
+      "date": "2026-08-25",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0471",
+      "date": "2026-08-24",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0470",
+      "date": "2026-08-23",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0469",
+      "date": "2026-08-22",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0468",
+      "date": "2026-08-21",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0467",
+      "date": "2026-08-20",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0466",
+      "date": "2026-08-19",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0465",
+      "date": "2026-08-18",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0464",
+      "date": "2026-08-17",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0463",
+      "date": "2026-08-16",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    {
+      "draw": "0462",
+      "date": "2026-08-15",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "tiers": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    }
+  ],
+  "draws": [
+    {
+      "draw": "0551",
+      "date": "2026-11-12",
+      "letter": "K",
+      "nums": [
+        "3",
+        "4",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "draw": "0550",
+      "date": "2026-11-11",
+      "letter": "A",
+      "nums": [
+        "4",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "draw": "0549",
+      "date": "2026-11-10",
+      "letter": "V",
+      "nums": [
+        "3",
+        "8",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "draw": "0548",
+      "date": "2026-11-09",
+      "letter": "Y",
+      "nums": [
+        "0",
+        "6",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "draw": "0547",
+      "date": "2026-11-08",
+      "letter": "Z",
+      "nums": [
+        "8",
+        "2",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "draw": "0546",
+      "date": "2026-11-07",
+      "letter": "L",
+      "nums": [
+        "9",
+        "6",
+        "7",
+        "4"
+      ]
+    },
+    {
+      "draw": "0545",
+      "date": "2026-11-06",
+      "letter": "K",
+      "nums": [
+        "6",
+        "6",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "draw": "0544",
+      "date": "2026-11-05",
+      "letter": "S",
+      "nums": [
+        "2",
+        "1",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "draw": "0543",
+      "date": "2026-11-04",
+      "letter": "M",
+      "nums": [
+        "6",
+        "2",
+        "9",
+        "3"
+      ]
+    },
+    {
+      "draw": "0542",
+      "date": "2026-11-03",
+      "letter": "C",
+      "nums": [
+        "1",
+        "2",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "draw": "0541",
+      "date": "2026-11-02",
+      "letter": "F",
+      "nums": [
+        "8",
+        "6",
+        "8",
+        "8"
+      ]
+    },
+    {
+      "draw": "0540",
+      "date": "2026-11-01",
+      "letter": "V",
+      "nums": [
+        "0",
+        "1",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "draw": "0539",
+      "date": "2026-10-31",
+      "letter": "D",
+      "nums": [
+        "0",
+        "1",
+        "5",
+        "5"
+      ]
+    },
+    {
+      "draw": "0538",
+      "date": "2026-10-30",
+      "letter": "E",
+      "nums": [
+        "5",
+        "0",
+        "6",
+        "5"
+      ]
+    },
+    {
+      "draw": "0537",
+      "date": "2026-10-29",
+      "letter": "F",
+      "nums": [
+        "0",
+        "1",
+        "5",
+        "0"
+      ]
+    },
+    {
+      "draw": "0536",
+      "date": "2026-10-28",
+      "letter": "F",
+      "nums": [
+        "2",
+        "2",
+        "0",
+        "4"
+      ]
+    },
+    {
+      "draw": "0535",
+      "date": "2026-10-27",
+      "letter": "M",
+      "nums": [
+        "6",
+        "5",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "draw": "0534",
+      "date": "2026-10-26",
+      "letter": "E",
+      "nums": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ]
+    },
+    {
+      "draw": "0533",
+      "date": "2026-10-25",
+      "letter": "F",
+      "nums": [
+        "6",
+        "6",
+        "6",
+        "6"
+      ]
+    },
+    {
+      "draw": "0532",
+      "date": "2026-10-24",
+      "letter": "Q",
+      "nums": [
+        "5",
+        "7",
+        "9",
+        "6"
+      ]
+    },
+    {
+      "draw": "0531",
+      "date": "2026-10-23",
+      "letter": "O",
+      "nums": [
+        "3",
+        "3",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "draw": "0530",
+      "date": "2026-10-22",
+      "letter": "N",
+      "nums": [
+        "0",
+        "1",
+        "1",
+        "4"
+      ]
+    },
+    {
+      "draw": "0529",
+      "date": "2026-10-21",
+      "letter": "R",
+      "nums": [
+        "7",
+        "7",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "draw": "0528",
+      "date": "2026-10-20",
+      "letter": "A",
+      "nums": [
+        "2",
+        "5",
+        "3",
+        "0"
+      ]
+    },
+    {
+      "draw": "0527",
+      "date": "2026-10-19",
+      "letter": "A",
+      "nums": [
+        "7",
+        "3",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "draw": "0526",
+      "date": "2026-10-18",
+      "letter": "R",
+      "nums": [
+        "0",
+        "5",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "draw": "0525",
+      "date": "2026-10-17",
+      "letter": "Z",
+      "nums": [
+        "3",
+        "7",
+        "9",
+        "8"
+      ]
+    },
+    {
+      "draw": "0524",
+      "date": "2026-10-16",
+      "letter": "R",
+      "nums": [
+        "4",
+        "9",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "draw": "0523",
+      "date": "2026-10-15",
+      "letter": "N",
+      "nums": [
+        "3",
+        "1",
+        "9",
+        "1"
+      ]
+    },
+    {
+      "draw": "0522",
+      "date": "2026-10-14",
+      "letter": "R",
+      "nums": [
+        "4",
+        "8",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "draw": "0521",
+      "date": "2026-10-13",
+      "letter": "T",
+      "nums": [
+        "2",
+        "6",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "draw": "0520",
+      "date": "2026-10-12",
+      "letter": "B",
+      "nums": [
+        "0",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "draw": "0519",
+      "date": "2026-10-11",
+      "letter": "R",
+      "nums": [
+        "0",
+        "8",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "draw": "0518",
+      "date": "2026-10-10",
+      "letter": "F",
+      "nums": [
+        "7",
+        "4",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "draw": "0517",
+      "date": "2026-10-09",
+      "letter": "K",
+      "nums": [
+        "1",
+        "9",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "draw": "0516",
+      "date": "2026-10-08",
+      "letter": "W",
+      "nums": [
+        "3",
+        "1",
+        "8",
+        "1"
+      ]
+    },
+    {
+      "draw": "0515",
+      "date": "2026-10-07",
+      "letter": "D",
+      "nums": [
+        "7",
+        "3",
+        "1",
+        "8"
+      ]
+    },
+    {
+      "draw": "0514",
+      "date": "2026-10-06",
+      "letter": "J",
+      "nums": [
+        "9",
+        "4",
+        "7",
+        "6"
+      ]
+    },
+    {
+      "draw": "0513",
+      "date": "2026-10-05",
+      "letter": "Q",
+      "nums": [
+        "0",
+        "6",
+        "4",
+        "9"
+      ]
+    },
+    {
+      "draw": "0512",
+      "date": "2026-10-04",
+      "letter": "G",
+      "nums": [
+        "3",
+        "2",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "draw": "0511",
+      "date": "2026-10-03",
+      "letter": "F",
+      "nums": [
+        "6",
+        "9",
+        "4",
+        "3"
+      ]
+    },
+    {
+      "draw": "0510",
+      "date": "2026-10-02",
+      "letter": "R",
+      "nums": [
+        "2",
+        "7",
+        "2",
+        "2"
+      ]
+    },
+    {
+      "draw": "0509",
+      "date": "2026-10-01",
+      "letter": "K",
+      "nums": [
+        "0",
+        "6",
+        "0",
+        "8"
+      ]
+    },
+    {
+      "draw": "0508",
+      "date": "2026-09-30",
+      "letter": "L",
+      "nums": [
+        "9",
+        "6",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "draw": "0507",
+      "date": "2026-09-29",
+      "letter": "T",
+      "nums": [
+        "2",
+        "7",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "draw": "0506",
+      "date": "2026-09-28",
+      "letter": "U",
+      "nums": [
+        "5",
+        "4",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "draw": "0505",
+      "date": "2026-09-27",
+      "letter": "V",
+      "nums": [
+        "5",
+        "0",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "draw": "0504",
+      "date": "2026-09-26",
+      "letter": "T",
+      "nums": [
+        "8",
+        "5",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "draw": "0503",
+      "date": "2026-09-25",
+      "letter": "—",
+      "nums": [
+        "7",
+        "3",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "draw": "0502",
+      "date": "2026-09-24",
+      "letter": "K",
+      "nums": [
+        "0",
+        "8",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "draw": "0501",
+      "date": "2026-09-23",
+      "letter": "D",
+      "nums": [
+        "3",
+        "1",
+        "8",
+        "8"
+      ]
+    },
+    {
+      "draw": "0500",
+      "date": "2026-09-22",
+      "letter": "B",
+      "nums": [
+        "6",
+        "8",
+        "8",
+        "7"
+      ]
+    },
+    {
+      "draw": "0499",
+      "date": "2026-09-21",
+      "letter": "A",
+      "nums": [
+        "2",
+        "9",
+        "9",
+        "4"
+      ]
+    },
+    {
+      "draw": "0498",
+      "date": "2026-09-20",
+      "letter": "B",
+      "nums": [
+        "8",
+        "4",
+        "3",
+        "7"
+      ]
+    },
+    {
+      "draw": "0497",
+      "date": "2026-09-19",
+      "letter": "S",
+      "nums": [
+        "0",
+        "1",
+        "7",
+        "2"
+      ]
+    },
+    {
+      "draw": "0496",
+      "date": "2026-09-18",
+      "letter": "H",
+      "nums": [
+        "8",
+        "8",
+        "7",
+        "2"
+      ]
+    },
+    {
+      "draw": "0495",
+      "date": "2026-09-17",
+      "letter": "V",
+      "nums": [
+        "1",
+        "4",
+        "8",
+        "8"
+      ]
+    },
+    {
+      "draw": "0494",
+      "date": "2026-09-16",
+      "letter": "K",
+      "nums": [
+        "8",
+        "6",
+        "9",
+        "9"
+      ]
+    },
+    {
+      "draw": "0493",
+      "date": "2026-09-15",
+      "letter": "O",
+      "nums": [
+        "9",
+        "9",
+        "6",
+        "6"
+      ]
+    },
+    {
+      "draw": "0492",
+      "date": "2026-09-14",
+      "letter": "U",
+      "nums": [
+        "0",
+        "6",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "draw": "0491",
+      "date": "2026-09-13",
+      "letter": "S",
+      "nums": [
+        "0",
+        "4",
+        "8",
+        "1"
+      ]
+    },
+    {
+      "draw": "0490",
+      "date": "2026-09-12",
+      "letter": "W",
+      "nums": [
+        "9",
+        "0",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "draw": "0489",
+      "date": "2026-09-11",
+      "letter": "T",
+      "nums": [
+        "9",
+        "0",
+        "0",
+        "9"
+      ]
+    },
+    {
+      "draw": "0488",
+      "date": "2026-09-10",
+      "letter": "Z",
+      "nums": [
+        "6",
+        "5",
+        "5",
+        "5"
+      ]
+    },
+    {
+      "draw": "0487",
+      "date": "2026-09-09",
+      "letter": "V",
+      "nums": [
+        "7",
+        "2",
+        "4",
+        "4"
+      ]
+    },
+    {
+      "draw": "0486",
+      "date": "2026-09-08",
+      "letter": "P",
+      "nums": [
+        "0",
+        "7",
+        "0",
+        "8"
+      ]
+    },
+    {
+      "draw": "0485",
+      "date": "2026-09-07",
+      "letter": "N",
+      "nums": [
+        "6",
+        "5",
+        "9",
+        "1"
+      ]
+    },
+    {
+      "draw": "0484",
+      "date": "2026-09-06",
+      "letter": "R",
+      "nums": [
+        "2",
+        "9",
+        "6",
+        "0"
+      ]
+    },
+    {
+      "draw": "0483",
+      "date": "2026-09-05",
+      "letter": "C",
+      "nums": [
+        "3",
+        "9",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "draw": "0482",
+      "date": "2026-09-04",
+      "letter": "C",
+      "nums": [
+        "0",
+        "4",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "draw": "0481",
+      "date": "2026-09-03",
+      "letter": "T",
+      "nums": [
+        "7",
+        "0",
+        "7",
+        "1"
+      ]
+    },
+    {
+      "draw": "0480",
+      "date": "2026-09-02",
+      "letter": "S",
+      "nums": [
+        "6",
+        "8",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "draw": "0479",
+      "date": "2026-09-01",
+      "letter": "E",
+      "nums": [
+        "1",
+        "7",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "draw": "0478",
+      "date": "2026-08-31",
+      "letter": "W",
+      "nums": [
+        "8",
+        "9",
+        "8",
+        "5"
+      ]
+    },
+    {
+      "draw": "0477",
+      "date": "2026-08-30",
+      "letter": "S",
+      "nums": [
+        "9",
+        "8",
+        "2",
+        "9"
+      ]
+    },
+    {
+      "draw": "0476",
+      "date": "2026-08-29",
+      "letter": "N",
+      "nums": [
+        "7",
+        "5",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "draw": "0475",
+      "date": "2026-08-28",
+      "letter": "G",
+      "nums": [
+        "8",
+        "4",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "draw": "0474",
+      "date": "2026-08-27",
+      "letter": "Q",
+      "nums": [
+        "1",
+        "2",
+        "0",
+        "7"
+      ]
+    },
+    {
+      "draw": "0473",
+      "date": "2026-08-26",
+      "letter": "F",
+      "nums": [
+        "4",
+        "8",
+        "8",
+        "2"
+      ]
+    },
+    {
+      "draw": "0472",
+      "date": "2026-08-25",
+      "letter": "Z",
+      "nums": [
+        "6",
+        "5",
+        "5",
+        "0"
+      ]
+    },
+    {
+      "draw": "0471",
+      "date": "2026-08-24",
+      "letter": "G",
+      "nums": [
+        "3",
+        "0",
+        "8",
+        "3"
+      ]
+    },
+    {
+      "draw": "0470",
+      "date": "2026-08-23",
+      "letter": "K",
+      "nums": [
+        "8",
+        "6",
+        "7",
+        "1"
+      ]
+    },
+    {
+      "draw": "0469",
+      "date": "2026-08-22",
+      "letter": "O",
+      "nums": [
+        "8",
+        "7",
+        "6",
+        "2"
+      ]
+    },
+    {
+      "draw": "0468",
+      "date": "2026-08-21",
+      "letter": "F",
+      "nums": [
+        "4",
+        "8",
+        "0",
+        "9"
+      ]
+    },
+    {
+      "draw": "0467",
+      "date": "2026-08-20",
+      "letter": "O",
+      "nums": [
+        "5",
+        "7",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "draw": "0466",
+      "date": "2026-08-19",
+      "letter": "Q",
+      "nums": [
+        "1",
+        "8",
+        "9",
+        "6"
+      ]
+    },
+    {
+      "draw": "0465",
+      "date": "2026-08-18",
+      "letter": "G",
+      "nums": [
+        "6",
+        "6",
+        "9",
+        "1"
+      ]
+    },
+    {
+      "draw": "0464",
+      "date": "2026-08-17",
+      "letter": "Q",
+      "nums": [
+        "1",
+        "0",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "draw": "0463",
+      "date": "2026-08-16",
+      "letter": "D",
+      "nums": [
+        "3",
+        "5",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "draw": "0462",
+      "date": "2026-08-15",
+      "letter": "H",
+      "nums": [
+        "7",
+        "6",
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "perDrawTables": {
+    "0551": {
+      "date": "2026-11-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0550": {
+      "date": "2026-11-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      }
+    },
+    "0549": {
+      "date": "2026-11-10",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0548": {
+      "date": "2026-11-09",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0547": {
+      "date": "2026-11-08",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0546": {
+      "date": "2026-11-07",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0545": {
+      "date": "2026-11-06",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0544": {
+      "date": "2026-11-05",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0543": {
+      "date": "2026-11-04",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0542": {
+      "date": "2026-11-03",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0541": {
+      "date": "2026-11-02",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0540": {
+      "date": "2026-11-01",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0539": {
+      "date": "2026-10-31",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0538": {
+      "date": "2026-10-30",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0537": {
+      "date": "2026-10-29",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0536": {
+      "date": "2026-10-28",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0535": {
+      "date": "2026-10-27",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0534": {
+      "date": "2026-10-26",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0533": {
+      "date": "2026-10-25",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0532": {
+      "date": "2026-10-24",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0531": {
+      "date": "2026-10-23",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0530": {
+      "date": "2026-10-22",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0529": {
+      "date": "2026-10-21",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0528": {
+      "date": "2026-10-20",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0527": {
+      "date": "2026-10-19",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0526": {
+      "date": "2026-10-18",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0525": {
+      "date": "2026-10-17",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0524": {
+      "date": "2026-10-16",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0523": {
+      "date": "2026-10-15",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0522": {
+      "date": "2026-10-14",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0521": {
+      "date": "2026-10-13",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0520": {
+      "date": "2026-10-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0519": {
+      "date": "2026-10-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0518": {
+      "date": "2026-10-10",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0517": {
+      "date": "2026-10-09",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0516": {
+      "date": "2026-10-08",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0515": {
+      "date": "2026-10-07",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0514": {
+      "date": "2026-10-06",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0513": {
+      "date": "2026-10-05",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0512": {
+      "date": "2026-10-04",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0511": {
+      "date": "2026-10-03",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0510": {
+      "date": "2026-10-02",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0509": {
+      "date": "2026-10-01",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0508": {
+      "date": "2026-09-30",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0507": {
+      "date": "2026-09-29",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0506": {
+      "date": "2026-09-28",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0505": {
+      "date": "2026-09-27",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0504": {
+      "date": "2026-09-26",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0503": {
+      "date": "2026-09-25",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0502": {
+      "date": "2026-09-24",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0501": {
+      "date": "2026-09-23",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0500": {
+      "date": "2026-09-22",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0499": {
+      "date": "2026-09-21",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0498": {
+      "date": "2026-09-20",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0497": {
+      "date": "2026-09-19",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0496": {
+      "date": "2026-09-18",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0495": {
+      "date": "2026-09-17",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0494": {
+      "date": "2026-09-16",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0493": {
+      "date": "2026-09-15",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0492": {
+      "date": "2026-09-14",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0491": {
+      "date": "2026-09-13",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0490": {
+      "date": "2026-09-12",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0489": {
+      "date": "2026-09-11",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0488": {
+      "date": "2026-09-10",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0487": {
+      "date": "2026-09-09",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0486": {
+      "date": "2026-09-08",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0485": {
+      "date": "2026-09-07",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0484": {
+      "date": "2026-09-06",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0483": {
+      "date": "2026-09-05",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0482": {
+      "date": "2026-09-04",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0481": {
+      "date": "2026-09-03",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0480": {
+      "date": "2026-09-02",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0479": {
+      "date": "2026-09-01",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0478": {
+      "date": "2026-08-31",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0477": {
+      "date": "2026-08-30",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0476": {
+      "date": "2026-08-29",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0475": {
+      "date": "2026-08-28",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0474": {
+      "date": "2026-08-27",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0473": {
+      "date": "2026-08-26",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0472": {
+      "date": "2026-08-25",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0471": {
+      "date": "2026-08-24",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0470": {
+      "date": "2026-08-23",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0469": {
+      "date": "2026-08-22",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0468": {
+      "date": "2026-08-21",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0467": {
+      "date": "2026-08-20",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0466": {
+      "date": "2026-08-19",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0465": {
+      "date": "2026-08-18",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0464": {
+      "date": "2026-08-17",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0463": {
+      "date": "2026-08-16",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
+    "0462": {
+      "date": "2026-08-15",
+      "totalWinners": 13534,
+      "totalPayout": 5972520.0,
+      "rows": [
+        {
+          "tier": "LAST 4 NOS,LETTER",
+          "prize": "Rs. 250,000.00",
+          "unitPrize": 250000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "LAST 4 NOS",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 28
+        },
+        {
+          "tier": "LAST 3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 271
+        },
+        {
+          "tier": "LAST 2 NOS",
+          "prize": "Rs. 1,000.00",
+          "unitPrize": 1000.0,
+          "avgWinners": 2641
+        },
+        {
+          "tier": "LETTER",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10594
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 0,
+        "TIER_80_120": 10594,
+        "TIER_200": 0,
+        "TIER_1000_2000": 2912,
+        "TIER_20000": 28,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    }
+  },
+  "updatedAt": "2026-11-13T01:14:56Z"
+}
