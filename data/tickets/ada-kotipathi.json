@@ -3,10 +3,10 @@
   "id": "ada-kotipathi",
   "name": "Ada Kotipathi",
   "board": "DLB",
-  "latestDraw": "3169",
-  "latestDate": "2026-11-12",
-  "drawCount": 90,
-  "tableCount": 90,
+  "latestDraw": "3170",
+  "latestDate": "2026-11-13",
+  "drawCount": 91,
+  "tableCount": 91,
   "currentJackpot": 61188209.6,
   "avgWinnersPerDraw": 106381,
   "dailyPrizePayout": 8098680.0,
@@ -76,6 +76,21 @@
     }
   ],
   "drawTierHistory": [
+    {
+      "draw": "3170",
+      "date": "2026-11-13",
+      "totalWinners": 106381,
+      "totalPayout": 8098680.0,
+      "tiers": {
+        "TIER_40": 97337,
+        "TIER_80_120": 0,
+        "TIER_200": 8706,
+        "TIER_1000_2000": 330,
+        "TIER_20000": 0,
+        "TIER_100000": 8,
+        "TIER_1M_PLUS": 0
+      }
+    },
     {
       "draw": "3169",
       "date": "2026-11-12",
@@ -1429,6 +1444,17 @@
   ],
   "draws": [
     {
+      "draw": "3170",
+      "date": "2026-11-13",
+      "letter": "G",
+      "nums": [
+        "10",
+        "40",
+        "54",
+        "65"
+      ]
+    },
+    {
       "draw": "3169",
       "date": "2026-11-12",
       "letter": "P",
@@ -2420,6 +2446,77 @@
     }
   ],
   "perDrawTables": {
+    "3170": {
+      "date": "2026-11-13",
+      "totalWinners": 106381,
+      "totalPayout": 8098680.0,
+      "rows": [
+        {
+          "tier": "4 NOS, ENGLISH LETTER",
+          "prize": "Rs. 61,188,209.60",
+          "unitPrize": 61188209.6,
+          "avgWinners": 0
+        },
+        {
+          "tier": "4 NOS",
+          "prize": "Rs. 2,000,000.00",
+          "unitPrize": 2000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "3 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200,000.00",
+          "unitPrize": 200000.0,
+          "avgWinners": 8
+        },
+        {
+          "tier": "3 NOS",
+          "prize": "Rs. 4,000.00",
+          "unitPrize": 4000.0,
+          "avgWinners": 102
+        },
+        {
+          "tier": "2 NOS, ENGLISH LETTER",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 228
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 5394
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 3312
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 83000
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 14337
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 97337,
+        "TIER_80_120": 0,
+        "TIER_200": 8706,
+        "TIER_1000_2000": 330,
+        "TIER_20000": 0,
+        "TIER_100000": 8,
+        "TIER_1M_PLUS": 0
+      },
+      "isFallback": true
+    },
     "3169": {
       "date": "2026-11-12",
       "totalWinners": 106381,
@@ -8809,5 +8906,5 @@
       "isFallback": true
     }
   },
-  "updatedAt": "2026-11-13T01:13:20Z"
+  "updatedAt": "2026-11-13T22:11:55Z"
 }

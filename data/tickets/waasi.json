@@ -3,10 +3,10 @@
   "id": "waasi",
   "name": "Waasi",
   "board": "DLB",
-  "latestDraw": "0043",
-  "latestDate": "2026-11-12",
-  "drawCount": 43,
-  "tableCount": 43,
+  "latestDraw": "0044",
+  "latestDate": "2026-11-13",
+  "drawCount": 44,
+  "tableCount": 44,
   "currentJackpot": 1000000.0,
   "avgWinnersPerDraw": 71735,
   "dailyPrizePayout": 8855760.0,
@@ -88,6 +88,21 @@
     }
   ],
   "drawTierHistory": [
+    {
+      "draw": "0044",
+      "date": "2026-11-13",
+      "totalWinners": 71735,
+      "totalPayout": 8855760.0,
+      "tiers": {
+        "TIER_40": 69248,
+        "TIER_80_120": 7,
+        "TIER_200": 2370,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 107,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 4
+      }
+    },
     {
       "draw": "0043",
       "date": "2026-11-12",
@@ -736,6 +751,16 @@
   ],
   "draws": [
     {
+      "draw": "0044",
+      "date": "2026-11-13",
+      "letter": "P",
+      "nums": [
+        "46",
+        "84",
+        "12"
+      ]
+    },
+    {
       "draw": "0043",
       "date": "2026-11-12",
       "letter": "T",
@@ -1167,6 +1192,89 @@
     }
   ],
   "perDrawTables": {
+    "0044": {
+      "date": "2026-11-13",
+      "totalWinners": 71735,
+      "totalPayout": 8855760.0,
+      "rows": [
+        {
+          "tier": "2 NOS, ENGLISH LETTER, SUPER NO",
+          "prize": "Rs. 1,000,000.00",
+          "unitPrize": 1000000.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "2 NOS, ENGLISH LETTER",
+          "prize": "Rs. 500,000.00",
+          "unitPrize": 500000.0,
+          "avgWinners": 4
+        },
+        {
+          "tier": "2 NOS, SUPER NO",
+          "prize": "Rs. 50,000.00",
+          "unitPrize": 50000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "2 NOS",
+          "prize": "Rs. 25,000.00",
+          "unitPrize": 25000.0,
+          "avgWinners": 98
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER, SUPER NO",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "1 NOS, ENGLISH LETTER",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 739
+        },
+        {
+          "tier": "1 NOS, SUPER NO",
+          "prize": "Rs. 500.00",
+          "unitPrize": 500.0,
+          "avgWinners": 1629
+        },
+        {
+          "tier": "ENGLISH LETTER, SUPER NO",
+          "prize": "Rs. 120.00",
+          "unitPrize": 120.0,
+          "avgWinners": 7
+        },
+        {
+          "tier": "1 NOS",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 17255
+        },
+        {
+          "tier": "ENGLISH LETTER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 16434
+        },
+        {
+          "tier": "SUPER NUMBER",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 35559
+        }
+      ],
+      "tierCounts": {
+        "TIER_40": 69248,
+        "TIER_80_120": 7,
+        "TIER_200": 2370,
+        "TIER_1000_2000": 0,
+        "TIER_20000": 107,
+        "TIER_100000": 0,
+        "TIER_1M_PLUS": 4
+      },
+      "isFallback": true
+    },
     "0043": {
       "date": "2026-11-12",
       "totalWinners": 71735,
@@ -4736,5 +4844,5 @@
       "isFallback": true
     }
   },
-  "updatedAt": "2026-11-13T01:14:32Z"
+  "updatedAt": "2026-11-13T22:11:47Z"
 }

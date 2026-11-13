@@ -3,34 +3,34 @@
   "id": "mahajana-sampatha",
   "name": "Mahajana Sampatha",
   "board": "NLB",
-  "latestDraw": "6369",
-  "latestDate": "2026-11-12",
-  "drawCount": 180,
-  "tableCount": 180,
+  "latestDraw": "6370",
+  "latestDate": "2026-11-13",
+  "drawCount": 208,
+  "tableCount": 208,
   "currentJackpot": 32476040.0,
-  "avgWinnersPerDraw": 248982,
-  "dailyPrizePayout": 20235320.0,
+  "avgWinnersPerDraw": 252597,
+  "dailyPrizePayout": 22957360.0,
   "tierWinnersPerDraw": {
-    "TIER_40": 226605,
-    "TIER_80_120": 10029,
-    "TIER_200": 11104,
-    "TIER_1000_2000": 1124,
-    "TIER_20000": 100,
+    "TIER_40": 229978,
+    "TIER_80_120": 10138,
+    "TIER_200": 11236,
+    "TIER_1000_2000": 1120,
+    "TIER_20000": 104,
     "TIER_100000": 19,
-    "TIER_1M_PLUS": 1
+    "TIER_1M_PLUS": 2
   },
   "prizeStructureDetails": [
     {
       "tier": "Super Prize — Letter and 6 Numbers Correct",
-      "prize": "Rs. 21,167,456.00",
-      "unitPrize": 21167456.0,
+      "prize": "Rs. 21,603,832.00",
+      "unitPrize": 21603832.0,
       "avgWinners": 0
     },
     {
       "tier": "1 st — 6 Numbers Correct",
       "prize": "Rs. 2,500,000.00",
       "unitPrize": 2500000.0,
-      "avgWinners": 1
+      "avgWinners": 2
     },
     {
       "tier": "2 nd — Last 5 Numbers Correct",
@@ -42,25 +42,25 @@
       "tier": "3 rd — Last 4 Numbers Correct",
       "prize": "Rs. 15,000.00",
       "unitPrize": 15000.0,
-      "avgWinners": 100
+      "avgWinners": 104
     },
     {
       "tier": "4 th — Last 3 Numbers Correct",
       "prize": "Rs. 2,000.00",
       "unitPrize": 2000.0,
-      "avgWinners": 1020
+      "avgWinners": 1021
     },
     {
       "tier": "5 th — Last 2 Numbers Correct",
       "prize": "Rs. 200.00",
       "unitPrize": 200.0,
-      "avgWinners": 10097
+      "avgWinners": 10211
     },
     {
       "tier": "6 th — Last Number Correct",
       "prize": "Rs. 40.00",
       "unitPrize": 40.0,
-      "avgWinners": 99832
+      "avgWinners": 101270
     },
     {
       "tier": "7 th — First 5 Numbers Correct",
@@ -72,34 +72,49 @@
       "tier": "8 th — First 4 Numbers Correct",
       "prize": "Rs. 2,000.00",
       "unitPrize": 2000.0,
-      "avgWinners": 104
+      "avgWinners": 99
     },
     {
       "tier": "9 th — First 3 Numbers Correct",
       "prize": "Rs. 200.00",
       "unitPrize": 200.0,
-      "avgWinners": 1007
+      "avgWinners": 1025
     },
     {
       "tier": "10 th — First 2 Numbers Correct",
       "prize": "Rs. 80.00",
       "unitPrize": 80.0,
-      "avgWinners": 10029
+      "avgWinners": 10138
     },
     {
       "tier": "11 th — First Number Correct",
       "prize": "Rs. 40.00",
       "unitPrize": 40.0,
-      "avgWinners": 90673
+      "avgWinners": 91867
     },
     {
       "tier": "12 th — Letter Correct",
       "prize": "Rs. 40.00",
       "unitPrize": 40.0,
-      "avgWinners": 36100
+      "avgWinners": 36841
     }
   ],
   "drawTierHistory": [
+    {
+      "draw": "6370",
+      "date": "2026-11-13",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
     {
       "draw": "6369",
       "date": "2026-11-12",
@@ -2799,9 +2814,427 @@
         "TIER_100000": 19,
         "TIER_1M_PLUS": 1
       }
+    },
+    {
+      "draw": "6189",
+      "date": "2026-05-14",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6188",
+      "date": "2026-05-13",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6187",
+      "date": "2026-05-12",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6186",
+      "date": "2026-05-11",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6185",
+      "date": "2026-05-10",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6184",
+      "date": "2026-05-09",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6183",
+      "date": "2026-05-08",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6182",
+      "date": "2026-05-07",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6181",
+      "date": "2026-05-06",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6180",
+      "date": "2026-05-05",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6179",
+      "date": "2026-05-04",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6178",
+      "date": "2026-05-03",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6177",
+      "date": "2026-05-02",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6176",
+      "date": "2026-05-01",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6175",
+      "date": "2026-04-30",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6174",
+      "date": "2026-04-29",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6173",
+      "date": "2026-04-28",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6172",
+      "date": "2026-04-27",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6171",
+      "date": "2026-04-26",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6170",
+      "date": "2026-04-25",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6169",
+      "date": "2026-04-24",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6168",
+      "date": "2026-04-23",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6167",
+      "date": "2026-04-22",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6166",
+      "date": "2026-04-21",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6165",
+      "date": "2026-04-20",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6164",
+      "date": "2026-04-19",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
+    },
+    {
+      "draw": "6163",
+      "date": "2026-04-18",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tiers": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      }
     }
   ],
   "draws": [
+    {
+      "draw": "6370",
+      "date": "2026-11-13",
+      "letter": "E",
+      "nums": [
+        "4",
+        "1",
+        "2",
+        "2",
+        "0",
+        "8"
+      ]
+    },
     {
       "draw": "6369",
       "date": "2026-11-12",
@@ -5141,9 +5574,454 @@
         "1",
         "4"
       ]
+    },
+    {
+      "draw": "6189",
+      "date": "2026-05-14",
+      "letter": "W",
+      "nums": [
+        "3",
+        "4",
+        "7",
+        "4",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "draw": "6188",
+      "date": "2026-05-13",
+      "letter": "G",
+      "nums": [
+        "8",
+        "8",
+        "3",
+        "0",
+        "1",
+        "7"
+      ]
+    },
+    {
+      "draw": "6187",
+      "date": "2026-05-12",
+      "letter": "T",
+      "nums": [
+        "7",
+        "2",
+        "0",
+        "6",
+        "0",
+        "2"
+      ]
+    },
+    {
+      "draw": "6186",
+      "date": "2026-05-11",
+      "letter": "M",
+      "nums": [
+        "1",
+        "4",
+        "2",
+        "6",
+        "6",
+        "5"
+      ]
+    },
+    {
+      "draw": "6185",
+      "date": "2026-05-10",
+      "letter": "K",
+      "nums": [
+        "5",
+        "3",
+        "5",
+        "2",
+        "0",
+        "5"
+      ]
+    },
+    {
+      "draw": "6184",
+      "date": "2026-05-09",
+      "letter": "J",
+      "nums": [
+        "3",
+        "4",
+        "9",
+        "5",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "draw": "6183",
+      "date": "2026-05-08",
+      "letter": "X",
+      "nums": [
+        "2",
+        "6",
+        "4",
+        "7",
+        "9",
+        "4"
+      ]
+    },
+    {
+      "draw": "6182",
+      "date": "2026-05-07",
+      "letter": "R",
+      "nums": [
+        "3",
+        "1",
+        "4",
+        "7",
+        "2",
+        "7"
+      ]
+    },
+    {
+      "draw": "6181",
+      "date": "2026-05-06",
+      "letter": "E",
+      "nums": [
+        "3",
+        "2",
+        "2",
+        "1",
+        "6",
+        "4"
+      ]
+    },
+    {
+      "draw": "6180",
+      "date": "2026-05-05",
+      "letter": "V",
+      "nums": [
+        "8",
+        "3",
+        "3",
+        "2",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "draw": "6179",
+      "date": "2026-05-04",
+      "letter": "R",
+      "nums": [
+        "8",
+        "1",
+        "8",
+        "8",
+        "9",
+        "6"
+      ]
+    },
+    {
+      "draw": "6178",
+      "date": "2026-05-03",
+      "letter": "M",
+      "nums": [
+        "2",
+        "1",
+        "6",
+        "0",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "draw": "6177",
+      "date": "2026-05-02",
+      "letter": "G",
+      "nums": [
+        "1",
+        "1",
+        "2",
+        "3",
+        "1",
+        "6"
+      ]
+    },
+    {
+      "draw": "6176",
+      "date": "2026-05-01",
+      "letter": "T",
+      "nums": [
+        "2",
+        "7",
+        "3",
+        "5",
+        "6",
+        "6"
+      ]
+    },
+    {
+      "draw": "6175",
+      "date": "2026-04-30",
+      "letter": "X",
+      "nums": [
+        "4",
+        "4",
+        "4",
+        "5",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "draw": "6174",
+      "date": "2026-04-29",
+      "letter": "A",
+      "nums": [
+        "5",
+        "8",
+        "3",
+        "5",
+        "8",
+        "1"
+      ]
+    },
+    {
+      "draw": "6173",
+      "date": "2026-04-28",
+      "letter": "S",
+      "nums": [
+        "6",
+        "6",
+        "6",
+        "1",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "draw": "6172",
+      "date": "2026-04-27",
+      "letter": "V",
+      "nums": [
+        "5",
+        "4",
+        "7",
+        "6",
+        "2",
+        "0"
+      ]
+    },
+    {
+      "draw": "6171",
+      "date": "2026-04-26",
+      "letter": "Z",
+      "nums": [
+        "0",
+        "0",
+        "6",
+        "7",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "draw": "6170",
+      "date": "2026-04-25",
+      "letter": "H",
+      "nums": [
+        "8",
+        "3",
+        "5",
+        "5",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "draw": "6169",
+      "date": "2026-04-24",
+      "letter": "M",
+      "nums": [
+        "7",
+        "7",
+        "8",
+        "8",
+        "9",
+        "2"
+      ]
+    },
+    {
+      "draw": "6168",
+      "date": "2026-04-23",
+      "letter": "S",
+      "nums": [
+        "9",
+        "0",
+        "5",
+        "9",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "draw": "6167",
+      "date": "2026-04-22",
+      "letter": "Q",
+      "nums": [
+        "8",
+        "0",
+        "4",
+        "2",
+        "4",
+        "4"
+      ]
+    },
+    {
+      "draw": "6166",
+      "date": "2026-04-21",
+      "letter": "F",
+      "nums": [
+        "5",
+        "6",
+        "3",
+        "4",
+        "5",
+        "4"
+      ]
+    },
+    {
+      "draw": "6165",
+      "date": "2026-04-20",
+      "letter": "N",
+      "nums": [
+        "7",
+        "2",
+        "0",
+        "1",
+        "2",
+        "6"
+      ]
+    },
+    {
+      "draw": "6164",
+      "date": "2026-04-19",
+      "letter": "Y",
+      "nums": [
+        "1",
+        "8",
+        "2",
+        "0",
+        "4",
+        "0"
+      ]
+    },
+    {
+      "draw": "6163",
+      "date": "2026-04-18",
+      "letter": "S",
+      "nums": [
+        "5",
+        "8",
+        "1",
+        "6",
+        "8",
+        "3"
+      ]
     }
   ],
   "perDrawTables": {
+    "6370": {
+      "date": "2026-11-13",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ]
+    },
     "6369": {
       "date": "2026-11-12",
       "totalWinners": 248982,
@@ -22153,7 +23031,2572 @@
         }
       ],
       "isFallback": true
+    },
+    "6189": {
+      "date": "2026-05-14",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6188": {
+      "date": "2026-05-13",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6187": {
+      "date": "2026-05-12",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6186": {
+      "date": "2026-05-11",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6185": {
+      "date": "2026-05-10",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6184": {
+      "date": "2026-05-09",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6183": {
+      "date": "2026-05-08",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6182": {
+      "date": "2026-05-07",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6181": {
+      "date": "2026-05-06",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6180": {
+      "date": "2026-05-05",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6179": {
+      "date": "2026-05-04",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6178": {
+      "date": "2026-05-03",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6177": {
+      "date": "2026-05-02",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6176": {
+      "date": "2026-05-01",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6175": {
+      "date": "2026-04-30",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6174": {
+      "date": "2026-04-29",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6173": {
+      "date": "2026-04-28",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6172": {
+      "date": "2026-04-27",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6171": {
+      "date": "2026-04-26",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6170": {
+      "date": "2026-04-25",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6169": {
+      "date": "2026-04-24",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6168": {
+      "date": "2026-04-23",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6167": {
+      "date": "2026-04-22",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6166": {
+      "date": "2026-04-21",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6165": {
+      "date": "2026-04-20",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6164": {
+      "date": "2026-04-19",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
+    },
+    "6163": {
+      "date": "2026-04-18",
+      "totalWinners": 252597,
+      "totalPayout": 22957360.0,
+      "tierCounts": {
+        "TIER_40": 229978,
+        "TIER_80_120": 10138,
+        "TIER_200": 11236,
+        "TIER_1000_2000": 1120,
+        "TIER_20000": 104,
+        "TIER_100000": 19,
+        "TIER_1M_PLUS": 2
+      },
+      "rows": [
+        {
+          "tier": "Super Prize — Letter and 6 Numbers Correct",
+          "prize": "Rs. 21,603,832.00",
+          "unitPrize": 21603832.0,
+          "avgWinners": 0
+        },
+        {
+          "tier": "1 st — 6 Numbers Correct",
+          "prize": "Rs. 2,500,000.00",
+          "unitPrize": 2500000.0,
+          "avgWinners": 2
+        },
+        {
+          "tier": "2 nd — Last 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 9
+        },
+        {
+          "tier": "3 rd — Last 4 Numbers Correct",
+          "prize": "Rs. 15,000.00",
+          "unitPrize": 15000.0,
+          "avgWinners": 104
+        },
+        {
+          "tier": "4 th — Last 3 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 1021
+        },
+        {
+          "tier": "5 th — Last 2 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 10211
+        },
+        {
+          "tier": "6 th — Last Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 101270
+        },
+        {
+          "tier": "7 th — First 5 Numbers Correct",
+          "prize": "Rs. 100,000.00",
+          "unitPrize": 100000.0,
+          "avgWinners": 10
+        },
+        {
+          "tier": "8 th — First 4 Numbers Correct",
+          "prize": "Rs. 2,000.00",
+          "unitPrize": 2000.0,
+          "avgWinners": 99
+        },
+        {
+          "tier": "9 th — First 3 Numbers Correct",
+          "prize": "Rs. 200.00",
+          "unitPrize": 200.0,
+          "avgWinners": 1025
+        },
+        {
+          "tier": "10 th — First 2 Numbers Correct",
+          "prize": "Rs. 80.00",
+          "unitPrize": 80.0,
+          "avgWinners": 10138
+        },
+        {
+          "tier": "11 th — First Number Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 91867
+        },
+        {
+          "tier": "12 th — Letter Correct",
+          "prize": "Rs. 40.00",
+          "unitPrize": 40.0,
+          "avgWinners": 36841
+        }
+      ],
+      "isFallback": true
     }
   },
-  "updatedAt": "2026-11-13T01:31:47Z"
+  "updatedAt": "2026-11-13T22:11:19Z"
 }
